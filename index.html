@@ -7,23 +7,26 @@
   <meta name="description" content="Animações, vídeos e conteúdo em movimento com entrega rápida e processo direto. Para marcas, agências e criadores que precisam de resultado visual de verdade." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:      #080808;
-      --bg-2:    #0f0f0f;
-      --bg-3:    #141414;
-      --border:  #1e1e1e;
-      --border-2:#2a2a2a;
-      --text:    #f2f2f2;
-      --muted:   #777777;
-      --red:     #c0392b;
-      --red-2:   #e74c3c;
-      --red-dark:#7f0000;
-      --grad:    linear-gradient(135deg, #c0392b, #7f0000);
-      --grad-text: linear-gradient(90deg, #e74c3c, #c0392b);
+      --bg:      #050507;
+      --bg-2:    #0a0a0f;
+      --bg-3:    #0f0f18;
+      --border:  #1a1a2e;
+      --border-2:#2a2a4a;
+      --text:    #e8e8f0;
+      --muted:   #6666aa;
+      --red:     #7c3aed;
+      --red-2:   #a855f7;
+      --red-dark:#4c1d95;
+      --cyan:    #00f5ff;
+      --pink:    #ff2d78;
+      --grad:    linear-gradient(135deg, #7c3aed, #4c1d95);
+      --grad-text: linear-gradient(90deg, #c084fc, #00f5ff);
+      --neon-glow: 0 0 20px rgba(168,85,247,0.4), 0 0 60px rgba(124,58,237,0.2);
     }
 
     html { scroll-behavior: smooth; }
@@ -53,7 +56,7 @@
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--red-2);
-      border: 1px solid rgba(192,57,43,0.35);
+      border: 1px solid rgba(124,58,237,0.4);
       border-radius: 3px;
       padding: 5px 14px;
       margin-bottom: 20px;
@@ -120,7 +123,7 @@
       position: absolute;
       top: -180px; left: 50%; transform: translateX(-50%);
       width: 900px; height: 700px;
-      background: radial-gradient(ellipse, rgba(192,57,43,0.13) 0%, transparent 68%);
+      background: radial-gradient(ellipse, rgba(124,58,237,0.18) 0%, transparent 68%);
       pointer-events: none;
     }
     #hero::after {
@@ -128,7 +131,7 @@
       position: absolute;
       bottom: -60px; right: -80px;
       width: 500px; height: 500px;
-      background: radial-gradient(ellipse, rgba(127,0,0,0.08) 0%, transparent 70%);
+      background: radial-gradient(ellipse, rgba(76,29,149,0.1) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -170,11 +173,11 @@
       border-radius: 4px;
       text-decoration: none;
       transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 0 40px rgba(192,57,43,0.28);
+      box-shadow: 0 0 40px rgba(124,58,237,0.35);
     }
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 0 64px rgba(192,57,43,0.45);
+      box-shadow: 0 0 64px rgba(124,58,237,0.55);
     }
     .btn-primary svg { width: 20px; height: 20px; flex-shrink: 0; }
 
@@ -424,6 +427,7 @@
     }
     .sobre-foto {
       position: relative;
+      overflow: visible;
     }
     .sobre-foto img {
       width: 100%;
@@ -437,7 +441,7 @@
       position: absolute;
       inset: -1px;
       border-radius: 4px;
-      background: linear-gradient(135deg, rgba(192,57,43,0.3), transparent 60%);
+      background: linear-gradient(135deg, rgba(124,58,237,0.35), transparent 60%);
       pointer-events: none;
       z-index: 1;
     }
@@ -476,8 +480,8 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--red-2);
-      background: rgba(192,57,43,0.08);
-      border: 1px solid rgba(192,57,43,0.2);
+      background: rgba(124,58,237,0.08);
+      border: 1px solid rgba(124,58,237,0.25);
       padding: 5px 12px;
       border-radius: 3px;
     }
@@ -493,7 +497,7 @@
       position: absolute;
       top: 50%; left: 50%; transform: translate(-50%,-50%);
       width: 700px; height: 600px;
-      background: radial-gradient(ellipse, rgba(192,57,43,0.1) 0%, transparent 68%);
+      background: radial-gradient(ellipse, rgba(124,58,237,0.14) 0%, transparent 68%);
       pointer-events: none;
     }
     .cta-final-inner { position: relative; z-index: 1; max-width: 660px; margin: 0 auto; }
@@ -587,6 +591,143 @@
       background: var(--red);
       margin: 0 auto 20px;
     }
+
+    /* ── CYBERPUNK ── */
+
+    /* Background grid */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Scanlines */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(0,0,0,0.04) 3px,
+        rgba(0,0,0,0.04) 4px
+      );
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* All sections above grid */
+    section, nav, footer { position: relative; z-index: 1; }
+
+    /* Glitch animation */
+    @keyframes glitch {
+      0%, 88%, 100% { text-shadow: none; transform: none; }
+      89% { text-shadow: 3px 0 var(--cyan), -3px 0 var(--pink); transform: translateX(2px); }
+      91% { text-shadow: -3px 0 var(--cyan), 3px 0 var(--pink); transform: translateX(-2px); }
+      93% { text-shadow: 2px 0 var(--cyan), -2px 0 var(--pink); transform: translateX(1px); }
+      95% { text-shadow: none; transform: none; }
+    }
+
+    .hero-headline { animation: glitch 6s infinite; }
+
+    /* Neon tag */
+    .tag {
+      font-family: 'Share Tech Mono', monospace;
+      box-shadow: 0 0 8px rgba(168,85,247,0.3);
+    }
+
+    /* Neon rule */
+    .rule {
+      box-shadow: 0 0 8px rgba(168,85,247,0.6);
+    }
+
+    /* Neon border on cards hover */
+    .benefit-card:hover {
+      box-shadow: var(--neon-glow), inset 0 0 30px rgba(124,58,237,0.05);
+    }
+    .tool-card:hover {
+      box-shadow: 0 0 16px rgba(168,85,247,0.25);
+    }
+    .problema-card { border-right: 1px solid var(--border); }
+
+    /* Corner decoration on section titles */
+    .section-header { position: relative; }
+
+    /* Cyan accent on step numbers */
+    .step-num { color: var(--cyan); opacity: 0.15; }
+    .step:hover .step-num { opacity: 0.4; transition: opacity 0.3s; }
+
+    /* Mono font on tags + nums */
+    .benefit-num, .problema-card .num {
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    /* CTA button neon pulse */
+    @keyframes neon-pulse {
+      0%, 100% { box-shadow: 0 0 40px rgba(124,58,237,0.35); }
+      50%       { box-shadow: 0 0 70px rgba(168,85,247,0.6), 0 0 120px rgba(124,58,237,0.2); }
+    }
+    .btn-primary { animation: neon-pulse 3s ease-in-out infinite; }
+    .btn-primary:hover { animation: none; box-shadow: 0 0 80px rgba(168,85,247,0.7); }
+
+    /* Nav logo glitch on hover */
+    .nav-logo:hover { text-shadow: 2px 0 var(--cyan), -2px 0 var(--pink); transition: text-shadow 0.1s; }
+
+    /* Audience card cyan left border on hover */
+    .audience-card:hover { border-left: 2px solid var(--cyan); padding-left: 22px; }
+    .audience-label { color: var(--cyan); }
+
+    /* FAQ accent */
+    .faq-item h3::before {
+      content: '> ';
+      color: var(--red-2);
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 14px;
+    }
+
+    /* Footer social hover neon */
+    .footer-social a:hover { color: var(--cyan); text-shadow: 0 0 10px rgba(0,245,255,0.4); }
+
+    /* Hero corner decorations */
+    .hero-inner::before {
+      content: '[ ppvfx ]';
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+      color: rgba(168,85,247,0.3);
+      letter-spacing: 0.2em;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    /* Sobre foto neon border */
+    .sobre-foto::before {
+      background: linear-gradient(135deg, rgba(168,85,247,0.4), rgba(0,245,255,0.1) 60%);
+    }
+    .sobre-foto::after {
+      border-color: rgba(168,85,247,0.2);
+      box-shadow: 0 0 20px rgba(124,58,237,0.15);
+    }
+
+    /* Marquee label mono */
+    .marcas-label { font-family: 'Share Tech Mono', monospace; }
+
+    /* Nav CTA neon border */
+    .nav-cta {
+      box-shadow: 0 0 16px rgba(124,58,237,0.4);
+    }
+
+    /* CTA final glow */
+    #cta-final::before {
+      background: radial-gradient(ellipse, rgba(124,58,237,0.16) 0%, rgba(0,245,255,0.04) 50%, transparent 70%);
+    }
+
   </style>
 </head>
 <body>
