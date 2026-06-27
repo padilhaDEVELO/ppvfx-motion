@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motion Design para Marcas e Produtos | ppvfx</title>
+  <meta name="description" content="Animações, vídeos e conteúdo em movimento com entrega rápida e processo direto. Para marcas, agências e criadores que precisam de resultado visual de verdade." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #080808;
+      --bg-2:    #0f0f0f;
+      --bg-3:    #141414;
+      --border:  #1e1e1e;
+      --border-2:#2a2a2a;
+      --text:    #f2f2f2;
+      --muted:   #777777;
+      --red:     #c0392b;
+      --red-2:   #e74c3c;
+      --red-dark:#7f0000;
+      --grad:    linear-gradient(135deg, #c0392b, #7f0000);
+      --grad-text: linear-gradient(90deg, #e74c3c, #c0392b);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── UTILITY ── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    .grad-text {
+      background: var(--grad-text);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--red-2);
+      border: 1px solid rgba(192,57,43,0.35);
+      border-radius: 3px;
+      padding: 5px 14px;
+      margin-bottom: 20px;
+    }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 16px 0;
+      transition: background 0.3s, border-color 0.3s;
+      border-bottom: 1px solid transparent;
+    }
+    nav.scrolled {
+      background: rgba(8,8,8,0.94);
+      backdrop-filter: blur(16px);
+      border-color: var(--border);
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; }
+
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.06em;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--red-2); }
+
+    .nav-cta {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: #fff;
+      background: var(--grad);
+      padding: 10px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* cinematic red glow */
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -180px; left: 50%; transform: translateX(-50%);
+      width: 900px; height: 700px;
+      background: radial-gradient(ellipse, rgba(192,57,43,0.13) 0%, transparent 68%);
+      pointer-events: none;
+    }
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; right: -80px;
+      width: 500px; height: 500px;
+      background: radial-gradient(ellipse, rgba(127,0,0,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-headline {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(56px, 9vw, 112px);
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+      margin-bottom: 28px;
+    }
+    .hero-headline .line-accent { color: var(--red-2); }
+
+    .hero-sub {
+      font-size: clamp(15px, 1.8vw, 18px);
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 44px;
+      line-height: 1.75;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      color: #fff;
+      background: var(--grad);
+      padding: 17px 38px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 40px rgba(192,57,43,0.28);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 64px rgba(192,57,43,0.45);
+    }
+    .btn-primary svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+    .hero-note { margin-top: 14px; font-size: 12px; color: #3a3a3a; }
+
+    /* ── SECTIONS ── */
+    section { padding: 100px 0; }
+    section + section { border-top: 1px solid var(--border); }
+
+    .section-header { text-align: center; margin-bottom: 64px; }
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1;
+      letter-spacing: 0.03em;
+    }
+    .section-sub {
+      margin-top: 16px;
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 460px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    /* ── MARCAS ── */
+    #marcas {
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .marcas-label {
+      text-align: center;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #333;
+      margin-bottom: 32px;
+    }
+    .marquee-outer {
+      overflow: hidden;
+      position: relative;
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+    .marquee-track {
+      display: flex;
+      align-items: center;
+      gap: 72px;
+      width: max-content;
+      animation: marquee-scroll 28s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marquee-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-track img {
+      height: 36px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.45;
+      transition: opacity 0.3s;
+      flex-shrink: 0;
+    }
+    .marquee-track img:hover { opacity: 0.85; }
+
+    /* ── PROBLEMA ── */
+    #problema .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+    .problema-card {
+      background: var(--bg);
+      padding: 40px 32px;
+    }
+    .problema-card .num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--red);
+      margin-bottom: 20px;
+    }
+    .problema-card h3 {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .problema-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+    /* ── BENEFÍCIOS ── */
+    #beneficios { background: var(--bg-2); }
+    #beneficios .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .benefit-card {
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 36px 28px;
+      transition: border-color 0.25s;
+    }
+    .benefit-card:hover { border-color: var(--red); }
+    .benefit-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      line-height: 1;
+      color: var(--red);
+      opacity: 0.25;
+      margin-bottom: 16px;
+    }
+    .benefit-card h3 {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .benefit-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+    /* ── COMO FUNCIONA ── */
+    #como-funciona .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+      border: 1px solid var(--border);
+    }
+    .step {
+      padding: 44px 32px;
+      border-right: 1px solid var(--border);
+    }
+    .step:last-child { border-right: none; }
+    @media (max-width: 768px) {
+      .step { border-right: none; border-bottom: 1px solid var(--border); }
+      .step:last-child { border-bottom: none; }
+    }
+    .step-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 64px;
+      line-height: 1;
+      color: var(--red-2);
+      opacity: 0.18;
+      margin-bottom: 20px;
+    }
+    .step h3 { font-size: 17px; font-weight: 800; margin-bottom: 10px; }
+    .step p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+    /* ── PARA QUEM ── */
+    #para-quem .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .audience-card {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 32px 24px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .audience-card:hover { border-color: var(--border-2); background: var(--bg-3); }
+    .audience-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      letter-spacing: 0.04em;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .audience-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+    /* ── OBJEÇÕES ── */
+    #objecoes { background: var(--bg-2); }
+    .faq-list {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      padding: 36px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-item h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .faq-item p { font-size: 15px; color: var(--muted); line-height: 1.75; }
+
+    /* ── SOBRE MIM ── */
+    #sobre {
+      background: var(--bg-2);
+    }
+    .sobre-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .sobre-inner { grid-template-columns: 1fr; gap: 40px; }
+      .sobre-foto { order: -1; }
+    }
+    .sobre-foto {
+      position: relative;
+    }
+    .sobre-foto img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 4px;
+      display: block;
+      filter: grayscale(20%) contrast(1.05);
+    }
+    .sobre-foto::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 4px;
+      background: linear-gradient(135deg, rgba(192,57,43,0.3), transparent 60%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .sobre-foto::after {
+      content: '';
+      position: absolute;
+      bottom: -16px; right: -16px;
+      width: 60%; height: 60%;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      z-index: -1;
+    }
+    .sobre-texto .tag { display: inline-block; }
+    .sobre-texto h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(40px, 5vw, 64px);
+      line-height: 1;
+      letter-spacing: 0.03em;
+      margin-bottom: 24px;
+    }
+    .sobre-texto p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .sobre-texto p:last-of-type { margin-bottom: 32px; }
+    .sobre-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .sobre-skills span {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--red-2);
+      background: rgba(192,57,43,0.08);
+      border: 1px solid rgba(192,57,43,0.2);
+      padding: 5px 12px;
+      border-radius: 3px;
+    }
+
+    /* ── CTA FINAL ── */
+    #cta-final {
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #cta-final::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%; transform: translate(-50%,-50%);
+      width: 700px; height: 600px;
+      background: radial-gradient(ellipse, rgba(192,57,43,0.1) 0%, transparent 68%);
+      pointer-events: none;
+    }
+    .cta-final-inner { position: relative; z-index: 1; max-width: 660px; margin: 0 auto; }
+
+    .cta-headline {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(52px, 8vw, 96px);
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+      margin-bottom: 20px;
+    }
+    .cta-headline .line-accent { color: var(--red-2); }
+
+    .cta-final-inner p {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 44px;
+      line-height: 1.65;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background: #128C7E;
+      padding: 18px 42px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 40px rgba(18,140,126,0.2);
+    }
+    .btn-whatsapp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 60px rgba(18,140,126,0.35);
+    }
+    .btn-whatsapp svg { width: 22px; height: 22px; }
+
+    .cta-availability {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #333;
+    }
+    .cta-availability span {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #25D366;
+      margin-right: 7px;
+      vertical-align: middle;
+      animation: pulse 2.2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 0 40px;
+      text-align: center;
+    }
+    .footer-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+    .footer-social a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #555;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-social a:hover { color: var(--text); }
+    .footer-social svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .footer-copy { font-size: 11px; color: #2a2a2a; }
+
+    /* ── DIVIDER ── */
+    .rule {
+      width: 40px; height: 2px;
+      background: var(--red);
+      margin: 0 auto 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="container">
+      <a href="#hero" class="nav-logo">pp<span>vfx</span></a>
+      <a href="https://wa.me/5591991755068" class="nav-cta" target="_blank" rel="noopener">Falar sobre o projeto</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner fade-in visible">
+        <div class="tag">Motion Design &amp; Edição de Vídeo</div>
+        <h1 class="hero-headline">
+          Sua marca se move.<br />
+          <span class="line-accent">Ou fica parada enquanto<br />o mercado passa.</span>
+        </h1>
+        <p class="hero-sub">
+          Criação de animações, vídeos e peças em movimento para marcas, produtos e campanhas digitais. Do briefing ao arquivo final — sem idas e vindas desnecessárias.
+        </p>
+        <a href="https://wa.me/5591991755068" class="btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar sobre o projeto
+        </a>
+        <p class="hero-note">Resposta em até 24h</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARCAS -->
+  <section id="marcas">
+    <p class="marcas-label">Marcas que já trabalhei</p>
+    <div class="marquee-outer">
+      <div class="marquee-track">
+        <!-- set 1 -->
+        <img src="assets/logos/FEBRACIS.png" alt="FEBRACIS" />
+        <img src="assets/logos/GLOBAL.png" alt="Global Prime Solutions" />
+        <img src="assets/logos/Logotipo_da_RBATV.png" alt="RBATV" />
+        <img src="assets/logos/images.jpeg" alt="DOL" />
+        <img src="assets/logos/logo-header-v2.svg" alt="Diário do Pará" />
+        <img src="assets/logos/1739470855ova.png" alt="Cidades e Negócios" />
+        <img src="assets/logos/logo_login.png" alt="Prefeitura" />
+        <!-- set 2 — duplicado para loop contínuo -->
+        <img src="assets/logos/FEBRACIS.png" alt="FEBRACIS" aria-hidden="true" />
+        <img src="assets/logos/GLOBAL.png" alt="Global Prime Solutions" aria-hidden="true" />
+        <img src="assets/logos/Logotipo_da_RBATV.png" alt="RBATV" aria-hidden="true" />
+        <img src="assets/logos/images.jpeg" alt="DOL" aria-hidden="true" />
+        <img src="assets/logos/logo-header-v2.svg" alt="Diário do Pará" aria-hidden="true" />
+        <img src="assets/logos/1739470855ova.png" alt="Cidades e Negócios" aria-hidden="true" />
+        <img src="assets/logos/logo_login.png" alt="Prefeitura" aria-hidden="true" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section id="problema">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="tag">O problema</div>
+        <div class="rule"></div>
+        <h2 class="section-title">Conteúdo parado não vende.</h2>
+        <p class="section-sub">E o problema raramente é orçamento. É execução.</p>
+      </div>
+      <div class="grid fade-in">
+        <div class="problema-card">
+          <div class="num">01 — VISIBILIDADE</div>
+          <h3>Imagem estática perdida no feed</h3>
+          <p>Em 2026, parar o scroll exige movimento. Foto bem feita ainda é essencial, mas não compete sozinha num feed dominado por vídeo.</p>
+        </div>
+        <div class="problema-card">
+          <div class="num">02 — IDENTIDADE</div>
+          <h3>Vídeo genérico sem identidade</h3>
+          <p>Conteúdo que poderia ser de qualquer marca não representa nenhuma. Produção sem intenção visual é dinheiro queimado.</p>
+        </div>
+        <div class="problema-card">
+          <div class="num">03 — EXECUÇÃO</div>
+          <h3>Animação cara que não comunicou nada</h3>
+          <p>Acontece quando o briefing é vago e quem entrega não fez as perguntas certas. Bonito, mas não converte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="tag">O que você recebe</div>
+        <div class="rule"></div>
+        <h2 class="section-title">Motion design feito com intenção.</h2>
+      </div>
+      <div class="grid fade-in">
+        <div class="benefit-card">
+          <div class="benefit-num">01</div>
+          <h3>Animação com propósito</h3>
+          <p>Cada movimento tem razão de existir. Nada de floreio por floreio. O que se move tem função: guiar o olho, reforçar a mensagem, ampliar a marca.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-num">02</div>
+          <h3>Entrega rápida</h3>
+          <p>Fluxo de trabalho com automação e IA integrada. Sem gargalo em produção. Prazo combinado é prazo cumprido.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-num">03</div>
+          <h3>Formato certo para cada canal</h3>
+          <p>Stories, Reels, YouTube, apresentações, dashboards — o arquivo sai pronto para usar. Sem reexportação, sem retrabalho no seu lado.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-num">04</div>
+          <h3>Revisão sem drama</h3>
+          <p>Processo claro, feedback organizado, entrega que fecha. Sem ciclos infinitos de "quase isso, mas não bem assim".</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="tag">Processo</div>
+        <div class="rule"></div>
+        <h2 class="section-title">Sem reunião longa.<br />Sem proposta de 20 páginas.</h2>
+      </div>
+      <div class="steps fade-in">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Briefing direto</h3>
+          <p>Você manda o contexto. Eu faço as perguntas certas — as que evitam retrabalho depois.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Proposta enxuta</h3>
+          <p>Escopo, prazo e valor numa página. Sem surpresa no meio do projeto.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Produção</h3>
+          <p>Animação com checkpoint de revisão. Você aprova antes do arquivo final.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Entrega</h3>
+          <p>Arquivo final no formato que você precisa usar. Pronto para subir ou publicar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section id="para-quem">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="tag">Para quem é</div>
+        <div class="rule"></div>
+        <h2 class="section-title">Funciona se você é:</h2>
+      </div>
+      <div class="audience-grid fade-in">
+        <div class="audience-card">
+          <div class="audience-label">Marca</div>
+          <p>Quer conteúdo visual consistente e com identidade. Cansada de peças que poderiam ser de qualquer concorrente.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-label">Agência</div>
+          <p>Precisa de parceiro de produção de motion design sem overhead de equipe fixa. Entrega confiável, sem babysit.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-label">Criador</div>
+          <p>Quer elevar o nível dos vídeos com animações que reforçam a persona e aumentam retenção.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-label">Produto digital</div>
+          <p>Precisa de onboarding animado, demo de feature ou apresentação que mostre o valor antes da palavra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJEÇÕES -->
+  <section id="objecoes">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="tag">Dúvidas frequentes</div>
+        <div class="rule"></div>
+        <h2 class="section-title">Respostas diretas.</h2>
+      </div>
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <h3>"Já tentei antes e não ficou como eu queria."</h3>
+          <p>Isso acontece quando o briefing é vago e o processo não tem revisão estruturada. Aqui, a primeira entrega já costuma estar próxima — porque as perguntas certas foram feitas antes de começar. Se não estiver, existe checkpoint antes do arquivo final.</p>
+        </div>
+        <div class="faq-item">
+          <h3>"Acho que é caro contratar isso."</h3>
+          <p>Depende do que você está comparando. Conteúdo genérico é barato e some no feed. Uma animação que representa bem a marca, converte e pode ser reutilizada por meses — essa tem retorno. O custo real é o que você perde sem ela.</p>
+        </div>
+        <div class="faq-item">
+          <h3>"Não sei se preciso de motion ou só de um vídeo editado."</h3>
+          <p>Me manda o contexto do projeto. Digo o que faz sentido para o seu caso — e o que não faz. Sem forçar escopo maior do que o necessário.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MIM -->
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-inner">
+        <div class="sobre-texto fade-in">
+          <div class="tag">Quem faz</div>
+          <h2>Paulo<br />Padilha</h2>
+          <p>Motion designer e editor de vídeo com experiência em projetos para marcas, veículos de comunicação e criadores de conteúdo. Trabalho com After Effects, Premiere Pro, Remotion e automação com IA — do conceito ao arquivo final.</p>
+          <p>Já entreguei projetos para RBATV, FEBRACIS, DOL, Diário do Pará, Global Prime Solutions e outros. Processo direto, sem reuniões longas, sem retrabalho desnecessário.</p>
+          <div class="sobre-skills">
+            <span>After Effects</span>
+            <span>Premiere Pro</span>
+            <span>Motion Graphics</span>
+            <span>Remotion</span>
+            <span>IA aplicada a vídeo</span>
+            <span>Edição YouTube</span>
+          </div>
+        </div>
+        <div class="sobre-foto fade-in">
+          <img src="assets/FOTO PERFIL.jpg" alt="Paulo Padilha — Motion Designer" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="cta-final">
+    <div class="container">
+      <div class="cta-final-inner fade-in">
+        <div class="tag">Disponibilidade limitada</div>
+        <h2 class="cta-headline">
+          Próximo projeto,<br />
+          <span class="line-accent">próxima semana.</span>
+        </h2>
+        <p>Se tem um projeto em vista, a hora de conversar é agora.<br />Vagas abertas para novos projetos este mês.</p>
+        <a href="https://wa.me/5591991755068" class="btn-whatsapp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar sobre o projeto
+        </a>
+        <p class="cta-availability"><span></span>Geralmente respondo em menos de 24h</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/paulopadiilha" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+          @paulopadiilha
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/paulopadilhai/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          Paulo Padilha
+        </a>
+        <!-- Gmail -->
+        <a href="mailto:padilha.p717@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          padilha.p717@gmail.com
+        </a>
+        <!-- Behance -->
+        <a href="https://www.behance.net/gallery/220679669/Edicao-de-Video-Youtube" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 1.2.836 1.884 2.102 1.884.89 0 1.512-.38 1.872-1.071l3.782.216zM15.98 13.763h4.06c-.071-1.17-.665-1.976-1.97-1.976-1.23 0-1.94.8-2.09 1.976zM5.86 12.344c.587 0 1.026-.23 1.26-.607.22-.358.33-.834.33-1.414 0-.571-.132-1.049-.363-1.401-.242-.371-.638-.563-1.26-.563H3.51v3.985h2.35zm-2.35 5.656h2.638c.594 0 1.06-.173 1.404-.513.334-.333.514-.816.514-1.434 0-.59-.18-1.075-.522-1.434-.343-.36-.82-.54-1.43-.54H3.51v3.921zM1 5h4.914c2.397 0 4.097 1.207 4.097 3.312 0 1.03-.417 1.927-1.297 2.476v.06c1.272.513 1.98 1.545 1.98 2.913 0 2.465-1.788 3.739-4.452 3.739H1V5z"/>
+          </svg>
+          Behance
+        </a>
+      </div>
+      <p class="footer-copy">ppvfx &mdash; Motion Design &amp; Edição de Vídeo</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
