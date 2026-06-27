@@ -330,6 +330,41 @@
     .step h3 { font-size: 17px; font-weight: 800; margin-bottom: 10px; }
     .step p { font-size: 14px; color: var(--muted); line-height: 1.7; }
 
+    /* ── FERRAMENTAS ── */
+    #ferramentas { background: var(--bg-2); }
+    .tools-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .tool-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 28px 20px;
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      width: 110px;
+      transition: border-color 0.25s, transform 0.2s;
+      cursor: default;
+    }
+    .tool-card:hover {
+      border-color: var(--border-2);
+      transform: translateY(-3px);
+    }
+    .tool-card svg { width: 52px; height: 52px; flex-shrink: 0; }
+    .tool-card span {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+
     /* ── PARA QUEM ── */
     #para-quem .audience-grid {
       display: grid;
@@ -701,6 +736,130 @@
           <h3>Entrega</h3>
           <p>Arquivo final no formato que você precisa usar. Pronto para subir ou publicar.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FERRAMENTAS -->
+  <section id="ferramentas">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="tag">Ferramentas</div>
+        <div class="rule"></div>
+        <h2 class="section-title">Softwares que uso.</h2>
+      </div>
+      <div class="tools-grid fade-in">
+
+        <!-- Premiere Pro -->
+        <div class="tool-card">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <text x="44" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="34" fill="#EA77FF">Pr</text>
+          </svg>
+          <span>Premiere Pro</span>
+        </div>
+
+        <!-- After Effects -->
+        <div class="tool-card">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <text x="44" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="34" fill="#9999FF">Ae</text>
+          </svg>
+          <span>After Effects</span>
+        </div>
+
+        <!-- Photoshop -->
+        <div class="tool-card">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <text x="44" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="34" fill="#31A8FF">Ps</text>
+          </svg>
+          <span>Photoshop</span>
+        </div>
+
+        <!-- Illustrator -->
+        <div class="tool-card">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <text x="44" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="34" fill="#FF9A00">Ai</text>
+          </svg>
+          <span>Illustrator</span>
+        </div>
+
+        <!-- DaVinci Resolve -->
+        <div class="tool-card">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <!-- outer ring -->
+            <circle cx="44" cy="44" r="28" fill="none" stroke="#E8272A" stroke-width="4"/>
+            <!-- inner circle -->
+            <circle cx="44" cy="44" r="14" fill="#E8272A"/>
+            <!-- center dot -->
+            <circle cx="44" cy="44" r="5" fill="#1a1a1a"/>
+          </svg>
+          <span>DaVinci Resolve</span>
+        </div>
+
+        <!-- CapCut -->
+        <div class="tool-card">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <!-- play triangle -->
+            <polygon points="30,26 30,62 66,44" fill="#ffffff"/>
+            <!-- cut line -->
+            <line x1="26" y1="44" x2="62" y2="44" stroke="#1a1a1a" stroke-width="3.5"/>
+          </svg>
+          <span>CapCut</span>
+        </div>
+
+        <!-- Remotion -->
+        <div class="tool-card">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <!-- outer circle -->
+            <circle cx="44" cy="44" r="26" fill="none" stroke="#0B84F3" stroke-width="4"/>
+            <!-- play triangle inside -->
+            <polygon points="36,32 36,56 60,44" fill="#0B84F3"/>
+          </svg>
+          <span>Remotion</span>
+        </div>
+
+        <!-- Google Gemini -->
+        <div class="tool-card">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <!-- Gemini 4-pointed star -->
+            <path d="M44 14 C44 14 46 30 56 38 C66 46 74 44 74 44 C74 44 58 46 50 56 C42 66 44 74 44 74 C44 74 42 58 32 50 C22 42 14 44 14 44 C14 44 30 42 38 32 C46 22 44 14 44 14 Z"
+              fill="url(#gemini-grad)"/>
+            <defs>
+              <linearGradient id="gemini-grad" x1="14" y1="14" x2="74" y2="74" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#4285F4"/>
+                <stop offset="50%" stop-color="#9B72CB"/>
+                <stop offset="100%" stop-color="#D96570"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>Google Gemini</span>
+        </div>
+
+        <!-- Blender -->
+        <div class="tool-card">
+          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <!-- outer ring -->
+            <circle cx="48" cy="44" r="22" fill="none" stroke="#E87D0D" stroke-width="4"/>
+            <!-- middle filled circle -->
+            <circle cx="48" cy="44" r="12" fill="#E87D0D"/>
+            <!-- inner hole -->
+            <circle cx="48" cy="44" r="5" fill="#1a1a1a"/>
+            <!-- handle arm -->
+            <line x1="26" y1="44" x2="38" y2="44" stroke="#E87D0D" stroke-width="4" stroke-linecap="round"/>
+            <!-- top dot -->
+            <circle cx="26" cy="36" r="5" fill="#E87D0D"/>
+          </svg>
+          <span>Blender</span>
+        </div>
+
       </div>
     </div>
   </section>
