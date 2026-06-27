@@ -248,12 +248,12 @@
       align-items: center;
       gap: 72px;
       width: max-content;
-      animation: marquee-scroll 28s linear infinite;
+      animation: marquee-scroll 22s linear infinite;
     }
     .marquee-track:hover { animation-play-state: paused; }
     @keyframes marquee-scroll {
       0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+      100% { transform: translateX(-33.333%); }
     }
     .marquee-track img {
       height: 36px;
@@ -1559,6 +1559,32 @@
       0%   { opacity: 0.4; width: 400px; }
       100% { opacity: 0.9; width: 700px; }
     }
+
+    .hero-urgencia {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      opacity: 0.75;
+      margin-bottom: 20px;
+    }
+    .hero-urgencia::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cyan);
+      animation: blink 1.4s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @keyframes blink {
+      0%,100% { opacity: 1; }
+      50%      { opacity: 0.2; }
+    }
   </style>
 </head>
 <body>
@@ -1580,6 +1606,7 @@
         <a href="#portfolio" class="nav-link">Portfólio</a>
         <a href="#sobre" class="nav-link">Sobre</a>
         <a href="#como-funciona" class="nav-link">Processo</a>
+        <a href="#investimento" class="nav-link">Preços</a>
       </div>
       <a href="https://wa.me/5591991755068" class="nav-cta" target="_blank" rel="noopener">Falar sobre meu projeto</a>
     </div>
@@ -1602,12 +1629,13 @@
         </p>
         <a href="https://wa.me/5591991755068" class="btn-primary" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Quero um orçamento
+          Falar sobre meu projeto
         </a>
         <p class="hero-note">Sem compromisso · Responde no WhatsApp em até 24h · A partir de R$250</p>
 
         </div>
-        <div class="hero-stats">
+        <div class="hero-urgencia">Vagas abertas este mês — poucos projetos por vez</div>
+          <div class="hero-stats">
           <div class="hero-stat"><span>+200</span><p>projetos entregues</p></div>
           <div class="hero-stat"><span>8 anos</span><p>de experiência</p></div>
           <div class="hero-stat"><span>24h</span><p>tempo de resposta</p></div>
@@ -1627,16 +1655,18 @@
     <p class="marcas-label">Projetos entregues para</p>
     <div class="marquee-outer">
       <div class="marquee-track">
-        <!-- set 1 -->
         <img src="assets/logos/FEBRACIS.png" alt="FEBRACIS" />
         <img src="assets/logos/GLOBAL.png" alt="Global Prime Solutions" />
         <img src="assets/logos/logo-header-v2.svg" alt="Diário do Pará" />
         <img src="assets/logos/1739470855ova.png" alt="Cidades e Negócios" />
-        <!-- set 2 — duplicado para loop contínuo -->
-        <img src="assets/logos/FEBRACIS.png" alt="FEBRACIS" aria-hidden="true" />
+                <img src="assets/logos/FEBRACIS.png" alt="FEBRACIS" aria-hidden="true" />
         <img src="assets/logos/GLOBAL.png" alt="Global Prime Solutions" aria-hidden="true" />
         <img src="assets/logos/logo-header-v2.svg" alt="Diário do Pará" aria-hidden="true" />
         <img src="assets/logos/1739470855ova.png" alt="Cidades e Negócios" aria-hidden="true" />
+                <img src="assets/logos/FEBRACIS.png" aria-hidden="true" alt="FEBRACIS" />
+        <img src="assets/logos/GLOBAL.png" aria-hidden="true" alt="Global Prime Solutions" />
+        <img src="assets/logos/logo-header-v2.svg" aria-hidden="true" alt="Diário do Pará" />
+        <img src="assets/logos/1739470855ova.png" aria-hidden="true" alt="Cidades e Negócios" />
       </div>
     </div>
   </section>
@@ -1726,7 +1756,7 @@
                 </svg>
               </div>
             
-          <div class="video-caption"><strong>Vinheta animada</strong><span>Motion para redes sociais</span></div>
+          <div class="video-caption"><strong>Intro animada</strong><span>Motion · Identidade de marca</span></div>
         </div>
           <div class="video-overlay" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.style.pointerEvents='auto'">
             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1743,7 +1773,7 @@
                 </svg>
               </div>
             
-          <div class="video-caption"><strong>Motion Design</strong><span>Animação para marca</span></div>
+          <div class="video-caption"><strong>Reels animado</strong><span>Motion · Redes sociais</span></div>
         </div>
           <div class="video-overlay" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.style.pointerEvents='auto'">
             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1760,7 +1790,7 @@
                 </svg>
               </div>
             
-          <div class="video-caption"><strong>Motion Design</strong><span>Animação para marca</span></div>
+          <div class="video-caption"><strong>Vinheta institucional</strong><span>Motion · Vídeo de marca</span></div>
         </div>
           <div class="video-overlay" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.style.pointerEvents='auto'">
             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1777,7 +1807,7 @@
                 </svg>
               </div>
             
-          <div class="video-caption"><strong>Motion Design</strong><span>Animação para marca</span></div>
+          <div class="video-caption"><strong>Motion gráfico</strong><span>Animação · Social media</span></div>
         </div>
           <div class="video-overlay" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.style.pointerEvents='auto'">
             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1794,7 +1824,7 @@
                 </svg>
               </div>
             
-          <div class="video-caption"><strong>Motion Design</strong><span>Animação para marca</span></div>
+          <div class="video-caption"><strong>Edição + motion</strong><span>Vídeo · Produção completa</span></div>
         </div>
           <div class="video-overlay" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.style.pointerEvents='auto'">
             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1841,6 +1871,42 @@
 
 
 
+  <!-- SOBRE MIM -->
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-foto-wrap">
+          <img src="assets/foto-web.png" alt="Paulo Padilha — Motion Designer" class="sobre-foto">
+          <div class="sobre-foto-glow"></div>
+        </div>
+        <div class="sobre-content"><div class="sobre-inner">
+        <div class="sobre-texto fade-in">
+          <div class="tag">Por trás do projeto</div>
+          <h2>Paulo<br />Padilha</h2>
+          <p>Se você chegou até aqui, provavelmente já se cansou de resultado que não representa a marca — ou de processo que virou dor de cabeça. Meu nome é Paulo Padilha. Trabalho com motion design e edição de vídeo há 8 anos, com mais de 200 projetos entregues para marcas, veículos e criadores.</p>
+          <p>Já entreguei para:</p>
+          <div class="sobre-clientes">
+            <span>FEBRACIS</span>
+            <span>Diário do Pará</span>
+            <span>Global Prime Solutions</span>
+          </div>
+          <p>Cada projeto com briefing claro, prazo definido e arquivo final pronto para publicar. Sem intermediário, sem retrabalho.</p>
+          <div class="sobre-skills">
+            <span>After Effects</span>
+            <span>Premiere Pro</span>
+            <span>Motion Graphics</span>
+            <span>Remotion</span>
+            <span>IA aplicada a vídeo</span>
+            <span>Edição YouTube</span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
   <!-- COMO FUNCIONA -->
   <section id="como-funciona">
     <div class="container">
@@ -1871,72 +1937,6 @@
           <p>Arquivo pronto para usar — no formato certo, no canal certo, sem ajuste extra.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- FERRAMENTAS -->
-  <section id="ferramentas">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="tag">Ferramentas</div>
-        <div class="rule"></div>
-        <h2 class="section-title">Ferramentas que uso</h2>
-      </div>
-      <div class="tools-grid fade-in">
-
-        <!-- Adobe Premiere Pro -->
-        <div class="tool-card">
-          <img src="assets/tools/adobepremierepro.svg" alt="Premiere Pro" class="tool-logo">
-          <span>Premiere Pro</span>
-        </div>
-
-        <!-- Adobe After Effects -->
-        <div class="tool-card">
-          <img src="assets/tools/adobeaftereffects.svg" alt="After Effects" class="tool-logo">
-          <span>After Effects</span>
-        </div>
-
-        <!-- Adobe Photoshop -->
-        <div class="tool-card">
-          <img src="assets/tools/adobephotoshop.svg" alt="Photoshop" class="tool-logo">
-          <span>Photoshop</span>
-        </div>
-
-        <!-- Adobe Illustrator -->
-        <div class="tool-card">
-          <img src="assets/tools/adobeillustrator.svg" alt="Illustrator" class="tool-logo">
-          <span>Illustrator</span>
-        </div>
-
-        <!-- DaVinci Resolve -->
-        <div class="tool-card">
-          <img src="assets/tools/davinciresolve.svg" alt="DaVinci Resolve" class="tool-logo">
-          <span>DaVinci Resolve</span>
-        </div>
-
-        <!-- CapCut -->
-        <div class="tool-card">
-          <img src="assets/tools/capcut.svg" alt="CapCut" class="tool-logo">
-          <span>CapCut</span>
-        </div>
-
-        <!-- Remotion -->
-        <div class="tool-card">
-          <img src="assets/tools/remotion.svg" alt="Remotion" class="tool-logo">
-          <span>Remotion</span>
-        </div>
-
-        <!-- Google Gemini -->
-        <div class="tool-card">
-          <img src="assets/tools/googlegemini.svg" alt="Google Gemini" class="tool-logo">
-          <span>Google Gemini</span>
-        </div>
-
-        <!-- Blender -->
-        <div class="tool-card">
-          <img src="assets/tools/blender.svg" alt="Blender" class="tool-logo">
-          <span>Blender</span>
-        </div>      </div>
     </div>
   </section>
 
@@ -2007,40 +2007,6 @@
     </div>
   </section>
 
-  <!-- SOBRE MIM -->
-  <section id="sobre">
-    <div class="container">
-      <div class="sobre-grid">
-        <div class="sobre-foto-wrap">
-          <img src="assets/foto-web.png" alt="Paulo Padilha — Motion Designer" class="sobre-foto">
-          <div class="sobre-foto-glow"></div>
-        </div>
-        <div class="sobre-content"><div class="sobre-inner">
-        <div class="sobre-texto fade-in">
-          <div class="tag">Por trás do projeto</div>
-          <h2>Paulo<br />Padilha</h2>
-          <p>Se você chegou até aqui, provavelmente já se cansou de resultado que não representa a marca — ou de processo que virou dor de cabeça. Meu nome é Paulo Padilha. Trabalho com motion design e edição de vídeo há 8 anos, com mais de 200 projetos entregues para marcas, veículos e criadores.</p>
-          <p>Já entreguei para:</p>
-          <div class="sobre-clientes">
-            <span>FEBRACIS</span>
-            <span>Diário do Pará</span>
-            <span>Global Prime Solutions</span>
-          </div>
-          <p>Cada projeto com briefing claro, prazo definido e arquivo final pronto para publicar. Sem intermediário, sem retrabalho.</p>
-          <div class="sobre-skills">
-            <span>After Effects</span>
-            <span>Premiere Pro</span>
-            <span>Motion Graphics</span>
-            <span>Remotion</span>
-            <span>IA aplicada a vídeo</span>
-            <span>Edição YouTube</span>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- INVESTIMENTO -->
   <section id="investimento">
     <div class="container">
@@ -2102,7 +2068,7 @@
         <p>Aceito poucos projetos por mês. Se tem algo em vista, essa semana é a hora.</p>
         <a href="https://wa.me/5591991755068" class="btn-whatsapp" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Quero um orçamento
+          Falar sobre meu projeto
         </a>
         <p class="cta-availability"><span></span>Resposta em até 24h</p>
       </div>
