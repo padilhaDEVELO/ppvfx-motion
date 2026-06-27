@@ -1278,6 +1278,146 @@
 
     .sobre-content { max-width: 640px; margin: 0 auto; }
 
+
+    /* ── Seção investimento ── */
+    #investimento { background: var(--bg-2); }
+    .preco-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .preco-card {
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      transition: border-color 0.2s;
+    }
+    .preco-card:hover { border-color: var(--border-2); }
+    .preco-destaque {
+      border-color: rgba(124,58,237,0.5);
+      background: linear-gradient(160deg, rgba(124,58,237,0.08) 0%, var(--bg-3) 60%);
+    }
+    .preco-badge {
+      position: absolute;
+      top: -12px; left: 28px;
+      background: var(--red);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .preco-tipo {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .preco-valor {
+      font-size: 15px;
+      color: var(--muted);
+    }
+    .preco-valor span {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 40px;
+      color: var(--text);
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+    .preco-lista {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 0;
+      margin: 0;
+    }
+    .preco-lista li {
+      font-size: 13px;
+      color: var(--muted);
+      padding-left: 16px;
+      position: relative;
+    }
+    .preco-lista li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--red-2);
+      opacity: 0.6;
+    }
+    .preco-card p { font-size: 13px; color: var(--muted); line-height: 1.65; }
+    .btn-preco {
+      display: inline-block;
+      margin-top: auto;
+      padding: 10px 20px;
+      background: transparent;
+      border: 1px solid var(--border-2);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .preco-destaque .btn-preco {
+      background: var(--red);
+      border-color: var(--red);
+      color: #fff;
+    }
+    .btn-preco:hover { border-color: var(--red-2); background: rgba(124,58,237,0.15); }
+    .preco-destaque .btn-preco:hover { background: var(--red-2); border-color: var(--red-2); }
+    .preco-obs {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .preco-obs a { color: var(--red-2); text-decoration: none; }
+    .preco-obs a:hover { text-decoration: underline; }
+
+    /* ── Sobre: grid com foto ── */
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 60px;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .sobre-foto-wrap {
+      position: relative;
+    }
+    .sobre-foto {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+      mix-blend-mode: lighten;
+      filter: contrast(1.05);
+    }
+    .sobre-foto-glow {
+      position: absolute;
+      inset: -20px;
+      background: radial-gradient(ellipse at 50% 80%, rgba(124,58,237,0.2) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    @media (max-width: 768px) {
+      .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .sobre-foto-wrap { max-width: 220px; margin: 0 auto; }
+    }
+
   </style>
 </head>
 <body>
@@ -1706,7 +1846,12 @@
   <!-- SOBRE MIM -->
   <section id="sobre">
     <div class="container">
-      <div class="sobre-content"><div class="sobre-inner">
+      <div class="sobre-grid">
+        <div class="sobre-foto-wrap">
+          <img src="assets/foto-web.png" alt="Paulo Padilha — Motion Designer" class="sobre-foto">
+          <div class="sobre-foto-glow"></div>
+        </div>
+        <div class="sobre-content"><div class="sobre-inner">
         <div class="sobre-texto fade-in">
           <div class="tag">Quem faz</div>
           <h2>Paulo<br />Padilha</h2>
@@ -1723,6 +1868,49 @@
         </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- INVESTIMENTO -->
+  <section id="investimento">
+    <div class="container">
+      <div class="preco-grid fade-in">
+        <div class="preco-card">
+          <div class="preco-tipo">Social Media</div>
+          <div class="preco-valor">a partir de <span>R$ 350</span></div>
+          <p>Vinheta, intro ou animação para Reels, Shorts e Stories. Entrega em até 5 dias úteis.</p>
+          <ul class="preco-lista">
+            <li>Até 30 segundos</li>
+            <li>1 formato de entrega</li>
+            <li>1 rodada de ajuste</li>
+          </ul>
+          <a href="https://wa.me/5591991755068" class="btn-preco" target="_blank" rel="noopener">Solicitar orçamento</a>
+        </div>
+        <div class="preco-card preco-destaque">
+          <div class="preco-badge">Mais solicitado</div>
+          <div class="preco-tipo">Projeto Completo</div>
+          <div class="preco-valor">a partir de <span>R$ 800</span></div>
+          <p>Motion design completo com identidade visual. Para campanhas, lançamentos e marcas.</p>
+          <ul class="preco-lista">
+            <li>Peças para múltiplos formatos</li>
+            <li>Identidade em movimento</li>
+            <li>2 rodadas de ajuste</li>
+          </ul>
+          <a href="https://wa.me/5591991755068" class="btn-preco" target="_blank" rel="noopener">Solicitar orçamento</a>
+        </div>
+        <div class="preco-card">
+          <div class="preco-tipo">Edição de Vídeo</div>
+          <div class="preco-valor">a partir de <span>R$ 250</span></div>
+          <p>Edição de vídeos para YouTube, podcasts e conteúdo de marca. Com trilha, corte e cor.</p>
+          <ul class="preco-lista">
+            <li>Até 10 minutos</li>
+            <li>Cor e áudio inclusos</li>
+            <li>1 rodada de ajuste</li>
+          </ul>
+          <a href="https://wa.me/5591991755068" class="btn-preco" target="_blank" rel="noopener">Solicitar orçamento</a>
+        </div>
+      </div>
+      <p class="preco-obs fade-in">Projetos com escopo maior ou demandas específicas têm orçamento personalizado. <a href="https://wa.me/5591991755068" target="_blank" rel="noopener">Fala comigo.</a></p>
     </div>
   </section>
 
@@ -1999,7 +2187,7 @@
         const id = facade.dataset.id;
         const isShort = facade.classList.contains('aspect-short');
         const iframe = document.createElement('iframe');
-        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
         iframe.allow = 'autoplay; encrypted-media';
         iframe.allowFullscreen = true;
         iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
