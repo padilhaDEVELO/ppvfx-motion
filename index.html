@@ -725,6 +725,36 @@
     .video-card-h:hover iframe { pointer-events: auto; }
     .video-card-h .video-overlay svg { width: 48px; height: 48px; }
 
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat span {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      letter-spacing: 0.04em;
+      color: var(--red-2);
+      line-height: 1;
+    }
+    .hero-stat p {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    @media (max-width: 480px) {
+      .hero-stats { gap: 24px; }
+      .hero-stat span { font-size: 26px; }
+    }
+
     /* ── CYBERPUNK ── */
 
     /* Background grid */
@@ -1037,7 +1067,7 @@
   <nav id="nav">
     <div class="container">
       <a href="#hero" class="nav-logo">pp<span>vfx</span></a>
-      <a href="https://wa.me/5591991755068" class="nav-cta" target="_blank" rel="noopener">Falar sobre o projeto</a>
+      <a href="https://wa.me/5591991755068" class="nav-cta" target="_blank" rel="noopener">Quero um orçamento</a>
     </div>
   </nav>
 
@@ -1051,13 +1081,18 @@
           <span class="line-accent">Ou fica parada enquanto<br />o mercado passa.</span>
         </h1>
         <p class="hero-sub">
-          Criação de animações, vídeos e peças em movimento para marcas, produtos e campanhas digitais. Do briefing ao arquivo final — sem idas e vindas desnecessárias.
+          Você manda o projeto. Eu entrego a animação pronta para publicar — sem reunião longa, sem retrabalho, sem surpresa no prazo.
         </p>
         <a href="https://wa.me/5591991755068" class="btn-primary" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Falar sobre o projeto
+          Quero um orçamento
         </a>
         <p class="hero-note">Resposta em até 24h</p>
+        <div class="hero-stats">
+          <div class="hero-stat"><span>+50</span><p>projetos entregues</p></div>
+          <div class="hero-stat"><span>+10</span><p>marcas atendidas</p></div>
+          <div class="hero-stat"><span>24h</span><p>tempo de resposta</p></div>
+        </div>
       </div>
     </div>
   </section>
@@ -1162,18 +1197,18 @@
       <div class="grid fade-in">
         <div class="problema-card">
           <svg class="problema-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-          <h3>Imagem estática perdida no feed</h3>
-          <p>Em 2026, parar o scroll exige movimento. Foto bem feita ainda é essencial, mas não compete sozinha num feed dominado por vídeo.</p>
+          <h3>Seu post some em 3 segundos. O do concorrente para o scroll.</h3>
+          <p>Foto bem feita ainda é essencial. Mas num feed dominado por vídeo, imagem estática não compete — ela some.</p>
         </div>
         <div class="problema-card">
           <svg class="problema-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13.5A10 10 0 0 1 12 4a10 10 0 0 1 10 9.5"/><path d="M6 17a6 6 0 0 1 6-5.5A6 6 0 0 1 18 17"/><path d="M10 20.5a2 2 0 0 1 4 0"/><line x1="12" y1="12" x2="12" y2="20"/></svg>
-          <h3>Vídeo genérico sem identidade</h3>
-          <p>Conteúdo que poderia ser de qualquer marca não representa nenhuma. Produção sem intenção visual é dinheiro queimado.</p>
+          <h3>Parece que qualquer um poderia ter feito. Porque qualquer um faria.</h3>
+          <p>Conteúdo sem identidade não representa nenhuma marca. Produção sem intenção visual é dinheiro queimado.</p>
         </div>
         <div class="problema-card">
           <svg class="problema-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-          <h3>Animação cara que não comunicou nada</h3>
-          <p>Acontece quando o briefing é vago e quem entrega não fez as perguntas certas. Bonito, mas não converte.</p>
+          <h3>Você pagou caro. Não ficou parecido com a marca. Nem com o briefing.</h3>
+          <p>Acontece quando quem entrega não faz as perguntas certas antes de começar. Bonito na tela, inútil na prática.</p>
         </div>
       </div>
     </div>
@@ -1190,23 +1225,23 @@
       <div class="grid fade-in">
         <div class="benefit-card">
           <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v4M3 5h4M6 17v4M4 19h4M13 3l2.3 6.3L22 12l-6.7 2.7L13 21l-2.3-6.3L4 12l6.7-2.7L13 3z"/></svg>
-          <h3>Animação com propósito</h3>
-          <p>Cada movimento tem razão de existir. Nada de floreio por floreio. O que se move tem função: guiar o olho, reforçar a mensagem, ampliar a marca.</p>
+          <h3>Cada frame justificado</h3>
+          <p>Nada entra por decoração. O que se move tem função: guiar o olho, reforçar a mensagem, ampliar a marca.</p>
         </div>
         <div class="benefit-card">
           <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          <h3>Entrega rápida</h3>
-          <p>Fluxo de trabalho com automação e IA integrada. Sem gargalo em produção. Prazo combinado é prazo cumprido.</p>
+          <h3>Arquivo final em dias, não semanas</h3>
+          <p>Fluxo com automação e IA. Sem gargalo em produção. Prazo combinado é prazo cumprido — por escrito.</p>
         </div>
         <div class="benefit-card">
           <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-          <h3>Formato certo para cada canal</h3>
-          <p>Stories, Reels, YouTube, apresentações, dashboards — o arquivo sai pronto para usar. Sem reexportação, sem retrabalho no seu lado.</p>
+          <h3>Stories, Reels, YouTube — você sobe direto</h3>
+          <p>O arquivo sai no formato certo para o canal. Sem reexportação, sem retrabalho no seu lado.</p>
         </div>
         <div class="benefit-card">
           <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <h3>Revisão sem drama</h3>
-          <p>Processo claro, feedback organizado, entrega que fecha. Sem ciclos infinitos de "quase isso, mas não bem assim".</p>
+          <h3>Uma rodada de ajuste. Sem ciclo infinito.</h3>
+          <p>Processo claro, feedback organizado. Sem aquele loop de "quase isso, mas não bem assim" que não tem fim.</p>
         </div>
       </div>
     </div>
@@ -1224,22 +1259,22 @@
         <div class="step">
           <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           <h3>Briefing direto</h3>
-          <p>Você manda o contexto. Eu faço as perguntas certas — as que evitam retrabalho depois.</p>
+          <p>5 min de formulário ou mensagem. Eu faço as perguntas certas — as que evitam retrabalho depois.</p>
         </div>
         <div class="step">
           <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           <h3>Proposta enxuta</h3>
-          <p>Escopo, prazo e valor numa página. Sem surpresa no meio do projeto.</p>
+          <p>Resposta em até 24h. Escopo, prazo e valor numa página. Sem surpresa no meio do projeto.</p>
         </div>
         <div class="step">
           <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/><line x1="2" y1="11" x2="22" y2="11"/><line x1="7" y1="7" x2="7" y2="11"/><line x1="12" y1="7" x2="12" y2="11"/><line x1="17" y1="7" x2="17" y2="11"/></svg>
           <h3>Produção</h3>
-          <p>Animação com checkpoint de revisão. Você aprova antes do arquivo final.</p>
+          <p>Prazo definido, sem surpresa. Checkpoint de revisão antes do arquivo final.</p>
         </div>
         <div class="step">
           <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
           <h3>Entrega</h3>
-          <p>Arquivo final no formato que você precisa usar. Pronto para subir ou publicar.</p>
+          <p>Arquivo pronto para usar — no formato certo, no canal certo, sem ajuste extra.</p>
         </div>
       </div>
     </div>
@@ -1386,19 +1421,19 @@
       <div class="audience-grid fade-in">
         <div class="audience-card">
           <div class="audience-label">Marca</div>
-          <p>Quer conteúdo visual consistente e com identidade. Cansada de peças que poderiam ser de qualquer concorrente.</p>
+          <p>Quer conteúdo que represente a marca de verdade — não parece genérico, não poderia ser de qualquer concorrente.</p>
         </div>
         <div class="audience-card">
           <div class="audience-label">Agência</div>
-          <p>Precisa de parceiro de produção de motion design sem overhead de equipe fixa. Entrega confiável, sem babysit.</p>
+          <p>Precisa de entrega confiável para repassar ao cliente sem retrabalho — sem ficar em cima acompanhando cada etapa.</p>
         </div>
         <div class="audience-card">
           <div class="audience-label">Criador</div>
-          <p>Quer elevar o nível dos vídeos com animações que reforçam a persona e aumentam retenção.</p>
+          <p>Quer intro, vinheta ou animação que eleve o nível do canal sem depender de template igual ao de todo mundo.</p>
         </div>
         <div class="audience-card">
           <div class="audience-label">Produto digital</div>
-          <p>Precisa de onboarding animado, demo de feature ou apresentação que mostre o valor antes da palavra.</p>
+          <p>Precisa mostrar o produto funcionando antes de alguém comprar — demo, onboarding ou apresentação animada.</p>
         </div>
       </div>
     </div>
@@ -1425,6 +1460,10 @@
           <h3>"Não sei se preciso de motion ou só de um vídeo editado."</h3>
           <p>Me manda o contexto do projeto. Digo o que faz sentido para o seu caso — e o que não faz. Sem forçar escopo maior do que o necessário.</p>
         </div>
+        <div class="faq-item">
+          <h3>"Como sei que você entrega no prazo?"</h3>
+          <p>Cada projeto começa com prazo escrito na proposta. Sem prazo definido, sem contrato. É assim que trabalho — e é o que me obriga a cumprir.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -1436,8 +1475,8 @@
         <div class="sobre-texto fade-in">
           <div class="tag">Quem faz</div>
           <h2>Paulo<br />Padilha</h2>
-          <p>Motion designer e editor de vídeo com experiência em projetos para marcas, veículos de comunicação e criadores de conteúdo. Trabalho com After Effects, Premiere Pro, Remotion e automação com IA — do conceito ao arquivo final.</p>
-          <p>Já entreguei projetos para RBATV, FEBRACIS, DOL, Diário do Pará, Global Prime Solutions e outros. Processo direto, sem reuniões longas, sem retrabalho desnecessário.</p>
+          <p>Motion designer e editor de vídeo com projetos entregues para marcas, veículos de comunicação e criadores. Uso After Effects, Premiere Pro, Remotion e automação com IA para entregar mais rápido sem abrir mão da qualidade.</p>
+          <p>Já entreguei motion design para FEBRACIS, Diário do Pará, Global Prime Solutions e criadores com audiência consolidada. Cada projeto com briefing claro, prazo definido e arquivo final pronto para publicar.</p>
           <div class="sobre-skills">
             <span>After Effects</span>
             <span>Premiere Pro</span>
@@ -1460,10 +1499,10 @@
           Próximo projeto,<br />
           <span class="line-accent">próxima semana.</span>
         </h2>
-        <p>Se tem um projeto em vista, a hora de conversar é agora.<br />Vagas abertas para novos projetos este mês.</p>
+        <p>Aceito poucos projetos por mês para manter a qualidade da entrega.<br />Se tem algo em vista, a hora de conversar é agora.</p>
         <a href="https://wa.me/5591991755068" class="btn-whatsapp" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Falar sobre o projeto
+          Quero um orçamento
         </a>
         <p class="cta-availability"><span></span>Geralmente respondo em menos de 24h</p>
       </div>
