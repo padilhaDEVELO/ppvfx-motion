@@ -431,14 +431,8 @@
       background: var(--bg-2);
     }
     .sobre-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-    @media (max-width: 768px) {
-      .sobre-inner { grid-template-columns: 1fr; gap: 40px; }
-      .sobre-foto { order: -1; }
+      max-width: 680px;
+      margin: 0 auto;
     }
     .sobre-foto {
       position: relative;
@@ -1116,10 +1110,7 @@
             <span>Edição YouTube</span>
           </div>
         </div>
-        <div class="sobre-foto fade-in">
-          <img src="assets/foto-perfil.png" alt="Paulo Padilha — Motion Designer" />
         </div>
-      </div>
     </div>
   </section>
 
