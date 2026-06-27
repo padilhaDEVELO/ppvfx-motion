@@ -338,7 +338,7 @@
     .benefit-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
 
     /* ── COMO FUNCIONA ── */
-    #como-funciona .steps {
+    #como-funciona .steps, #sobre .steps {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 0;
@@ -352,6 +352,7 @@
     @media (max-width: 768px) {
       .step { border-right: none; border-bottom: 1px solid var(--border); }
       .step:last-child { border-bottom: none; }
+      #sobre .steps, #como-funciona .steps { grid-template-columns: 1fr; }
     }
     .step-num {
       font-family: 'Bebas Neue', sans-serif;
