@@ -1436,6 +1436,24 @@
     .sobre-foto-wrap {
       position: relative;
     }
+    .sobre-foto-wrap::before,
+    .sobre-foto-wrap::after {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border-color: var(--cyan);
+      border-style: solid;
+      z-index: 2;
+    }
+    .sobre-foto-wrap::before {
+      top: -8px; left: -8px;
+      border-width: 2px 0 0 2px;
+    }
+    .sobre-foto-wrap::after {
+      bottom: -8px; right: -8px;
+      border-width: 0 2px 2px 0;
+    }
     .sobre-foto {
       width: 100%;
       display: block;
@@ -1460,6 +1478,51 @@
       .sobre-foto-wrap { max-width: 220px; margin: 0 auto; }
     }
 
+
+    .hero-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 24px 0 0;
+    }
+    .hero-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 2px solid var(--cyan);
+      mix-blend-mode: normal;
+      filter: contrast(1.05);
+    }
+    .hero-author-info strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .hero-author-info span {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .sobre-clientes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 8px 0 16px;
+    }
+    .sobre-clientes span {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      border: 1px solid rgba(0,245,255,0.3);
+      padding: 4px 10px;
+      border-radius: 2px;
+      background: rgba(0,245,255,0.05);
+    }
   </style>
 </head>
 <body>
@@ -1504,6 +1567,14 @@
           Quero um orçamento
         </a>
         <p class="hero-note">Sem compromisso · Responde no WhatsApp em até 24h · A partir de R$250</p>
+
+        <div class="hero-author">
+          <img src="assets/foto-web.png" alt="Paulo Padilha" class="hero-avatar">
+          <div class="hero-author-info">
+            <strong>Paulo Padilha</strong>
+            <span>Motion Designer · Belém, PA</span>
+          </div>
+        </div>
         <div class="hero-stats">
           <div class="hero-stat"><span>+200</span><p>projetos entregues</p></div>
           <div class="hero-stat"><span>8 anos</span><p>de experiência</p></div>
@@ -1917,7 +1988,13 @@
           <div class="tag">Por trás do projeto</div>
           <h2>Paulo<br />Padilha</h2>
           <p>Se você chegou até aqui, provavelmente já se cansou de resultado que não representa a marca — ou de processo que virou dor de cabeça. Meu nome é Paulo Padilha. Trabalho com motion design e edição de vídeo há 8 anos, com mais de 200 projetos entregues para marcas, veículos e criadores.</p>
-          <p>Já entreguei motion design para FEBRACIS, Diário do Pará, Global Prime Solutions e criadores com audiência consolidada. Cada projeto com briefing claro, prazo definido e arquivo final pronto para publicar. Sem intermediário, sem retrabalho.</p>
+          <p>Já entreguei para:</p>
+          <div class="sobre-clientes">
+            <span>FEBRACIS</span>
+            <span>Diário do Pará</span>
+            <span>Global Prime Solutions</span>
+          </div>
+          <p>Cada projeto com briefing claro, prazo definido e arquivo final pronto para publicar. Sem intermediário, sem retrabalho.</p>
           <div class="sobre-skills">
             <span>After Effects</span>
             <span>Premiere Pro</span>
