@@ -663,14 +663,10 @@
     /* Corner decoration on section titles */
     .section-header { position: relative; }
 
-    /* Cyan accent on step numbers */
-    .step-num { color: var(--cyan); opacity: 0.15; }
-    .step:hover .step-num { opacity: 0.4; transition: opacity 0.3s; }
+    /* Cyan accent on step icons */
+    .step-icon { transition: opacity 0.3s; }
 
-    /* Mono font on tags + nums */
-    .benefit-num, .problema-card .num {
-      font-family: 'Share Tech Mono', monospace;
-    }
+
 
     /* CTA button neon pulse */
     @keyframes neon-pulse {
@@ -772,19 +768,15 @@
         <!-- set 1 -->
         <img src="assets/logos/FEBRACIS.png" alt="FEBRACIS" />
         <img src="assets/logos/GLOBAL.png" alt="Global Prime Solutions" />
-        <img src="assets/logos/Logotipo_da_RBATV.png" alt="RBATV" />
         <img src="assets/logos/images.jpeg" alt="DOL" />
         <img src="assets/logos/logo-header-v2.svg" alt="Diário do Pará" />
         <img src="assets/logos/1739470855ova.png" alt="Cidades e Negócios" />
-        <img src="assets/logos/logo_login.png" alt="Prefeitura" />
         <!-- set 2 — duplicado para loop contínuo -->
         <img src="assets/logos/FEBRACIS.png" alt="FEBRACIS" aria-hidden="true" />
         <img src="assets/logos/GLOBAL.png" alt="Global Prime Solutions" aria-hidden="true" />
-        <img src="assets/logos/Logotipo_da_RBATV.png" alt="RBATV" aria-hidden="true" />
         <img src="assets/logos/images.jpeg" alt="DOL" aria-hidden="true" />
         <img src="assets/logos/logo-header-v2.svg" alt="Diário do Pará" aria-hidden="true" />
         <img src="assets/logos/1739470855ova.png" alt="Cidades e Negócios" aria-hidden="true" />
-        <img src="assets/logos/logo_login.png" alt="Prefeitura" aria-hidden="true" />
       </div>
     </div>
   </section>
@@ -800,17 +792,17 @@
       </div>
       <div class="grid fade-in">
         <div class="problema-card">
-          <div class="num">01 — VISIBILIDADE</div>
+          <svg class="problema-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           <h3>Imagem estática perdida no feed</h3>
           <p>Em 2026, parar o scroll exige movimento. Foto bem feita ainda é essencial, mas não compete sozinha num feed dominado por vídeo.</p>
         </div>
         <div class="problema-card">
-          <div class="num">02 — IDENTIDADE</div>
+          <svg class="problema-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13.5A10 10 0 0 1 12 4a10 10 0 0 1 10 9.5"/><path d="M6 17a6 6 0 0 1 6-5.5A6 6 0 0 1 18 17"/><path d="M10 20.5a2 2 0 0 1 4 0"/><line x1="12" y1="12" x2="12" y2="20"/></svg>
           <h3>Vídeo genérico sem identidade</h3>
           <p>Conteúdo que poderia ser de qualquer marca não representa nenhuma. Produção sem intenção visual é dinheiro queimado.</p>
         </div>
         <div class="problema-card">
-          <div class="num">03 — EXECUÇÃO</div>
+          <svg class="problema-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
           <h3>Animação cara que não comunicou nada</h3>
           <p>Acontece quando o briefing é vago e quem entrega não fez as perguntas certas. Bonito, mas não converte.</p>
         </div>
@@ -828,22 +820,22 @@
       </div>
       <div class="grid fade-in">
         <div class="benefit-card">
-          <div class="benefit-num">01</div>
+          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v4M3 5h4M6 17v4M4 19h4M13 3l2.3 6.3L22 12l-6.7 2.7L13 21l-2.3-6.3L4 12l6.7-2.7L13 3z"/></svg>
           <h3>Animação com propósito</h3>
           <p>Cada movimento tem razão de existir. Nada de floreio por floreio. O que se move tem função: guiar o olho, reforçar a mensagem, ampliar a marca.</p>
         </div>
         <div class="benefit-card">
-          <div class="benefit-num">02</div>
+          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           <h3>Entrega rápida</h3>
           <p>Fluxo de trabalho com automação e IA integrada. Sem gargalo em produção. Prazo combinado é prazo cumprido.</p>
         </div>
         <div class="benefit-card">
-          <div class="benefit-num">03</div>
+          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
           <h3>Formato certo para cada canal</h3>
           <p>Stories, Reels, YouTube, apresentações, dashboards — o arquivo sai pronto para usar. Sem reexportação, sem retrabalho no seu lado.</p>
         </div>
         <div class="benefit-card">
-          <div class="benefit-num">04</div>
+          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           <h3>Revisão sem drama</h3>
           <p>Processo claro, feedback organizado, entrega que fecha. Sem ciclos infinitos de "quase isso, mas não bem assim".</p>
         </div>
@@ -861,22 +853,22 @@
       </div>
       <div class="steps fade-in">
         <div class="step">
-          <div class="step-num">01</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           <h3>Briefing direto</h3>
           <p>Você manda o contexto. Eu faço as perguntas certas — as que evitam retrabalho depois.</p>
         </div>
         <div class="step">
-          <div class="step-num">02</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           <h3>Proposta enxuta</h3>
           <p>Escopo, prazo e valor numa página. Sem surpresa no meio do projeto.</p>
         </div>
         <div class="step">
-          <div class="step-num">03</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/><line x1="2" y1="11" x2="22" y2="11"/><line x1="7" y1="7" x2="7" y2="11"/><line x1="12" y1="7" x2="12" y2="11"/><line x1="17" y1="7" x2="17" y2="11"/></svg>
           <h3>Produção</h3>
           <p>Animação com checkpoint de revisão. Você aprova antes do arquivo final.</p>
         </div>
         <div class="step">
-          <div class="step-num">04</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
           <h3>Entrega</h3>
           <p>Arquivo final no formato que você precisa usar. Pronto para subir ou publicar.</p>
         </div>
@@ -894,112 +886,118 @@
       </div>
       <div class="tools-grid fade-in">
 
-        <!-- Premiere Pro -->
+        <!-- Premiere Pro — white square + Pr -->
         <div class="tool-card">
           <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
-            <text x="44" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="34" fill="#EA77FF">Pr</text>
+            <rect width="88" height="88" rx="12" fill="#fff" fill-opacity="0.08"/>
+            <rect x="2" y="2" width="84" height="84" rx="11" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.5"/>
+            <text x="44" y="62" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="38" fill="#ffffff">Pr</text>
           </svg>
           <span>Premiere Pro</span>
         </div>
 
-        <!-- After Effects -->
+        <!-- After Effects — white square + Ae -->
         <div class="tool-card">
           <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
-            <text x="44" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="34" fill="#9999FF">Ae</text>
+            <rect width="88" height="88" rx="12" fill="#fff" fill-opacity="0.08"/>
+            <rect x="2" y="2" width="84" height="84" rx="11" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.5"/>
+            <text x="44" y="62" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="38" fill="#ffffff">Ae</text>
           </svg>
           <span>After Effects</span>
         </div>
 
-        <!-- Photoshop -->
+        <!-- Photoshop — white square + Ps -->
         <div class="tool-card">
           <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
-            <text x="44" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="34" fill="#31A8FF">Ps</text>
+            <rect width="88" height="88" rx="12" fill="#fff" fill-opacity="0.08"/>
+            <rect x="2" y="2" width="84" height="84" rx="11" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.5"/>
+            <text x="44" y="62" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="38" fill="#ffffff">Ps</text>
           </svg>
           <span>Photoshop</span>
         </div>
 
-        <!-- Illustrator -->
+        <!-- Illustrator — white square + Ai -->
         <div class="tool-card">
           <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
-            <text x="44" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="34" fill="#FF9A00">Ai</text>
+            <rect width="88" height="88" rx="12" fill="#fff" fill-opacity="0.08"/>
+            <rect x="2" y="2" width="84" height="84" rx="11" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.5"/>
+            <text x="44" y="62" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="38" fill="#ffffff">Ai</text>
           </svg>
           <span>Illustrator</span>
         </div>
 
-        <!-- DaVinci Resolve -->
+        <!-- DaVinci Resolve — white concentric circles (fiel ao logo) -->
         <div class="tool-card">
           <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
-            <!-- outer ring -->
-            <circle cx="44" cy="44" r="28" fill="none" stroke="#E8272A" stroke-width="4"/>
-            <!-- inner circle -->
-            <circle cx="44" cy="44" r="14" fill="#E8272A"/>
-            <!-- center dot -->
-            <circle cx="44" cy="44" r="5" fill="#1a1a1a"/>
+            <rect width="88" height="88" rx="12" fill="#fff" fill-opacity="0.08"/>
+            <rect x="2" y="2" width="84" height="84" rx="11" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.5"/>
+            <circle cx="44" cy="44" r="26" fill="none" stroke="#fff" stroke-width="3.5"/>
+            <circle cx="44" cy="44" r="16" fill="#fff"/>
+            <circle cx="44" cy="44" r="7"  fill="#0f0f18"/>
           </svg>
           <span>DaVinci Resolve</span>
         </div>
 
-        <!-- CapCut -->
+        <!-- CapCut — white CC estilo original -->
         <div class="tool-card">
           <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
-            <!-- play triangle -->
-            <polygon points="30,26 30,62 66,44" fill="#ffffff"/>
-            <!-- cut line -->
-            <line x1="26" y1="44" x2="62" y2="44" stroke="#1a1a1a" stroke-width="3.5"/>
+            <rect width="88" height="88" rx="12" fill="#fff" fill-opacity="0.08"/>
+            <rect x="2" y="2" width="84" height="84" rx="11" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.5"/>
+            <!-- C left -->
+            <path d="M30 30 A16 16 0 0 0 30 58" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+            <!-- C right -->
+            <path d="M46 30 A16 16 0 0 0 46 58" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+            <!-- cut scissors bar -->
+            <line x1="18" y1="44" x2="70" y2="44" stroke="#fff" stroke-width="2.5" stroke-dasharray="5 3" stroke-linecap="round"/>
           </svg>
           <span>CapCut</span>
         </div>
 
-        <!-- Remotion -->
+        <!-- Remotion — fiel: círculo com play -->
         <div class="tool-card">
           <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
-            <!-- outer circle -->
-            <circle cx="44" cy="44" r="26" fill="none" stroke="#0B84F3" stroke-width="4"/>
-            <!-- play triangle inside -->
-            <polygon points="36,32 36,56 60,44" fill="#0B84F3"/>
+            <rect width="88" height="88" rx="12" fill="#fff" fill-opacity="0.08"/>
+            <rect x="2" y="2" width="84" height="84" rx="11" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.5"/>
+            <circle cx="44" cy="44" r="26" fill="none" stroke="#fff" stroke-width="3.5"/>
+            <polygon points="38,32 38,56 62,44" fill="#fff"/>
           </svg>
           <span>Remotion</span>
         </div>
 
-        <!-- Google Gemini -->
+        <!-- Google Gemini — estrela 4 pontas fiel, branca -->
         <div class="tool-card">
           <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
-            <!-- Gemini 4-pointed star -->
-            <path d="M44 14 C44 14 46 30 56 38 C66 46 74 44 74 44 C74 44 58 46 50 56 C42 66 44 74 44 74 C44 74 42 58 32 50 C22 42 14 44 14 44 C14 44 30 42 38 32 C46 22 44 14 44 14 Z"
-              fill="url(#gemini-grad)"/>
-            <defs>
-              <linearGradient id="gemini-grad" x1="14" y1="14" x2="74" y2="74" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#4285F4"/>
-                <stop offset="50%" stop-color="#9B72CB"/>
-                <stop offset="100%" stop-color="#D96570"/>
-              </linearGradient>
-            </defs>
+            <rect width="88" height="88" rx="12" fill="#fff" fill-opacity="0.08"/>
+            <rect x="2" y="2" width="84" height="84" rx="11" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.5"/>
+            <path d="M44 12
+              C44 12 46.5 30 58 40
+              C69 50 76 44 76 44
+              C76 44 58 46 48 58
+              C38 70 44 76 44 76
+              C44 76 41.5 58 30 48
+              C19 38 12 44 12 44
+              C12 44 30 42 40 30
+              C50 18 44 12 44 12 Z"
+              fill="#ffffff"/>
           </svg>
           <span>Google Gemini</span>
         </div>
 
-        <!-- Blender -->
+        <!-- Blender — fiel: círculo+braço+ponto, branco -->
         <div class="tool-card">
           <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="10" fill="#1a1a1a"/>
+            <rect width="88" height="88" rx="12" fill="#fff" fill-opacity="0.08"/>
+            <rect x="2" y="2" width="84" height="84" rx="11" fill="none" stroke="#fff" stroke-opacity="0.15" stroke-width="1.5"/>
             <!-- outer ring -->
-            <circle cx="48" cy="44" r="22" fill="none" stroke="#E87D0D" stroke-width="4"/>
-            <!-- middle filled circle -->
-            <circle cx="48" cy="44" r="12" fill="#E87D0D"/>
+            <circle cx="50" cy="46" r="20" fill="none" stroke="#fff" stroke-width="3.5"/>
+            <!-- filled mid circle -->
+            <circle cx="50" cy="46" r="11" fill="#fff"/>
             <!-- inner hole -->
-            <circle cx="48" cy="44" r="5" fill="#1a1a1a"/>
+            <circle cx="50" cy="46" r="4.5" fill="#0f0f18"/>
             <!-- handle arm -->
-            <line x1="26" y1="44" x2="38" y2="44" stroke="#E87D0D" stroke-width="4" stroke-linecap="round"/>
-            <!-- top dot -->
-            <circle cx="26" cy="36" r="5" fill="#E87D0D"/>
+            <line x1="18" y1="46" x2="31" y2="46" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+            <!-- top node -->
+            <circle cx="18" cy="36" r="5.5" fill="#fff"/>
           </svg>
           <span>Blender</span>
         </div>
