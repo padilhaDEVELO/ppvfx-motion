@@ -856,11 +856,184 @@
       background: radial-gradient(ellipse, rgba(124,58,237,0.16) 0%, rgba(0,245,255,0.04) 50%, transparent 70%);
     }
 
+
+    /* ══════════════════════════════════════════
+       CYBERPUNK ANIMATIONS — EXTENDED
+    ══════════════════════════════════════════ */
+
+    /* Custom neon cursor */
+    * { cursor: none !important; }
+    #cursor {
+      position: fixed;
+      width: 10px; height: 10px;
+      background: var(--red-2);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: width 0.15s, height 0.15s, background 0.15s;
+      box-shadow: 0 0 10px var(--red-2), 0 0 30px rgba(168,85,247,0.4);
+      mix-blend-mode: screen;
+    }
+    #cursor-ring {
+      position: fixed;
+      width: 32px; height: 32px;
+      border: 1px solid rgba(168,85,247,0.5);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: transform 0.08s linear, width 0.2s, height 0.2s;
+    }
+    a:hover ~ #cursor, button:hover ~ #cursor { width: 16px; height: 16px; background: var(--cyan); }
+
+    /* Glitch intensificado no hero — clip-path layers */
+    @keyframes glitch-clip-1 {
+      0%,87%,100% { clip-path: none; transform: none; }
+      88% { clip-path: polygon(0 20%, 100% 20%, 100% 35%, 0 35%); transform: translateX(-4px); }
+      89% { clip-path: polygon(0 60%, 100% 60%, 100% 75%, 0 75%); transform: translateX(4px); }
+      90% { clip-path: none; transform: none; }
+    }
+    @keyframes glitch-clip-2 {
+      0%,87%,100% { clip-path: none; transform: none; opacity: 0; }
+      88% { clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%); transform: translateX(6px); opacity: 1; color: var(--cyan); }
+      89% { clip-path: polygon(0 10%, 100% 10%, 100% 25%, 0 25%); transform: translateX(-6px); opacity: 1; color: var(--pink); }
+      90% { opacity: 0; }
+    }
+
+    .hero-headline {
+      animation: glitch 6s infinite;
+      position: relative;
+    }
+    .hero-headline::before,
+    .hero-headline::after {
+      content: attr(data-text);
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+    .hero-headline::before { animation: glitch-clip-1 6s infinite; color: var(--cyan); }
+    .hero-headline::after  { animation: glitch-clip-2 6s 0.05s infinite; color: var(--pink); }
+
+    /* Typewriter no subheadline */
+    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+    .hero-sub::after {
+      content: '|';
+      color: var(--red-2);
+      animation: blink 1s infinite;
+      font-weight: 300;
+    }
+
+    /* Neon flicker nas tags */
+    @keyframes neon-flicker {
+      0%,19%,21%,23%,25%,54%,56%,100% {
+        box-shadow: 0 0 6px rgba(168,85,247,0.3);
+        color: var(--red-2);
+      }
+      20%,24%,55% {
+        box-shadow: none;
+        color: rgba(168,85,247,0.3);
+      }
+    }
+    .tag { animation: neon-flicker 8s infinite; }
+
+    /* Animated gradient border no btn-primary */
+    @keyframes border-spin {
+      to { --angle: 360deg; }
+    }
+    @property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+    .btn-primary {
+      position: relative;
+      animation: neon-pulse 3s ease-in-out infinite;
+    }
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: 5px;
+      background: conic-gradient(from var(--angle), var(--cyan), var(--red-2), var(--pink), var(--red-2), var(--cyan));
+      animation: border-spin 3s linear infinite;
+      z-index: -1;
+      opacity: 0.7;
+    }
+
+    /* Scanline sweep periódica */
+    @keyframes scanline-sweep {
+      0%   { top: -10%; opacity: 0; }
+      5%   { opacity: 1; }
+      95%  { opacity: 1; }
+      100% { top: 110%; opacity: 0; }
+    }
+    #hero::before {
+      content: '' !important;
+    }
+    .scanline-sweep {
+      position: fixed;
+      left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(0,245,255,0.15), rgba(168,85,247,0.25), rgba(0,245,255,0.15), transparent);
+      pointer-events: none;
+      z-index: 50;
+      animation: scanline-sweep 8s linear infinite;
+      animation-delay: 2s;
+    }
+
+    /* Neon border animado nos cards */
+    @keyframes border-glow-pulse {
+      0%,100% { box-shadow: 0 0 0px rgba(168,85,247,0); }
+      50%      { box-shadow: 0 0 20px rgba(168,85,247,0.2), inset 0 0 15px rgba(124,58,237,0.05); }
+    }
+    .benefit-card { animation: border-glow-pulse 4s ease-in-out infinite; }
+    .benefit-card:nth-child(2) { animation-delay: 1s; }
+    .benefit-card:nth-child(3) { animation-delay: 2s; }
+    .benefit-card:nth-child(4) { animation-delay: 3s; }
+
+    /* Hover elétrico nos cards */
+    .benefit-card:hover,
+    .tool-card:hover,
+    .audience-card:hover {
+      box-shadow: 0 0 20px rgba(168,85,247,0.25), 0 0 60px rgba(124,58,237,0.1), inset 0 0 20px rgba(124,58,237,0.04);
+    }
+
+    /* Rule neon pulse */
+    @keyframes rule-pulse {
+      0%,100% { box-shadow: 0 0 4px rgba(168,85,247,0.4); width: 40px; }
+      50%      { box-shadow: 0 0 16px rgba(168,85,247,0.8), 0 0 30px rgba(124,58,237,0.3); width: 60px; }
+    }
+    .rule { animation: rule-pulse 3s ease-in-out infinite; }
+
+    /* CTA final — glow rotativo */
+    @keyframes cta-halo {
+      0%   { box-shadow: 0 0 60px rgba(124,58,237,0.2), 0 0 120px rgba(124,58,237,0.05); }
+      33%  { box-shadow: 0 0 60px rgba(0,245,255,0.15), 0 0 120px rgba(0,245,255,0.05); }
+      66%  { box-shadow: 0 0 60px rgba(255,45,120,0.15), 0 0 120px rgba(255,45,120,0.05); }
+      100% { box-shadow: 0 0 60px rgba(124,58,237,0.2), 0 0 120px rgba(124,58,237,0.05); }
+    }
+    #cta-final { animation: cta-halo 6s ease-in-out infinite; }
+
+    /* Número da etapa → indicador neon animado */
+    @keyframes step-dot {
+      0%,100% { opacity: 0.45; transform: scale(1); }
+      50%      { opacity: 1;    transform: scale(1.15); box-shadow: 0 0 12px var(--cyan); }
+    }
+    .step-icon { animation: step-dot 2.5s ease-in-out infinite; }
+    .step:nth-child(2) .step-icon { animation-delay: 0.6s; }
+    .step:nth-child(3) .step-icon { animation-delay: 1.2s; }
+    .step:nth-child(4) .step-icon { animation-delay: 1.8s; }
+
   </style>
 </head>
 <body>
 
   <!-- NAV -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <div class="scanline-sweep"></div>
+
   <nav id="nav">
     <div class="container">
       <a href="#hero" class="nav-logo">pp<span>vfx</span></a>
@@ -873,7 +1046,7 @@
     <div class="container">
       <div class="hero-inner fade-in visible">
         <div class="tag">Motion Design &amp; Edição de Vídeo</div>
-        <h1 class="hero-headline">
+        <h1 class="hero-headline" data-text="Sua marca se move. Ou fica parada enquanto o mercado passa.">
           Sua marca se move.<br />
           <span class="line-accent">Ou fica parada enquanto<br />o mercado passa.</span>
         </h1>
@@ -1359,6 +1532,64 @@
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
     }
+  </script>
+
+  <script>
+    // Cursor neon
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    (function animate() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      cursor.style.left = mx + 'px';
+      cursor.style.top  = my + 'px';
+      ring.style.left   = rx + 'px';
+      ring.style.top    = ry + 'px';
+      requestAnimationFrame(animate);
+    })();
+    document.querySelectorAll('a, button, .tool-card, .benefit-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width  = '18px';
+        cursor.style.height = '18px';
+        cursor.style.background = 'var(--cyan)';
+        ring.style.width  = '48px';
+        ring.style.height = '48px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width  = '10px';
+        cursor.style.height = '10px';
+        cursor.style.background = 'var(--red-2)';
+        ring.style.width  = '32px';
+        ring.style.height = '32px';
+      });
+    });
+
+    // Data rain — canvas no hero
+    const canvas = document.createElement('canvas');
+    canvas.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;opacity:0.06;z-index:0;';
+    document.getElementById('hero').appendChild(canvas);
+    const ctx = canvas.getContext('2d');
+    function resizeCanvas() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    const cols = Math.floor(canvas.width / 18);
+    const drops = Array(cols).fill(1);
+    const chars = '01アイウエオカキクケコ';
+    function drawRain() {
+      ctx.fillStyle = 'rgba(5,5,7,0.05)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#a855f7';
+      ctx.font = '13px Share Tech Mono, monospace';
+      drops.forEach((y, i) => {
+        const ch = chars[Math.floor(Math.random() * chars.length)];
+        ctx.fillText(ch, i * 18, y * 18);
+        if (y * 18 > canvas.height && Math.random() > 0.975) drops[i] = 0;
+        drops[i]++;
+      });
+    }
+    setInterval(drawRain, 60);
   </script>
 </body>
 </html>
