@@ -1398,10 +1398,12 @@
     }
     .sobre-foto {
       width: 100%;
-      border-radius: 12px;
       display: block;
       mix-blend-mode: lighten;
-      filter: contrast(1.05);
+      filter: contrast(1.08) brightness(0.95);
+      mask-image: radial-gradient(ellipse 85% 90% at 55% 45%, black 40%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 85% 90% at 55% 45%, black 40%, transparent 100%);
+      opacity: 0.88;
     }
     .sobre-foto-glow {
       position: absolute;
