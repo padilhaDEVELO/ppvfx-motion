@@ -246,9 +246,9 @@
     .marquee-track {
       display: flex;
       align-items: center;
-      gap: 72px;
+      gap: 100px;
       width: max-content;
-      animation: marquee-scroll 22s linear infinite;
+      animation: marquee-scroll 30s linear infinite;
     }
     .marquee-track:hover { animation-play-state: paused; }
     @keyframes marquee-scroll {
@@ -1585,6 +1585,75 @@
       0%,100% { opacity: 1; }
       50%      { opacity: 0.2; }
     }
+
+    .sobre-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .sobre-tool-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      padding: 10px 8px;
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      width: 68px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .sobre-tool-item:hover {
+      border-color: rgba(168,85,247,0.35);
+      transform: translateY(-2px);
+    }
+    .sobre-tool-item img { width: 32px; height: 32px; object-fit: contain; }
+    .sobre-tool-item span {
+      font-size: 9px;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+    #cta-meio {
+      background: var(--bg-2);
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .cta-meio-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .cta-meio-texto {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .cta-meio-texto strong {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .cta-meio-texto span {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .btn-meio {
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding: 14px 28px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .cta-meio-inner { flex-direction: column; text-align: center; align-items: center; }
+    }
   </style>
 </head>
 <body>
@@ -1756,7 +1825,7 @@
                 </svg>
               </div>
             
-          <div class="video-caption"><strong>Intro animada</strong><span>Motion · Identidade de marca</span></div>
+          <div class="video-caption"><strong>Identidade em movimento</strong><span>Vinheta · Redes sociais</span></div>
         </div>
           <div class="video-overlay" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.style.pointerEvents='auto'">
             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1773,7 +1842,7 @@
                 </svg>
               </div>
             
-          <div class="video-caption"><strong>Reels animado</strong><span>Motion · Redes sociais</span></div>
+          <div class="video-caption"><strong>Animação para feed</strong><span>Motion · Instagram / Reels</span></div>
         </div>
           <div class="video-overlay" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.style.pointerEvents='auto'">
             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1790,7 +1859,7 @@
                 </svg>
               </div>
             
-          <div class="video-caption"><strong>Vinheta institucional</strong><span>Motion · Vídeo de marca</span></div>
+          <div class="video-caption"><strong>Apresentação de marca</strong><span>Motion · Vídeo institucional</span></div>
         </div>
           <div class="video-overlay" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.style.pointerEvents='auto'">
             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1824,7 +1893,7 @@
                 </svg>
               </div>
             
-          <div class="video-caption"><strong>Edição + motion</strong><span>Vídeo · Produção completa</span></div>
+          <div class="video-caption"><strong>Produção completa</strong><span>Edição + motion · Entrega final</span></div>
         </div>
           <div class="video-overlay" onclick="this.style.opacity=0;this.style.pointerEvents='none';this.previousElementSibling.style.pointerEvents='auto'">
             <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -1891,7 +1960,46 @@
             <span>Global Prime Solutions</span>
           </div>
           <p>Cada projeto com briefing claro, prazo definido e arquivo final pronto para publicar. Sem intermediário, sem retrabalho.</p>
-          <div class="sobre-skills">
+          
+          <div class="sobre-tools">
+            <div class="sobre-tool-item">
+              <img src="assets/tools/adobeaftereffects.svg" alt="After Effects" class="tool-logo">
+              <span>After Effects</span>
+            </div>
+            <div class="sobre-tool-item">
+              <img src="assets/tools/adobepremierepro.svg" alt="Premiere Pro" class="tool-logo">
+              <span>Premiere Pro</span>
+            </div>
+            <div class="sobre-tool-item">
+              <img src="assets/tools/adobephotoshop.svg" alt="Photoshop" class="tool-logo">
+              <span>Photoshop</span>
+            </div>
+            <div class="sobre-tool-item">
+              <img src="assets/tools/adobeillustrator.svg" alt="Illustrator" class="tool-logo">
+              <span>Illustrator</span>
+            </div>
+            <div class="sobre-tool-item">
+              <img src="assets/tools/davinciresolve.svg" alt="DaVinci" class="tool-logo">
+              <span>DaVinci</span>
+            </div>
+            <div class="sobre-tool-item">
+              <img src="assets/tools/capcut.svg" alt="CapCut" class="tool-logo">
+              <span>CapCut</span>
+            </div>
+            <div class="sobre-tool-item">
+              <img src="assets/tools/remotion.svg" alt="Remotion" class="tool-logo">
+              <span>Remotion</span>
+            </div>
+            <div class="sobre-tool-item">
+              <img src="assets/tools/googlegemini.svg" alt="Gemini" class="tool-logo">
+              <span>Gemini</span>
+            </div>
+            <div class="sobre-tool-item">
+              <img src="assets/tools/blender.svg" alt="Blender" class="tool-logo">
+              <span>Blender</span>
+            </div>
+          </div>
+          <div class="sobre-skills" style="display:none">
             <span>After Effects</span>
             <span>Premiere Pro</span>
             <span>Motion Graphics</span>
@@ -1906,6 +2014,20 @@
   </section>
 
   
+  <!-- CTA MEIO -->
+  <section id="cta-meio" aria-hidden="false">
+    <div class="container">
+      <div class="cta-meio-inner fade-in">
+        <div class="cta-meio-texto">
+          <strong>Tem um projeto em mente?</strong>
+          <span>Respondo no WhatsApp em até 24h — sem compromisso.</span>
+        </div>
+        <a href="https://wa.me/5591991755068" class="btn-primary btn-meio" target="_blank" rel="noopener">
+          Falar sobre meu projeto
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- COMO FUNCIONA -->
   <section id="como-funciona">
