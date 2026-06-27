@@ -374,6 +374,7 @@
       transform: translateY(-2px);
     }
     .tool-card svg { width: 40px; height: 40px; flex-shrink: 0; }
+    .tool-card img.tool-logo { width: 52px; height: 52px; object-fit: contain; display: block; }
     .tool-card span {
       font-size: 10px;
       font-weight: 600;
@@ -1396,131 +1397,59 @@
       </div>
       <div class="tools-grid fade-in">
 
-        <!-- Premiere Pro — cores originais Adobe -->
+        <!-- Adobe Premiere Pro -->
         <div class="tool-card">
-          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="12" fill="#1A0227"/>
-            <text x="44" y="60" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="36" fill="#B2ADFF">Pr</text>
-          </svg>
+          <img src="https://cdn.simpleicons.org/adobepremierepro" alt="Premiere Pro" class="tool-logo">
           <span>Premiere Pro</span>
         </div>
 
-        <!-- After Effects — cores originais Adobe -->
+        <!-- Adobe After Effects -->
         <div class="tool-card">
-          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="12" fill="#00003B"/>
-            <text x="44" y="60" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="36" fill="#9999FF">Ae</text>
-          </svg>
+          <img src="https://cdn.simpleicons.org/adobeaftereffects" alt="After Effects" class="tool-logo">
           <span>After Effects</span>
         </div>
 
-        <!-- Photoshop — cores originais Adobe -->
+        <!-- Adobe Photoshop -->
         <div class="tool-card">
-          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="12" fill="#001B2D"/>
-            <text x="44" y="60" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="36" fill="#31A8FF">Ps</text>
-          </svg>
+          <img src="https://cdn.simpleicons.org/adobephotoshop" alt="Photoshop" class="tool-logo">
           <span>Photoshop</span>
         </div>
 
-        <!-- Illustrator — cores originais Adobe -->
+        <!-- Adobe Illustrator -->
         <div class="tool-card">
-          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="12" fill="#2C0A00"/>
-            <text x="44" y="60" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="36" fill="#FF9A00">Ai</text>
-          </svg>
+          <img src="https://cdn.simpleicons.org/adobeillustrator" alt="Illustrator" class="tool-logo">
           <span>Illustrator</span>
         </div>
 
-        <!-- DaVinci Resolve — roda colorida (RGB) fiel ao ícone oficial -->
+        <!-- DaVinci Resolve -->
         <div class="tool-card">
-          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <clipPath id="wheel-clip"><circle cx="44" cy="44" r="26"/></clipPath>
-            </defs>
-            <rect width="88" height="88" rx="12" fill="#1A1A1A"/>
-            <!-- segmentos RGB da roda de cor do DaVinci -->
-            <path d="M44 44 L44 18 A26 26 0 0 1 66.5 57 Z" fill="#FF3B3B" clip-path="url(#wheel-clip)"/>
-            <path d="M44 44 L66.5 57 A26 26 0 0 1 21.5 57 Z" fill="#3BFF6E" clip-path="url(#wheel-clip)"/>
-            <path d="M44 44 L21.5 57 A26 26 0 0 1 44 18 Z" fill="#3B8CFF" clip-path="url(#wheel-clip)"/>
-            <!-- anel externo -->
-            <circle cx="44" cy="44" r="26" fill="none" stroke="#333" stroke-width="1"/>
-            <!-- spoke lines -->
-            <line x1="44" y1="18" x2="44" y2="44" stroke="#1A1A1A" stroke-width="1.5"/>
-            <line x1="66.5" y1="57" x2="44" y2="44" stroke="#1A1A1A" stroke-width="1.5"/>
-            <line x1="21.5" y1="57" x2="44" y2="44" stroke="#1A1A1A" stroke-width="1.5"/>
-            <!-- centro branco -->
-            <circle cx="44" cy="44" r="9" fill="#fff"/>
-            <circle cx="44" cy="44" r="4" fill="#1A1A1A"/>
-          </svg>
+          <img src="https://cdn.simpleicons.org/davinciresolve" alt="DaVinci Resolve" class="tool-logo">
           <span>DaVinci Resolve</span>
         </div>
 
-        <!-- CapCut — logo original: fundo preto, CC branco -->
+        <!-- CapCut -->
         <div class="tool-card">
-          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="12" fill="#000000"/>
-            <text x="44" y="60" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="36" fill="#FFFFFF">CC</text>
-          </svg>
+          <img src="https://cdn.simpleicons.org/capcut" alt="CapCut" class="tool-logo">
           <span>CapCut</span>
         </div>
 
-        <!-- Remotion — logo: fundo escuro, círculos em azul-índigo brand -->
+        <!-- Remotion -->
         <div class="tool-card">
-          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="12" fill="#0F0F1A"/>
-            <!-- R estilizado em azul índigo — cor brand do Remotion -->
-            <text x="44" y="62" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="52" fill="#5B6FFF">R</text>
-            <!-- ponto brand -->
-            <circle cx="67" cy="58" r="6" fill="#FF5C87"/>
-          </svg>
+          <img src="https://cdn.simpleicons.org/remotion" alt="Remotion" class="tool-logo">
           <span>Remotion</span>
         </div>
 
-        <!-- Google Gemini — estrela 4 pontas com gradiente azul oficial -->
+        <!-- Google Gemini -->
         <div class="tool-card">
-          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="gem-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#4285F4"/>
-                <stop offset="50%" stop-color="#9B72CB"/>
-                <stop offset="100%" stop-color="#D96570"/>
-              </linearGradient>
-            </defs>
-            <rect width="88" height="88" rx="12" fill="#0A0A14"/>
-            <path d="M44 10
-              C44 10 47 28 60 38
-              C72 48 78 44 78 44
-              C78 44 60 47 50 60
-              C40 72 44 78 44 78
-              C44 78 41 60 28 50
-              C16 40 10 44 10 44
-              C10 44 28 41 38 28
-              C48 16 44 10 44 10 Z"
-              fill="url(#gem-grad)"/>
-          </svg>
+          <img src="https://cdn.simpleicons.org/googlegemini" alt="Google Gemini" class="tool-logo">
           <span>Google Gemini</span>
         </div>
 
-        <!-- Blender — logo laranja original -->
+        <!-- Blender -->
         <div class="tool-card">
-          <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
-            <rect width="88" height="88" rx="12" fill="#16161A"/>
-            <!-- outer ring laranja -->
-            <circle cx="50" cy="47" r="22" fill="none" stroke="#E87D0D" stroke-width="3.5"/>
-            <!-- inner filled circle — laranja -->
-            <circle cx="47" cy="44" r="13" fill="#E87D0D"/>
-            <!-- center hole branco -->
-            <circle cx="47" cy="44" r="5.5" fill="#fff"/>
-            <!-- braço horizontal -->
-            <line x1="14" y1="44" x2="34" y2="44" stroke="#E87D0D" stroke-width="5" stroke-linecap="round"/>
-            <!-- dot superior -->
-            <circle cx="14" cy="33" r="6" fill="#E87D0D"/>
-          </svg>
+          <img src="https://cdn.simpleicons.org/blender" alt="Blender" class="tool-logo">
           <span>Blender</span>
-        </div>
-
-      </div>
+        </div>      </div>
     </div>
   </section>
 
