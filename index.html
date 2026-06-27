@@ -97,6 +97,13 @@
       text-decoration: none;
     }
     .nav-logo span { color: var(--red-2); }
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-logo-img {
+      width: 28px; height: 28px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.9;
+    }
 
     .nav-cta {
       font-size: 13px;
@@ -592,6 +599,14 @@
     .footer-social a:hover { color: var(--text); }
     .footer-social svg { width: 18px; height: 18px; flex-shrink: 0; }
     .footer-copy { font-size: 11px; color: #2a2a2a; }
+    .footer-logo-mark {
+      width: 36px; height: 36px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.15;
+      display: block;
+      margin: 0 auto 24px;
+    }
 
     /* ── DIVIDER ── */
     .rule {
@@ -699,15 +714,14 @@
     /* Footer social hover neon */
     .footer-social a:hover { color: var(--cyan); text-shadow: 0 0 10px rgba(0,245,255,0.4); }
 
-    /* Hero corner decorations */
-    .hero-inner::before {
-      content: '[ ppvfx ]';
-      font-family: 'Share Tech Mono', monospace;
-      font-size: 11px;
-      color: rgba(168,85,247,0.3);
-      letter-spacing: 0.2em;
+    /* Hero logo mark */
+    .hero-logo-mark {
+      width: 48px; height: 48px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.25;
+      margin: 0 auto 20px;
       display: block;
-      margin-bottom: 16px;
     }
 
     /* Sobre foto neon border */
@@ -739,7 +753,10 @@
   <!-- NAV -->
   <nav id="nav">
     <div class="container">
-      <a href="#hero" class="nav-logo">pp<span>vfx</span></a>
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo-ppvfx.png" alt="ppvfx logo" class="nav-logo-img" />
+        pp<span>vfx</span>
+      </a>
       <a href="https://wa.me/5591991755068" class="nav-cta" target="_blank" rel="noopener">Falar sobre o projeto</a>
     </div>
   </nav>
@@ -748,6 +765,7 @@
   <section id="hero">
     <div class="container">
       <div class="hero-inner fade-in visible">
+        <img src="assets/logo-ppvfx.png" alt="ppvfx" class="hero-logo-mark" />
         <div class="tag">Motion Design &amp; Edição de Vídeo</div>
         <h1 class="hero-headline">
           Sua marca se move.<br />
@@ -1110,6 +1128,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
+      <img src="assets/logo-ppvfx.png" alt="ppvfx" class="footer-logo-mark" />
       <div class="footer-social">
         <!-- Instagram -->
         <a href="https://www.instagram.com/paulopadiilha" target="_blank" rel="noopener">
