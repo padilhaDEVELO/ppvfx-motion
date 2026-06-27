@@ -770,21 +770,7 @@
       z-index: 0;
     }
 
-    /* Scanlines */
-    body::after {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background: repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 3px,
-        rgba(0,0,0,0.04) 3px,
-        rgba(0,0,0,0.04) 4px
-      );
-      pointer-events: none;
-      z-index: 0;
-    }
+    /* scanlines removidos — impactavam performance */
 
     /* All sections above grid */
     section, nav, footer { position: relative; z-index: 1; }
@@ -941,9 +927,20 @@
       position: absolute;
       inset: 0;
       pointer-events: none;
+      opacity: 0;
     }
-    .hero-headline::before { animation: glitch-clip-1 6s infinite; color: var(--cyan); }
-    .hero-headline::after  { animation: glitch-clip-2 6s 0.05s infinite; color: var(--pink); }
+    /* glitch APENAS no hover */
+    .hero-headline:hover { animation: glitch 0.4s steps(1) 2; }
+    .hero-headline:hover::before {
+      opacity: 1;
+      animation: glitch-clip-1 0.4s steps(1) 2;
+      color: var(--cyan);
+    }
+    .hero-headline:hover::after {
+      opacity: 1;
+      animation: glitch-clip-2 0.4s steps(1) 2;
+      color: var(--pink);
+    }
 
     /* Typewriter no subheadline */
     @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
@@ -1763,7 +1760,7 @@
       resize();
       window.addEventListener('resize', () => { resize(); init(); });
 
-      const COUNT = 60;
+      const COUNT = 35;
       function Particle() {
         this.x  = Math.random() * W;
         this.y  = Math.random() * H;
@@ -1810,8 +1807,17 @@
         }
         requestAnimationFrame(draw);
       }
-      draw();
+      let animating = true;
+      const heroEl = document.getElementById('hero');
+      const heroObs = new IntersectionObserver(entries => {
+        animating = entries[0].isIntersecting;
+      }, { threshold: 0.01 });
+      if (heroEl) heroObs.observe(heroEl);
 
+      function drawLoop() {
+        if (animating) draw();
+        requestAnimationFrame(drawLoop);
+      }
       /* Mouse repel */
       document.getElementById('hero').addEventListener('mousemove', e => {
         const rect = canvas.getBoundingClientRect();
