@@ -813,11 +813,16 @@
       position: fixed;
       inset: 0;
       background-image:
-        linear-gradient(rgba(124,58,237,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(124,58,237,0.04) 1px, transparent 1px);
-      background-size: 48px 48px;
+        linear-gradient(rgba(124,58,237,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,58,237,0.07) 1px, transparent 1px);
+      background-size: 56px 56px;
+      animation: grid-drift 28s linear infinite;
       pointer-events: none;
       z-index: 0;
+    }
+    @keyframes grid-drift {
+      0%   { background-position: 0 0; }
+      100% { background-position: 56px 56px; }
     }
 
     /* scanlines removidos — impactavam performance */
@@ -1523,6 +1528,63 @@
       border-radius: 2px;
       background: rgba(0,245,255,0.05);
     }
+
+    /* ── HERO PERSPECTIVE GRID ── */
+    .hero-perspective-grid {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 55%;
+      perspective: 500px;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-perspective-grid::before {
+      content: '';
+      position: absolute;
+      inset: -10% -50%;
+      background-image:
+        linear-gradient(rgba(0,245,255,0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,245,255,0.12) 1px, transparent 1px);
+      background-size: 80px 80px;
+      transform: rotateX(72deg);
+      transform-origin: bottom center;
+      animation: horizon-scroll 2.4s linear infinite;
+    }
+    .hero-perspective-grid::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60%;
+      background: linear-gradient(to top, var(--bg) 0%, transparent 100%);
+      pointer-events: none;
+    }
+    @keyframes horizon-scroll {
+      0%   { background-position: 0 0; }
+      100% { background-position: 0 80px; }
+    }
+
+    .hero-horizon-glow {
+      position: absolute;
+      bottom: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(0,245,255,0.4), rgba(168,85,247,0.6), rgba(0,245,255,0.4), transparent);
+      filter: blur(6px);
+      animation: horizon-glow 3s ease-in-out infinite alternate;
+      pointer-events: none;
+      z-index: 1;
+    }
+    @keyframes horizon-glow {
+      0%   { opacity: 0.4; width: 400px; }
+      100% { opacity: 0.9; width: 700px; }
+    }
   </style>
 </head>
 <body>
@@ -1552,6 +1614,8 @@
   <!-- HERO -->
   <section id="hero">
     <canvas id="particle-canvas"></canvas>
+    <div class="hero-perspective-grid" aria-hidden="true"></div>
+    <div class="hero-horizon-glow" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-inner fade-in visible">
         <div class="tag">Belém · PA — Motion Design &amp; Edição de Vídeo</div>
