@@ -246,9 +246,9 @@
     .marquee-track {
       display: flex;
       align-items: center;
-      gap: 100px;
+      gap: 120px;
       width: max-content;
-      animation: marquee-scroll 30s linear infinite;
+      animation: marquee-scroll 18s linear infinite;
     }
     .marquee-track:hover { animation-play-state: paused; }
     @keyframes marquee-scroll {
@@ -1654,6 +1654,26 @@
     @media (max-width: 600px) {
       .cta-meio-inner { flex-direction: column; text-align: center; align-items: center; }
     }
+
+    .portfolio-scroll-hint {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      justify-content: center;
+      margin-top: 16px;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+    }
+    .portfolio-scroll-hint svg { width: 14px; height: 14px; opacity: 0.6; }
+    @media (max-width: 580px) {
+      .portfolio-scroll-hint { display: flex; }
+      .videos-grid {
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .videos-grid::-webkit-scrollbar { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -1775,14 +1795,14 @@
       <div class="section-header fade-in">
         <div class="tag">O que você recebe</div>
         <div class="rule"></div>
-        <h2 class="section-title">O que muda quando você trabalha com quem sabe o que está fazendo</h2>
+        <h2 class="section-title">O que você recebe de diferente</h2>
         <p class="section-sub">Cada entrega tem propósito, prazo e formato certo. Sem achismo, sem retrabalho.</p>
       </div>
       <div class="grid fade-in">
         <div class="benefit-card">
           <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v4M3 5h4M6 17v4M4 19h4M13 3l2.3 6.3L22 12l-6.7 2.7L13 21l-2.3-6.3L4 12l6.7-2.7L13 3z"/></svg>
-          <h3>Cada frame justificado</h3>
-          <p>Nada entra por decoração. O que se move tem função: guiar o olho, reforçar a mensagem, ampliar a marca.</p>
+          <h3>Animação que trabalha pela marca</h3>
+          <p>Cada movimento tem função — guiar o olho, reforçar a mensagem, fazer o conteúdo parar o scroll. Nada por decoração.</p>
         </div>
         <div class="benefit-card">
           <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
@@ -1999,14 +2019,6 @@
               <span>Blender</span>
             </div>
           </div>
-          <div class="sobre-skills" style="display:none">
-            <span>After Effects</span>
-            <span>Premiere Pro</span>
-            <span>Motion Graphics</span>
-            <span>Remotion</span>
-            <span>IA aplicada a vídeo</span>
-            <span>Edição YouTube</span>
-          </div>
         </div>
         </div>
       </div>
@@ -2019,8 +2031,8 @@
     <div class="container">
       <div class="cta-meio-inner fade-in">
         <div class="cta-meio-texto">
-          <strong>Tem um projeto em mente?</strong>
-          <span>Respondo no WhatsApp em até 24h — sem compromisso.</span>
+          <strong>Quer ver como fica na prática?</strong>
+          <span>Me manda o briefing e mostro o que faz sentido — sem compromisso, sem proposta de 20 páginas.</span>
         </div>
         <a href="https://wa.me/5591991755068" class="btn-primary btn-meio" target="_blank" rel="noopener">
           Falar sobre meu projeto
@@ -2068,8 +2080,8 @@
       <div class="section-header fade-in">
         <div class="tag">Para quem é</div>
         <div class="rule"></div>
-        <h2 class="section-title">Para quem é</h2>
-        <p class="section-sub">Se você é um desses, a gente tem conversa.</p>
+        <h2 class="section-title">Seu projeto se encaixa aqui.</h2>
+        <p class="section-sub">Quatro perfis. Se um é você, a gente tem conversa.</p>
       </div>
       <div class="audience-grid fade-in">
         <div class="audience-card">
@@ -2119,7 +2131,7 @@
         </div>
         <div class="faq-item">
           <h3>"Não sei se preciso de motion ou só de um vídeo editado."</h3>
-          <p>Me manda o contexto do projeto. Digo o que faz sentido para o seu caso — e o que não faz. Sem forçar escopo maior do que o necessário.</p>
+          <p>Regra prática: se o conteúdo precisa explicar algo ou chamar atenção no feed, motion. Se é conversa, entrevista ou vídeo longo, edição. Na dúvida, me manda o contexto — respondo direto qual faz mais sentido para o seu caso.</p>
         </div>
         <div class="faq-item">
           <h3>"Como sei que você entrega no prazo?"</h3>
@@ -2140,12 +2152,12 @@
       </div>
       <div class="preco-grid fade-in">
         <div class="preco-card">
-          <div class="preco-tipo">Social Media</div>
+          <div class="preco-tipo">Motion para Redes</div>
           <div class="preco-valor">a partir de <span>R$ 350</span></div>
-          <p>Vinheta, intro ou animação para Reels, Shorts e Stories. Entrega em até 5 dias úteis.</p>
+          <p>Animação original para Reels, Shorts e Stories — não é template, é criado do zero para a sua marca.</p>
           <ul class="preco-lista">
             <li>Até 30 segundos</li>
-            <li>1 formato de entrega</li>
+            <li>Entrega em até 5 dias úteis</li>
             <li>1 rodada de ajuste</li>
           </ul>
           <a href="https://wa.me/5591991755068" class="btn-preco" target="_blank" rel="noopener">Solicitar orçamento</a>
@@ -2163,9 +2175,9 @@
           <a href="https://wa.me/5591991755068" class="btn-preco" target="_blank" rel="noopener">Solicitar orçamento</a>
         </div>
         <div class="preco-card">
-          <div class="preco-tipo">Edição de Vídeo</div>
+          <div class="preco-tipo">Edição Longa</div>
           <div class="preco-valor">a partir de <span>R$ 250</span></div>
-          <p>Edição de vídeos para YouTube, podcasts e conteúdo de marca. Com trilha, corte e cor.</p>
+          <p>Edição de vídeos longos — YouTube, podcast, vídeo de marca. Corte, cor, trilha e sincronização inclusos.</p>
           <ul class="preco-lista">
             <li>Até 10 minutos</li>
             <li>Cor e áudio inclusos</li>
@@ -2219,8 +2231,8 @@
           </svg>
           Paulo Padilha
         </a>
-        <!-- Gmail -->
-        <a href="mailto:padilha.p717@gmail.com">
+        <!-- Gmail oculto no footer -->
+        <a href="mailto:padilha.p717@gmail.com" style="display:none">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
