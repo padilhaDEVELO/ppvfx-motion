@@ -1170,6 +1170,103 @@
     .benefit-card:nth-child(3) { transition-delay: 0.2s; }
     .benefit-card:nth-child(4) { transition-delay: 0.3s; }
 
+
+    /* ── WhatsApp flutuante ── */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      z-index: 500;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .whatsapp-float svg { width: 28px; height: 28px; flex-shrink: 0; }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.6);
+    }
+
+    /* ── Scroll indicator ── */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: scroll-bounce 2s ease-in-out infinite;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    @keyframes scroll-bounce {
+      0%,100% { transform: translateX(-50%) translateY(0); }
+      50%      { transform: translateX(-50%) translateY(8px); }
+    }
+
+    /* ── Nav links center ── */
+    .nav-links-center { display: flex; gap: 28px; }
+    .nav-link {
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+    .nav-link:hover { color: var(--text); }
+    @media (max-width: 640px) { .nav-links-center { display: none; } }
+
+    /* ── YouTube facade ── */
+    .yt-facade {
+      position: relative;
+      cursor: pointer;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #000;
+      width: 100%;
+    }
+    .yt-facade.aspect-short  { aspect-ratio: 9/16; }
+    .yt-facade.aspect-wide   { aspect-ratio: 16/9; }
+    .yt-facade img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .yt-facade:hover img { transform: scale(1.03); }
+    .yt-play {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.25);
+      transition: background 0.2s;
+    }
+    .yt-facade:hover .yt-play { background: rgba(0,0,0,0.1); }
+    .yt-play svg { width: 60px; height: 42px; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5)); }
+
+    /* ── tool-logo img ── */
+    .tool-card img.tool-logo {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* ── Mobile: desabilitar cursor em touch ── */
+    @media (hover: none), (pointer: coarse) {
+      * { cursor: auto !important; }
+      #cursor, #cursor-ring { display: none !important; }
+    }
+
   </style>
 </head>
 <body>
