@@ -13,9 +13,11 @@
   <meta property="og:image"       content="https://padilhadevelo.github.io/ppvfx-motion/assets/logos/logo-header-v2.svg" />
   <meta name="twitter:card"       content="summary_large_image" />
   <meta name="description" content="Animações, vídeos e conteúdo em movimento com entrega rápida e processo direto. Para marcas, agências e criadores que precisam de resultado visual de verdade." />
+  <link rel="canonical" href="https://padilhadevelo.github.io/ppvfx-motion/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23050507'/%3E%3Ctext x='32' y='44' font-family='Arial Black,sans-serif' font-size='30' font-weight='900' text-anchor='middle' fill='%23a855f7'%3EPP%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -26,7 +28,7 @@
       --border:  #1a1a2e;
       --border-2:#2a2a4a;
       --text:    #e8e8f0;
-      --muted:   #6666aa;
+      --muted:   #8a8ac4;
       --red:     #7c3aed;
       --red-2:   #a855f7;
       --red-dark:#4c1d95;
@@ -42,7 +44,7 @@
     :root { --accent: #a855f7; }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Space Grotesk', sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -118,7 +120,7 @@
       letter-spacing: 0.04em;
       color: #fff;
       background: var(--grad);
-      padding: 10px 22px;
+      padding: 12px 22px;
       border-radius: 4px;
       text-decoration: none;
       transition: opacity 0.2s, transform 0.2s;
@@ -622,15 +624,17 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      min-height: 44px;
+      padding: 0 6px;
       font-size: 13px;
       font-weight: 600;
-      color: #555;
+      color: #8a8a92;
       text-decoration: none;
       transition: color 0.2s;
     }
     .footer-social a:hover { color: var(--text); }
     .footer-social svg { width: 18px; height: 18px; flex-shrink: 0; }
-    .footer-copy { font-size: 11px; color: #2a2a2a; }
+    .footer-copy { font-size: 11px; color: #777; }
     .footer-logo-mark {
       width: 36px; height: 36px;
       object-fit: contain;
@@ -686,7 +690,11 @@
         gap: 12px;
         padding-bottom: 12px;
         scroll-snap-type: x mandatory;
+        scroll-padding-inline: 24px;
         -webkit-overflow-scrolling: touch;
+        /* bleed até a borda da tela, estilo Reels */
+        margin-inline: -24px;
+        padding-inline: 24px;
       }
     }
     .video-card {
@@ -701,7 +709,7 @@
       scroll-snap-align: start;
     }
     @media (max-width: 580px) {
-      .video-card { width: 160px; }
+      .video-card { width: min(68vw, 300px); scroll-snap-align: center; }
     }
     .video-card:hover {
       border-color: rgba(168,85,247,0.4);
@@ -942,8 +950,13 @@
        CYBERPUNK ANIMATIONS — EXTENDED
     ══════════════════════════════════════════ */
 
-    /* Custom neon cursor */
-    * { cursor: none !important; }
+    /* Custom neon cursor — só em dispositivos com mouse de precisão */
+    @media (hover: hover) and (pointer: fine) {
+      * { cursor: none !important; }
+    }
+    @media (hover: none), (pointer: coarse) {
+      #cursor, #cursor-ring { display: none; }
+    }
     #cursor {
       position: fixed;
       width: 10px; height: 10px;
@@ -1305,11 +1318,27 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(0,0,0,0.25);
+      background: rgba(5,5,7,0.3);
       transition: background 0.2s;
     }
-    .yt-facade:hover .yt-play { background: rgba(0,0,0,0.1); }
-    .yt-play svg { width: 60px; height: 42px; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5)); }
+    .yt-facade:hover .yt-play { background: rgba(5,5,7,0.12); }
+    .yt-play svg {
+      width: 24px; height: 24px;
+      color: #fff;
+      padding: 15px;
+      box-sizing: content-box;
+      border-radius: 50%;
+      background: rgba(5,5,7,0.55);
+      border: 1px solid rgba(168,85,247,0.6);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 20px rgba(124,58,237,0.45), inset 0 0 12px rgba(168,85,247,0.25);
+      transition: transform 0.25s ease-out, box-shadow 0.25s ease-out, border-color 0.25s;
+    }
+    .yt-facade:hover .yt-play svg {
+      transform: scale(1.08);
+      border-color: var(--cyan);
+      box-shadow: 0 0 28px rgba(0,245,255,0.35), inset 0 0 12px rgba(0,245,255,0.2);
+    }
 
     /* ── tool-logo img ── */
     .tool-card img.tool-logo {
@@ -1413,7 +1442,7 @@
     .btn-preco {
       display: inline-block;
       margin-top: auto;
-      padding: 10px 20px;
+      padding: 12px 20px;
       background: transparent;
       border: 1px solid var(--border-2);
       border-radius: 6px;
@@ -1696,6 +1725,39 @@
       color: var(--muted);
       margin-bottom: 16px;
     }
+
+    /* ══ Stagger: cards revelam em cascata dentro das grids ══
+       animation + fill backwards: some durante o delay, e não deixa
+       resíduo depois (hover/transition dos cards continua intacto) */
+    @keyframes card-in {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: none; }
+    }
+    .fade-in.visible > :is(.video-card, .video-card-h, .step, .preco-card, .faq-item) {
+      animation: card-in 0.5s ease-out backwards;
+    }
+    .fade-in.visible > :is(.video-card, .video-card-h, .step, .preco-card, .faq-item):nth-child(2) { animation-delay: 70ms; }
+    .fade-in.visible > :is(.video-card, .video-card-h, .step, .preco-card, .faq-item):nth-child(3) { animation-delay: 140ms; }
+    .fade-in.visible > :is(.video-card, .video-card-h, .step, .preco-card, .faq-item):nth-child(4) { animation-delay: 210ms; }
+    .fade-in.visible > :is(.video-card, .video-card-h, .step, .preco-card, .faq-item):nth-child(5) { animation-delay: 280ms; }
+
+    /* ══ Acessibilidade e toque ══ */
+    a, button { touch-action: manipulation; }
+    .preco-obs a { display: inline-block; padding: 12px 4px; margin: -12px 0; }
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      #particle-canvas, #cursor, #cursor-ring { display: none !important; }
+    }
   </style>
 </head>
 <body>
@@ -1710,6 +1772,7 @@
 
   <div id="cursor"></div>
   <div id="cursor-ring"></div>
+  <header>
   <nav id="nav">
     <div class="container">
       <a href="#hero" class="nav-logo">pp<span>vfx</span></a>
@@ -1722,8 +1785,10 @@
       <a href="https://wa.me/5591991755068?text=Oi%20Paulo%2C%20tenho%20um%20projeto%20de%20motion%20design%20e%20quero%20conversar" class="nav-cta" target="_blank" rel="noopener">Falar sobre meu projeto</a>
     </div>
   </nav>
+  </header>
 
   <!-- HERO -->
+  <main>
   <section id="hero">
     <canvas id="particle-canvas"></canvas>
     <div class="hero-perspective-grid" aria-hidden="true"></div>
@@ -1744,7 +1809,7 @@
             Falar sobre meu projeto
           </a>
           <p class="hero-note">Sem compromisso · Responde no WhatsApp em até 24h · A partir de R$250</p>
-          <div class="hero-urgencia">2 vagas abertas em julho — aceito poucos projetos por mês</div>
+          <div class="hero-urgencia"><span>2 vagas abertas em <span id="mes-atual">julho</span> — aceito poucos projetos por mês</span></div>
           <div class="hero-stats">
             <div class="hero-stat"><span>+200</span><p>projetos entregues</p></div>
             <div class="hero-stat"><span>8 anos</span><p>de experiência</p></div>
@@ -1766,18 +1831,18 @@
     <p class="marcas-label">Projetos entregues para</p>
     <div class="marquee-outer">
       <div class="marquee-track">
-        <img src="assets/logos/FEBRACIS.png" alt="FEBRACIS" />
-        <img src="assets/logos/GLOBAL.png" alt="Global Prime Solutions" />
+        <img src="assets/logos/FEBRACIS.webp" alt="FEBRACIS" />
+        <img src="assets/logos/GLOBAL.webp" alt="Global Prime Solutions" />
         <img src="assets/logos/logo-header-v2.svg" alt="Diário do Pará" />
-        <img src="assets/logos/1739470855ova.png" alt="Cidades e Negócios" />
-                <img src="assets/logos/FEBRACIS.png" alt="FEBRACIS" aria-hidden="true" />
-        <img src="assets/logos/GLOBAL.png" alt="Global Prime Solutions" aria-hidden="true" />
+        <img src="assets/logos/1739470855ova.webp" alt="Cidades e Negócios" />
+                <img src="assets/logos/FEBRACIS.webp" alt="FEBRACIS" aria-hidden="true" />
+        <img src="assets/logos/GLOBAL.webp" alt="Global Prime Solutions" aria-hidden="true" />
         <img src="assets/logos/logo-header-v2.svg" alt="Diário do Pará" aria-hidden="true" />
-        <img src="assets/logos/1739470855ova.png" alt="Cidades e Negócios" aria-hidden="true" />
-                <img src="assets/logos/FEBRACIS.png" aria-hidden="true" alt="FEBRACIS" />
-        <img src="assets/logos/GLOBAL.png" aria-hidden="true" alt="Global Prime Solutions" />
+        <img src="assets/logos/1739470855ova.webp" alt="Cidades e Negócios" aria-hidden="true" />
+                <img src="assets/logos/FEBRACIS.webp" aria-hidden="true" alt="FEBRACIS" />
+        <img src="assets/logos/GLOBAL.webp" aria-hidden="true" alt="Global Prime Solutions" />
         <img src="assets/logos/logo-header-v2.svg" aria-hidden="true" alt="Diário do Pará" />
-        <img src="assets/logos/1739470855ova.png" aria-hidden="true" alt="Cidades e Negócios" />
+        <img src="assets/logos/1739470855ova.webp" aria-hidden="true" alt="Cidades e Negócios" />
       </div>
     </div>
   </section>
@@ -1795,12 +1860,9 @@
 
         <div class="video-card">
           <div class="yt-facade aspect-short" data-id="K7sz44MX7Ks" role="button" tabindex="0" aria-label="Reproduzir vídeo">
-              <img src="https://img.youtube.com/vi/K7sz44MX7Ks/hqdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
+              <img src="https://img.youtube.com/vi/K7sz44MX7Ks/maxresdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
               <div class="yt-play">
-                <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/>
-                  <path d="M45 24 27 14v20" fill="#fff"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
               </div>
             
           <div class="video-caption"><strong>Identidade em movimento</strong><span>Vinheta · Redes sociais</span></div>
@@ -1812,12 +1874,9 @@
 
         <div class="video-card">
           <div class="yt-facade aspect-short" data-id="Ie3ZOMup0TI" role="button" tabindex="0" aria-label="Reproduzir vídeo">
-              <img src="https://img.youtube.com/vi/Ie3ZOMup0TI/hqdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
+              <img src="https://img.youtube.com/vi/Ie3ZOMup0TI/maxresdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
               <div class="yt-play">
-                <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/>
-                  <path d="M45 24 27 14v20" fill="#fff"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
               </div>
             
           <div class="video-caption"><strong>Animação para feed</strong><span>Motion · Instagram / Reels</span></div>
@@ -1829,12 +1888,9 @@
 
         <div class="video-card">
           <div class="yt-facade aspect-short" data-id="BbxBwroAa7M" role="button" tabindex="0" aria-label="Reproduzir vídeo">
-              <img src="https://img.youtube.com/vi/BbxBwroAa7M/hqdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
+              <img src="https://img.youtube.com/vi/BbxBwroAa7M/maxresdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
               <div class="yt-play">
-                <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/>
-                  <path d="M45 24 27 14v20" fill="#fff"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
               </div>
             
           <div class="video-caption"><strong>Apresentação de marca</strong><span>Motion · Vídeo institucional</span></div>
@@ -1846,12 +1902,9 @@
 
         <div class="video-card">
           <div class="yt-facade aspect-short" data-id="hXxPlKrLdFQ" role="button" tabindex="0" aria-label="Reproduzir vídeo">
-              <img src="https://img.youtube.com/vi/hXxPlKrLdFQ/hqdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
+              <img src="https://img.youtube.com/vi/hXxPlKrLdFQ/maxresdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
               <div class="yt-play">
-                <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/>
-                  <path d="M45 24 27 14v20" fill="#fff"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
               </div>
             
           <div class="video-caption"><strong>Motion gráfico</strong><span>Animação · Social media</span></div>
@@ -1863,12 +1916,9 @@
 
         <div class="video-card">
           <div class="yt-facade aspect-short" data-id="cM_V5sN7SLY" role="button" tabindex="0" aria-label="Reproduzir vídeo">
-              <img src="https://img.youtube.com/vi/cM_V5sN7SLY/hqdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
+              <img src="https://img.youtube.com/vi/cM_V5sN7SLY/maxresdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
               <div class="yt-play">
-                <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/>
-                  <path d="M45 24 27 14v20" fill="#fff"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
               </div>
             
           <div class="video-caption"><strong>Produção completa</strong><span>Edição + motion · Entrega final</span></div>
@@ -1884,12 +1934,9 @@
 
         <div class="video-card-h">
           <div class="yt-facade aspect-wide" data-id="ef-kyVnx328" role="button" tabindex="0" aria-label="Reproduzir vídeo">
-              <img src="https://img.youtube.com/vi/ef-kyVnx328/hqdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
+              <img src="https://img.youtube.com/vi/ef-kyVnx328/maxresdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
               <div class="yt-play">
-                <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/>
-                  <path d="M45 24 27 14v20" fill="#fff"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
               </div>
             </div>
           <div class="video-caption"><strong>Lançamento animado</strong><span>Motion · Campanha digital</span></div>
@@ -1900,12 +1947,9 @@
 
         <div class="video-card-h">
           <div class="yt-facade aspect-wide" data-id="Hk94bWJ7Vvw" role="button" tabindex="0" aria-label="Reproduzir vídeo">
-              <img src="https://img.youtube.com/vi/Hk94bWJ7Vvw/hqdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
+              <img src="https://img.youtube.com/vi/Hk94bWJ7Vvw/maxresdefault.jpg" alt="Thumbnail do vídeo" loading="lazy">
               <div class="yt-play">
-                <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/>
-                  <path d="M45 24 27 14v20" fill="#fff"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
               </div>
             </div>
           <div class="video-caption"><strong>Vinheta de canal</strong><span>Intro · YouTube</span></div>
@@ -1934,7 +1978,10 @@
 
       <div class="sobre-grid fade-in">
         <div class="sobre-foto-wrap">
-          <img src="assets/foto-web.png" alt="Paulo Padilha" class="sobre-foto">
+          <picture>
+            <source srcset="assets/foto-web.webp" type="image/webp">
+            <img src="assets/foto-web.png" alt="Paulo Padilha" class="sobre-foto">
+          </picture>
           <div class="sobre-foto-glow"></div>
         </div>
         <div class="sobre-content">
@@ -2117,6 +2164,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
   <footer>
     <div class="container">
@@ -2222,6 +2271,10 @@
         ring.style.height = '32px';
       });
     });
+
+    // Mês da urgência sempre atual — nunca fica desatualizado
+    document.getElementById('mes-atual').textContent =
+      new Date().toLocaleDateString('pt-BR', { month: 'long' });
   </script>
 
   <script>
