@@ -401,7 +401,16 @@
       background:
         linear-gradient(var(--surface), var(--surface)) padding-box,
         linear-gradient(130deg, var(--from), var(--to) 55%, var(--border)) border-box;
+      position: relative; z-index: 2;
+      transform: scale(1.06);
+      animation: destaque-glow 3s ease-in-out infinite;
     }
+    .preco-card.destaque:hover { transform: scale(1.06) translateY(-6px); }
+    @keyframes destaque-glow {
+      0%, 100% { box-shadow: 0 0 24px rgba(168,85,247,0.18), 0 0 0 rgba(255,170,64,0); }
+      50% { box-shadow: 0 0 44px rgba(168,85,247,0.34), 0 0 22px rgba(255,170,64,0.16); }
+    }
+    @media (prefers-reduced-motion: reduce) { .preco-card.destaque { animation: none; box-shadow: 0 0 30px rgba(168,85,247,0.25); } }
     .preco-badge {
       align-self: flex-start;
       font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
@@ -550,6 +559,8 @@
       .work-grid > .card { flex: 0 0 min(68vw, 300px); scroll-snap-align: center; }
       .work-grid-h { grid-template-columns: 1fr; }
       .precos-grid { grid-template-columns: 1fr; }
+      .preco-card.destaque { transform: scale(1); }
+      .preco-card.destaque:hover { transform: translateY(-6px); }
       .about-stats { gap: 36px; }
       footer { justify-content: center; text-align: center; }
     }
@@ -1017,7 +1028,59 @@
     })();
 
     // ── YouTube facades
+    let mobileOverlayOpen = false;
+    function openMobileFullscreen(facade, id) {
+      if (mobileOverlayOpen) return;
+      mobileOverlayOpen = true;
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const rect = facade.getBoundingClientRect();
+      const tDur = reduced ? '0s' : '0.45s';
+      const tEase = 'cubic-bezier(0.19,1,0.22,1)';
+
+      const overlay = document.createElement('div');
+      overlay.style.cssText = `position:fixed;z-index:10000;background:#000;overflow:hidden;
+        top:${rect.top}px;left:${rect.left}px;width:${rect.width}px;height:${rect.height}px;
+        border-radius:32px;
+        transition:top ${tDur} ${tEase},left ${tDur} ${tEase},width ${tDur} ${tEase},height ${tDur} ${tEase},border-radius ${tDur} ${tEase};`;
+      document.body.appendChild(overlay);
+      document.body.style.overflow = 'hidden';
+
+      const ifr = document.createElement('iframe');
+      ifr.src = 'https://www.youtube.com/embed/' + id + '?rel=0&modestbranding=1&autoplay=1&playsinline=1';
+      ifr.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      ifr.allowFullscreen = true;
+      ifr.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+      overlay.appendChild(ifr);
+
+      const closeBtn = document.createElement('button');
+      closeBtn.setAttribute('aria-label', 'Fechar vídeo');
+      closeBtn.style.cssText = `position:absolute;top:max(16px,env(safe-area-inset-top));right:16px;
+        width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,0.55);color:#fff;border:none;
+        display:flex;align-items:center;justify-content:center;z-index:2;
+        opacity:0;transition:opacity ${tDur};`;
+      closeBtn.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+      overlay.appendChild(closeBtn);
+
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        overlay.style.top = '0px'; overlay.style.left = '0px';
+        overlay.style.width = '100vw'; overlay.style.height = '100dvh';
+        overlay.style.borderRadius = '0px';
+        closeBtn.style.opacity = '1';
+      }));
+
+      function close() {
+        overlay.style.top = rect.top + 'px'; overlay.style.left = rect.left + 'px';
+        overlay.style.width = rect.width + 'px'; overlay.style.height = rect.height + 'px';
+        overlay.style.borderRadius = '32px';
+        closeBtn.style.opacity = '0';
+        document.body.style.overflow = '';
+        setTimeout(() => { overlay.remove(); mobileOverlayOpen = false; }, reduced ? 0 : 450);
+      }
+      closeBtn.addEventListener('click', close);
+    }
+
     document.querySelectorAll('.yt-facade').forEach(f => {
+      const isVertical = !!f.closest('.card.phone');
       function play() {
         const id = f.dataset.id;
         const ifr = document.createElement('iframe');
@@ -1030,6 +1093,12 @@
         const meta = f.querySelector('.card-meta');
         if (meta) meta.style.display = 'none';
       }
+      f.addEventListener('click', e => {
+        if (isVertical && window.matchMedia('(max-width: 640px)').matches) {
+          e.stopImmediatePropagation();
+          openMobileFullscreen(f, f.dataset.id);
+        }
+      });
       f.addEventListener('click', play, { once: true });
       f.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); } }, { once: true });
     });
