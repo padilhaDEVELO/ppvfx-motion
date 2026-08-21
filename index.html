@@ -293,22 +293,31 @@
     .yt-facade.h { aspect-ratio: 16/9; }
 
     /* ── MOCKUPS DE DISPOSITIVO ── */
-    .card.phone { padding: 18px 13px 24px; }
-    .card.phone .yt-facade { border-radius: 20px; }
-    .card.phone .device-notch {
-      position: absolute; top: 9px; left: 50%; transform: translateX(-50%);
-      width: 46px; height: 5px; border-radius: 3px;
-      background: var(--bg); z-index: 3;
+    .card.phone { padding: 10px 8px 14px; border-radius: 40px; }
+    .card.phone .yt-facade { border-radius: 32px; }
+    .card.phone .dynamic-island {
+      position: absolute; top: 21px; left: 50%; transform: translateX(-50%);
+      width: 78px; height: 23px; border-radius: 16px;
+      background: #000; z-index: 5;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
     }
-    .card.laptop { padding: 16px 15px 0; }
-    .card.laptop .yt-facade { border-radius: 8px; }
-    .card.laptop .device-cam {
+    .card.phone::before, .card.phone::after { content: ''; position: absolute; background: var(--border); z-index: 0; }
+    .card.phone::before { right: -1px; top: 92px; width: 3px; height: 56px; border-radius: 2px 0 0 2px; }
+    .card.phone::after { left: -1px; top: 78px; width: 3px; height: 78px; border-radius: 0 2px 2px 0; }
+    .card.laptop { padding: 8px 8px 0; }
+    .card.laptop .yt-facade { border-radius: 10px 10px 0 0; }
+    .card.laptop .device-notch {
       position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
-      width: 5px; height: 5px; border-radius: 50%;
-      background: var(--border); z-index: 3;
+      width: 104px; height: 15px;
+      background: #000; border-radius: 0 0 9px 9px;
+      z-index: 5;
+    }
+    .card.laptop .device-notch::after {
+      content: ''; position: absolute; bottom: 3px; left: 50%; transform: translateX(-50%);
+      width: 5px; height: 5px; border-radius: 50%; background: #1a1a1a;
     }
     .card.laptop .device-base {
-      height: 16px; margin: 0 -15px;
+      height: 14px; margin: 0 -8px;
       background: linear-gradient(180deg, var(--surface), #1a1d27);
       border-top: 1px solid var(--border);
       position: relative;
@@ -353,16 +362,27 @@
     }
     .about-stat span { font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
     .tools-label { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
-    .tools-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .tools-row { display: flex; flex-wrap: wrap; gap: 14px; }
     .tool {
-      display: inline-flex; align-items: center; gap: 9px;
+      display: flex; align-items: center; justify-content: center;
+      width: 52px; height: 52px;
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: 999px; padding: 9px 18px 9px 12px;
-      font-size: 13.5px; font-weight: 500;
-      transition: border-color 0.2s, transform 0.25s ease-out;
+      border-radius: 50%;
+      transition: transform 0.25s ease-out;
+      animation: tool-glow 3.2s ease-in-out infinite;
     }
-    .tool:hover { border-color: rgba(168,85,247,0.5); transform: translateY(-2px); box-shadow: 0 0 18px rgba(168,85,247,0.12); }
-    .tool img { width: 20px; height: 20px; }
+    .tool:nth-child(2) { animation-delay: 0.4s; }
+    .tool:nth-child(3) { animation-delay: 0.8s; }
+    .tool:nth-child(4) { animation-delay: 1.2s; }
+    .tool:nth-child(5) { animation-delay: 1.6s; }
+    .tool:nth-child(6) { animation-delay: 2s; }
+    .tool:hover { transform: translateY(-3px) scale(1.08); }
+    .tool img { width: 24px; height: 24px; }
+    @keyframes tool-glow {
+      0%, 100% { box-shadow: 0 0 0 rgba(168,85,247,0); border-color: var(--border); }
+      50% { box-shadow: 0 0 16px 2px rgba(168,85,247,0.45); border-color: rgba(168,85,247,0.6); }
+    }
+    @media (prefers-reduced-motion: reduce) { .tool { animation: none; box-shadow: 0 0 10px 1px rgba(168,85,247,0.25); } }
 
     /* ── PREÇOS ── */
     #precos { padding: 120px 0; }
@@ -634,7 +654,7 @@
 
       <div class="work-grid grid-rv">
         <div class="card phone">
-          <div class="device-notch"></div>
+          <div class="dynamic-island"></div>
           <div class="yt-facade v" data-id="K7sz44MX7Ks" role="button" tabindex="0" aria-label="Reproduzir vídeo: Identidade em movimento">
             <img src="https://img.youtube.com/vi/K7sz44MX7Ks/maxresdefault.jpg" alt="Thumbnail: Identidade em movimento" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
@@ -642,7 +662,7 @@
           </div>
         </div>
         <div class="card phone">
-          <div class="device-notch"></div>
+          <div class="dynamic-island"></div>
           <div class="yt-facade v" data-id="Ie3ZOMup0TI" role="button" tabindex="0" aria-label="Reproduzir vídeo: Animação para feed">
             <img src="https://img.youtube.com/vi/Ie3ZOMup0TI/maxresdefault.jpg" alt="Thumbnail: Animação para feed" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
@@ -650,7 +670,7 @@
           </div>
         </div>
         <div class="card phone">
-          <div class="device-notch"></div>
+          <div class="dynamic-island"></div>
           <div class="yt-facade v" data-id="BbxBwroAa7M" role="button" tabindex="0" aria-label="Reproduzir vídeo: Apresentação de marca">
             <img src="https://img.youtube.com/vi/BbxBwroAa7M/maxresdefault.jpg" alt="Thumbnail: Apresentação de marca" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
@@ -658,7 +678,7 @@
           </div>
         </div>
         <div class="card phone">
-          <div class="device-notch"></div>
+          <div class="dynamic-island"></div>
           <div class="yt-facade v" data-id="hXxPlKrLdFQ" role="button" tabindex="0" aria-label="Reproduzir vídeo: Motion gráfico">
             <img src="https://img.youtube.com/vi/hXxPlKrLdFQ/maxresdefault.jpg" alt="Thumbnail: Motion gráfico" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
@@ -666,7 +686,7 @@
           </div>
         </div>
         <div class="card phone">
-          <div class="device-notch"></div>
+          <div class="dynamic-island"></div>
           <div class="yt-facade v" data-id="cM_V5sN7SLY" role="button" tabindex="0" aria-label="Reproduzir vídeo: Produção completa">
             <img src="https://img.youtube.com/vi/cM_V5sN7SLY/maxresdefault.jpg" alt="Thumbnail: Produção completa" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
@@ -687,7 +707,7 @@
 
       <div class="work-grid-h grid-rv">
         <div class="card laptop">
-          <div class="device-cam"></div>
+          <div class="device-notch"></div>
           <div class="yt-facade h" data-id="ef-kyVnx328" role="button" tabindex="0" aria-label="Reproduzir vídeo: Lançamento animado">
             <img src="https://img.youtube.com/vi/ef-kyVnx328/maxresdefault.jpg" alt="Thumbnail: Lançamento animado" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
@@ -696,7 +716,7 @@
           <div class="device-base"></div>
         </div>
         <div class="card laptop">
-          <div class="device-cam"></div>
+          <div class="device-notch"></div>
           <div class="yt-facade h" data-id="Hk94bWJ7Vvw" role="button" tabindex="0" aria-label="Reproduzir vídeo: Vinheta de canal">
             <img src="https://img.youtube.com/vi/Hk94bWJ7Vvw/maxresdefault.jpg" alt="Thumbnail: Vinheta de canal" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
@@ -729,14 +749,12 @@
           <div class="rv rv-d3">
             <div class="tools-label">Ferramentas</div>
             <div class="tools-row">
-              <span class="tool"><img src="assets/tools/adobeaftereffects.svg" alt="" loading="lazy">After Effects</span>
-              <span class="tool"><img src="assets/tools/adobepremierepro.svg" alt="" loading="lazy">Premiere Pro</span>
-              <span class="tool"><img src="assets/tools/davinciresolve.svg" alt="" loading="lazy">DaVinci Resolve</span>
-              <span class="tool"><img src="assets/tools/adobephotoshop.svg" alt="" loading="lazy">Photoshop</span>
-              <span class="tool"><img src="assets/tools/adobeillustrator.svg" alt="" loading="lazy">Illustrator</span>
-              <span class="tool"><img src="assets/tools/blender.svg" alt="" loading="lazy">Blender</span>
-              <span class="tool"><img src="assets/tools/remotion.svg" alt="" loading="lazy">Remotion</span>
-              <span class="tool"><img src="assets/tools/capcut.svg" alt="" loading="lazy">CapCut</span>
+              <span class="tool"><img src="assets/tools/adobeaftereffects.svg" alt="After Effects" loading="lazy"></span>
+              <span class="tool"><img src="assets/tools/adobepremierepro.svg" alt="Premiere Pro" loading="lazy"></span>
+              <span class="tool"><img src="assets/tools/davinciresolve.svg" alt="DaVinci Resolve" loading="lazy"></span>
+              <span class="tool"><img src="assets/tools/adobephotoshop.svg" alt="Photoshop" loading="lazy"></span>
+              <span class="tool"><img src="assets/tools/adobeillustrator.svg" alt="Illustrator" loading="lazy"></span>
+              <span class="tool"><img src="assets/tools/blender.svg" alt="Blender" loading="lazy"></span>
             </div>
           </div>
         </div>
@@ -753,7 +771,7 @@
       <div class="precos-grid grid-rv">
         <div class="preco-card">
           <div class="preco-nome">Edição Longa</div>
-          <div class="preco-valor"><small>a partir de</small> R$ 250</div>
+          <div class="preco-valor"><small>a partir de</small> R$ 350</div>
           <p class="preco-desc">Edição de vídeos para YouTube, podcast e vídeo de marca. Corte, cor, trilha e sincronização inclusos.</p>
           <ul class="preco-list">
             <li>Até 10 minutos</li>
@@ -764,7 +782,7 @@
         </div>
         <div class="preco-card">
           <div class="preco-nome">Motion para Redes</div>
-          <div class="preco-valor"><small>a partir de</small> R$ 350</div>
+          <div class="preco-valor"><small>a partir de</small> R$ 450</div>
           <p class="preco-desc">Animações para Instagram, Reels e TikTok. Conteúdo que para o dedo no feed.</p>
           <ul class="preco-list">
             <li>Formato vertical otimizado</li>
@@ -776,7 +794,7 @@
         <div class="preco-card destaque">
           <div class="preco-badge">Mais solicitado</div>
           <div class="preco-nome">Motion de Campanha</div>
-          <div class="preco-valor"><small>a partir de</small> R$ 800</div>
+          <div class="preco-valor"><small>a partir de</small> R$ 900</div>
           <p class="preco-desc">Pacote completo para lançamento ou campanha: vinheta, peças animadas e versões por formato.</p>
           <ul class="preco-list">
             <li>Múltiplas peças e formatos</li>
@@ -802,7 +820,7 @@
         </div>
         <div class="faq-item">
           <h3>"Acho que é caro contratar isso."</h3>
-          <p>Depende do que você perde sem movimento. Um Reels bem feito sai a partir de R$350 e fica rodando por meses.</p>
+          <p>Depende do que você perde sem movimento. Um Reels bem feito sai a partir de R$450 e fica rodando por meses.</p>
         </div>
         <div class="faq-item">
           <h3>"Não sei se preciso de motion ou só de um vídeo editado."</h3>
