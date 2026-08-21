@@ -47,7 +47,57 @@
     img { max-width: 100%; }
     a { color: inherit; }
 
+    /* ── FUNDO ANIMADO (aurora + grão) ── */
+    #bg-fx { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .bg-aurora { position: absolute; border-radius: 50%; filter: blur(120px); will-change: transform; }
+    .bg-aurora-1 {
+      width: 65vw; height: 65vw; max-width: 780px; max-height: 780px;
+      background: radial-gradient(circle, #3b0764 0%, transparent 70%);
+      opacity: 0.6; top: -16%; left: -12%;
+      animation: aurora-1 34s ease-in-out infinite;
+    }
+    .bg-aurora-2 {
+      width: 50vw; height: 50vw; max-width: 620px; max-height: 620px;
+      background: radial-gradient(circle, var(--neon) 0%, transparent 70%);
+      opacity: 0.12; top: 26%; right: -14%;
+      animation: aurora-2 40s ease-in-out infinite;
+    }
+    .bg-aurora-3 {
+      width: 58vw; height: 58vw; max-width: 720px; max-height: 720px;
+      background: radial-gradient(circle, #1e0a3c 0%, transparent 70%);
+      opacity: 0.65; bottom: -20%; left: 16%;
+      animation: aurora-3 46s ease-in-out infinite;
+    }
+    @keyframes aurora-1 { 0%, 100% { transform: translate(0,0) scale(1); } 50% { transform: translate(6vw,8vh) scale(1.12); } }
+    @keyframes aurora-2 { 0%, 100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-7vw,6vh) scale(1.08); } }
+    @keyframes aurora-3 { 0%, 100% { transform: translate(0,0) scale(1); } 50% { transform: translate(5vw,-7vh) scale(1.15); } }
+    .bg-grain {
+      position: absolute; inset: -50px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+      background-size: 140px 140px;
+      opacity: 0.035; mix-blend-mode: overlay;
+      animation: grain-shift 1s steps(6) infinite;
+    }
+    @keyframes grain-shift {
+      0% { transform: translate(0,0); } 16% { transform: translate(-4%,3%); }
+      33% { transform: translate(3%,-5%); } 50% { transform: translate(-3%,4%); }
+      66% { transform: translate(5%,-2%); } 83% { transform: translate(-2%,-4%); }
+      100% { transform: translate(0,0); }
+    }
+    @media (prefers-reduced-motion: reduce) { .bg-aurora, .bg-grain { animation: none; } }
+
     ::selection { background: var(--neon); color: #fff; }
+
+    /* ── SCROLLBAR ── */
+    html { scrollbar-width: thin; scrollbar-color: var(--neon) var(--bg); }
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #ec4899, var(--neon));
+      border-radius: 10px;
+      border: 2px solid var(--bg);
+    }
+    ::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #f472b6, #c084fc); }
 
     /* ── NAV ── */
     header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
@@ -139,7 +189,11 @@
     .hero-social svg { width: 18px; height: 18px; }
 
     /* ── MARQUEE CLIENTES ── */
-    #marcas { padding: 48px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    #marcas { padding: 48px 0; border-bottom: 1px solid var(--border); }
+    #marcas::before, #about::before, #precos::before, #faq::before, #contact::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, #ec4899 20%, var(--neon) 80%, transparent);
+    }
     .marquee { overflow: hidden; position: relative; }
     .marquee::before, .marquee::after {
       content: ''; position: absolute; top: 0; bottom: 0; width: 120px; z-index: 2; pointer-events: none;
@@ -237,6 +291,33 @@
     .yt-facade { position: relative; cursor: pointer; background: #000; width: 100%; }
     .yt-facade.v { aspect-ratio: 9/16; }
     .yt-facade.h { aspect-ratio: 16/9; }
+
+    /* ── MOCKUPS DE DISPOSITIVO ── */
+    .card.phone { padding: 18px 13px 24px; }
+    .card.phone .yt-facade { border-radius: 20px; }
+    .card.phone .device-notch {
+      position: absolute; top: 9px; left: 50%; transform: translateX(-50%);
+      width: 46px; height: 5px; border-radius: 3px;
+      background: var(--bg); z-index: 3;
+    }
+    .card.laptop { padding: 16px 15px 0; }
+    .card.laptop .yt-facade { border-radius: 8px; }
+    .card.laptop .device-cam {
+      position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--border); z-index: 3;
+    }
+    .card.laptop .device-base {
+      height: 16px; margin: 0 -15px;
+      background: linear-gradient(180deg, var(--surface), #1a1d27);
+      border-top: 1px solid var(--border);
+      position: relative;
+    }
+    .card.laptop .device-base::after {
+      content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+      width: 72px; height: 5px;
+      background: var(--bg); border-radius: 0 0 7px 7px;
+    }
     .yt-facade img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s cubic-bezier(0.19,1,0.22,1), opacity 0.3s; }
     .card:hover .yt-facade img { transform: scale(1.045); }
     .yt-play {
@@ -256,12 +337,12 @@
       position: absolute; left: 20px; right: 20px; bottom: 16px; z-index: 2;
       pointer-events: none;
     }
-    .card-meta strong { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 17px; display: block; }
+    .card-meta strong { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 17px; display: block; }
     .card-meta span { font-size: 12.5px; color: rgba(228,222,215,0.75); letter-spacing: 0.04em; text-transform: uppercase; }
     .work-cta { text-align: center; margin-top: 64px; }
 
     /* ── SOBRE ── */
-    #about { padding: 120px 0; border-top: 1px solid var(--border); }
+    #about { padding: 120px 0; }
     .about-grid { display: grid; grid-template-columns: 1fr; align-items: start; }
     .about-txt p { color: var(--muted); margin-bottom: 18px; max-width: 620px; }
     .about-txt p strong { color: var(--text); font-weight: 600; }
@@ -284,7 +365,7 @@
     .tool img { width: 20px; height: 20px; }
 
     /* ── PREÇOS ── */
-    #precos { padding: 120px 0; border-top: 1px solid var(--border); }
+    #precos { padding: 120px 0; }
     .precos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .preco-card {
       background: var(--surface);
@@ -307,7 +388,7 @@
       background: var(--grad); color: #0e1016;
       padding: 5px 12px; border-radius: 999px; margin-bottom: 18px;
     }
-    .preco-nome { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 20px; margin-bottom: 8px; }
+    .preco-nome { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; margin-bottom: 8px; }
     .preco-valor { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; margin-bottom: 6px; white-space: nowrap; }
     .preco-valor small { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 500; color: var(--muted); margin-bottom: 6px; }
     .preco-desc { color: var(--muted); font-size: 14.5px; margin: 14px 0 22px; }
@@ -332,14 +413,14 @@
     .preco-obs a { color: var(--text); font-weight: 600; display: inline-block; padding: 12px 4px; margin: -12px 0; }
 
     /* ── FAQ ── */
-    #faq { padding: 120px 0; border-top: 1px solid var(--border); }
+    #faq { padding: 120px 0; }
     .faq-list { max-width: 760px; }
     .faq-item { border-bottom: 1px solid var(--border); padding: 30px 0; }
-    .faq-item h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 19px; margin-bottom: 10px; }
+    .faq-item h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 19px; margin-bottom: 10px; }
     .faq-item p { color: var(--muted); font-size: 15px; max-width: 640px; }
 
     /* ── CONTATO ── */
-    #contact { padding: 160px 0 60px; border-top: 1px solid var(--border); text-align: center; }
+    #contact { padding: 160px 0 60px; text-align: center; }
     .contact-title {
       font-family: 'Syne', sans-serif; font-weight: 800;
       font-size: clamp(52px, 11vw, 150px);
@@ -447,12 +528,21 @@
       }
       .work-grid::-webkit-scrollbar { display: none; }
       .work-grid > .card { flex: 0 0 min(68vw, 300px); scroll-snap-align: center; }
+      .work-grid-h { grid-template-columns: 1fr; }
+      .precos-grid { grid-template-columns: 1fr; }
       .about-stats { gap: 36px; }
       footer { justify-content: center; text-align: center; }
     }
   </style>
 </head>
 <body>
+
+  <div id="bg-fx" aria-hidden="true">
+    <div class="bg-aurora bg-aurora-1"></div>
+    <div class="bg-aurora bg-aurora-2"></div>
+    <div class="bg-aurora bg-aurora-3"></div>
+    <div class="bg-grain"></div>
+  </div>
 
   <header>
     <nav>
@@ -480,8 +570,8 @@
       <div class="hero-status">Motion Design &amp; Edição de Vídeo — Belém · PA</div>
       <h1 class="hero-name" id="hero-name"><span class="ln">Paulo</span><span class="ln">Padilha</span></h1>
       <p class="hero-sub rv">
-        Você manda o briefing. Eu devolvo o <strong>arquivo pronto para publicar</strong> —
-        com prazo definido, processo direto e resultado que representa a marca.
+        Você manda o briefing. Eu devolvo o <strong>arquivo pronto para publicar</strong>,
+        com prazo definido.
         <strong>2 vagas abertas em <span id="mes-atual">julho</span></strong>, respondo em até 24h.
       </p>
       <div class="hero-row rv rv-d1">
@@ -509,14 +599,20 @@
         <img src="assets/logos/GLOBAL.webp" alt="Global Prime Solutions" loading="lazy">
         <img src="assets/logos/logo-header-v2.svg" alt="Diário do Pará" loading="lazy">
         <img src="assets/logos/1739470855ova.webp" alt="OVA" loading="lazy">
+        <img src="assets/logos/DOL.webp" alt="DOL" loading="lazy">
+        <img src="assets/logos/ANANINDEUA.webp" alt="Prefeitura de Ananindeua" loading="lazy">
         <img src="assets/logos/FEBRACIS.webp" alt="" aria-hidden="true" loading="lazy">
         <img src="assets/logos/GLOBAL.webp" alt="" aria-hidden="true" loading="lazy">
         <img src="assets/logos/logo-header-v2.svg" alt="" aria-hidden="true" loading="lazy">
         <img src="assets/logos/1739470855ova.webp" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/DOL.webp" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/ANANINDEUA.webp" alt="" aria-hidden="true" loading="lazy">
         <img src="assets/logos/FEBRACIS.webp" alt="" aria-hidden="true" loading="lazy">
         <img src="assets/logos/GLOBAL.webp" alt="" aria-hidden="true" loading="lazy">
         <img src="assets/logos/logo-header-v2.svg" alt="" aria-hidden="true" loading="lazy">
         <img src="assets/logos/1739470855ova.webp" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/DOL.webp" alt="" aria-hidden="true" loading="lazy">
+        <img src="assets/logos/ANANINDEUA.webp" alt="" aria-hidden="true" loading="lazy">
       </div>
     </div>
   </section>
@@ -537,35 +633,40 @@
       <p class="sec-sub rv rv-d2">Formato vertical para Instagram, Reels e TikTok — conteúdo que para o dedo no feed.</p>
 
       <div class="work-grid grid-rv">
-        <div class="card">
+        <div class="card phone">
+          <div class="device-notch"></div>
           <div class="yt-facade v" data-id="K7sz44MX7Ks" role="button" tabindex="0" aria-label="Reproduzir vídeo: Identidade em movimento">
             <img src="https://img.youtube.com/vi/K7sz44MX7Ks/maxresdefault.jpg" alt="Thumbnail: Identidade em movimento" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
             <div class="card-meta"><strong>Identidade em movimento</strong><span>Vinheta · Redes sociais</span></div>
           </div>
         </div>
-        <div class="card">
+        <div class="card phone">
+          <div class="device-notch"></div>
           <div class="yt-facade v" data-id="Ie3ZOMup0TI" role="button" tabindex="0" aria-label="Reproduzir vídeo: Animação para feed">
             <img src="https://img.youtube.com/vi/Ie3ZOMup0TI/maxresdefault.jpg" alt="Thumbnail: Animação para feed" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
             <div class="card-meta"><strong>Animação para feed</strong><span>Motion · Instagram / Reels</span></div>
           </div>
         </div>
-        <div class="card">
+        <div class="card phone">
+          <div class="device-notch"></div>
           <div class="yt-facade v" data-id="BbxBwroAa7M" role="button" tabindex="0" aria-label="Reproduzir vídeo: Apresentação de marca">
             <img src="https://img.youtube.com/vi/BbxBwroAa7M/maxresdefault.jpg" alt="Thumbnail: Apresentação de marca" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
             <div class="card-meta"><strong>Apresentação de marca</strong><span>Motion · Institucional</span></div>
           </div>
         </div>
-        <div class="card">
+        <div class="card phone">
+          <div class="device-notch"></div>
           <div class="yt-facade v" data-id="hXxPlKrLdFQ" role="button" tabindex="0" aria-label="Reproduzir vídeo: Motion gráfico">
             <img src="https://img.youtube.com/vi/hXxPlKrLdFQ/maxresdefault.jpg" alt="Thumbnail: Motion gráfico" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
             <div class="card-meta"><strong>Motion gráfico</strong><span>Animação · Social media</span></div>
           </div>
         </div>
-        <div class="card">
+        <div class="card phone">
+          <div class="device-notch"></div>
           <div class="yt-facade v" data-id="cM_V5sN7SLY" role="button" tabindex="0" aria-label="Reproduzir vídeo: Produção completa">
             <img src="https://img.youtube.com/vi/cM_V5sN7SLY/maxresdefault.jpg" alt="Thumbnail: Produção completa" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
@@ -585,19 +686,23 @@
       <p class="sec-sub rv rv-d2">Vinhetas, intros e vídeos de campanha em widescreen — do conceito ao arquivo final.</p>
 
       <div class="work-grid-h grid-rv">
-        <div class="card">
+        <div class="card laptop">
+          <div class="device-cam"></div>
           <div class="yt-facade h" data-id="ef-kyVnx328" role="button" tabindex="0" aria-label="Reproduzir vídeo: Lançamento animado">
             <img src="https://img.youtube.com/vi/ef-kyVnx328/maxresdefault.jpg" alt="Thumbnail: Lançamento animado" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
             <div class="card-meta"><strong>Lançamento animado</strong><span>Motion · Campanha digital</span></div>
           </div>
+          <div class="device-base"></div>
         </div>
-        <div class="card">
+        <div class="card laptop">
+          <div class="device-cam"></div>
           <div class="yt-facade h" data-id="Hk94bWJ7Vvw" role="button" tabindex="0" aria-label="Reproduzir vídeo: Vinheta de canal">
             <img src="https://img.youtube.com/vi/Hk94bWJ7Vvw/maxresdefault.jpg" alt="Thumbnail: Vinheta de canal" loading="lazy">
             <div class="yt-play"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span></div>
             <div class="card-meta"><strong>Vinheta de canal</strong><span>Intro · YouTube</span></div>
           </div>
+          <div class="device-base"></div>
         </div>
       </div>
 
@@ -614,7 +719,7 @@
       <h2 class="sec-title rv rv-d1">Quem entrega.</h2>
       <div class="about-grid" style="margin-top:56px">
         <div class="about-txt">
-          <p class="rv">Meu nome é <strong>Paulo Padilha</strong>. Trabalho com motion design e edição de vídeo há 8 anos — mais de 200 projetos entregues para marcas, veículos de comunicação e criadores de conteúdo.</p>
+          <p class="rv">Meu nome é <strong>Paulo Padilha</strong>. Trabalho com motion design e edição de vídeo para marcas, veículos de comunicação e criadores de conteúdo.</p>
           <p class="rv rv-d1">O processo é direto: <strong>você manda o briefing, eu mando prazo e valor.</strong> Aprovou, entro em produção com checkpoint de revisão antes da entrega final. Sem reunião desnecessária, sem surpresa no orçamento.</p>
           <div class="about-stats rv rv-d2">
             <div class="about-stat"><strong>+200</strong><span>Projetos entregues</span></div>
@@ -697,7 +802,7 @@
         </div>
         <div class="faq-item">
           <h3>"Acho que é caro contratar isso."</h3>
-          <p>Depende do que você perde sem movimento. Um Reels bem feito sai a partir de R$350 e fica rodando por meses. Vídeo genérico ou imagem estática tem custo menor, mas resultado menor também.</p>
+          <p>Depende do que você perde sem movimento. Um Reels bem feito sai a partir de R$350 e fica rodando por meses.</p>
         </div>
         <div class="faq-item">
           <h3>"Não sei se preciso de motion ou só de um vídeo editado."</h3>
