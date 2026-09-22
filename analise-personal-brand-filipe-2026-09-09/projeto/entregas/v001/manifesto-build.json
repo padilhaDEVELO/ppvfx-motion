@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "version": "v001",
+  "source_sha256": "07fff156cd5e094c92c03efd5ae08a89a12b66435085403636b7bcffe2ebb34f",
+  "slides": 14,
+  "assets": [],
+  "bio_characters": 121,
+  "bios_characters": {
+    "instagram": 121
+  },
+  "files": {
+    "LEIA-ME.md": "bee0352b59e8c4ced573cab723939303f53a221e1143b1248e96a2cd31b6c927",
+    "apresentacao.html": "0263d1385e2c3576651b789ecbc1b97cc871592a1a6e2686a98bff12b98f396f",
+    "kit/bio-instagram.txt": "fb609bcca7d1aa1d19ce09fa6e4e80e5edd4c91765e2716186e575bbb1bc93dc",
+    "kit/bio.txt": "fb609bcca7d1aa1d19ce09fa6e4e80e5edd4c91765e2716186e575bbb1bc93dc",
+    "kit/tokens.json": "6149eec1f1fdeb0568f5161b200a1c0b1e410b781c016b403fa55742c150af3a",
+    "projeto-fonte.json": "d4948439cb451f7606c4f6d79cbaf6b16d00dfc5a64fa0aee7ccfbffecaf7511"
+  }
+}

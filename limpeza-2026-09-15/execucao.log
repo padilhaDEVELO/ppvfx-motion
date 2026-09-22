@@ -1,0 +1,54 @@
+{
+  "mode": "apply",
+  "archived": [
+    {
+      "source": "/Users/ppvfx/Documents/IA/ciclo-anim/out/news/2026-09-08",
+      "destination": "/Users/ppvfx/Documents/IA/output/limpeza-2026-09-15/recuperacao/noticias/2026-09-08"
+    },
+    {
+      "source": "/Users/ppvfx/Documents/IA/ciclo-anim/out/news/2026-09-09",
+      "destination": "/Users/ppvfx/Documents/IA/output/limpeza-2026-09-15/recuperacao/noticias/2026-09-09"
+    },
+    {
+      "source": "/Users/ppvfx/Documents/IA/ciclo-anim/out/news/2026-09-10",
+      "destination": "/Users/ppvfx/Documents/IA/output/limpeza-2026-09-15/recuperacao/noticias/2026-09-10"
+    },
+    {
+      "source": "/Users/ppvfx/Documents/IA/ciclo-anim/out/news/2026-09-11",
+      "destination": "/Users/ppvfx/Documents/IA/output/limpeza-2026-09-15/recuperacao/noticias/2026-09-11"
+    }
+  ],
+  "protected": [
+    "/Users/ppvfx/Library/Caches/com.google.antigravity-ide.ShipIt",
+    "/Users/ppvfx/Library/Caches/CloudKit",
+    "/Users/ppvfx/Library/Caches/com.apple.nsurlsessiond",
+    "/Users/ppvfx/Library/Caches/ms-playwright-go",
+    "/Users/ppvfx/Library/Caches/com.google.antigravity-ide",
+    "/Users/ppvfx/Library/Application Support/Antigravity IDE (processo ativo)",
+    "/Users/ppvfx/Library/Application Support/Figma (processo ativo)"
+  ],
+  "errors": [
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WorkflowKit.BackgroundShortcutRunner.ShortcutsSandboxCache'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WebKit.WebContent.Sandbox'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.siriactionsd.ShortcutsSandboxCache'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WebKit.Networking.Sandbox'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WebKit.GPU.Sandbox'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.siriactionsd/ShortcutsSandboxCache'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WorkflowKit.BackgroundShortcutRunner/ShortcutsSandboxCache'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.quicklook.ThumbnailsAgent/com.apple.QuickLook.thumbnailcache'",
+    "[Errno 13] Permission denied: '/Users/ppvfx/Library/Caches/com.adobe.acc.Setup/Cache.db-shm'",
+    "[Errno 13] Permission denied: '/Users/ppvfx/Library/Caches/com.adobe.acc.Setup/Cache.db-wal'",
+    "[Errno 13] Permission denied: '/Users/ppvfx/Library/Caches/com.adobe.acc.Setup/Cache.db'",
+    "[Errno 13] Permission denied: '/Users/ppvfx/.npm/_cacache/content-v2/sha512/c1/b1/c39a2b7b4bf62f046557d43426935df1b566e5676700a5e27fa41ef10d9d740a76be0d97398a3edfd05e0ec5db17378156d682d3e3c3a9a20508d7ef18db'",
+    "[Errno 13] Permission denied: '/Users/ppvfx/.npm/_cacache/content-v2/sha512/07/5a/a13777dad5acb4474c06ce25ea8304a407989ca580a134a1e1b411df7ffd14b524c2ef3fa5f1a4edbcc9468c7dc4f0712f637fa78c825e94cf42000a155a'",
+    "[Errno 13] Permission denied: '/Users/ppvfx/.npm/_cacache/index-v5/fa/2a/e9d928439adaf9dae7a240e5b1793ae88f1ca4453e475ad3bf7b145e0d63'",
+    "[Errno 13] Permission denied: '/Users/ppvfx/.npm/_cacache/index-v5/7a/d6/311fa2763dea599dd57094aeb186374ef771114ae9ba5d021178779130e9'"
+  ],
+  "files": 2744,
+  "logical_bytes": 201632630,
+  "allocated_bytes": 207945728,
+  "free_before": 99032207360,
+  "free_after": 99244658688,
+  "verified_absent": 2744,
+  "open_files_detected": 3451
+}

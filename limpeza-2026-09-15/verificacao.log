@@ -1,0 +1,30 @@
+{
+  "mode": "preview",
+  "archived": [],
+  "protected": [
+    "/Users/ppvfx/Library/Caches/com.google.antigravity-ide.ShipIt",
+    "/Users/ppvfx/Library/Caches/CloudKit",
+    "/Users/ppvfx/Library/Caches/com.apple.nsurlsessiond",
+    "/Users/ppvfx/Library/Caches/ms-playwright-go",
+    "/Users/ppvfx/Library/Caches/com.google.antigravity-ide",
+    "/Users/ppvfx/Library/Application Support/Antigravity IDE (processo ativo)",
+    "/Users/ppvfx/Library/Application Support/Figma (processo ativo)"
+  ],
+  "errors": [
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WorkflowKit.BackgroundShortcutRunner.ShortcutsSandboxCache'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WebKit.WebContent.Sandbox'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.siriactionsd.ShortcutsSandboxCache'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WebKit.Networking.Sandbox'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WebKit.GPU.Sandbox'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.siriactionsd/ShortcutsSandboxCache'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WorkflowKit.BackgroundShortcutRunner/ShortcutsSandboxCache'",
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.quicklook.ThumbnailsAgent/com.apple.QuickLook.thumbnailcache'"
+  ],
+  "files": 7,
+  "logical_bytes": 115760535,
+  "allocated_bytes": 115773440,
+  "free_before": 99233312768,
+  "free_after": 99230068736,
+  "verified_absent": 0,
+  "open_files_detected": 3453
+}

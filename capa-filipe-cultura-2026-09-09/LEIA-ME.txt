@@ -1,0 +1,29 @@
+CAPA DO VÍDEO FILIPE -cultura.mp4
+Data: 09/09/2026
+
+ARQUIVO FINAL
+CAPA_CULTURA_TIKTOK_1080x1920.png
+Alternativa: CAPA_CULTURA_TIKTOK_1080x1920.jpg
+
+TÍTULO
+GESTÃO HUMANIZADA NÃO É BAGUNÇA
+
+BASE EDITORIAL
+O vídeo contrapõe autoritarismo e permissividade, defendendo empatia com limites definidos pela cultura. O título é uma síntese editorial, não uma citação literal. Apoio principal: trecho aproximado de 24 a 41 segundos e fechamento de 53 a 63 segundos.
+
+IMAGEM
+Frame original extraído em 00:03,500, sem legendas naquele instante. Rosto preservado. Composição local a partir do modelo de capa: linha superior em SF Pro Display Bold branca; linha inferior em Tusker Grotesk 5500 Medium laranja #FF7A00, escurecimento e assinatura discreta. Nenhum arquivo foi enviado a serviço externo.
+
+VERIFICAÇÃO
+PNG e JPG com 1080 × 1920. Texto e composição conferidos visualmente. PREVIA_RECORTE_3x4.jpg é somente uma simulação de recorte central para conferência; não substitui o arquivo vertical final.
+
+APOIO
+titulo-e-legenda.txt: título e legenda prontos para copiar.
+frames/frame-escolhido.png: frame de origem.
+render-capa.swift: composição local editável por código.
+transcricao.txt e transcricao.json: transcrição automática local de apoio; pode conter erros de reconhecimento, não é uma transcrição editorial revisada.
+
+O vídeo original foi preservado. Não houve publicação ou alteração da conta.
+
+REVISÃO DE TIPOGRAFIA
+Fontes locais confirmadas: SFPRODISPLAYBOLD.otf e TuskerGrotesk-5500Medium.otf. Versão anterior preservada em versao-anterior-vermelha/.

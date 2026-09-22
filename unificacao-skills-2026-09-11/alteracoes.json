@@ -1,0 +1,2754 @@
+[
+  {
+    "type": "yaml-format",
+    "path": "/Users/ppvfx/Documents/IA/skills/opensquad-skill-creator/SKILL.md",
+    "backup": "/Users/ppvfx/Documents/IA/output/unificacao-skills-2026-09-11/backup-cabecalhos/opensquad-skill-creator.SKILL.md",
+    "before_sha256": "632b5a2846ed13cf85135c5c9f2b0b9aae7869f5385a9a6814609272529bf621",
+    "after_sha256": "ff2f0c68cf7f8c77ea22eee962413d9430235a914ca14d64b246afbd0f40ca73"
+  },
+  {
+    "type": "yaml-format",
+    "path": "/Users/ppvfx/Documents/IA/.claude/skills/opensquad/SKILL.md",
+    "backup": "/Users/ppvfx/Documents/IA/output/unificacao-skills-2026-09-11/backup-cabecalhos/opensquad.SKILL.md",
+    "before_sha256": "3df736ba75b546f0d963308c7da3e1ae1171f17a2c6fb2d13954f5c52b80b9b2",
+    "after_sha256": "21824a93f7c6a318941b48572f64bdf5b564c6536d1cd086636fd7fa60d1aabd"
+  },
+  {
+    "type": "yaml-format",
+    "path": "/Users/ppvfx/.agents/skills/corte-opus-xml-padilha/SKILL.md",
+    "backup": "/Users/ppvfx/Documents/IA/output/unificacao-skills-2026-09-11/backup-cabecalhos/corte-opus-xml-padilha.SKILL.md",
+    "before_sha256": "34756d06ec7ce6650b89e4bb0c801a0a81605bd30eab65a66086fdd834f2f2a0",
+    "after_sha256": "9e67c5f0fd9edaad2e432b6f7f056f5ee0fe29881a3777141ed0f13388a0c389"
+  },
+  {
+    "type": "yaml-format",
+    "path": "/Users/ppvfx/.config/opencode/skills/corte-video-respect/SKILL.md",
+    "backup": "/Users/ppvfx/Documents/IA/output/unificacao-skills-2026-09-11/backup-cabecalhos/corte-video-respect.SKILL.md",
+    "before_sha256": "2ef91af14f7eba05ac185ae9c6a561a949ffe36188758d8604be3f0b8b78a4d4",
+    "after_sha256": "066d6878318f4643d78bd4251cd014e7508d30cbf80e2d921ce7ec50983d29c8"
+  },
+  {
+    "type": "version-copy",
+    "path": "/Users/ppvfx/.agents/skills/copywriting-claude",
+    "source": "/Users/ppvfx/.agents/skills/copywriting",
+    "original_name": "copywriting",
+    "imported_name": "copywriting-claude"
+  },
+  {
+    "type": "version-copy",
+    "path": "/Users/ppvfx/.agents/skills/netlify-deploy-claude",
+    "source": "/Users/ppvfx/.agents/skills/netlify-deploy",
+    "original_name": "netlify-deploy",
+    "imported_name": "netlify-deploy-claude"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/04-agente-figma-to-lp",
+    "target": "/Users/ppvfx/.agents/skills/04-agente-figma-to-lp"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/04-agente-figma-to-lp",
+    "target": "/Users/ppvfx/.agents/skills/04-agente-figma-to-lp"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/3d-model-generation",
+    "target": "/Users/ppvfx/.agents/skills/3d-model-generation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/3d-model-generation",
+    "target": "/Users/ppvfx/.agents/skills/3d-model-generation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/3d-modeling",
+    "target": "/Users/ppvfx/.agents/skills/3d-modeling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/3d-modeling",
+    "target": "/Users/ppvfx/.agents/skills/3d-modeling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/3d-visualizer",
+    "target": "/Users/ppvfx/.agents/skills/3d-visualizer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/3d-visualizer",
+    "target": "/Users/ppvfx/.agents/skills/3d-visualizer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/ab-test-setup",
+    "target": "/Users/ppvfx/.agents/skills/ab-test-setup"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/ab-test-setup",
+    "target": "/Users/ppvfx/.agents/skills/ab-test-setup"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/ab-testing",
+    "target": "/Users/ppvfx/.agents/skills/ab-testing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/ad-creative",
+    "target": "/Users/ppvfx/.agents/skills/ad-creative"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/ad-creative",
+    "target": "/Users/ppvfx/.agents/skills/ad-creative"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/adobe-batch-edit-photos",
+    "target": "/Users/ppvfx/.agents/skills/adobe-batch-edit-photos"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/adobe-batch-edit-photos",
+    "target": "/Users/ppvfx/.agents/skills/adobe-batch-edit-photos"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/ads",
+    "target": "/Users/ppvfx/.agents/skills/ads"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/agents",
+    "target": "/Users/ppvfx/.agents/skills/agents"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/agents",
+    "target": "/Users/ppvfx/.agents/skills/agents"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/ai-image-generation",
+    "target": "/Users/ppvfx/.agents/skills/ai-image-generation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/ai-image-generation",
+    "target": "/Users/ppvfx/.agents/skills/ai-image-generation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/ai-seo",
+    "target": "/Users/ppvfx/.agents/skills/ai-seo"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/ai-seo",
+    "target": "/Users/ppvfx/.agents/skills/ai-seo"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/analytics",
+    "target": "/Users/ppvfx/.agents/skills/analytics"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/analytics-and-reporting",
+    "target": "/Users/ppvfx/.agents/skills/analytics-and-reporting"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/analytics-and-reporting",
+    "target": "/Users/ppvfx/.agents/skills/analytics-and-reporting"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/analytics-tracking",
+    "target": "/Users/ppvfx/.agents/skills/analytics-tracking"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/analytics-tracking",
+    "target": "/Users/ppvfx/.agents/skills/analytics-tracking"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/apify",
+    "target": "/Users/ppvfx/.agents/skills/apify"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/apify",
+    "target": "/Users/ppvfx/.agents/skills/apify"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/aso",
+    "target": "/Users/ppvfx/.agents/skills/aso"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/aso-audit",
+    "target": "/Users/ppvfx/.agents/skills/aso-audit"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/aso-audit",
+    "target": "/Users/ppvfx/.agents/skills/aso-audit"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/aspnet-core",
+    "target": "/Users/ppvfx/.agents/skills/aspnet-core"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/audience-research",
+    "target": "/Users/ppvfx/.agents/skills/audience-research"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/audience-research",
+    "target": "/Users/ppvfx/.agents/skills/audience-research"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/audio-editing",
+    "target": "/Users/ppvfx/.agents/skills/audio-editing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/audio-editing",
+    "target": "/Users/ppvfx/.agents/skills/audio-editing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/audio-transcriber",
+    "target": "/Users/ppvfx/.agents/skills/audio-transcriber"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/audio-transcriber",
+    "target": "/Users/ppvfx/.agents/skills/audio-transcriber"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/banner-design",
+    "target": "/Users/ppvfx/.agents/skills/banner-design"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/batch-content-plan",
+    "target": "/Users/ppvfx/.agents/skills/batch-content-plan"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/batch-content-plan",
+    "target": "/Users/ppvfx/.agents/skills/batch-content-plan"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/blender-mcp",
+    "target": "/Users/ppvfx/.agents/skills/blender-mcp"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/blender-mcp",
+    "target": "/Users/ppvfx/.agents/skills/blender-mcp"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/blender-web-pipeline",
+    "target": "/Users/ppvfx/.agents/skills/blender-web-pipeline"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/blender-web-pipeline",
+    "target": "/Users/ppvfx/.agents/skills/blender-web-pipeline"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/blockbench-modeling",
+    "target": "/Users/ppvfx/.agents/skills/blockbench-modeling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/blockbench-modeling",
+    "target": "/Users/ppvfx/.agents/skills/blockbench-modeling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/blotato",
+    "target": "/Users/ppvfx/.agents/skills/blotato"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/blotato",
+    "target": "/Users/ppvfx/.agents/skills/blotato"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/brand",
+    "target": "/Users/ppvfx/.agents/skills/brand"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/brand-profile",
+    "target": "/Users/ppvfx/.agents/skills/brand-profile"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/brand-profile",
+    "target": "/Users/ppvfx/.agents/skills/brand-profile"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/canva",
+    "target": "/Users/ppvfx/.agents/skills/canva"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/canva",
+    "target": "/Users/ppvfx/.agents/skills/canva"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/caption-writer",
+    "target": "/Users/ppvfx/.agents/skills/caption-writer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/caption-writer",
+    "target": "/Users/ppvfx/.agents/skills/caption-writer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/captions-and-clipping",
+    "target": "/Users/ppvfx/.agents/skills/captions-and-clipping"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/captions-and-clipping",
+    "target": "/Users/ppvfx/.agents/skills/captions-and-clipping"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/carousel-writer",
+    "target": "/Users/ppvfx/.agents/skills/carousel-writer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/carousel-writer",
+    "target": "/Users/ppvfx/.agents/skills/carousel-writer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/chatgpt-apps",
+    "target": "/Users/ppvfx/.agents/skills/chatgpt-apps"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/churn-prevention",
+    "target": "/Users/ppvfx/.agents/skills/churn-prevention"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/churn-prevention",
+    "target": "/Users/ppvfx/.agents/skills/churn-prevention"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/cli-creator",
+    "target": "/Users/ppvfx/.agents/skills/cli-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/cloudflare-deploy",
+    "target": "/Users/ppvfx/.agents/skills/cloudflare-deploy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/co-marketing",
+    "target": "/Users/ppvfx/.agents/skills/co-marketing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/cold-email",
+    "target": "/Users/ppvfx/.agents/skills/cold-email"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/cold-email",
+    "target": "/Users/ppvfx/.agents/skills/cold-email"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/community-marketing",
+    "target": "/Users/ppvfx/.agents/skills/community-marketing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/community-marketing",
+    "target": "/Users/ppvfx/.agents/skills/community-marketing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/comparison-table-generator",
+    "target": "/Users/ppvfx/.agents/skills/comparison-table-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/comparison-table-generator",
+    "target": "/Users/ppvfx/.agents/skills/comparison-table-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/competitor-alternatives",
+    "target": "/Users/ppvfx/.agents/skills/competitor-alternatives"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/competitor-alternatives",
+    "target": "/Users/ppvfx/.agents/skills/competitor-alternatives"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/competitor-profiling",
+    "target": "/Users/ppvfx/.agents/skills/competitor-profiling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/competitor-profiling",
+    "target": "/Users/ppvfx/.agents/skills/competitor-profiling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/competitors",
+    "target": "/Users/ppvfx/.agents/skills/competitors"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/contact-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/contact-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/contact-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/contact-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/content-audit",
+    "target": "/Users/ppvfx/.agents/skills/content-audit"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/content-audit",
+    "target": "/Users/ppvfx/.agents/skills/content-audit"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/content-calendar",
+    "target": "/Users/ppvfx/.agents/skills/content-calendar"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/content-calendar",
+    "target": "/Users/ppvfx/.agents/skills/content-calendar"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/content-humanizer",
+    "target": "/Users/ppvfx/.agents/skills/content-humanizer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/content-humanizer",
+    "target": "/Users/ppvfx/.agents/skills/content-humanizer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/content-pillars",
+    "target": "/Users/ppvfx/.agents/skills/content-pillars"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/content-pillars",
+    "target": "/Users/ppvfx/.agents/skills/content-pillars"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/content-recycling",
+    "target": "/Users/ppvfx/.agents/skills/content-recycling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/content-recycling",
+    "target": "/Users/ppvfx/.agents/skills/content-recycling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/content-strategy",
+    "target": "/Users/ppvfx/.agents/skills/content-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/content-strategy",
+    "target": "/Users/ppvfx/.agents/skills/content-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/coppiegpt",
+    "target": "/Users/ppvfx/.agents/skills/coppiegpt"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/copy-cro-direct-response",
+    "target": "/Users/ppvfx/.agents/skills/copy-cro-direct-response"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/copy-editing",
+    "target": "/Users/ppvfx/.agents/skills/copy-editing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/copy-editing",
+    "target": "/Users/ppvfx/.agents/skills/copy-editing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/copywriting",
+    "target": "/Users/ppvfx/.agents/skills/copywriting"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/copywriting-claude",
+    "target": "/Users/ppvfx/.agents/skills/copywriting-claude"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.claude/skills/copywriting-claude",
+    "target": "/Users/ppvfx/.agents/skills/copywriting-claude"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/copywriting-claude",
+    "target": "/Users/ppvfx/.agents/skills/copywriting-claude"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/copywriting-prompts",
+    "target": "/Users/ppvfx/.agents/skills/copywriting-prompts"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/core-web-vitals",
+    "target": "/Users/ppvfx/.agents/skills/core-web-vitals"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/core-web-vitals",
+    "target": "/Users/ppvfx/.agents/skills/core-web-vitals"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/corte-opus-xml-padilha",
+    "target": "/Users/ppvfx/.agents/skills/corte-opus-xml-padilha"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/corte-opus-xml-padilha",
+    "target": "/Users/ppvfx/.agents/skills/corte-opus-xml-padilha"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/corte-video-respect",
+    "target": "/Users/ppvfx/.agents/skills/corte-video-respect"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/cortes-padilha",
+    "target": "/Users/ppvfx/.agents/skills/cortes-padilha"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/cortes-padilha",
+    "target": "/Users/ppvfx/.agents/skills/cortes-padilha"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/cro",
+    "target": "/Users/ppvfx/.agents/skills/cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/cross-platform-repurposing",
+    "target": "/Users/ppvfx/.agents/skills/cross-platform-repurposing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/cross-platform-repurposing",
+    "target": "/Users/ppvfx/.agents/skills/cross-platform-repurposing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/cta-generator",
+    "target": "/Users/ppvfx/.agents/skills/cta-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/cta-generator",
+    "target": "/Users/ppvfx/.agents/skills/cta-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/customer-research",
+    "target": "/Users/ppvfx/.agents/skills/customer-research"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/customer-research",
+    "target": "/Users/ppvfx/.agents/skills/customer-research"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/define-goal",
+    "target": "/Users/ppvfx/.agents/skills/define-goal"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/deploy-to-vercel",
+    "target": "/Users/ppvfx/.agents/skills/deploy-to-vercel"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/deploy-to-vercel",
+    "target": "/Users/ppvfx/.agents/skills/deploy-to-vercel"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/design",
+    "target": "/Users/ppvfx/.agents/skills/design"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/design-system",
+    "target": "/Users/ppvfx/.agents/skills/design-system"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/directory-submissions",
+    "target": "/Users/ppvfx/.agents/skills/directory-submissions"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/directory-submissions",
+    "target": "/Users/ppvfx/.agents/skills/directory-submissions"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/doc-coauthoring",
+    "target": "/Users/ppvfx/.agents/skills/doc-coauthoring"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/doc-coauthoring",
+    "target": "/Users/ppvfx/.agents/skills/doc-coauthoring"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/eachlabs-image-edit",
+    "target": "/Users/ppvfx/.agents/skills/eachlabs-image-edit"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/eachlabs-image-edit",
+    "target": "/Users/ppvfx/.agents/skills/eachlabs-image-edit"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/educational-content-and-how-to",
+    "target": "/Users/ppvfx/.agents/skills/educational-content-and-how-to"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/educational-content-and-how-to",
+    "target": "/Users/ppvfx/.agents/skills/educational-content-and-how-to"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/elevenlabs",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/elevenlabs",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/elevenlabs-music",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-music"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/elevenlabs-music",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-music"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/elevenlabs-music-generation",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-music-generation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/elevenlabs-music-generation",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-music-generation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/elevenlabs-remotion",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-remotion"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/elevenlabs-remotion",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-remotion"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/elevenlabs-sound-effects",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-sound-effects"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/elevenlabs-sound-effects",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-sound-effects"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/elevenlabs-tts",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-tts"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/elevenlabs-tts",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-tts"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/elevenlabs-voice-changer",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-voice-changer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/elevenlabs-voice-changer",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-voice-changer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/elevenlabs-voice-isolator",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-voice-isolator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/elevenlabs-voice-isolator",
+    "target": "/Users/ppvfx/.agents/skills/elevenlabs-voice-isolator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/email-sequence",
+    "target": "/Users/ppvfx/.agents/skills/email-sequence"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/email-sequence",
+    "target": "/Users/ppvfx/.agents/skills/email-sequence"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/emails",
+    "target": "/Users/ppvfx/.agents/skills/emails"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/experimentation-and-ab-testing",
+    "target": "/Users/ppvfx/.agents/skills/experimentation-and-ab-testing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/experimentation-and-ab-testing",
+    "target": "/Users/ppvfx/.agents/skills/experimentation-and-ab-testing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/fal-video-to-video",
+    "target": "/Users/ppvfx/.agents/skills/fal-video-to-video"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/fal-video-to-video",
+    "target": "/Users/ppvfx/.agents/skills/fal-video-to-video"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/faq-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/faq-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/faq-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/faq-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/features-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/features-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/features-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/features-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma",
+    "target": "/Users/ppvfx/.agents/skills/figma"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/figma-code-connect",
+    "target": "/Users/ppvfx/.agents/skills/figma-code-connect"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-code-connect",
+    "target": "/Users/ppvfx/.agents/skills/figma-code-connect"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-code-connect-components",
+    "target": "/Users/ppvfx/.agents/skills/figma-code-connect-components"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-create-design-system-rules",
+    "target": "/Users/ppvfx/.agents/skills/figma-create-design-system-rules"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-create-new-file",
+    "target": "/Users/ppvfx/.agents/skills/figma-create-new-file"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-generate-design",
+    "target": "/Users/ppvfx/.agents/skills/figma-generate-design"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/figma-generate-diagram",
+    "target": "/Users/ppvfx/.agents/skills/figma-generate-diagram"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-generate-diagram",
+    "target": "/Users/ppvfx/.agents/skills/figma-generate-diagram"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-generate-library",
+    "target": "/Users/ppvfx/.agents/skills/figma-generate-library"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-implement-design",
+    "target": "/Users/ppvfx/.agents/skills/figma-implement-design"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-use",
+    "target": "/Users/ppvfx/.agents/skills/figma-use"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/figma-use-figjam",
+    "target": "/Users/ppvfx/.agents/skills/figma-use-figjam"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-use-figjam",
+    "target": "/Users/ppvfx/.agents/skills/figma-use-figjam"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/figma-use-slides",
+    "target": "/Users/ppvfx/.agents/skills/figma-use-slides"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/figma-use-slides",
+    "target": "/Users/ppvfx/.agents/skills/figma-use-slides"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/firecrawl",
+    "target": "/Users/ppvfx/.agents/skills/firecrawl"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/firecrawl",
+    "target": "/Users/ppvfx/.agents/skills/firecrawl"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/flux-image",
+    "target": "/Users/ppvfx/.agents/skills/flux-image"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/flux-image",
+    "target": "/Users/ppvfx/.agents/skills/flux-image"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/food-beverage-content-production",
+    "target": "/Users/ppvfx/.agents/skills/food-beverage-content-production"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/food-beverage-content-production",
+    "target": "/Users/ppvfx/.agents/skills/food-beverage-content-production"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/footer-generator",
+    "target": "/Users/ppvfx/.agents/skills/footer-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/footer-generator",
+    "target": "/Users/ppvfx/.agents/skills/footer-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/form-cro",
+    "target": "/Users/ppvfx/.agents/skills/form-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/form-cro",
+    "target": "/Users/ppvfx/.agents/skills/form-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/free-tool-strategy",
+    "target": "/Users/ppvfx/.agents/skills/free-tool-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/free-tool-strategy",
+    "target": "/Users/ppvfx/.agents/skills/free-tool-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/free-tools",
+    "target": "/Users/ppvfx/.agents/skills/free-tools"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/freepik-api",
+    "target": "/Users/ppvfx/.agents/skills/freepik-api"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/freepik-api",
+    "target": "/Users/ppvfx/.agents/skills/freepik-api"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/freepik-downloader",
+    "target": "/Users/ppvfx/.agents/skills/freepik-downloader"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/freepik-downloader",
+    "target": "/Users/ppvfx/.agents/skills/freepik-downloader"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/frontend-design",
+    "target": "/Users/ppvfx/.agents/skills/frontend-design"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/frontend-design",
+    "target": "/Users/ppvfx/.agents/skills/frontend-design"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/game-3d-assets",
+    "target": "/Users/ppvfx/.agents/skills/game-3d-assets"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/game-3d-assets",
+    "target": "/Users/ppvfx/.agents/skills/game-3d-assets"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/gh-address-comments",
+    "target": "/Users/ppvfx/.agents/skills/gh-address-comments"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/gh-fix-ci",
+    "target": "/Users/ppvfx/.agents/skills/gh-fix-ci"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/goals-and-kpis",
+    "target": "/Users/ppvfx/.agents/skills/goals-and-kpis"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/goals-and-kpis",
+    "target": "/Users/ppvfx/.agents/skills/goals-and-kpis"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/gpt-image-2",
+    "target": "/Users/ppvfx/.agents/skills/gpt-image-2"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/gpt-image-2",
+    "target": "/Users/ppvfx/.agents/skills/gpt-image-2"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/hashtag-strategy",
+    "target": "/Users/ppvfx/.agents/skills/hashtag-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/hashtag-strategy",
+    "target": "/Users/ppvfx/.agents/skills/hashtag-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/hatch-pet",
+    "target": "/Users/ppvfx/.agents/skills/hatch-pet"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/headline-cta-lab",
+    "target": "/Users/ppvfx/.agents/skills/headline-cta-lab"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/hero-generator",
+    "target": "/Users/ppvfx/.agents/skills/hero-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/hero-generator",
+    "target": "/Users/ppvfx/.agents/skills/hero-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/homepage-generator",
+    "target": "/Users/ppvfx/.agents/skills/homepage-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/homepage-generator",
+    "target": "/Users/ppvfx/.agents/skills/homepage-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/hook-writer",
+    "target": "/Users/ppvfx/.agents/skills/hook-writer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/hook-writer",
+    "target": "/Users/ppvfx/.agents/skills/hook-writer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/howto-section-generator",
+    "target": "/Users/ppvfx/.agents/skills/howto-section-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/howto-section-generator",
+    "target": "/Users/ppvfx/.agents/skills/howto-section-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/idea-generation-and-ideation",
+    "target": "/Users/ppvfx/.agents/skills/idea-generation-and-ideation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/idea-generation-and-ideation",
+    "target": "/Users/ppvfx/.agents/skills/idea-generation-and-ideation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/image",
+    "target": "/Users/ppvfx/.agents/skills/image"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/image",
+    "target": "/Users/ppvfx/.agents/skills/image"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/image-ai-generator",
+    "target": "/Users/ppvfx/.agents/skills/image-ai-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/image-ai-generator",
+    "target": "/Users/ppvfx/.agents/skills/image-ai-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/image-creator",
+    "target": "/Users/ppvfx/.agents/skills/image-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/image-creator",
+    "target": "/Users/ppvfx/.agents/skills/image-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/image-fetcher",
+    "target": "/Users/ppvfx/.agents/skills/image-fetcher"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/image-fetcher",
+    "target": "/Users/ppvfx/.agents/skills/image-fetcher"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/image-inpainting",
+    "target": "/Users/ppvfx/.agents/skills/image-inpainting"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/image-inpainting",
+    "target": "/Users/ppvfx/.agents/skills/image-inpainting"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/image-optimization",
+    "target": "/Users/ppvfx/.agents/skills/image-optimization"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/image-optimization",
+    "target": "/Users/ppvfx/.agents/skills/image-optimization"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/image-outpainting",
+    "target": "/Users/ppvfx/.agents/skills/image-outpainting"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/image-outpainting",
+    "target": "/Users/ppvfx/.agents/skills/image-outpainting"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/image-upscaling",
+    "target": "/Users/ppvfx/.agents/skills/image-upscaling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/image-upscaling",
+    "target": "/Users/ppvfx/.agents/skills/image-upscaling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/imagegen",
+    "target": "/Users/ppvfx/.agents/skills/imagegen"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/imagegen",
+    "target": "/Users/ppvfx/.agents/skills/imagegen"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/instagram-growth",
+    "target": "/Users/ppvfx/.agents/skills/instagram-growth"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/instagram-growth",
+    "target": "/Users/ppvfx/.agents/skills/instagram-growth"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/instagram-publisher",
+    "target": "/Users/ppvfx/.agents/skills/instagram-publisher"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/instagram-publisher",
+    "target": "/Users/ppvfx/.agents/skills/instagram-publisher"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/instagram-reels-publishing",
+    "target": "/Users/ppvfx/.agents/skills/instagram-reels-publishing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/instagram-reels-publishing",
+    "target": "/Users/ppvfx/.agents/skills/instagram-reels-publishing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/instagram-research",
+    "target": "/Users/ppvfx/.agents/skills/instagram-research"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/instagram-research",
+    "target": "/Users/ppvfx/.agents/skills/instagram-research"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/instagram-seo",
+    "target": "/Users/ppvfx/.agents/skills/instagram-seo"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/instagram-seo",
+    "target": "/Users/ppvfx/.agents/skills/instagram-seo"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/jupyter-notebook",
+    "target": "/Users/ppvfx/.agents/skills/jupyter-notebook"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/landing-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/landing-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/landing-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/landing-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/landing-page-sales-copy",
+    "target": "/Users/ppvfx/.agents/skills/landing-page-sales-copy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/launch",
+    "target": "/Users/ppvfx/.agents/skills/launch"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/launch-strategy",
+    "target": "/Users/ppvfx/.agents/skills/launch-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/launch-strategy",
+    "target": "/Users/ppvfx/.agents/skills/launch-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/lead-magnets",
+    "target": "/Users/ppvfx/.agents/skills/lead-magnets"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/lead-magnets",
+    "target": "/Users/ppvfx/.agents/skills/lead-magnets"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/legendas-instagram",
+    "target": "/Users/ppvfx/.agents/skills/legendas-instagram"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/linear",
+    "target": "/Users/ppvfx/.agents/skills/linear"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/manim-composer",
+    "target": "/Users/ppvfx/.agents/skills/manim-composer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/manim-composer",
+    "target": "/Users/ppvfx/.agents/skills/manim-composer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/manim-video",
+    "target": "/Users/ppvfx/.agents/skills/manim-video"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/manim-video",
+    "target": "/Users/ppvfx/.agents/skills/manim-video"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/manimce-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/manimce-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/manimce-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/manimce-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/manimgl-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/manimgl-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/manimgl-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/manimgl-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/marketing-ideas",
+    "target": "/Users/ppvfx/.agents/skills/marketing-ideas"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/marketing-ideas",
+    "target": "/Users/ppvfx/.agents/skills/marketing-ideas"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/marketing-plan",
+    "target": "/Users/ppvfx/.agents/skills/marketing-plan"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/marketing-psychology",
+    "target": "/Users/ppvfx/.agents/skills/marketing-psychology"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/marketing-psychology",
+    "target": "/Users/ppvfx/.agents/skills/marketing-psychology"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/meta-description",
+    "target": "/Users/ppvfx/.agents/skills/meta-description"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/meta-description",
+    "target": "/Users/ppvfx/.agents/skills/meta-description"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/midjourney-prompt-engineering",
+    "target": "/Users/ppvfx/.agents/skills/midjourney-prompt-engineering"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/midjourney-prompt-engineering",
+    "target": "/Users/ppvfx/.agents/skills/midjourney-prompt-engineering"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/migrate-to-codex",
+    "target": "/Users/ppvfx/.agents/skills/migrate-to-codex"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/mobile-friendly",
+    "target": "/Users/ppvfx/.agents/skills/mobile-friendly"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/mobile-friendly",
+    "target": "/Users/ppvfx/.agents/skills/mobile-friendly"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/music",
+    "target": "/Users/ppvfx/.agents/skills/music"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/music",
+    "target": "/Users/ppvfx/.agents/skills/music"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/navigation-menu-generator",
+    "target": "/Users/ppvfx/.agents/skills/navigation-menu-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/navigation-menu-generator",
+    "target": "/Users/ppvfx/.agents/skills/navigation-menu-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-ai-gateway",
+    "target": "/Users/ppvfx/.agents/skills/netlify-ai-gateway"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-ai-gateway",
+    "target": "/Users/ppvfx/.agents/skills/netlify-ai-gateway"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-blobs",
+    "target": "/Users/ppvfx/.agents/skills/netlify-blobs"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-blobs",
+    "target": "/Users/ppvfx/.agents/skills/netlify-blobs"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-caching",
+    "target": "/Users/ppvfx/.agents/skills/netlify-caching"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-caching",
+    "target": "/Users/ppvfx/.agents/skills/netlify-caching"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-cli-and-deploy",
+    "target": "/Users/ppvfx/.agents/skills/netlify-cli-and-deploy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-cli-and-deploy",
+    "target": "/Users/ppvfx/.agents/skills/netlify-cli-and-deploy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-config",
+    "target": "/Users/ppvfx/.agents/skills/netlify-config"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-config",
+    "target": "/Users/ppvfx/.agents/skills/netlify-config"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-database",
+    "target": "/Users/ppvfx/.agents/skills/netlify-database"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-database",
+    "target": "/Users/ppvfx/.agents/skills/netlify-database"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-deploy",
+    "target": "/Users/ppvfx/.agents/skills/netlify-deploy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-deploy-claude",
+    "target": "/Users/ppvfx/.agents/skills/netlify-deploy-claude"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.claude/skills/netlify-deploy-claude",
+    "target": "/Users/ppvfx/.agents/skills/netlify-deploy-claude"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-deploy-claude",
+    "target": "/Users/ppvfx/.agents/skills/netlify-deploy-claude"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-edge-functions",
+    "target": "/Users/ppvfx/.agents/skills/netlify-edge-functions"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-edge-functions",
+    "target": "/Users/ppvfx/.agents/skills/netlify-edge-functions"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-forms",
+    "target": "/Users/ppvfx/.agents/skills/netlify-forms"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-forms",
+    "target": "/Users/ppvfx/.agents/skills/netlify-forms"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-frameworks",
+    "target": "/Users/ppvfx/.agents/skills/netlify-frameworks"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-frameworks",
+    "target": "/Users/ppvfx/.agents/skills/netlify-frameworks"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-functions",
+    "target": "/Users/ppvfx/.agents/skills/netlify-functions"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-functions",
+    "target": "/Users/ppvfx/.agents/skills/netlify-functions"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-identity",
+    "target": "/Users/ppvfx/.agents/skills/netlify-identity"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-identity",
+    "target": "/Users/ppvfx/.agents/skills/netlify-identity"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/netlify-image-cdn",
+    "target": "/Users/ppvfx/.agents/skills/netlify-image-cdn"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/netlify-image-cdn",
+    "target": "/Users/ppvfx/.agents/skills/netlify-image-cdn"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/new-skill",
+    "target": "/Users/ppvfx/.agents/skills/new-skill"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/new-skill",
+    "target": "/Users/ppvfx/.agents/skills/new-skill"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/next-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/next-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/next-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/next-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/notion-knowledge-capture",
+    "target": "/Users/ppvfx/.agents/skills/notion-knowledge-capture"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/notion-meeting-intelligence",
+    "target": "/Users/ppvfx/.agents/skills/notion-meeting-intelligence"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/notion-research-documentation",
+    "target": "/Users/ppvfx/.agents/skills/notion-research-documentation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/notion-spec-to-implementation",
+    "target": "/Users/ppvfx/.agents/skills/notion-spec-to-implementation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/offer-stack-builder",
+    "target": "/Users/ppvfx/.agents/skills/offer-stack-builder"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/offers",
+    "target": "/Users/ppvfx/.agents/skills/offers"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/onboarding",
+    "target": "/Users/ppvfx/.agents/skills/onboarding"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/onboarding-cro",
+    "target": "/Users/ppvfx/.agents/skills/onboarding-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/onboarding-cro",
+    "target": "/Users/ppvfx/.agents/skills/onboarding-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/open-graph",
+    "target": "/Users/ppvfx/.agents/skills/open-graph"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/open-graph",
+    "target": "/Users/ppvfx/.agents/skills/open-graph"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/openai-docs",
+    "target": "/Users/ppvfx/.agents/skills/openai-docs"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/opensquad",
+    "target": "/Users/ppvfx/.agents/skills/opensquad"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/opensquad",
+    "target": "/Users/ppvfx/.agents/skills/opensquad"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/opensquad-agent-creator",
+    "target": "/Users/ppvfx/.agents/skills/opensquad-agent-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/opensquad-agent-creator",
+    "target": "/Users/ppvfx/.agents/skills/opensquad-agent-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/opensquad-skill-creator",
+    "target": "/Users/ppvfx/.agents/skills/opensquad-skill-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/opensquad-skill-creator",
+    "target": "/Users/ppvfx/.agents/skills/opensquad-skill-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/page-cro",
+    "target": "/Users/ppvfx/.agents/skills/page-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/page-cro",
+    "target": "/Users/ppvfx/.agents/skills/page-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/page-metadata",
+    "target": "/Users/ppvfx/.agents/skills/page-metadata"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/page-metadata",
+    "target": "/Users/ppvfx/.agents/skills/page-metadata"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/paid-ads",
+    "target": "/Users/ppvfx/.agents/skills/paid-ads"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/paid-ads",
+    "target": "/Users/ppvfx/.agents/skills/paid-ads"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/paywall-upgrade-cro",
+    "target": "/Users/ppvfx/.agents/skills/paywall-upgrade-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/paywall-upgrade-cro",
+    "target": "/Users/ppvfx/.agents/skills/paywall-upgrade-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/paywalls",
+    "target": "/Users/ppvfx/.agents/skills/paywalls"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/pdf",
+    "target": "/Users/ppvfx/.agents/skills/pdf"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/playwright",
+    "target": "/Users/ppvfx/.agents/skills/playwright"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/playwright-interactive",
+    "target": "/Users/ppvfx/.agents/skills/playwright-interactive"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/plugin-creator",
+    "target": "/Users/ppvfx/.agents/skills/plugin-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/plugin-creator",
+    "target": "/Users/ppvfx/.agents/skills/plugin-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-articles",
+    "target": "/Users/ppvfx/.agents/skills/podcast-articles"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-articles",
+    "target": "/Users/ppvfx/.agents/skills/podcast-articles"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-asr",
+    "target": "/Users/ppvfx/.agents/skills/podcast-asr"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-asr",
+    "target": "/Users/ppvfx/.agents/skills/podcast-asr"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-audio",
+    "target": "/Users/ppvfx/.agents/skills/podcast-audio"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-audio",
+    "target": "/Users/ppvfx/.agents/skills/podcast-audio"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-clean",
+    "target": "/Users/ppvfx/.agents/skills/podcast-clean"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-clean",
+    "target": "/Users/ppvfx/.agents/skills/podcast-clean"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-editor",
+    "target": "/Users/ppvfx/.agents/skills/podcast-editor"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-editor",
+    "target": "/Users/ppvfx/.agents/skills/podcast-editor"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-highlights",
+    "target": "/Users/ppvfx/.agents/skills/podcast-highlights"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-highlights",
+    "target": "/Users/ppvfx/.agents/skills/podcast-highlights"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-instagram",
+    "target": "/Users/ppvfx/.agents/skills/podcast-instagram"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-instagram",
+    "target": "/Users/ppvfx/.agents/skills/podcast-instagram"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-normalize",
+    "target": "/Users/ppvfx/.agents/skills/podcast-normalize"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-normalize",
+    "target": "/Users/ppvfx/.agents/skills/podcast-normalize"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-post-production",
+    "target": "/Users/ppvfx/.agents/skills/podcast-post-production"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-post-production",
+    "target": "/Users/ppvfx/.agents/skills/podcast-post-production"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-shownotes",
+    "target": "/Users/ppvfx/.agents/skills/podcast-shownotes"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-shownotes",
+    "target": "/Users/ppvfx/.agents/skills/podcast-shownotes"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-storyline",
+    "target": "/Users/ppvfx/.agents/skills/podcast-storyline"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-storyline",
+    "target": "/Users/ppvfx/.agents/skills/podcast-storyline"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-summary",
+    "target": "/Users/ppvfx/.agents/skills/podcast-summary"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-summary",
+    "target": "/Users/ppvfx/.agents/skills/podcast-summary"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-transcribe",
+    "target": "/Users/ppvfx/.agents/skills/podcast-transcribe"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-transcribe",
+    "target": "/Users/ppvfx/.agents/skills/podcast-transcribe"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-videoclip",
+    "target": "/Users/ppvfx/.agents/skills/podcast-videoclip"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-videoclip",
+    "target": "/Users/ppvfx/.agents/skills/podcast-videoclip"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/popup-cro",
+    "target": "/Users/ppvfx/.agents/skills/popup-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/popup-cro",
+    "target": "/Users/ppvfx/.agents/skills/popup-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/popups",
+    "target": "/Users/ppvfx/.agents/skills/popups"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/pricing",
+    "target": "/Users/ppvfx/.agents/skills/pricing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/pricing-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/pricing-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/pricing-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/pricing-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/pricing-page-sales-copy",
+    "target": "/Users/ppvfx/.agents/skills/pricing-page-sales-copy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/pricing-strategy",
+    "target": "/Users/ppvfx/.agents/skills/pricing-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/pricing-strategy",
+    "target": "/Users/ppvfx/.agents/skills/pricing-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/product-marketing",
+    "target": "/Users/ppvfx/.agents/skills/product-marketing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/product-marketing-context",
+    "target": "/Users/ppvfx/.agents/skills/product-marketing-context"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/product-marketing-context",
+    "target": "/Users/ppvfx/.agents/skills/product-marketing-context"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/products-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/products-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/products-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/products-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/programmatic-seo",
+    "target": "/Users/ppvfx/.agents/skills/programmatic-seo"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/programmatic-seo",
+    "target": "/Users/ppvfx/.agents/skills/programmatic-seo"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/prompt-images",
+    "target": "/Users/ppvfx/.agents/skills/prompt-images"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/prompt-images",
+    "target": "/Users/ppvfx/.agents/skills/prompt-images"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/prospecting",
+    "target": "/Users/ppvfx/.agents/skills/prospecting"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/public-relations",
+    "target": "/Users/ppvfx/.agents/skills/public-relations"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/reels-script",
+    "target": "/Users/ppvfx/.agents/skills/reels-script"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/reels-script",
+    "target": "/Users/ppvfx/.agents/skills/reels-script"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/referral-program",
+    "target": "/Users/ppvfx/.agents/skills/referral-program"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/referral-program",
+    "target": "/Users/ppvfx/.agents/skills/referral-program"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/referrals",
+    "target": "/Users/ppvfx/.agents/skills/referrals"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/remotion-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/remotion-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/remotion-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/remotion-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/render-deploy",
+    "target": "/Users/ppvfx/.agents/skills/render-deploy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/rendering-strategies",
+    "target": "/Users/ppvfx/.agents/skills/rendering-strategies"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/rendering-strategies",
+    "target": "/Users/ppvfx/.agents/skills/rendering-strategies"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/resend",
+    "target": "/Users/ppvfx/.agents/skills/resend"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/resend",
+    "target": "/Users/ppvfx/.agents/skills/resend"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/revops",
+    "target": "/Users/ppvfx/.agents/skills/revops"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/revops",
+    "target": "/Users/ppvfx/.agents/skills/revops"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/run-local-codex-automations",
+    "target": "/Users/ppvfx/.agents/skills/run-local-codex-automations"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/run-local-codex-automations",
+    "target": "/Users/ppvfx/.agents/skills/run-local-codex-automations"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/sales-enablement",
+    "target": "/Users/ppvfx/.agents/skills/sales-enablement"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/sales-enablement",
+    "target": "/Users/ppvfx/.agents/skills/sales-enablement"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/schema",
+    "target": "/Users/ppvfx/.agents/skills/schema"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/schema-markup",
+    "target": "/Users/ppvfx/.agents/skills/schema-markup"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/schema-markup",
+    "target": "/Users/ppvfx/.agents/skills/schema-markup"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/screenshot",
+    "target": "/Users/ppvfx/.agents/skills/screenshot"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/scripting-and-storyboarding",
+    "target": "/Users/ppvfx/.agents/skills/scripting-and-storyboarding"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/scripting-and-storyboarding",
+    "target": "/Users/ppvfx/.agents/skills/scripting-and-storyboarding"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/security-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/security-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/security-ownership-map",
+    "target": "/Users/ppvfx/.agents/skills/security-ownership-map"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/security-threat-model",
+    "target": "/Users/ppvfx/.agents/skills/security-threat-model"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/sentry",
+    "target": "/Users/ppvfx/.agents/skills/sentry"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/seo-audit",
+    "target": "/Users/ppvfx/.agents/skills/seo-audit"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/seo-audit",
+    "target": "/Users/ppvfx/.agents/skills/seo-audit"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/services-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/services-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/services-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/services-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/setup-api-key",
+    "target": "/Users/ppvfx/.agents/skills/setup-api-key"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/setup-api-key",
+    "target": "/Users/ppvfx/.agents/skills/setup-api-key"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/short-form-video-script",
+    "target": "/Users/ppvfx/.agents/skills/short-form-video-script"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/short-form-video-script",
+    "target": "/Users/ppvfx/.agents/skills/short-form-video-script"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/signup",
+    "target": "/Users/ppvfx/.agents/skills/signup"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/signup-flow-cro",
+    "target": "/Users/ppvfx/.agents/skills/signup-flow-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/signup-flow-cro",
+    "target": "/Users/ppvfx/.agents/skills/signup-flow-cro"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/site-architecture",
+    "target": "/Users/ppvfx/.agents/skills/site-architecture"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/site-architecture",
+    "target": "/Users/ppvfx/.agents/skills/site-architecture"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/skill-creator",
+    "target": "/Users/ppvfx/.agents/skills/skill-creator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/skill-installer",
+    "target": "/Users/ppvfx/.agents/skills/skill-installer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/skill-installer",
+    "target": "/Users/ppvfx/.agents/skills/skill-installer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/slides",
+    "target": "/Users/ppvfx/.agents/skills/slides"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/sms",
+    "target": "/Users/ppvfx/.agents/skills/sms"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/social",
+    "target": "/Users/ppvfx/.agents/skills/social"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/social-content",
+    "target": "/Users/ppvfx/.agents/skills/social-content"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/social-content",
+    "target": "/Users/ppvfx/.agents/skills/social-content"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/social-media-analyzer",
+    "target": "/Users/ppvfx/.agents/skills/social-media-analyzer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/social-media-analyzer",
+    "target": "/Users/ppvfx/.agents/skills/social-media-analyzer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/social-seo",
+    "target": "/Users/ppvfx/.agents/skills/social-seo"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/social-seo",
+    "target": "/Users/ppvfx/.agents/skills/social-seo"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/social-short-production",
+    "target": "/Users/ppvfx/.agents/skills/social-short-production"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/social-short-production",
+    "target": "/Users/ppvfx/.agents/skills/social-short-production"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/social-strategy",
+    "target": "/Users/ppvfx/.agents/skills/social-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/social-strategy",
+    "target": "/Users/ppvfx/.agents/skills/social-strategy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/sound-design-film",
+    "target": "/Users/ppvfx/.agents/skills/sound-design-film"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/sound-design-film",
+    "target": "/Users/ppvfx/.agents/skills/sound-design-film"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/sound-effects",
+    "target": "/Users/ppvfx/.agents/skills/sound-effects"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/sound-effects",
+    "target": "/Users/ppvfx/.agents/skills/sound-effects"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/speech",
+    "target": "/Users/ppvfx/.agents/skills/speech"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/speech-engine",
+    "target": "/Users/ppvfx/.agents/skills/speech-engine"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/speech-engine",
+    "target": "/Users/ppvfx/.agents/skills/speech-engine"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/speech-to-text",
+    "target": "/Users/ppvfx/.agents/skills/speech-to-text"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/speech-to-text",
+    "target": "/Users/ppvfx/.agents/skills/speech-to-text"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/stable-diffusion-image-generation",
+    "target": "/Users/ppvfx/.agents/skills/stable-diffusion-image-generation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/stable-diffusion-image-generation",
+    "target": "/Users/ppvfx/.agents/skills/stable-diffusion-image-generation"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/story-writer",
+    "target": "/Users/ppvfx/.agents/skills/story-writer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/story-writer",
+    "target": "/Users/ppvfx/.agents/skills/story-writer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/storytelling-and-narrative",
+    "target": "/Users/ppvfx/.agents/skills/storytelling-and-narrative"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/storytelling-and-narrative",
+    "target": "/Users/ppvfx/.agents/skills/storytelling-and-narrative"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/talking-head-and-piece-to-camera",
+    "target": "/Users/ppvfx/.agents/skills/talking-head-and-piece-to-camera"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/talking-head-and-piece-to-camera",
+    "target": "/Users/ppvfx/.agents/skills/talking-head-and-piece-to-camera"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/template-designer",
+    "target": "/Users/ppvfx/.agents/skills/template-designer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/template-designer",
+    "target": "/Users/ppvfx/.agents/skills/template-designer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/template-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/template-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/template-page-generator",
+    "target": "/Users/ppvfx/.agents/skills/template-page-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/testimonials-generator",
+    "target": "/Users/ppvfx/.agents/skills/testimonials-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/testimonials-generator",
+    "target": "/Users/ppvfx/.agents/skills/testimonials-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/text-to-cad-harness",
+    "target": "/Users/ppvfx/.agents/skills/text-to-cad-harness"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/text-to-cad-harness",
+    "target": "/Users/ppvfx/.agents/skills/text-to-cad-harness"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/text-to-image-prompt-optimizer",
+    "target": "/Users/ppvfx/.agents/skills/text-to-image-prompt-optimizer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/text-to-image-prompt-optimizer",
+    "target": "/Users/ppvfx/.agents/skills/text-to-image-prompt-optimizer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/text-to-speech",
+    "target": "/Users/ppvfx/.agents/skills/text-to-speech"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/text-to-speech",
+    "target": "/Users/ppvfx/.agents/skills/text-to-speech"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/threejs",
+    "target": "/Users/ppvfx/.agents/skills/threejs"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/threejs",
+    "target": "/Users/ppvfx/.agents/skills/threejs"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/thumbnail-design",
+    "target": "/Users/ppvfx/.agents/skills/thumbnail-design"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/thumbnail-design",
+    "target": "/Users/ppvfx/.agents/skills/thumbnail-design"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/tiktok-growth",
+    "target": "/Users/ppvfx/.agents/skills/tiktok-growth"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/tiktok-growth",
+    "target": "/Users/ppvfx/.agents/skills/tiktok-growth"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/tiktok-photo-mode",
+    "target": "/Users/ppvfx/.agents/skills/tiktok-photo-mode"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/tiktok-photo-mode",
+    "target": "/Users/ppvfx/.agents/skills/tiktok-photo-mode"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/tiktok-script",
+    "target": "/Users/ppvfx/.agents/skills/tiktok-script"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/tiktok-script",
+    "target": "/Users/ppvfx/.agents/skills/tiktok-script"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/title-tag",
+    "target": "/Users/ppvfx/.agents/skills/title-tag"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/title-tag",
+    "target": "/Users/ppvfx/.agents/skills/title-tag"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/transcribe",
+    "target": "/Users/ppvfx/.agents/skills/transcribe"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/trend-jacking",
+    "target": "/Users/ppvfx/.agents/skills/trend-jacking"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/trend-jacking",
+    "target": "/Users/ppvfx/.agents/skills/trend-jacking"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/trust-badges-generator",
+    "target": "/Users/ppvfx/.agents/skills/trust-badges-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/trust-badges-generator",
+    "target": "/Users/ppvfx/.agents/skills/trust-badges-generator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/ui-styling",
+    "target": "/Users/ppvfx/.agents/skills/ui-styling"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/ui-ux-pro-max",
+    "target": "/Users/ppvfx/.agents/skills/ui-ux-pro-max"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/vercel-cli-with-tokens",
+    "target": "/Users/ppvfx/.agents/skills/vercel-cli-with-tokens"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/vercel-cli-with-tokens",
+    "target": "/Users/ppvfx/.agents/skills/vercel-cli-with-tokens"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/vercel-composition-patterns",
+    "target": "/Users/ppvfx/.agents/skills/vercel-composition-patterns"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/vercel-composition-patterns",
+    "target": "/Users/ppvfx/.agents/skills/vercel-composition-patterns"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/vercel-deploy",
+    "target": "/Users/ppvfx/.agents/skills/vercel-deploy"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/vercel-optimize",
+    "target": "/Users/ppvfx/.agents/skills/vercel-optimize"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/vercel-optimize",
+    "target": "/Users/ppvfx/.agents/skills/vercel-optimize"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/vercel-react-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/vercel-react-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/vercel-react-best-practices",
+    "target": "/Users/ppvfx/.agents/skills/vercel-react-best-practices"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/vercel-react-native-skills",
+    "target": "/Users/ppvfx/.agents/skills/vercel-react-native-skills"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/vercel-react-native-skills",
+    "target": "/Users/ppvfx/.agents/skills/vercel-react-native-skills"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/vercel-react-view-transitions",
+    "target": "/Users/ppvfx/.agents/skills/vercel-react-view-transitions"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/vercel-react-view-transitions",
+    "target": "/Users/ppvfx/.agents/skills/vercel-react-view-transitions"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/video",
+    "target": "/Users/ppvfx/.agents/skills/video"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/video",
+    "target": "/Users/ppvfx/.agents/skills/video"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/video-enhancement",
+    "target": "/Users/ppvfx/.agents/skills/video-enhancement"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/video-enhancement",
+    "target": "/Users/ppvfx/.agents/skills/video-enhancement"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/video-marketing",
+    "target": "/Users/ppvfx/.agents/skills/video-marketing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/video-marketing",
+    "target": "/Users/ppvfx/.agents/skills/video-marketing"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/video-tracking-padilha",
+    "target": "/Users/ppvfx/.agents/skills/video-tracking-padilha"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/video-tracking-padilha",
+    "target": "/Users/ppvfx/.agents/skills/video-tracking-padilha"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/video-use",
+    "target": "/Users/ppvfx/.agents/skills/video-use"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/video-use",
+    "target": "/Users/ppvfx/.agents/skills/video-use"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/videoagent-audio-studio",
+    "target": "/Users/ppvfx/.agents/skills/videoagent-audio-studio"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/videoagent-audio-studio",
+    "target": "/Users/ppvfx/.agents/skills/videoagent-audio-studio"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/viral-hooks",
+    "target": "/Users/ppvfx/.agents/skills/viral-hooks"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/viral-hooks",
+    "target": "/Users/ppvfx/.agents/skills/viral-hooks"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/viral-reverse-engineering",
+    "target": "/Users/ppvfx/.agents/skills/viral-reverse-engineering"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/viral-reverse-engineering",
+    "target": "/Users/ppvfx/.agents/skills/viral-reverse-engineering"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/voice-builder",
+    "target": "/Users/ppvfx/.agents/skills/voice-builder"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/voice-builder",
+    "target": "/Users/ppvfx/.agents/skills/voice-builder"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/voice-changer",
+    "target": "/Users/ppvfx/.agents/skills/voice-changer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/voice-changer",
+    "target": "/Users/ppvfx/.agents/skills/voice-changer"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/voice-isolator",
+    "target": "/Users/ppvfx/.agents/skills/voice-isolator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/voice-isolator",
+    "target": "/Users/ppvfx/.agents/skills/voice-isolator"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/voiceover",
+    "target": "/Users/ppvfx/.agents/skills/voiceover"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/voiceover",
+    "target": "/Users/ppvfx/.agents/skills/voiceover"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/web-design-guidelines",
+    "target": "/Users/ppvfx/.agents/skills/web-design-guidelines"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/web-design-guidelines",
+    "target": "/Users/ppvfx/.agents/skills/web-design-guidelines"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/winui-app",
+    "target": "/Users/ppvfx/.agents/skills/winui-app"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/writing-guidelines",
+    "target": "/Users/ppvfx/.agents/skills/writing-guidelines"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/writing-guidelines",
+    "target": "/Users/ppvfx/.agents/skills/writing-guidelines"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/writing-style-and-tone",
+    "target": "/Users/ppvfx/.agents/skills/writing-style-and-tone"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/writing-style-and-tone",
+    "target": "/Users/ppvfx/.agents/skills/writing-style-and-tone"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/yeet",
+    "target": "/Users/ppvfx/.agents/skills/yeet"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/youtube-shorts",
+    "target": "/Users/ppvfx/.agents/skills/youtube-shorts"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/youtube-shorts",
+    "target": "/Users/ppvfx/.agents/skills/youtube-shorts"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.agents/skills/podcast-shared",
+    "target": "/Users/ppvfx/Documents/IA/podcast-workflow/podcast-shared"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.codex/skills/podcast-shared",
+    "target": "/Users/ppvfx/.agents/skills/podcast-shared"
+  },
+  {
+    "type": "symlink",
+    "path": "/Users/ppvfx/.config/opencode/skills/podcast-shared",
+    "target": "/Users/ppvfx/.agents/skills/podcast-shared"
+  }
+]

@@ -1,0 +1,31 @@
+HORÁRIOS RECOMENDADOS PARA TESTE — FILIPE FRAZÃO
+Revisão com Overview.csv em 09/09/2026.
+Fuso operacional: Belém/Brasília (UTC-3).
+
+Segunda: 19h — decisões de gestão.
+Terça: 19h — cultura e liderança; testar também 12h.
+Quarta: 19h — liderança; hipótese editorial.
+Quinta: 12h — caso prático/cultura; testar também 19h.
+Sexta: 18h — bastidor e aprendizado.
+Sábado: 10h — história pessoal ligada à gestão.
+Domingo: 19h — delegação e prioridades.
+
+PARA O VÍDEO CULTURA
+Próxima quinta às 12h como oportunidade inicial; terça às 19h como alternativa se a janela passou. A escolha é um teste e não um horário comprovado. Para o experimento sistemático, a alternância abaixo tem prioridade sobre a grade fixa.
+
+O QUE OS DADOS APOIAM
+Assumindo que o CSV cobre 08/09/2025 a 07/09/2026, terça e quinta têm medianas diárias de 45 e 38 visualizações nos últimos 90 dias. Nos últimos 28 dias, quarta (25,5), quinta (25) e terça (24,5) estão próximas. Priorizar terça e quinta é uma escolha exploratória, não prova de superioridade. O ano não consta do arquivo: confirmar antes de tratar a associação com dias da semana como definitiva.
+
+O QUE NÃO ESTÁ MEDIDO
+Nenhuma hora está validada: Overview tem totais diários, não horário de publicação, atividade horária do público, retenção ou desempenho por vídeo. As horas continuam hipóteses editoriais de rotina de donos e gestores. A recomendação anterior de quarta às 19h não foi comprovada pelo CSV.
+
+EXPERIMENTO
+Semanas 1 e 3: terça 12h e quinta 19h.
+Semanas 2 e 4: terça 19h e quinta 12h.
+Dois cortes comparáveis de liderança/cultura por semana, sem duplicar vídeo. A grade não obriga publicação diária. Duas observações por combinação são apenas início exploratório. Registrar resultado em 24h e 7 dias, retenção, conclusão e compartilhamentos por mil visualizações; comparar temas, abertura e duração antes de atribuir diferenças ao horário.
+
+FALTAM PARA VALIDAR
+Período com ano e fuso; Conteúdo com data/hora, identificação e métricas por vídeo; atividade do público por hora/dia, em CSV ou captura.
+
+RELATÓRIO
+../2026-09-09-tiktok-studio/ANALISE_TIKTOK_STUDIO_FILIPE.pdf

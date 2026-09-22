@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "version": "v002",
+  "source_sha256": "49e833aff9f14f94b161f3144112c593dff40c51e3fd7fb79755d4066cb22230",
+  "slides": 6,
+  "assets": [
+    {
+      "file": "kit/destaques/inicio.svg",
+      "width": 1080,
+      "height": 1920,
+      "kind": "highlight"
+    },
+    {
+      "file": "kit/destaques/trajetoria.svg",
+      "width": 1080,
+      "height": 1920,
+      "kind": "highlight"
+    },
+    {
+      "file": "kit/posts/carrossel-1/tela-01.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    },
+    {
+      "file": "kit/posts/carrossel-1/tela-02.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    },
+    {
+      "file": "kit/posts/carrossel-1/tela-03.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    },
+    {
+      "file": "kit/posts/carrossel-1/tela-04.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    },
+    {
+      "file": "kit/posts/carrossel-1/tela-05.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    },
+    {
+      "file": "kit/posts/carrossel-2/tela-01.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    },
+    {
+      "file": "kit/posts/carrossel-2/tela-02.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    },
+    {
+      "file": "kit/posts/carrossel-2/tela-03.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    },
+    {
+      "file": "kit/posts/carrossel-2/tela-04.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    },
+    {
+      "file": "kit/posts/carrossel-2/tela-05.svg",
+      "width": 1080,
+      "height": 1350,
+      "kind": "post"
+    }
+  ],
+  "bio_characters": 50,
+  "bios_characters": {
+    "instagram": 28,
+    "linkedin-headline": 29
+  },
+  "files": {
+    "LEIA-ME.md": "b0d60583d3a3be148fb9cb38baeba726c9b53457a59899dd8e1c3067235dfbb7",
+    "apresentacao.html": "4385be3d7e6f05b2afe8172c02752312a965dbd3e6f93539bb9083681cc74899",
+    "kit/bio-instagram.txt": "3cf045c84b3d2d4712da83b8471eee816cf68ba4e18e2c61991b5cf21a6cd818",
+    "kit/bio-linkedin-headline.txt": "699b20ed5212054361fb356dd9acefbd6138bff24eb441398957ef0654f415af",
+    "kit/bio.txt": "3dc4bb432ea25420b64b4de58e97be02336f46c030c340b9ffa39683d3c36179",
+    "kit/destaques/inicio.svg": "d840ceef194af037bda6baa9742f8907af4dd516aba124385bc805d2dbfcdfba",
+    "kit/destaques/trajetoria.svg": "2f865e80e8d38c292072a20f1f22f5f6e448e94bcef5a216abdd09b2ce224cb4",
+    "kit/posts/carrossel-1/legenda-instagram.txt": "d304a7f020bac655d0f3dae62fb48d7ab25f83b14cdece56d3ca3802f4dde7e4",
+    "kit/posts/carrossel-1/legenda-linkedin.txt": "b0c5cc76a4569b76fbf981c96450680d93688cf616ce69b463483f5f7b6d2750",
+    "kit/posts/carrossel-1/legenda.txt": "8e0ea77f27772909ccc1716631e0f17833ffc8f63a846d60e50c93e935a8e555",
+    "kit/posts/carrossel-1/tela-01.svg": "c4ce0b193f5dd4f4baf2782b38c4424c8037043bd1fcc601b430ed810ae736a1",
+    "kit/posts/carrossel-1/tela-02.svg": "4e79b2068b1de24d7e99910366b97adf94691156facd0167761f1296115de5aa",
+    "kit/posts/carrossel-1/tela-03.svg": "3bcde7a4e875fc90dad9605294b78bf55767d361ec9aa335925680052bbf148d",
+    "kit/posts/carrossel-1/tela-04.svg": "fc178b0664aaa85eeb345c9263588c3fed6ab490a38923b63999fe3d89c5be02",
+    "kit/posts/carrossel-1/tela-05.svg": "decc11e27394cc07305e91e24ac0559c1a28ccbe2ca61165d3c5ec9c02e65030",
+    "kit/posts/carrossel-2/legenda-instagram.txt": "d304a7f020bac655d0f3dae62fb48d7ab25f83b14cdece56d3ca3802f4dde7e4",
+    "kit/posts/carrossel-2/legenda-linkedin.txt": "b0c5cc76a4569b76fbf981c96450680d93688cf616ce69b463483f5f7b6d2750",
+    "kit/posts/carrossel-2/legenda.txt": "8e0ea77f27772909ccc1716631e0f17833ffc8f63a846d60e50c93e935a8e555",
+    "kit/posts/carrossel-2/tela-01.svg": "c4ce0b193f5dd4f4baf2782b38c4424c8037043bd1fcc601b430ed810ae736a1",
+    "kit/posts/carrossel-2/tela-02.svg": "4e79b2068b1de24d7e99910366b97adf94691156facd0167761f1296115de5aa",
+    "kit/posts/carrossel-2/tela-03.svg": "3bcde7a4e875fc90dad9605294b78bf55767d361ec9aa335925680052bbf148d",
+    "kit/posts/carrossel-2/tela-04.svg": "fc178b0664aaa85eeb345c9263588c3fed6ab490a38923b63999fe3d89c5be02",
+    "kit/posts/carrossel-2/tela-05.svg": "decc11e27394cc07305e91e24ac0559c1a28ccbe2ca61165d3c5ec9c02e65030",
+    "kit/tokens.json": "953cba7d0d171784cbb4824ebeb5a130e8b29082acdf3dd53f59e37c676279b7",
+    "projeto-fonte.json": "49e833aff9f14f94b161f3144112c593dff40c51e3fd7fb79755d4066cb22230"
+  }
+}

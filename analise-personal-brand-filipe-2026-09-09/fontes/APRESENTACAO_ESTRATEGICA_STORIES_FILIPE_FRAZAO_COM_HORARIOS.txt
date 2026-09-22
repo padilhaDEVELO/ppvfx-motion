@@ -1,0 +1,584 @@
+PÁGINA 1
+MAPEAMENTO PROFUNDO · CONTEÚDO, MÉTRICAS E ESTRATÉGIA COMERCIAL
+STORIES
+COMO SISTEMA
+DE PROVA
+O que publicar | Mecânica de interação | Métricas e fórmulas | Roadmap de 90 dias
+Transformar presença diária em contexto, diagnóstico, prova,
+conversa e receita rastreável.
+FILIPE FRAZÃO
+Edição estendida · complemento do relatório de redes de 27 de agosto de 2026
+
+
+PÁGINA 2
+SUMÁRIO
+FILIPE FRAZÃO / STORIES / 02
+Cinco capítulos, do princípio editorial ao número que decide o
+próximo passo.
+01 ARQUITETURA DE CONTEÚDO
+O que uma sequência deve conter, modelos e séries recorrentes
+02 MECÂNICA DE INTERAÇÃO
+Stickers, escada de CTA, fluxo de DM e Destaques
+03 BENCHMARK APLICADO
+Alfredo, Tallis, espaço de Filipe, erros e acertos
+04 MÉTRICAS E DECISÃO
+Taxonomia, fórmulas, funil, scorecard e painel mensal
+05 EXECUÇÃO E ROADMAP
+Pipeline semanal, cadência e plano de 90 dias
+
+PÁGINA 3
+CAPÍTULO 1 · TESE CENTRAL
+FILIPE FRAZÃO / STORIES / 03
+Bastidor só vira autoridade quando recebe contexto,
+decisão e prova.
+O ativo mais forte de Filipe é o acesso a empresas, reuniões, equipes e decisões reais. O risco é usar esse
+acesso apenas como cobertura de agenda. Mostrar onde ele está não basta.
+vira
+Presença
+Contexto
+vira
+Contexto
+Diagnóstico
+vira
+Diagnóstico
+Prova
+vira
+Prova
+Conversa
+vira
+Conversa
+Ação + receita
+Decisão recomendada: Stories não são sobra de calendário.
+Operam como diário de campo do CEO: contexto rápido, diagnóstico próprio, prova autorizada e uma conversa mensurável.
+
+PÁGINA 4
+CAPÍTULO 1 · O QUE CADA SEQUÊNCIA DEVE CONTER
+FILIPE FRAZÃO / STORIES / 04
+Cinco movimentos. Abertura, entrega e fechamento sempre
+presentes.
+1
+CONTEXTO
+Estou nesta empresa
+olhando este processo.
+2
+TENSÃO
+O sintoma parece X, mas o
+custo real está em Y.
+3
+DIAGNÓSTICO
+Explicar por que o problema
+acontece.
+4
+PROVA/DECISÃO
+Tela, documento, indicador
+ou mudança autorizada.
+5
+PRÓXIMA AÇÃO
+Enquete, DM com
+palavra-chave, link ou vídeo
+longo.
+REGRA DE UNIDADE NARRATIVA
+Não é obrigatório usar cinco frames, mas a sequência precisa ter uma ideia central, uma prova e um fechamento que responde à
+própria abertura. Sequência sem fechamento vira ruído, não relacionamento.
+
+PÁGINA 5
+CAPÍTULO 1 · QUATRO MODELOS DE SEQUÊNCIA
+FILIPE FRAZÃO / STORIES / 05
+Cada objetivo comercial tem um roteiro de Stories próprio.
+A VISITA A UMA EMPRESA
+Abrir com o problema, não o deslocamento
+Sintoma observado + diagnóstico
+Decisão tomada + evidência permitida
+CTA: "o mesmo gargalo existe na sua empresa?"
+B MICRODIAGNÓSTICO DE GESTÃO
+Pergunta binária ou situação reconhecível
+Enquete que separa estágio ou dor
+Explicação em vídeo curto
+CTA: enviar dúvida ou acessar conteúdo completo
+C PROVA E ACOMPANHAMENTO
+Relembrar problema e data da intervenção
+Mostrar o que mudou, com fonte e período
+Explicar o que ainda não funcionou
+Direcionar para o caso completo ou rota
+D OBJEÇÃO COMERCIAL
+Publicar objeção real e anonimizada
+Explicar para quem a solução não serve
+Mostrar o mecanismo, sem promessa genérica
+CTA único para a rota correspondente
+
+PÁGINA 6
+CAPÍTULO 1 · SÉRIES RECORRENTES DE STORIES
+FILIPE FRAZÃO / STORIES / 06
+Sete séries transformam Stories soltos em hábito de
+audiência.
+ENTREI HOJE
+1X POR VISITA
+Bastidor de campo: contexto + tensão da empresa do
+dia
+1 DECISÃO, 1 MINUTO
+2X/SEMANA
+A decisão de CEO explicada em uma sequência
+curta
+COCKPIT DO DIA
+1X/SEMANA
+Leitura de um indicador real + a decisão que ele gera
+PERGUNTA QUE CHEGOU
+2X/SEMANA
+Resposta a uma dúvida ou objeção real recebida em
+DM
+ANTES DE AUTOMATIZAR
+1X/SEMANA
+Microensino de IA aplicada a um processo específico
+30 DIAS DEPOIS
+POR CASO FECHADO
+Retorno a um cliente mostrando prova e indicador
+ESCOLHA SEU GARGALO
+1X/SEMANA
+Enquete de qualificação que direciona para uma rota
+
+PÁGINA 7
+CAPÍTULO 1 · DIRETRIZ DE CONTEÚDO
+FILIPE FRAZÃO / STORIES / 07
+Manter o que já é forte. Atualizar o genérico. Cortar o que não constrói
+autoridade.
+MANTER
+Rosto e voz de Filipe
+Bastidor de operação real
+Telas e processos autorizados
+Resposta direta a dúvidas
+Prova com condição e período
+ATUALIZAR
+Selfie de visita → problema + decisão
+Repost do feed → contexto novo
+Foto de evento → tese aplicável
+Enquete genérica → pergunta
+qualificadora
+CTA amplo → uma ação específica
+EVITAR
+Agenda sem aprendizado
+Repost sem comentário
+Oferta antes do diagnóstico
+Sequência longa sem resumo
+Três ofertas no mesmo bloco
+
+PÁGINA 8
+CAPÍTULO 2 · BIBLIOTECA DE STICKERS
+FILIPE FRAZÃO / STORIES / 08
+Cada sticker mede uma coisa diferente. Escolher errado mede a coisa
+errada.
+ENQUETE INTENÇÃO BINÁRIA
+Microdiagnóstico: "isso trava sua empresa? sim/não"
+QUIZ QUALIFICAÇÃO/CONHECIMENTO
+Conteúdo educativo antes de qualquer oferta
+SLIDER (EMOJI) INTENSIDADE DA DOR
+Termômetro: "o quanto isso atrapalha, de 0 a 100?"
+CAIXA DE PERGUNTA OBJEÇÕES REAIS
+Captação de dúvidas para a série Pergunta que chegou
+CONTAGEM REGRESSIVA ANTECIPAÇÃO
+Lançar live, prazo de vaga ou lote de diagnóstico
+STICKER DE LINK INTENÇÃO DE CONVERSÃO
+Só na etapa de ação, uma rota por sequência
+ADICIONAR AOS SEUS PARTICIPAÇÃO VIRAL
+Usar com cautela — risco de desviar do tema central
+MÚSICA TOM EMOCIONAL
+Apoio de clima, nunca o conteúdo principal da sequência
+
+PÁGINA 9
+CAPÍTULO 2 · ESCADA DE CTA POR ESTÁGIO
+FILIPE FRAZÃO / STORIES / 09
+Um único CTA por sequência, calibrado pela etapa do funil.
+DESCOBERTA
+"Responda com 1 emoji se isso acontece na
+sua empresa"
+"Arraste para cima e me conte seu gargalo"
+CONSIDERAÇÃO
+"Comente TIME, VENDAS ou FINANCEIRO
+neste story"
+"Toque no link e faça o diagnóstico gratuito"
+CONVERSÃO
+"Me chama na DM com a palavra
+GARGALO"
+"Link na bio: agende o diagnóstico completo"
+Regra: nunca misturar duas rotas comerciais na mesma sequência.
+
+PÁGINA 10
+CAPÍTULO 2 · FLUXO DE DM QUALIFICADA
+FILIPE FRAZÃO / STORIES / 10
+Da palavra-chave no Story ao lead registrado na rota certa.
+1
+STORY
+Sticker ou pergunta com
+palavra-chave
+2
+DM
+Seguidor responde com a
+palavra combinada
+3
+TRIAGEM
+Resposta identifica o
+gargalo declarado
+4
+ROTA
+/time · /vendas · /financeiro ·
+/diagnostico
+5
+CRM + LEAD
+Registro com origem,
+palavra-chave e UTM
+O QUE REGISTRAR POR LEAD
+Sequência de origem, palavra-chave usada, rota comercial, data, resposta ao follow-up e status (qualificado, agendado, perdido, convertido). Sem isso,
+"leads por Stories" continua sendo opinião.
+
+PÁGINA 11
+CAPÍTULO 2 · ARQUITETURA DE DESTAQUES
+FILIPE FRAZÃO / STORIES / 11
+O Destaque é o arquivo permanente dos Stories que já provaram
+valor.
+COMECE AQUI promessa, para quem é e como acompanhar
+CASOS REAIS antes, decisão, depois e depoimentos verificáveis
+TIMES conteúdos de liderança, papéis e execução
+VENDAS CRM, follow-up, LTV, CAC e reativação
+OPERAÇÃO IA, processos, automações e cockpit
+RESULTADOS provas com contexto, data e condição
+SOLUÇÕES ofertas e próximos passos por rota
+REGRA DE PROMOÇÃO
+Uma sequência só sobe para Destaque se
+pontuar 12/16 ou mais no scorecard de
+auditoria (média 1,5 por dimensão).
+Sequência fraca some em 24h; Destaque
+fraco expõe o perfil todo dia.
+
+PÁGINA 12
+CAPÍTULO 3 · BENCHMARK — ALFREDO SOARES
+FILIPE FRAZÃO / STORIES / 12
+Mecanismo: aplicação comercial de situações atuais.
+REFERÊNCIA: MECANISMO PÚBLICO CONSOLIDADO NO RELATÓRIO DE REDES (FEED/YOUTUBE). SEM ACESSO A STORIES ARQUIVADOS — LEITURA PROJETIVA, NÃO FRAME A FRAME.
+O QUE APLICAR NOS STORIES
+Abrir com o acontecimento do dia (reunião, evento, decisão) como
+gancho imediato
+Traduzir a situação em decisão comercial ou operacional, não em
+opinião solta
+Alternar produção cuidada com Stories crus — dá sensação de
+acesso real
+Mostrar repertório (casos, aulas, bastidor) como prova contínua, não
+só em datas especiais
+O QUE NÃO COPIAR
+Depender de marca ou acontecimento reconhecível que Filipe ainda
+não tem escala para usar
+Comentar tendências desconectadas de IA e gestão só para gerar
+engajamento
+Alternar registro cuidado e cru sem fio condutor — vira feed picotado,
+não diário de campo
+Uso correto: atenção emprestada do momento, aplicação traduzida para dentro da operação do cliente.
+
+PÁGINA 13
+CAPÍTULO 3 · BENCHMARK — TALLIS GOMES
+FILIPE FRAZÃO / STORIES / 13
+Mecanismo: acesso, status, convicção e consequência.
+REFERÊNCIA: MECANISMO PÚBLICO CONSOLIDADO NO RELATÓRIO DE REDES (FEED/YOUTUBE). SEM ACESSO A STORIES ARQUIVADOS — LEITURA PROJETIVA, NÃO FRAME A FRAME.
+O QUE APLICAR NOS STORIES
+Declarar uma convicção operacional clara por sequência, não uma
+frase motivacional genérica
+Mostrar o custo real de não decidir — número, prazo ou
+consequência
+Usar o acesso à empresa e à reunião como ativo narrativo, com
+peso, não como vitrine
+O QUE NÃO COPIAR
+Polarização política ou social sem relação direta com o negócio
+Excesso de status (números grandes, viagens) sem mostrar o
+mecanismo por trás
+Sequência que só afirma poder, sem provar como o resultado foi
+construído
+Uso correto: convicção que vem acompanhada do sistema, não da encenação de status.
+
+PÁGINA 14
+CAPÍTULO 3 · ESPAÇO ESTRATÉGICO
+FILIPE FRAZÃO / STORIES / 14
+Nenhum dos dois documenta diagnóstico, decisão e retorno dentro da
+operação do cliente.
+ALFREDO
+Story-reação
+Comenta o momento e traduz para
+venda ou marketing.
+TALLIS
+Story-convicção
+Expõe status, convicção e o custo de
+não decidir.
+FILIPE
+Story-diagnóstico
+Mostra o problema real na empresa, a
+decisão tomada e o resultado que vai
+medir.
+Território livre de Filipe: diagnóstico + decisão + retorno mensurável, dentro da empresa real do cliente.
+
+PÁGINA 15
+CAPÍTULO 3 · ERROS E ACERTOS
+FILIPE FRAZÃO / STORIES / 15
+Riscos que viram ruído versus padrões que viram autoridade.
+EVITAR
+Repostar o feed sem comentário novo
+Mostrar acesso sem traduzir em aprendizado
+Oferta antes do diagnóstico
+Sequência sem abertura/fechamento
+Enquete genérica sem qualificar dor
+MANTER E REPETIR
+Voz própria de Filipe, não só repost
+Prova com condição, fonte e período
+Um único CTA por sequência
+Resposta direta a objeção real
+Recalibrar pela conclusão, não pelo alcance
+REGRA DE PROVA (VALE PARA STORIES TAMBÉM)
+Não usar "na prática", "10x" ou "implementado" sem número, tela, documento, comparação, demonstração ou retorno combinado. Publicar bloco
+extenso sem função editorial aumenta avanço e saída sem construir lembrança. Copiar polarização ou status sem mostrar o mecanismo por trás não
+gera autoridade, gera ruído.
+
+PÁGINA 16
+CAPÍTULO 4 · TAXONOMIA DE MÉTRICAS NATIVAS
+FILIPE FRAZÃO / STORIES / 16
+Dez métricas do Instagram Stories, o que cada uma realmente diz.
+Alcance
+Contas únicas que viram o frame
+Impressões
+Total de visualizações, incluindo repetidas
+Avanços (taps forward)
+Toques para pular para o próximo frame
+Voltas (taps back)
+Toques para rever o frame anterior
+Saídas (exits)
+Quem fechou os Stories durante o frame
+Respostas
+Mensagens enviadas em reação ao frame
+Cliques em sticker
+Interações com enquete, quiz, slider, pergunta
+Cliques em link
+Toques no sticker de link
+
+PÁGINA 17
+CAPÍTULO 4 · TAXONOMIA DE MÉTRICAS NATIVAS (CONT.)
+FILIPE FRAZÃO / STORIES / 17
+Duas métricas de fronteira: onde o Story vira negócio.
+Visitas ao perfil
+Idas ao perfil originadas do Story
+Seguidores ganhos
+Novos seguidores atribuíveis à sequência
+POR QUE ESSAS DEZ E NÃO "CURTIDAS"
+Stories não têm curtidas visíveis como métrica pública de vaidade — o formato já força a olhar para comportamento (avançar, voltar, sair,
+responder) em vez de aprovação passiva. Isso é uma vantagem: cada métrica nativa aponta diretamente para uma decisão editorial, não para
+ego.
+
+PÁGINA 18
+CAPÍTULO 4 · FÓRMULAS DE LEITURA
+FILIPE FRAZÃO / STORIES / 18
+Sete fórmulas transformam número solto em decisão editorial.
+TAXA DE CONCLUSÃO
+alcance do último frame / alcance do primeiro frame
+TAXA DE RESPOSTA
+respostas / alcance do frame
+TAXA DE SAÍDA
+saídas / alcance do frame
+TAXA DE AVANÇO
+avanços / (avanços + voltas + saídas)
+CTR DO LINK
+cliques no link / alcance do frame com link
+CONVERSÃO EM DM
+leads qualificados / DMs recebidas
+CUSTO POR DM (se houver mídia paga)
+investimento / DMs qualificadas
+REGRA DE COMPARAÇÃO
+Comparar apenas sequências com objetivo e tamanho semelhantes. Usar o
+histórico do próprio Filipe como benchmark — nunca importar taxa genérica de
+mercado.
+
+PÁGINA 19
+CAPÍTULO 4 · FUNIL DE MÉTRICAS POR CAMADA
+FILIPE FRAZÃO / STORIES / 19
+Quando um número cai, a camada certa diz o que revisar.
+ALCANCE
+SE CAIR → REVISAR: horário, frequência, primeiro frame
+RETENÇÃO
+SE CAIR → REVISAR: ritmo, nº de frames, clareza da ideia
+INTERAÇÃO
+SE CAIR → REVISAR: escolha de sticker, tom do convite
+CONVERSÃO
+SE CAIR → REVISAR: CTA, oferta, rota comercial
+
+PÁGINA 20
+CAPÍTULO 4 · SCORECARD DE AUDITORIA
+FILIPE FRAZÃO / STORIES / 20
+Pontuar cada sequência antes de repeti-la.
+0 = ausente | 1 = parcial | 2 = claro
+ABERTURA
+O primeiro frame apresenta tensão ou motivo para continuar?
+CLAREZA
+Existe uma ideia central identificável?
+VALOR
+O seguidor aprende algo que não estava no feed?
+PROVA
+Há tela, processo, número, exemplo ou contexto real?
+PRESENÇA
+Filipe aparece com voz própria, não apenas em reposts?
+INTERAÇÃO
+O sticker ou pergunta produz informação útil?
+FECHAMENTO
+A sequência conclui a promessa de abertura?
+CONVERSÃO
+Existe apenas uma próxima ação coerente?
+
+PÁGINA 21
+CAPÍTULO 4 · PAINEL MENSAL
+FILIPE FRAZÃO / STORIES / 21
+Modelo de planilha para registrar cada sequência publicada.
+SEQUÊNCIA / TEMA FRAMES ALCANCE 1º →ÚLT. CONCLUSÃO % RESP.+CLIQUES DMs QUALIF. DECISÃO
+— — — — — — —
+— — — — — — —
+— — — — — — —
+— — — — — — —
+— — — — — — —
+Preencher semanalmente com dados exportados do Instagram Insights. "Decisão" recebe manter, atualizar ou interromper.
+
+PÁGINA 22
+CAPÍTULO 4 · CADÊNCIA DE ANÁLISE E REGRAS DE DECISÃO
+FILIPE FRAZÃO / STORIES / 22
+Cada janela de tempo pede uma pergunta diferente.
+24 HORAS
+Embalagem e retenção inicial da
+sequência
+7 DIAS
+Distribuição, resposta e primeiras
+DMs qualificadas
+28 DIAS
+Valor de biblioteca: quais séries
+sustentam Destaques
+TRIMESTRAL
+Decisão de formato, série e
+alocação de recursos
+REGRAS DE DECISÃO — QUANDO MANTER, QUANDO MATAR
+Nunca decidir com uma única publicação — comparar grupos de conteúdo com tema, formato e objetivo semelhantes
+Três sequências consecutivas abaixo da mediana do próprio histórico → revisar o modelo antes de descartar o tema
+Sequência acima da mediana em conclusão e DMs qualificadas → candidata a virar série recorrente ou Destaque
+Não aumentar volume apenas porque o alcance bruto subiu — volume sem função editorial aumenta saída, não lembrança
+
+PÁGINA 23
+CAPÍTULO 5 · PIPELINE SEMANAL
+FILIPE FRAZÃO / STORIES / 23
+Stories não são improviso — têm lugar fixo na semana de produção.
+SEGUNDA Revisar objeções da semana; planejar 1 sequência de microdiagnóstico
+TERÇA Captar Stories da visita/gravação do dia — contexto, tensão e diagnóstico
+QUARTA Editar e publicar a prova/acompanhamento de um caso anterior
+QUINTA Publicar a sequência-ponte do vídeo longo da semana
+SEXTA Revisar métricas de 7 dias e ajustar a próxima semana
+DIÁRIO 1 a 2 sequências curtas de bastidor ou resposta a objeção
+
+PÁGINA 24
+CAPÍTULO 5 · CADÊNCIA INICIAL (HIPÓTESE PARA TESTE)
+FILIPE FRAZÃO / STORIES / 24
+Distribuição de partida para os primeiros 30 dias.
+Bastidor com contexto empresarial 30%
+PROXIMIDADE E ACESSO
+Diagnóstico ou microensino 25%
+AUTORIDADE
+Prova, tela ou acompanhamento 20%
+CREDIBILIDADE
+Pergunta, enquete ou resposta 15%
+CONVERSA E PESQUISA
+Oferta direta 10%
+CONVERSÃO
+Hipótese editorial, não regra permanente. Recalibrar com conclusão, respostas, cliques e DMs qualificadas. Não aumentar volume apenas
+porque o alcance bruto subiu.
+
+PÁGINA 25
+CAPÍTULO 5 · PROTOCOLO DE CAPTURA DE 30 DIAS
+FILIPE FRAZÃO / STORIES / 25
+Capturar, medir, classificar e só então repetir o que funciona.
+1
+Salvar a captura de cada sequência antes de expirar
+2
+Exportar Insights após 24h e registrar os números por frame
+3
+Classificar: bastidor, diagnóstico, prova, interação ou oferta
+4
+Registrar tema, nº de frames, abertura, sticker, CTA e rota
+5
+Avaliar com o scorecard estrutural
+6
+Separar as sequências com melhor conclusão, resposta e DM
+qualificada
+7
+Aplicar manter, atualizar ou interromper — comparando
+objetivos semelhantes 8
+Transformar padrões vencedores em séries recorrentes e
+Destaques
+MEDIR POR SEQUÊNCIA E POR FRAME
+Alcance do 1º e do último frame, taxa de conclusão, avanços/saídas, respostas, cliques em sticker/link, visitas ao perfil, DMs qualificadas e leads por
+palavra-chave ou UTM.
+
+PÁGINA 26
+CAPÍTULO 5 · ROADMAP DE 90 DIAS
+FILIPE FRAZÃO / STORIES / 26
+Fundamento, prova, dobra e escala — mesma lógica do plano geral, aplicada
+aos Stories.
+01
+DIAS 1-14
+FUNDAMENTO
+planilha e rotina de captura
+scorecard ativo
+5 sequências-piloto
+02
+DIAS 15-45
+PROVA DE
+FORMATO
+todos os 4 modelos, 2x cada
+funil completo medido
+1ª leva de Destaques
+03
+DIAS 46-75
+DOBRA
+promover vencedores a
+Destaque
+fixar 2 séries recorrentes
+cortar formatos fracos
+04
+DIAS 76-90
+ESCALA
+playbook fechado
+Stories no pipeline semanal
+relatório trimestral
+Métrica principal: leads qualificados e receita atribuída por série editorial de Stories.
+
+PÁGINA 27
+PRÓXIMOS PASSOS
+Transformar acesso diário em prova,
+conversa e receita medível.
+48 HORAS
+Criar planilha e rotina de captura das sequências antes de expirar
+7 DIAS
+Publicar 5 sequências-piloto usando os 5 movimentos
+Aplicar um CTA único por sequência
+14 DIAS
+Comparar conclusão, respostas, cliques e DMs das sequências-piloto
+Ajustar cadência e roteiro a partir dos dados
+90 DIAS
+Playbook fechado, séries fixas e Stories no pipeline semanal
+Framework completo na seção 6.8 do relatório de redes.
+
+PÁGINA 28
+CAPÍTULO 5 · JANELAS DE PUBLICAÇÃO
+Horários de partida para testar nos próximos 30 dias.
+Horário de Brasília. Priorizar dados nativos por formato antes de fixar uma rotina definitiva.
+STORIES
+DIÁRIO · 1 A 2 SEQUÊNCIAS
+7h30-8h30  |  12h15-13h15  |  19h-20h30
+INSTAGRAM
+FEED E REELS
+Terça e quinta: 7h30-8h30 ou 12h15-13h15
+TIKTOK
+3 TESTES POR SEMANA
+Segunda, quarta e sexta: 7h-8h30, 12h-13h30 ou 19h-21h
+YOUTUBE SHORTS
+3 TESTES POR SEMANA
+Terça e quinta: 12h-14h  |  Sábado: 9h-10h30
+YOUTUBE LONGO
+1 PUBLICAÇÃO SEMANAL
+Terça ou quinta: 19h-20h30
+REGRA: testar por 30 dias; manter ou ajustar a janela com base em retenção, respostas, cliques e conversão.
+FILIPE FRAZÃO / STORIES / 28

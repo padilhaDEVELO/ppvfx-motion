@@ -1,0 +1,2119 @@
+{
+  "data": "2026-09-17",
+  "raiz": "/Library/Application Support/Adobe/CEP/extensions/com.victoframe.framespeed",
+  "versao_manifesto": "2.2",
+  "metodo": "Leitura estatica. Sem execucao do plugin e sem leitura de credenciais.",
+  "total_arquivos": 513,
+  "total_bytes": 201584294,
+  "contagem_por_extensao": {
+    ".css": 2,
+    ".epr": 2,
+    ".fsa": 79,
+    ".fsm": 79,
+    ".html": 1,
+    ".jpg": 79,
+    ".js": 28,
+    ".json": 1,
+    ".jsxbin": 1,
+    ".m4a": 49,
+    ".mogrt": 1,
+    ".mp3": 24,
+    ".mp4": 83,
+    ".png": 18,
+    ".prproj": 1,
+    ".txt": 1,
+    ".wav": 62,
+    ".webp": 1,
+    ".xml": 1
+  },
+  "arquivos": [
+    {
+      "arquivo": "CSXS/manifest.xml",
+      "bytes": 2415,
+      "sha256": "4c8f77caa9f6d1ea9c1b530af7d168b8106bfa735ecee6d2adc0b4eb8f9904c0"
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/COLOQUE SUAS TRILHAS AQUI.txt",
+      "bytes": 394
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Chill/20 Min - Lil Uzi Vert.m4a",
+      "bytes": 2147256
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Chill/Affogato.m4a",
+      "bytes": 1556862
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Chill/As It Was.m4a",
+      "bytes": 1610840
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Chill/Dark Red - Steve Lacy.m4a",
+      "bytes": 1673461
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Chill/J. Cole - No Role Modelz.m4a",
+      "bytes": 2485132
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Chill/Kendrick Lamar & SZA - All The Stars.m4a",
+      "bytes": 2328946
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Chill/Suga Suga.m4a",
+      "bytes": 2385154
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Cinematic/After Dark x Sweater Weather.m4a",
+      "bytes": 2872145
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Cinematic/ESSENCE - Casper.m4a",
+      "bytes": 2038146
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Cinematic/Kavinsky - Night Call.m4a",
+      "bytes": 2551073
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Cinematic/Luminary - Joel Sunny.m4a",
+      "bytes": 1884608
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Cinematic/No Church in the Wild.m4a",
+      "bytes": 2229490
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Cinematic/The Weeknd, Kendrick Lamar - Pray For Me.m4a",
+      "bytes": 2085549
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Cinematic/Violin by Infraction (No Copyright Music).m4a",
+      "bytes": 1095414
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Hype/Brodyaga Funk.m4a",
+      "bytes": 1329226
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Hype/Close Eyes (slowed + reverb) - DVRST.m4a",
+      "bytes": 1458116
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Hype/Dr Dre - Still Dre.m4a",
+      "bytes": 2696739
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Hype/METAMORPHOSIS - INTERWORLD.m4a",
+      "bytes": 1460108
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Hype/Not Like Us - Kendrick Lamar.m4a",
+      "bytes": 2776401
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Hype/The Weeknd - Blinding Lights (Official).m4a",
+      "bytes": 2024990
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Hype/Travis Scott - HIGHEST IN THE ROOM.m4a",
+      "bytes": 1769772
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Motivational/Black out days.m4a",
+      "bytes": 2687192
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Motivational/GigaChad Theme - g3ox_em.m4a",
+      "bytes": 1465206
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Motivational/Memory Reboot - Narvent, VØJ.m4a",
+      "bytes": 2080682
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Motivational/Paul Engemann - Push It To The Limit.m4a",
+      "bytes": 1782794
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Motivational/TOP G Song.m4a",
+      "bytes": 2103384
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Motivational/Walking on a Dream - Empire of the Sun.m4a",
+      "bytes": 1964369
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Motivational/Way Down We Go.m4a",
+      "bytes": 1553509
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Playful/1901 - Phoenix.m4a",
+      "bytes": 50268
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Playful/Billie Jean.m4a",
+      "bytes": 3222889
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Playful/Eminem - Without Me.m4a",
+      "bytes": 2870115
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Playful/Hell N Back - Bakar.m4a",
+      "bytes": 2117142
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Playful/Lost - Frank Ocean.m4a",
+      "bytes": 2336342
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Playful/Million Dollar Baby - Tommy Richman.m4a",
+      "bytes": 1558795
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Playful/Paper Planes - M.I.A..m4a",
+      "bytes": 2021832
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Sad/After Hours (slowed + reverb) - The Weeknd.m4a",
+      "bytes": 1696665
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Sad/Another Love.m4a",
+      "bytes": 2258575
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Sad/Archangel (Ultra Slowed).m4a",
+      "bytes": 2204494
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Sad/Mr.Kitty - After Dark.m4a",
+      "bytes": 2572889
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Sad/Sail.m4a",
+      "bytes": 2578960
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Sad/Star Shopping.m4a",
+      "bytes": 2459367
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Sad/i was only temporary - my head is empty.m4a",
+      "bytes": 972480
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Suspense/Blade Runner.m4a",
+      "bytes": 2259089
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Suspense/Hand Covers Bruise - Atticus Ross, Trent Reznor.m4a",
+      "bytes": 2661281
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Suspense/MGMT - Little Dark Age (Instrumental).m4a",
+      "bytes": 1344974
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Suspense/Nightcrawler (Instrumental).m4a",
+      "bytes": 602368
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Suspense/Sahara - Hensonn.m4a",
+      "bytes": 1696582
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Suspense/Thelema - øfdream.m4a",
+      "bytes": 2075479
+    },
+    {
+      "arquivo": "TRILHAS VIRAIS/Suspense/Travis Scott - Goosebumps.m4a",
+      "bytes": 2509706
+    },
+    {
+      "arquivo": "css/auth.css",
+      "bytes": 7072,
+      "sha256": "5bef7ecd22943e41b68c254710e5089f3fffeaf8d39c5785140f8d3ebc137269"
+    },
+    {
+      "arquivo": "css/style.css",
+      "bytes": 139536,
+      "sha256": "a509e2c5ec389b4d2f7e88052647417b3d6a6fd958fb3c523b02f5b28536b9c1"
+    },
+    {
+      "arquivo": "guias/grade_centro_169.png",
+      "bytes": 10780
+    },
+    {
+      "arquivo": "guias/grade_centro_916.png",
+      "bytes": 12618
+    },
+    {
+      "arquivo": "guias/grade_quartos_169.png",
+      "bytes": 14908
+    },
+    {
+      "arquivo": "guias/grade_quartos_916.png",
+      "bytes": 18762
+    },
+    {
+      "arquivo": "guias/grade_tercos_169.png",
+      "bytes": 13623
+    },
+    {
+      "arquivo": "guias/grade_tercos_916.png",
+      "bytes": 16980
+    },
+    {
+      "arquivo": "guias/plat_instagram_916.png",
+      "bytes": 147254
+    },
+    {
+      "arquivo": "guias/plat_tiktok_916.png",
+      "bytes": 197569
+    },
+    {
+      "arquivo": "icons/fs_logo.webp",
+      "bytes": 55578
+    },
+    {
+      "arquivo": "icons/logo.png",
+      "bytes": 3598
+    },
+    {
+      "arquivo": "icons/logo_dark.png",
+      "bytes": 3598
+    },
+    {
+      "arquivo": "icons/logo_rollover.png",
+      "bytes": 3598
+    },
+    {
+      "arquivo": "icons/vf_128.png",
+      "bytes": 13362
+    },
+    {
+      "arquivo": "icons/vf_24.png",
+      "bytes": 1591
+    },
+    {
+      "arquivo": "icons/vf_32.png",
+      "bytes": 2170
+    },
+    {
+      "arquivo": "icons/vf_48.png",
+      "bytes": 3598
+    },
+    {
+      "arquivo": "icons/vf_64.png",
+      "bytes": 5184
+    },
+    {
+      "arquivo": "icons/victoframe_full.png",
+      "bytes": 50821
+    },
+    {
+      "arquivo": "index.html",
+      "bytes": 200638,
+      "sha256": "2beddda26ac3f377cdf5c425ed14aba57ef5a2bda29ff4883a863cf323a322a3"
+    },
+    {
+      "arquivo": "js/CSInterface.js",
+      "bytes": 42759,
+      "sha256": "d940cbc991553b4885d1b3b04d99c17f448041a738a12cc0b24ce688ace2d263"
+    },
+    {
+      "arquivo": "js/animtexto.js",
+      "bytes": 6989,
+      "sha256": "237986f1e25bca0522359d97dd1b0d0608c4710c36606865bd2f89e72c85846a"
+    },
+    {
+      "arquivo": "js/autocut.js",
+      "bytes": 93078,
+      "sha256": "e5933ea81894c1e181091d975171cc81bc6e2e6985b021aa32c9e6d6cb9b782a"
+    },
+    {
+      "arquivo": "js/autodistribute.js",
+      "bytes": 31461,
+      "sha256": "ef48dfac478c80d20f73656376d803aaf49a89520ce27fb9aeb75878174832a1"
+    },
+    {
+      "arquivo": "js/autoedit.js",
+      "bytes": 34538,
+      "sha256": "f87a55d531615903543a837798f9f5b823b063f382110099204768cc1fdabebf"
+    },
+    {
+      "arquivo": "js/autosfx.js",
+      "bytes": 29236,
+      "sha256": "f54f10f290bfa3eefa63d55d644b72fc1d749c127cf1c0f25bbc5ced4c6aed6f"
+    },
+    {
+      "arquivo": "js/autotrilha.js",
+      "bytes": 21190,
+      "sha256": "e881d49854359423ea0a252a27f0dce0e16437f97c0a1a4391b6ee4048ae03cb"
+    },
+    {
+      "arquivo": "js/captions.js",
+      "bytes": 35096,
+      "sha256": "d70f5d5e120c4259d98e3c329ef79926d421c397d964ea3e4ba0b3c3a9c1b277"
+    },
+    {
+      "arquivo": "js/clientes.js",
+      "bytes": 8548,
+      "sha256": "e4c97d7b1ee66fda644b85c04e78fe0cca5a8306ee6297d086b4ac76606cc452"
+    },
+    {
+      "arquivo": "js/cofre.js",
+      "bytes": 3881,
+      "sha256": "e9f86a43c98355c92510aaec564b990e421bce9f68576829923a88f99ff809b8"
+    },
+    {
+      "arquivo": "js/colorpicker.js",
+      "bytes": 13467,
+      "sha256": "9ea5226719d6142a5ae01dba6ce1cc9ac2b49771a5004ed35383b3c27ec70dac"
+    },
+    {
+      "arquivo": "js/dinamica.js",
+      "bytes": 43385,
+      "sha256": "e7188883084f57307520a7cde40908baa72d8150ffacaf27ddf2b7b3b3facf43"
+    },
+    {
+      "arquivo": "js/framespeed_patch.js",
+      "bytes": 5412,
+      "sha256": "047ce356aa17d1542ff0554ff7fe1b1a00491eb7a1a6f1dcc522aa837c951755"
+    },
+    {
+      "arquivo": "js/fxpresets.js",
+      "bytes": 13267,
+      "sha256": "dfdf7cd9e3a4073e49c53b914ea87fc129df99f96187b4ca6e165af0acd8ed48"
+    },
+    {
+      "arquivo": "js/gradiente.js",
+      "bytes": 2462,
+      "sha256": "8eebaa251c3bd3063f7a7b321ef87838dd7520e1606c3d74a1b3fbfcf8a317d3"
+    },
+    {
+      "arquivo": "js/guias.js",
+      "bytes": 8547,
+      "sha256": "62a274f604c51249ba851ae3a82a8c63f99f830dfefaf191ef2a05651014095b"
+    },
+    {
+      "arquivo": "js/jlcut.js",
+      "bytes": 9201,
+      "sha256": "8076afce354615b334c444a25254fe50186d677d95a49cd0eb85e75139e52aee"
+    },
+    {
+      "arquivo": "js/legendas-projeto.js",
+      "bytes": 2326,
+      "sha256": "3a54bb16060c6c5227b5cf16720e24578f727303e3e9a63fff11613a764f9b6c"
+    },
+    {
+      "arquivo": "js/main.js",
+      "bytes": 144569,
+      "sha256": "c0ab1d19011c9c05da46197df00a133fb5a199f973bd51741a6c86d6d2bdaca4"
+    },
+    {
+      "arquivo": "js/painel.js",
+      "bytes": 659,
+      "sha256": "0d0c938c51825804599bf06e7030eab7a915b1815dddce7b08628884d15ebe26"
+    },
+    {
+      "arquivo": "js/premiere_fix.js",
+      "bytes": 5563,
+      "sha256": "baf8ee8cbaa821ee0196a4390098750858f37d99297fb9d7b9f940e7977cda4c"
+    },
+    {
+      "arquivo": "js/prfpset.js",
+      "bytes": 3912,
+      "sha256": "c7c4c6bac5308082281f3a74ce62f809a7ad7b28740e237e60896e1989c74050"
+    },
+    {
+      "arquivo": "js/repeticoes.js",
+      "bytes": 18180,
+      "sha256": "4f330d87589187dbb290f200cad0ff95bcb724ac5ab0302ed5ddda54ef6e4350"
+    },
+    {
+      "arquivo": "js/seletor.js",
+      "bytes": 2231,
+      "sha256": "c3e49dc1bab9aa96098d01f19f8ff3ac449dabee64d614000a71565b0448f2da"
+    },
+    {
+      "arquivo": "js/sfxopcoes.js",
+      "bytes": 8863,
+      "sha256": "eec41fdcc6cabf1c07aff0502afe3666c1e44844f75a78936544e2878b2c7d1c"
+    },
+    {
+      "arquivo": "js/srt_modal.js",
+      "bytes": 957,
+      "sha256": "334e5bd2704122e884ce111f3c1390d8663d505f48358e254cf434c987327864"
+    },
+    {
+      "arquivo": "js/styleclone.js",
+      "bytes": 23239,
+      "sha256": "66f6ebe22244779838ed7513a9fa2038523e9177ee7aad6af3facdd1473dee41"
+    },
+    {
+      "arquivo": "js/transcription.js",
+      "bytes": 69058,
+      "sha256": "33a4af424ea00a045c375d50278a8b8c37b6d7458f98560bcf27d93216cfd6ca"
+    },
+    {
+      "arquivo": "jsx/hostscript.jsxbin",
+      "bytes": 616536,
+      "sha256": "b7d39c14c221297549bc794e89aef20efe98ab6ff809b1837f55bdbfd33cf09f"
+    },
+    {
+      "arquivo": "logo.png",
+      "bytes": 50821
+    },
+    {
+      "arquivo": "presets/bloco_legenda.mogrt",
+      "bytes": 17612
+    },
+    {
+      "arquivo": "presets/curvas_zoom.json",
+      "bytes": 695,
+      "sha256": "6f322d693611cb022e20912efae6ebd84e3882017214ac27f1b51ade832473db"
+    },
+    {
+      "arquivo": "presets/fs_audio.epr",
+      "bytes": 18285,
+      "sha256": "14d02662ab6b412ba1538701ecb24fa2772da061360da19dad4532b9c8816963"
+    },
+    {
+      "arquivo": "presets/fs_audio_leve.epr",
+      "bytes": 18304,
+      "sha256": "049ab07ba9d07f6fc93b107d1c1991dc110b085e4bbf412e700dfcd0ffdd6243"
+    },
+    {
+      "arquivo": "presets/fs_camada_ajuste.prproj",
+      "bytes": 10481
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 01/01 word .fsm",
+      "bytes": 21726
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 01/PREVIEW1.mp4",
+      "bytes": 411338
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 01/project.fsa",
+      "bytes": 14581
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 01/thumb.jpg",
+      "bytes": 16278
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 02/01 word 2.fsm",
+      "bytes": 21736
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 02/PREVIEW.mp4",
+      "bytes": 316349
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 02/project.fsa",
+      "bytes": 14928
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 02/thumb.jpg",
+      "bytes": 18514
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 03/01 word 3.fsm",
+      "bytes": 21384
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 03/PREVIEW_1.mp4",
+      "bytes": 313596
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 03/project.fsa",
+      "bytes": 14199
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 03/thumb.jpg",
+      "bytes": 16579
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 04/01 word 04.fsm",
+      "bytes": 20385
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 04/PREVIEW1.mp4",
+      "bytes": 290647
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 04/project.fsa",
+      "bytes": 13799
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE BOUNCE/MODELO 04/thumb.jpg",
+      "bytes": 14602
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 01/01 words  + Blur 2.fsm",
+      "bytes": 57240
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 01/PREVIEW_01.mp4",
+      "bytes": 366216
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 01/project.fsa",
+      "bytes": 12924
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 01/thumb.jpg",
+      "bytes": 18921
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 02/01 words  + Blur 2.fsm",
+      "bytes": 17207
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 02/PREVIEW.mp4",
+      "bytes": 381687
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 02/project.fsa",
+      "bytes": 11844
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 02/sfxs.wav",
+      "bytes": 311456
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 02/thumb.jpg",
+      "bytes": 12886
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 03/01 word + ligh sweep 3.fsm",
+      "bytes": 18882
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 03/Thumb.jpg",
+      "bytes": 35023
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 03/preview 01.mp4",
+      "bytes": 345956
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 03/project.fsa",
+      "bytes": 14981
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 04/01 word  Left (esquerda).fsm",
+      "bytes": 18054
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 04/PREVIEW01.mp4",
+      "bytes": 350350
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 04/project.fsa",
+      "bytes": 12957
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 04/thumb.jpg",
+      "bytes": 14990
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 05/01 word typewriter .fsm",
+      "bytes": 18153
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 05/PREVIEW-01.mp4",
+      "bytes": 209645
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 05/project.fsa",
+      "bytes": 12924
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 05/thumb.jpg",
+      "bytes": 17370
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 06/01 words RIGHT - (direita).fsm",
+      "bytes": 18118
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 06/PREVIEW01.mp4",
+      "bytes": 274421
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 06/project.fsa",
+      "bytes": 12883
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 06/thumb.jpg",
+      "bytes": 15855
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 07/01 word 07.fsm",
+      "bytes": 18275
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 07/PREVIEW_1.mp4",
+      "bytes": 205793
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 07/project.fsa",
+      "bytes": 13487
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 07/thumb.jpg",
+      "bytes": 16818
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 08/1 LINHA 01.fsm",
+      "bytes": 17309
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 08/1 LINHA 01.mp4",
+      "bytes": 203273
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 08/project.fsa",
+      "bytes": 17917
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 08/thumb.jpg",
+      "bytes": 12727
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 09/1 LINHA 04.fsm",
+      "bytes": 17341
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 09/1 LINHA 04.mp4",
+      "bytes": 90158
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 09/project.fsa",
+      "bytes": 17906
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 09/thumb.jpg",
+      "bytes": 10967
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 10/1 LINHA 05.fsm",
+      "bytes": 16499
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 10/1 LINHA 05.mp4",
+      "bytes": 92721
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 10/project.fsa",
+      "bytes": 16938
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 10/thumb.jpg",
+      "bytes": 12908
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 11/1 LINHA 06.fsm",
+      "bytes": 16386
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 11/1 LINHA 06.mp4",
+      "bytes": 58575
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 11/project.fsa",
+      "bytes": 16962
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 11/thumb.jpg",
+      "bytes": 10295
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 12/1 LINHA 12.fsm",
+      "bytes": 18827
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 12/1 LINHA 12.mp4",
+      "bytes": 213608
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 12/project.fsa",
+      "bytes": 22680
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 12/thumb.jpg",
+      "bytes": 12137
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 13/1 LINHA 13.fsm",
+      "bytes": 19405
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 13/1 LINHA 13.mp4",
+      "bytes": 198346
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 13/project.fsa",
+      "bytes": 19151
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 13/thumb.jpg",
+      "bytes": 13777
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 14/1 LINHA 16.fsm",
+      "bytes": 19440
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 14/1 LINHA 16.mp4",
+      "bytes": 257225
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 14/project.fsa",
+      "bytes": 19061
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 14/thumb.jpg",
+      "bytes": 12172
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 15/1 LINHA 17.fsm",
+      "bytes": 17592
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 15/1 LINHA 17.mp4",
+      "bytes": 58847
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 15/project.fsa",
+      "bytes": 18547
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 15/thumb.jpg",
+      "bytes": 12194
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 16/1 LINHA 18.fsm",
+      "bytes": 560163
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 16/1 LINHA 18.mp4",
+      "bytes": 86387
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 16/project.fsa",
+      "bytes": 18666
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 16/thumb.jpg",
+      "bytes": 24515
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 17/1 LINHA 03.fsm",
+      "bytes": 17766
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 17/PREVIEW.mp4",
+      "bytes": 124009
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 17/project.fsa",
+      "bytes": 15378
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/01 LINE SOLO/MODELO 17/thumb.jpg",
+      "bytes": 9972
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 01/02 words + effects.fsm",
+      "bytes": 84776
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 01/preview.mp4",
+      "bytes": 570134
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 01/project.fsa",
+      "bytes": 17949
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 01/thumb.jpg",
+      "bytes": 28308
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 02/02 words + effects 2 .fsm",
+      "bytes": 24078
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 02/PREVIEW cinematic motion.mp4",
+      "bytes": 535713
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 02/project.fsa",
+      "bytes": 18208
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 02/thumb.jpg",
+      "bytes": 35693
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 03/02 word Ui.fsm",
+      "bytes": 24881
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 03/PREVIEW 01.mp4",
+      "bytes": 489434
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 03/project.fsa",
+      "bytes": 18618
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 03/thumb.jpg",
+      "bytes": 35250
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 04/02 words - down-up + effects.fsm",
+      "bytes": 26990
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 04/PREVIEW01.mp4",
+      "bytes": 548880
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 04/project.fsa",
+      "bytes": 19635
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 04/sfxs.wav",
+      "bytes": 415672
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 04/thumb.jpg",
+      "bytes": 36246
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 05/02 words + effects 5.fsm",
+      "bytes": 23420
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 05/PREVIEW.mp4",
+      "bytes": 451935
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 05/project.fsa",
+      "bytes": 15235
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 05/thumb.jpg",
+      "bytes": 25296
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 06/02 words + effects 6.fsm",
+      "bytes": 27101
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 06/PREVIEW.mp4",
+      "bytes": 459871
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 06/project.fsa",
+      "bytes": 14865
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 06/thumb.jpg",
+      "bytes": 22232
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 07/02 words + EFFECTS.fsm",
+      "bytes": 23849
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 07/PREVIEW_1.mp4",
+      "bytes": 464817
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 07/project.fsa",
+      "bytes": 15900
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 07/thumb.jpg",
+      "bytes": 27337
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 08/02 words 8.fsm",
+      "bytes": 24339
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 08/PREVIEW1.mp4",
+      "bytes": 558266
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 08/project.fsa",
+      "bytes": 17663
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 08/thumb.jpg",
+      "bytes": 25840
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 09/02 words + DIFFERENCE.fsm",
+      "bytes": 20446
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 09/PREVIEW_1.mp4",
+      "bytes": 395259
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 09/project.fsa",
+      "bytes": 16238
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 09/thumb.jpg",
+      "bytes": 203274
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 10/2 linhas.fsm",
+      "bytes": 24605
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 10/2 linhas.mp4",
+      "bytes": 419465
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 10/project.fsa",
+      "bytes": 29103
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 10/thumb.jpg",
+      "bytes": 16366
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 11/2 LINHAS 01.fsm",
+      "bytes": 25074
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 11/2 LINHAS 01.mp4",
+      "bytes": 385078
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 11/project.fsa",
+      "bytes": 25533
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 11/thumb.jpg",
+      "bytes": 16996
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 12/2 LINHAS 02.fsm",
+      "bytes": 22473
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 12/2 LINHAS 02.mp4",
+      "bytes": 711977
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 12/project.fsa",
+      "bytes": 26305
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 12/thumb.jpg",
+      "bytes": 18046
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 13/2 LINHAS 03.fsm",
+      "bytes": 22213
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 13/2 LINHAS 03.mp4",
+      "bytes": 498836
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 13/project.fsa",
+      "bytes": 26123
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 13/thumb.jpg",
+      "bytes": 12782
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 14/2 LINHAS 05.fsm",
+      "bytes": 23235
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 14/2 LINHAS 05.mp4",
+      "bytes": 1224962
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 14/project.fsa",
+      "bytes": 26857
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 14/thumb.jpg",
+      "bytes": 64897
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 15/2 LINHAS 06.fsm",
+      "bytes": 24791
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 15/2 LINHAS 06.mp4",
+      "bytes": 242636
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 15/project.fsa",
+      "bytes": 25399
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 15/thumb.jpg",
+      "bytes": 13786
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 16/2 LINHAS 07.fsm",
+      "bytes": 25318
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 16/2 LINHAS 07.mp4",
+      "bytes": 335740
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 16/project.fsa",
+      "bytes": 25419
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 16/thumb.jpg",
+      "bytes": 14413
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 17/2 LINHAS 08.fsm",
+      "bytes": 25385
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 17/2 LINHAS 08.mp4",
+      "bytes": 363319
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 17/project.fsa",
+      "bytes": 25323
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 17/thumb.jpg",
+      "bytes": 15660
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 18/2 LINHAS 09.fsm",
+      "bytes": 25322
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 18/2 LINHAS 09.mp4",
+      "bytes": 411325
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 18/project.fsa",
+      "bytes": 25455
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 18/thumb.jpg",
+      "bytes": 17659
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 19/2 LINHAS 10.fsm",
+      "bytes": 24376
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 19/2 LINHAS 10.mp4",
+      "bytes": 210232
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 19/project.fsa",
+      "bytes": 22029
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 19/thumb.jpg",
+      "bytes": 11400
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 20/2 LINHAS 11.fsm",
+      "bytes": 25169
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 20/2 LINHAS 11.mp4",
+      "bytes": 318023
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 20/project.fsa",
+      "bytes": 18453
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 20/thumb.jpg",
+      "bytes": 15061
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 21/2 LINHAS 12.fsm",
+      "bytes": 25477
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 21/2 LINHAS 12.mp4",
+      "bytes": 407585
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 21/project.fsa",
+      "bytes": 18623
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 21/thumb.jpg",
+      "bytes": 16878
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 22/2 LINHAS 13.fsm",
+      "bytes": 25729
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 22/2 LINHAS 13.mp4",
+      "bytes": 374152
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 22/project.fsa",
+      "bytes": 18567
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 22/thumb.jpg",
+      "bytes": 19835
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 23/2 LINHAS 14.fsm",
+      "bytes": 25660
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 23/2 LINHAS 14.mp4",
+      "bytes": 376074
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 23/project.fsa",
+      "bytes": 18606
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 23/thumb.jpg",
+      "bytes": 22162
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 24/2 LINHAS 15.fsm",
+      "bytes": 25733
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 24/2 LINHAS 15.mp4",
+      "bytes": 415460
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 24/project.fsa",
+      "bytes": 20099
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 24/thumb.jpg",
+      "bytes": 18576
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 25/2 LINHAS FLICKER BAIXO.fsm",
+      "bytes": 24363
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 25/2 linhas flicker baixo.mp4",
+      "bytes": 519390
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 25/project.fsa",
+      "bytes": 26551
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 25/thumb.jpg",
+      "bytes": 23326
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 26/2 LINHAS FLICKER.fsm",
+      "bytes": 26330
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 26/2 linhas flicker.mp4",
+      "bytes": 838088
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 26/project.fsa",
+      "bytes": 27932
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 26/thumb.jpg",
+      "bytes": 23067
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 27/2 LINHAS 16.fsm",
+      "bytes": 26632
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 27/PREVIEW.mp4",
+      "bytes": 688541
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 27/project.fsa",
+      "bytes": 22880
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 27/thumb.jpg",
+      "bytes": 17837
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 28/2 LINHAS 17.fsm",
+      "bytes": 27010
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 28/PREVIEW.mp4",
+      "bytes": 532035
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 28/project.fsa",
+      "bytes": 22981
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 28/thumb.jpg",
+      "bytes": 15059
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 29/2 LINHAS 18.fsm",
+      "bytes": 26596
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 29/PREVIEW.mp4",
+      "bytes": 502406
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 29/project.fsa",
+      "bytes": 22772
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/02 LINE DUO/MODELO 29/thumb.jpg",
+      "bytes": 16337
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 01/03 words 1 + effects.fsm",
+      "bytes": 31465
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 01/PREVIEW.mp4",
+      "bytes": 740990
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 01/Thumb.jpg",
+      "bytes": 45447
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 01/project.fsa",
+      "bytes": 25774
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 01/sfxs.wav",
+      "bytes": 382900
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 02/03 words + effects 2.fsm",
+      "bytes": 28829
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 02/PREVIEW...mp4",
+      "bytes": 868294
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 02/project.fsa",
+      "bytes": 21879
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 02/thumb.jpg",
+      "bytes": 45435
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 03/03 words + sweep + effects.fsm",
+      "bytes": 29367
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 03/PREVIEW 1.mp4",
+      "bytes": 978652
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 03/project.fsa",
+      "bytes": 23627
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 03/thumb.jpg",
+      "bytes": 50333
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 04/03 words + EFFECTS 4.fsm",
+      "bytes": 24720
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 04/PREVIEW_1.mp4",
+      "bytes": 675291
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 04/project.fsa",
+      "bytes": 18385
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 04/thumb.jpg",
+      "bytes": 25361
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 05/03 words + effects 5.fsm",
+      "bytes": 28687
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 05/PREVIEW01.mp4",
+      "bytes": 958292
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 05/project.fsa",
+      "bytes": 21708
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 05/thumb.jpg",
+      "bytes": 42890
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 06/03 words elegants + effects 6.fsm",
+      "bytes": 25970
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 06/PREVIEW_1.mp4",
+      "bytes": 618810
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 06/project.fsa",
+      "bytes": 17461
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 06/thumb.jpg",
+      "bytes": 31901
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 07/03 words + effects 7.fsm",
+      "bytes": 26048
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 07/PREVIEW.mp4",
+      "bytes": 930252
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 07/project.fsa",
+      "bytes": 19533
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 07/thumb.jpg",
+      "bytes": 36172
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 08/03 WORDS HOOK.fsm",
+      "bytes": 26155
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 08/PREVIEW..mp4",
+      "bytes": 539184
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 08/project.fsa",
+      "bytes": 17557
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 08/thumb.jpg",
+      "bytes": 35924
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 09/03 WORD 02.fsm",
+      "bytes": 35538
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 09/04 words 02.mp4",
+      "bytes": 861431
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 09/project.fsa",
+      "bytes": 32468
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 09/thumb.jpg",
+      "bytes": 21649
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 10/03 words 3.mp4",
+      "bytes": 1034152
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 10/3 WORD 03.fsm",
+      "bytes": 52071
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 10/project.fsa",
+      "bytes": 32240
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 10/thumb.jpg",
+      "bytes": 27118
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 11/03 WORD 4.fsm",
+      "bytes": 31099
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 11/03 words 4.mp4",
+      "bytes": 1088747
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 11/project.fsa",
+      "bytes": 33263
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 11/thumb.jpg",
+      "bytes": 23292
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 12/03 WORD 5.fsm",
+      "bytes": 35005
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 12/03 words 5.mp4",
+      "bytes": 675362
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 12/project.fsa",
+      "bytes": 31981
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 12/thumb.jpg",
+      "bytes": 19550
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 13/03 word 6.fsm",
+      "bytes": 27758
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 13/03 words 6.mp4",
+      "bytes": 546334
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 13/project.fsa",
+      "bytes": 43501
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 13/thumb.jpg",
+      "bytes": 16253
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 14/03 word 7.fsm",
+      "bytes": 26941
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 14/03 words 7.mp4",
+      "bytes": 594944
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 14/project.fsa",
+      "bytes": 29657
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 14/thumb.jpg",
+      "bytes": 17684
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 15/03 words 8.mp4",
+      "bytes": 871802
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 15/3 word 8.fsm",
+      "bytes": 29611
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 15/project.fsa",
+      "bytes": 29998
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 15/thumb.jpg",
+      "bytes": 20989
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 16/03 words 9.mp4",
+      "bytes": 748315
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 16/3 words 9.fsm",
+      "bytes": 30215
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 16/project.fsa",
+      "bytes": 43640
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 16/thumb.jpg",
+      "bytes": 19107
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 17/03 word 10.fsm",
+      "bytes": 33084
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 17/03 words 10.mp4",
+      "bytes": 500638
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 17/project.fsa",
+      "bytes": 28815
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/03 LINE TRIO/MODELO 17/thumb.jpg",
+      "bytes": 16792
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 01/04 Words + effects.fsm",
+      "bytes": 176385
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 01/PREVIEW.mp4",
+      "bytes": 1025672
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 01/project.fsa",
+      "bytes": 24787
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 01/thumb.jpg",
+      "bytes": 51206
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 02/04 words + effects 2.fsm",
+      "bytes": 94407
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 02/PREVIEW01.mp4",
+      "bytes": 876600
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 02/project.fsa",
+      "bytes": 26180
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 02/thumb.jpg",
+      "bytes": 43969
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 03/04 words + effects 3.fsm",
+      "bytes": 97874
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 03/PREVIEW.mp4",
+      "bytes": 674326
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 03/project.fsa",
+      "bytes": 22420
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 03/thumb.jpg",
+      "bytes": 27960
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 04/04 words + effects 4.fsm",
+      "bytes": 78306
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 04/PREVIEW..mp4",
+      "bytes": 507951
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 04/THUMB.jpg",
+      "bytes": 24130
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 04/project.fsa",
+      "bytes": 19650
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 05/4 words  01.fsm",
+      "bytes": 35498
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 05/4 words  01.mp4",
+      "bytes": 625536
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 05/project.fsa",
+      "bytes": 30791
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 05/thumb.jpg",
+      "bytes": 23507
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 06/04 word 02.fsm",
+      "bytes": 32379
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 06/04 words 02.mp4",
+      "bytes": 871362
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 06/project.fsa",
+      "bytes": 28125
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 06/sfx 04 word 2.mp3",
+      "bytes": 63088
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 06/thumb.jpg",
+      "bytes": 13644
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 07/04 word 03.fsm",
+      "bytes": 33545
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 07/04 words 03.mp4",
+      "bytes": 526461
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 07/project.fsa",
+      "bytes": 28138
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/04 LINE QUARTETO/MODELO 07/thumb.jpg",
+      "bytes": 14658
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 01/05 words + effects.fsm",
+      "bytes": 110576
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 01/PREVIEW.mp4",
+      "bytes": 1054903
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 01/project.fsa",
+      "bytes": 24604
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 01/thumb.jpg",
+      "bytes": 51563
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 02/05 words + effects.fsm",
+      "bytes": 121607
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 02/PREVIEW.....mp4",
+      "bytes": 794014
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 02/project.fsa",
+      "bytes": 26761
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 02/thumb.jpg",
+      "bytes": 45061
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 03/05 words elegants + effects 3.fsm",
+      "bytes": 107395
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 03/PREVIEW..mp4",
+      "bytes": 943502
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 03/project.fsa",
+      "bytes": 26475
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 03/thumb.jpg",
+      "bytes": 46582
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 04/05 word 01.fsm",
+      "bytes": 1839810
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 04/05 words 01.mp4",
+      "bytes": 1022824
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 04/project.fsa",
+      "bytes": 34700
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 04/thumb.jpg",
+      "bytes": 27073
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 05/05 word 02.fsm",
+      "bytes": 1828366
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 05/05 words 02.mp4",
+      "bytes": 868851
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 05/project.fsa",
+      "bytes": 34648
+    },
+    {
+      "arquivo": "templates/01 STYLE LETTERINGS/05 LINE QUINTETO/MODELO 05/thumb.jpg",
+      "bytes": 25890
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX TYPER/v1) Typing+Enter (short).wav",
+      "bytes": 751092
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX TYPER/v2) Typing  (Short)+ Enter.wav",
+      "bytes": 802348
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX TYPER/v3) Typing.wav",
+      "bytes": 1186734
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/8 Bit UI - Buzzy Error.wav",
+      "bytes": 200248
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/AM - SCI FI CLICK 2.MP3",
+      "bytes": 10916
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/AM - SCI FI CLICK 4.MP3",
+      "bytes": 15932
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/AM - SCI FI CLICK 5.MP3",
+      "bytes": 24291
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/AM - SCI FI CLICK 6.MP3",
+      "bytes": 28053
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/AM - SCI FI CLICK 8.MP3",
+      "bytes": 27217
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Advanced UI - Airy Bubble Pop.wav",
+      "bytes": 903788
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Advanced Ui - Cute Bubble.wav",
+      "bytes": 471788
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Bright UI - Positive Chimes Alert.wav",
+      "bytes": 366074
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Cartoon UI - Collect Prize.wav",
+      "bytes": 796928
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Casual UI - Cursor Short Click 02.wav",
+      "bytes": 91266
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Creator Kit - Smartphone Typing, Single Click.wav",
+      "bytes": 86124
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Gambling, Slot Machine, Melody Sounds 02.mp3",
+      "bytes": 82194
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Hits & Pieces - Notification Beep.wav",
+      "bytes": 709936
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/JBoB - Cartoon UI - Miracle Bleep.wav",
+      "bytes": 1154644
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Line Disruption - Input Error.wav",
+      "bytes": 13234688
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Morph - Incoming Pop, Popping.wav",
+      "bytes": 890288
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Morph - Interface Notification.wav",
+      "bytes": 850544
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Power Accents - Gust of Wind Whoosh, Left to Right.wav",
+      "bytes": 3238202
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Robotica - Tiny Robot, Processing.wav",
+      "bytes": 1465534
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Sci Fi Interface - UI, Maximize on Screen Window.wav",
+      "bytes": 603378
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Select, Soft Round Pluck, Short, Reverb Audio Extracted.wav",
+      "bytes": 290416
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Slick UI - Digital Appearance.wav",
+      "bytes": 468428
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Smartphone UI - Menu Navigation, Swipe, Short.wav",
+      "bytes": 218924
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Smartphone UI - Typing, Single Click 2.wav",
+      "bytes": 163586
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Smartphone typing ui.wav",
+      "bytes": 2115264
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Solid Ui - Positive Confirmation, Bouncy, Cheerful.wav",
+      "bytes": 937152
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Spaceships Systems - Positive Popup.wav",
+      "bytes": 1875512
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/UI - Vintage Error.wav",
+      "bytes": 184550
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/UIX 03.wav",
+      "bytes": 439592
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/Video game, modern, game-play element, inventory, grab potion.wav",
+      "bytes": 554142
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX UI/artlist_sound_sfx49164.wav",
+      "bytes": 439592
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/15. Whoosh Swoosh.wav",
+      "bytes": 296554
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/24. Whoosh Swoosh.wav",
+      "bytes": 705718
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Designed_Whoosh_Whoosh_SDGWATT_33564.wav",
+      "bytes": 34256
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/TM DEEP WOOSH.mp4",
+      "bytes": 133917
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/TM HIGH WOOSH.mp4",
+      "bytes": 133067
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/TM LONG WOOSH.mp4",
+      "bytes": 166230
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/TM MID WOOSH.mp4",
+      "bytes": 133917
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/WHOOSH_The_End.wav",
+      "bytes": 631538
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 00.mp3",
+      "bytes": 107732
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 01.wav",
+      "bytes": 577104
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 03.mp3",
+      "bytes": 79519
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 04.mp3",
+      "bytes": 115046
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 05.mp3",
+      "bytes": 85789
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 06.mp3",
+      "bytes": 93103
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 07.mp3",
+      "bytes": 103552
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 08.wav",
+      "bytes": 577868
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 09.mp3",
+      "bytes": 97283
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 11.wav",
+      "bytes": 577104
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 12.wav",
+      "bytes": 577870
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 13.wav",
+      "bytes": 577868
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh 3.wav",
+      "bytes": 577870
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh Impact.wav",
+      "bytes": 530004
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh and Hit (2).mp3",
+      "bytes": 66993
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh and Hit (3).wav",
+      "bytes": 462892
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Whoosh sound effect.mp3",
+      "bytes": 42978
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Woosh 01.mp3",
+      "bytes": 107623
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Woosh 02.mp3",
+      "bytes": 82546
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Woosh 03.mp3",
+      "bytes": 36570
+    },
+    {
+      "arquivo": "templates/02 SFX FRAMESPEED/SFX WHOOSH/Woosh 04.mp3",
+      "bytes": 158823
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Bright Click (mp3).mp3",
+      "bytes": 36543
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Bright Click.wav",
+      "bytes": 109448
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Button Press.wav",
+      "bytes": 217768
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Casual UI.wav",
+      "bytes": 112022
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Click Ding (mp3).mp3",
+      "bytes": 86758
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Click Ding.wav",
+      "bytes": 363872
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Click.wav",
+      "bytes": 198530
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Crisp Snap.wav",
+      "bytes": 36402
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Device Enter.wav",
+      "bytes": 194140
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Device Switch.wav",
+      "bytes": 197776
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Extract.wav",
+      "bytes": 205950
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Lettering 01.wav",
+      "bytes": 89912
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Lettering Phone.wav",
+      "bytes": 16128
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Magical UI.wav",
+      "bytes": 239904
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Phone Text.wav",
+      "bytes": 44090
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Pulse Tap.wav",
+      "bytes": 36372
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS Soft Tick.wav",
+      "bytes": 27740
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS UI Button.wav",
+      "bytes": 269600
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS UI Click Bubble.wav",
+      "bytes": 88890
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS UI Flick Bubble.wav",
+      "bytes": 242902
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS UI Pop.mp3",
+      "bytes": 46707
+    },
+    {
+      "arquivo": "templates/SFX LETTERING/FS iPhone Keyboard.mp3",
+      "bytes": 726413
+    }
+  ]
+}

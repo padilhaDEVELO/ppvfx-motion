@@ -1,0 +1,3781 @@
+{
+  "mode": "execute",
+  "targets": [
+    {
+      "path": "/Users/ppvfx/.npm/_logs",
+      "category": "cache npm",
+      "bytes": 45056,
+      "min_days": 0
+    },
+    {
+      "path": "/Users/ppvfx/.npm/_cacache",
+      "category": "cache npm",
+      "bytes": 318746624,
+      "min_days": 0
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/pip",
+      "category": "cache de downloads de dependencias",
+      "bytes": 309673984,
+      "min_days": 0
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/node-gyp",
+      "category": "cache de downloads de dependencias",
+      "bytes": 65634304,
+      "min_days": 0
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/electron",
+      "category": "cache de downloads de dependencias",
+      "bytes": 111357952,
+      "min_days": 0
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/.video-tools/yaml/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/.tools/pymupdf/pymupdf/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 45056,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/av/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/PIL/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/tqdm/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/yaml/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/regex/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/scipy/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/pymupdf/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/whisper/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/llvmlite/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/ma/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/tiktoken/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/np/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torchgen/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/mps/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/cpu/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/xpu/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/amp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/jit/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fft/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/lib/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/fft/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/cuda/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/mtia/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/func/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/core/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/misc/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/scipy/_lib/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 147456,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/llvmlite/ir/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/optim/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/_core/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/ctranslate2/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/typed/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_prims/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/linalg/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/masked/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/sparse/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/export/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nested/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/signal/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/_utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/compat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/linalg/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/random/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_export/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/monitor/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/futures/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_vendor/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/cpu/amp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_decomp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/special/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/testing/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_awaits/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/package/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/_typing/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 4096,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/cpython/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/parfors/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_logging/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/autograd/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/cuda/amp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_library/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/nn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/profiler/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/compiler/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/faster_whisper/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/stencils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/np/types/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/np/ufunc/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/huggingface_hub/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_dispatch/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/passes/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/qat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/matrixlib/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/llvmlite/binding/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_functorch/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_custom_op/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/polynomial/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/types/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_subclasses/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/parallel/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/accelerator/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/ctranslate2/specs/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/typing/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/unsafe/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/cloudpickle/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/attention/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/mha/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/mps/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/cpu/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/mkl/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/quantization/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/sparse/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/linalg/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_strobelight/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/ctranslate2/models/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/experimental/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/runtime/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_prims_common/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/cuda/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/special/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributions/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/typeconv/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/rewrites/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/qat/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/qat/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantizable/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/cudnn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/signal/windows/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/datamodel/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/cpython/unsafe/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/rpc/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/experimental/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/passes/infra/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/passes/utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/multiprocessing/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/nnpack/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/miopen/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/mkldnn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/openmp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/quantization/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/package/analyze/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/qat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/backcompat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nested/_internal/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/norm/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/topk/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/ctranslate2/converters/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/annotations/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_higher_order_ops/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_vendor/packaging/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/kleidiai/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/_debug_mode/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/_utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/testing/_internal/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/qat/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/qat/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantizable/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/_pycute/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/opt_einsum/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/cusparselt/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/masked/maskedtensor/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/serialization/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/qat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/nn/functional/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantized/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantized/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/autograd/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/experimental/jitclass/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/qat/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantizable/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/algorithms/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/python_native/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/sparse/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/foreach_mm/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/scatter_add/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/qat/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/map/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/iter/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/qat/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/reference/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantizable/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/experimental/unification/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/qat/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/bmm_outer_product/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/quantized/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/dataframe/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/sparse/quantized/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/reference/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/quantized/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/quantized/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/quantized/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/quantized/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/experimental/unification/multipledispatch/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    }
+  ],
+  "skipped": [
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.AvatarKit",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/familycircled",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/GeoServices",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.managedappdistributionagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.Music",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.storekitagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.HomeKit",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.proactive.eventtracker",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.google.antigravity-ide.ShipIt",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/PassKit",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/CloudKit",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.adobe.ARMDCHelper",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.e5rt.e5bundlecache",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.Safari",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.juce.locks",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.filmimpact.Plugins",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/claude-cli-nodejs",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.Spotlight",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.businessservicesd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.appstoreagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.CloudTelemetry",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.geoanalyticsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.nbagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.tipsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.nsurlsessiond",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/pip",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/Adobe",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/CSXS",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.passd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.chrono",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.AppleMediaServices",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.remindd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.assistantd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.dataaccess.dataaccessd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.python",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.Safari.SafeBrowsing",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.parsecd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.nsservicescache.plist",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/FamilyCircle",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/node-gyp",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.AMPLibraryAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.adobe.PremierePro.26",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.feedbacklogger",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.duetexpertd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.translationd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.AuthenticationServicesCore.AuthenticationServicesAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/electron",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.adobe.acc.Setup",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/com.apple.amsengagementd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/net.blip.macos",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.ImageIOXPCService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.adobe.cep.CEPHtmlEngine Helper (GPU)",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.callintelligenced",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.Safari.SandboxBroker",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.github.Electron.helper",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.replayd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.facetimemessagestored",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.appleaccounttransparencyd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/mobiletimerd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.securityuploadd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.CoreGraphics.CGPDFService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/org.python.python",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.photos.ImageConversionService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.managedappdistributionagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.speech.localspeechrecognition",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.ImageIOXPCService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.ThreadCommissionerService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.avconferenced",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.callintelligenced",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/BlobRegistryFiles-BvrX0c2Z",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.appleaccountd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.replayd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.lockdownmoded",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.facetimemessagestored",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.appleaccounttransparencyd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/node-compile-cache",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/mobiletimerd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.MTLCompilerService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.securityuploadd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.CoreGraphics.CGPDFService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.syncdefaultsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.managedappdistributionagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.FaceTime.FTConversationService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.speech.localspeechrecognition",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.transparencyd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.AppSSOAgent",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remotemanagement.PasscodeSettingsSubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.AuthenticationServices.ASConfigurationSubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.linkd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.jetpackassetd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.siriactionsd",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.progressd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remotemanagement.AccountSubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.iconservicesagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.trustd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/BlobRegistryFiles-HtvITKCo",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.GenerativeFunctions.generativeexperiencesd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.findmy.findmylocateagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.triald",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.ap.promotedcontentd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.fskit.fskit_agent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.replicatord",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.SharePlay.GroupSessionService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.appplaceholdersync",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.akd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.FeatureAccessAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.homeenergyd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/contentlinkingd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/BlobRegistryFiles-N6o5OIpF",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/talagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.proactiveeventtrackerd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.backgroundassets.managed.helper.service",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.SafariLaunchAgent",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.ScopedBookmarkAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.trial.TrialArchivingService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.TelephonyUtilities",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.siriinferenced",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/ppvfx-antigravity-ide-zsh",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.dataaccess",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.amp.mediasharingd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/.LINKS",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.sessionkit",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/AudioComponentRegistrar",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remotemanagement.SecuritySubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/CrashHandlerService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.businessservicesd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.ProtectedCloudKeySyncing",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.appstoreagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/Blob2ThnWi",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.secureelementservice",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.imtransferservices.IMTransferAgent",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.inputanalyticsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.BiomeAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remotemanagement.ManagementTestSubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.naturallanguaged",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/unleash-repo-schema-v1-codeium-language-server.json",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/mediaanalysisd-access",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/TemporaryItems",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.parsec-fbf",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.useractivityd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.geoanalyticsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.ciphermld",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.amsondevicestoraged",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.tipsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.TrustedPeersHelper",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/playwright-artifacts-kjFUNU",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/playwright-artifacts-xOPL1x",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.fileproviderd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.dmd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/vscode-git-eeb537ce7d.sock",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/UXP",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.sirittsd",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.siri.SuggestionsBookkeepingService",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.nsurlsessiond",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.intelligentroutingd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.WorkflowKit.BackgroundShortcutRunner",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/skyeTemp",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/BlobRegistryFiles-ateXxPUL",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/playwright-artifacts-VNFUTe",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/SandboxHelper",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.intelligenceplatformd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.keychainsharingmessagingd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.privatecloudcomputed",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.passd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.StreamingUnzipService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.chrono",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.calaccessd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remotemanagement.ManagedAppsSubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/playwright-artifacts-w57U17",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remindd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remotemanagement.ManagedSettingsSubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/StatusKitAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/duetexpertd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.GamePolicyAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.adprivacyd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.parsecd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/icdd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.identityservicesd",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.adobe.dynamiclinkmanager26.0",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.sharingd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/assessmentagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/playwright-artifacts-DkJkDI",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.bluetoothuserd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remotemanagement.ScreenSharingSubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.Maps.mapssyncd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/heard",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.bird",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.biomesyncd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/BlobRegistryFiles-eXfhxJFx",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.cloudd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.amsaccountsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remotemanagement.LegacyProfilesSubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.cloudkit.upload-request.cache",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.textunderstandingd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.avatarsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.storekit",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.adobe.ae.cap",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/betaenrollmentagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/.AddressBookLocks",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/AudioConverterService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/tmpxvxn3expcacert.pem",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.analyticsagent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/metrickitd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.stickersd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.remotemanagement.InteractiveLegacyProfilesSubscriber",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.intelligencetasksd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.GameController.gamecontrolleragentd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.WindowManager",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/homed",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.usernotificationsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.email.maild",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.sociallayerd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.corespeechd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.SetStoreUpdateService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.quicklook.ThumbnailsAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.siri-distributed-evaluation",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.pluginkit",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/diagnosticextensionsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/playwright-artifacts-7igkRs",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.devicecheckd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.accessibility.mediaaccessibilityd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.communicationtrustd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.donotdisturbd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.intelligenceplatform.IntelligencePlatformComputeService",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/playwright-artifacts-6rOViY",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.translationd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.tccd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/itunescloudd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/BlobRegistryFiles-ChzBLZGj",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.CloudDocsDaemon.container-metadata-extractor",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.intelligenceflow.intelligencecontextd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.homeeventsd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.iCloudNotificationAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.imagent",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.frauddefensed",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.knowledgeconstructiond",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.weatherd",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.milod",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/tombstone",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.familycircled",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.imdpersistence.IMDPersistenceAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.amsengagementd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.RemoteManagementAgent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/proactived",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.ap.adprivacyd",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/torchinductor_ppvfx",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.icloud.searchpartyuseragent",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/BlobRegistryFiles-4kv2qjuv",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/xcrun_db",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/T/com.apple.financed",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/com.ppvfx.news-retention-cleanup.err.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/PhotosSearch.aapbz",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/DiscRecording.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/com.ppvfx.news-retention-cleanup.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NGLClient_CCXProcess17.13 2026-09-19 11-06-50-387.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NGLClient_PremierePro1.ngllogcontrolconfig",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NGLClient_default.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NglFeatureFetchTimestamp",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NglFeatureConfig",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NGLClient_CCXProcess17.13 2026-09-19 11-39-03-968.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NglIEvtOPMPD",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NGLClient_CCXProcess1.ngllogcontrolconfig",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NGLClient_PremierePro126.5.1.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NGLClient_CCXProcess17.13 2026-09-19 10-34-37-411.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NglIEvtAppOPMPD_PremierePro1",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NGLClient_PremierePro126.5.1 2026-09-19 10-08-31-777.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/NGL/NGLClient_CCXProcess17.13.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/com.apple.CloudTelemetry/XPCService/com.apple.swtransparencyd/CloudTelemetry_messageLog_2026-09-19-17-03-36.txt",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/com.apple.CloudTelemetry/XPCService/com.apple.privatecloudcomputed/CloudTelemetry_messageLog_2026-09-19-09-32-32.txt",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/com.apple.CloudTelemetry/XPCService/com.apple.identityservicesd/CloudTelemetry_messageLog_2026-09-19-17-03-36.txt",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/com.apple.CloudTelemetry/XPCService/com.apple.cloudd/CloudTelemetry_messageLog_2026-09-19-09-32-13.txt",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/CrashReporter/DiagnosticLogs/Search/spotlight_heartbeat_last.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/Adobe/Acrobat Update Helper DC.log",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/Adobe/AdobeCRCommon/Logs/CC_Creative Cloud_6.10_6.10.0.253.db",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/Adobe/AdobeCRCommon/Logs/CC_Creative Cloud UI Helper (GPU)_6.10.0.253_6.10.0.253.db",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/Adobe/Adobe Premiere Pro 2026/UXPLogs_2026-09-19_09-38-18_329475.log",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/Adobe/GrowthSDK/Production/Premiere Pro_2026-09-19.log",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/Adobe/GrowthSDK/Production/CCX Process_2026-09-19.log",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/Adobe/GrowthSDK/Production/Premiere_2026-09-19.log",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/CSXS/CEPHtmlEngine12-PPRO-26.5.1-com.padilha.cortes.panel-renderer.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/CSXS/CEP12-PPRO.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/CSXS/CEPHtmlEngine12-PPRO-26.5.1-com.misterhorse.premierecomposer.browser.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/CSXS/CEPHtmlEngine12-PPRO-26.5.1-com.misterhorse.premierecomposer.browser-renderer.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/CSXS/CEPHtmlEngine12-PPRO-26.5.1-com.padilha.cortes.panel.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Logs/CreativeCloud/CCX Welcome/CCX Process.log",
+      "reason": "conteudo recente"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Antigravity IDE/CachedData",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Antigravity IDE/Crashpad",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Antigravity IDE/GPUCache",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Antigravity IDE/Cache",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Antigravity IDE/DawnWebGPUCache",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Antigravity IDE/DawnGraphiteCache",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Adobe/Common/Media Cache Files",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Adobe/Common/Analyzer Cache Files",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Adobe/Common/Peak Files",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Figma/DesktopProfile/v42/Cache",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Figma/DesktopProfile/v42/Code Cache",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Figma/DesktopProfile/v42/GPUCache",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Figma/DesktopProfile/v42/DawnWebGPUCache",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Figma/DesktopProfile/v42/DawnGraphiteCache",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Figma/DesktopProfile/v42/Crashpad",
+      "reason": "aplicativo em uso"
+    },
+    {
+      "path": "/Users/ppvfx/Library/Application Support/Figma/DesktopProfile/v42/Shared Dictionary",
+      "reason": "aplicativo em uso"
+    }
+  ],
+  "warnings": [
+    "[Errno 1] Operation not permitted: '/var/folders/8z/6m4s4t995vv4021pb1ht0kvw0000gn/C/com.apple.WorkflowKit.BackgroundShortcutRunner.ShortcutsSandboxCache'"
+  ],
+  "estimated_bytes": 805654528,
+  "removed": [
+    {
+      "path": "/Users/ppvfx/.npm/_logs",
+      "category": "cache npm",
+      "bytes": 45056,
+      "min_days": 0
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/pip",
+      "category": "cache de downloads de dependencias",
+      "bytes": 309673984,
+      "min_days": 0
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/node-gyp",
+      "category": "cache de downloads de dependencias",
+      "bytes": 65634304,
+      "min_days": 0
+    },
+    {
+      "path": "/Users/ppvfx/Library/Caches/electron",
+      "category": "cache de downloads de dependencias",
+      "bytes": 111357952,
+      "min_days": 0
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/.video-tools/yaml/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/.tools/pymupdf/pymupdf/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 45056,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/av/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/PIL/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/tqdm/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/yaml/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/regex/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/scipy/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/pymupdf/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/whisper/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/llvmlite/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/ma/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/tiktoken/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/np/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torchgen/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/mps/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/cpu/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/xpu/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/amp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/jit/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fft/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/lib/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/fft/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/cuda/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/mtia/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/func/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/core/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/misc/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/scipy/_lib/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 147456,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/llvmlite/ir/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/optim/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/_core/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/ctranslate2/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/typed/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_prims/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/linalg/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/masked/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/sparse/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/export/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nested/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/signal/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/_utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/compat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/linalg/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/random/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_export/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/monitor/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/futures/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_vendor/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/cpu/amp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_decomp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/special/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/testing/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_awaits/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/package/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/_typing/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 4096,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/cpython/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/parfors/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_logging/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/autograd/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/cuda/amp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_library/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/nn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/profiler/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/compiler/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/faster_whisper/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/stencils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/np/types/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/np/ufunc/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/huggingface_hub/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_dispatch/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/passes/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/qat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/matrixlib/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/llvmlite/binding/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_functorch/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_custom_op/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numpy/polynomial/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/types/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_subclasses/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/parallel/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/accelerator/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/ctranslate2/specs/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/typing/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/unsafe/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/cloudpickle/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/attention/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/mha/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/mps/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/cpu/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/mkl/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/quantization/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/sparse/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/linalg/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_strobelight/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/ctranslate2/models/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/experimental/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/runtime/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_prims_common/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/cuda/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/special/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributions/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/typeconv/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/rewrites/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/qat/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/qat/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantizable/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/cudnn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/signal/windows/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/datamodel/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/cpython/unsafe/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/rpc/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/experimental/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/passes/infra/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/passes/utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/multiprocessing/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/nnpack/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/miopen/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/mkldnn/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/openmp/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/quantization/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/package/analyze/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/qat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/backcompat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nested/_internal/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/norm/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/topk/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/ctranslate2/converters/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/core/annotations/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_higher_order_ops/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_vendor/packaging/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/kleidiai/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/_debug_mode/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/_utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/testing/_internal/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/qat/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/qat/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantizable/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/_pycute/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/opt_einsum/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/cusparselt/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/masked/maskedtensor/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/serialization/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/qat/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_refs/nn/functional/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantized/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantized/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/autograd/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/numba/experimental/jitclass/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/qat/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/quantizable/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/distributed/algorithms/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/backends/python_native/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/sparse/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/foreach_mm/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/scatter_add/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/qat/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/map/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/iter/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/qat/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/reference/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantizable/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/quantized/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/utils/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/experimental/unification/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/qat/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/_native/ops/bmm_outer_product/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/quantized/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/utils/data/datapipes/dataframe/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/sparse/quantized/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/quantized/reference/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/quantized/dynamic/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/quantized/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/nn/intrinsic/quantized/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/ao/nn/intrinsic/quantized/dynamic/modules/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    },
+    {
+      "path": "/Users/ppvfx/Documents/IA/whisper-env/lib/python3.10/site-packages/torch/fx/experimental/unification/multipledispatch/__pycache__",
+      "category": "caches dos projetos",
+      "bytes": 0,
+      "min_days": 3
+    }
+  ],
+  "failed": [
+    {
+      "path": "/Users/ppvfx/.npm/_cacache",
+      "error": "Residuos pertencentes a root; sudo sem senha indisponivel",
+      "remaining_bytes": 115691520
+    }
+  ],
+  "disk_free_before": 67591380992,
+  "preserved": [
+    "arquivos pessoais e duplicados",
+    "Downloads",
+    "Lixeira",
+    "apps instalados",
+    "perfis",
+    "preferencias",
+    "modelos e runtimes locais",
+    "edicoes salvas de news"
+  ],
+  "disk_free_after": 72604381184,
+  "removed_bytes": 689963008,
+  "remaining_removed_targets": [],
+  "npm_partial": {
+    "original_bytes": 318746624,
+    "remaining_bytes": 115691520,
+    "removed_bytes_estimate": 203055104
+  }
+}

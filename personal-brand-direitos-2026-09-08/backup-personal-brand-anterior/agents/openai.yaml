@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marca pessoal completa"
+  short_description: "Da pesquisa ao plano, identidade, peças e apresentação"
+  default_prompt: "Use $personal-brand para executar meu projeto completo de marca pessoal, da pesquisa à entrega dos materiais revisados."

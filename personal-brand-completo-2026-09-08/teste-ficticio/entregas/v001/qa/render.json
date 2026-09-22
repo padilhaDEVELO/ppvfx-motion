@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "build_sha256": "723fd7f78af5fa50e981a0ecbc4507df7c3738e2abb3f7042b0d455a77f7190f",
+  "slides": 6,
+  "assets": 12,
+  "issues": [
+    {
+      "reason": "runtime",
+      "message": "Chrome encerrou: null "
+    }
+  ],
+  "files": {}
+}

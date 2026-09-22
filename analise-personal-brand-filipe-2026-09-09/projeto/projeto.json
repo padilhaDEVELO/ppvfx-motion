@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "person": "Filipe Frazão",
+  "title": "Marca pessoal, Instagram e TikTok",
+  "status": "revisão estratégica com coleta atual limitada",
+  "bio": "Gestão, processos e IA para sua empresa depender menos de você.\nFounder & CEO do Grupo FRZ\nConheça as soluções do grupo ↓",
+  "bios": {
+    "instagram": "Gestão, processos e IA para sua empresa depender menos de você.\nFounder & CEO do Grupo FRZ\nConheça as soluções do grupo ↓"
+  },
+  "visual": {
+    "background": "#030201",
+    "foreground": "#FFFFFF",
+    "accent": "#9D9D9F",
+    "font_file": "assets/Montserrat-Regular.ttf"
+  },
+  "deck": [
+    {
+      "layout": "text",
+      "title": "Filipe Frazão\nMarca pessoal e descoberta",
+      "body": "Instagram, TikTok e comparação com Alfredo Soares.\nDireção editorial, entrada do perfil, pilotos e revisão do plano de Stories.",
+      "eyebrow": "REVISÃO ESTRATÉGICA · 09 SET 2026",
+      "note": "Diagnóstico apoiado em acervo de agosto e fontes públicas acessíveis. A grade atual e os Analytics não foram verificados.",
+      "sources": []
+    },
+    {
+      "layout": "text",
+      "title": "O que sabemos — e o que falta",
+      "body": "ACERVO: relatório de redes de 27/08; texto de dois PDFs de Stories; seis capas enviadas.\nFONTES PÚBLICAS: sites de Filipe/Grupo FRZ e Alfredo; um post histórico de Alfredo no LinkedIn.\nLIMITES: Instagram e TikTok não carregaram. Não foram assistidos os cortes nem conferidas as hashtags atuais.",
+      "eyebrow": "ALCANCE DA LEITURA",
+      "note": "Não atribuímos notas, taxas atuais ou causalidade a perfis que não puderam ser examinados.",
+      "sources": [
+        {
+          "label": "Inventário detalhado no dossiê",
+          "source_id": "L01-L03"
+        }
+      ]
+    },
+    {
+      "layout": "text",
+      "title": "A utilidade precisa aparecer primeiro",
+      "body": "O relatório de agosto registrava uma promessa ampla de escala e performance e uma primeira fileira institucional.\nHipótese: o visitante frio precisa interpretar a marca antes de perceber qual problema ela ajuda a resolver.\nMudança: começar pela situação do gestor, mostrar uma decisão e conectar a demonstração ao grupo.",
+      "eyebrow": "INSTAGRAM DO FILIPE · EVIDÊNCIA HISTÓRICA",
+      "note": "É um diagnóstico da comunicação registrada em agosto; o estado atual da bio e dos fixados precisa de conferência.",
+      "sources": [
+        {
+          "label": "Relatório local, seções 3.1 e 6",
+          "source_id": "L01"
+        }
+      ]
+    },
+    {
+      "layout": "text",
+      "title": "Alfredo: território e continuidade",
+      "body": "No site oficial, vendas, marketing e varejo conectam trajetória, livros, conteúdo e caminhos de educação.\nNo post histórico examinado, a experiência pessoal dá contexto à produção e ao relacionamento.\nPara Filipe: repetir uma contribuição clara e demonstrar a própria decisão em situações reais.",
+      "eyebrow": "COMPARAÇÃO · MECANISMO DE MARCA",
+      "note": "A arquitetura observada não comprova receita nem explica, isoladamente, o alcance nas redes.",
+      "sources": [
+        {
+          "label": "Site Alfredo Soares",
+          "url": "https://alfredosoares.com.br/"
+        }
+      ]
+    },
+    {
+      "layout": "text",
+      "title": "Comparação por canal, com limites claros",
+      "body": "INSTAGRAM: conta do Alfredo vinculada pelo site; ambos os perfis sem leitura atual.\nYOUTUBE: site de Alfredo aponta para endereço legado; handle atual localizado, equivalência pendente.\nLINKEDIN: um texto público histórico de Alfredo lido; sem análise da frequência.\nTIKTOK: perfil indicado pelo usuário; sem acesso direto.\nSPOTIFY: podcast vinculado pelo site; episódios não ouvidos.",
+      "eyebrow": "INVENTÁRIO DAS REDES",
+      "note": "Perfis de cortes e homônimos não foram tratados como oficiais. URLs e condições de identificação estão no dossiê.",
+      "sources": []
+    },
+    {
+      "layout": "text",
+      "title": "Um recorte demonstrável para Filipe",
+      "body": "POSICIONAMENTO PROPOSTO\nMostrar como organizar a operação de uma empresa com gestão, processos e IA.\nPÚBLICO\nDonos e gestores com decisões centralizadas e rotinas repetitivas.\nPROVA\nSituação → decisão → demonstração → limite → próximo passo.",
+      "eyebrow": "APLICAÇÃO · PERSONAL BRAND PADILHA",
+      "note": "A contribuição deve ser demonstrada em cada conteúdo. Não há promessa de exclusividade ou resultado financeiro.",
+      "sources": [
+        {
+          "label": "Apresentação do Grupo FRZ",
+          "url": "https://frzgroup.com.br/"
+        }
+      ]
+    },
+    {
+      "layout": "text",
+      "title": "Bio pronta para revisão",
+      "body": "Gestão, processos e IA para sua empresa depender menos de você.\nFounder & CEO do Grupo FRZ\nConheça as soluções do grupo ↓",
+      "eyebrow": "ENTRADA DO INSTAGRAM",
+      "note": "Nome proposto: Filipe Frazão | Gestão e IA. Destino proposto: frzgroup.com.br. Não foi aplicado ao perfil.",
+      "sources": []
+    },
+    {
+      "layout": "text",
+      "title": "Três fixados com funções diferentes",
+      "body": "1 · IDENTIFICAÇÃO\nSua empresa depende de você para tudo? Três sinais e um exemplo didático.\n2 · PROVA\nComo uma tarefa vira um processo claro. Mostrar entrada, responsável, conclusão e exceção.\n3 · ORIENTAÇÃO\nPor onde começar com gestão e IA. Explicar a ordem e o próximo passo real.",
+      "eyebrow": "DO VISITANTE AO INTERESSE",
+      "note": "Destaques propostos: Comece aqui, Gestão, IA, Casos e Soluções. Criar somente os que tiverem acervo suficiente.",
+      "sources": []
+    },
+    {
+      "layout": "text",
+      "title": "A mesma capa não produz o mesmo alcance",
+      "body": "Na imagem enviada: de 2.106 a 57,8 mil visualizações com linguagem visual semelhante.\nA diferença de aproximadamente 27,4 vezes não permite isolar o efeito da capa. Faltam datas, idade, tráfego, duração e retenção.\nAplicação: foto real, fundo escurecido e título curto. Tema, abertura e entrega continuam sendo hipóteses prioritárias de teste.",
+      "eyebrow": "TIKTOK · CAPAS E TÍTULOS",
+      "note": "Imagem sem identificação independente do perfil/plataforma. Modelo HTML entregue na pasta TikTok.",
+      "sources": []
+    },
+    {
+      "layout": "text",
+      "title": "Três pilotos para gravar",
+      "body": "GESTÃO · Sua empresa depende só de você?\nResponsável, critério e exceção para uma decisão recorrente.\nIA · IA não conserta processo ruim.\nEntrada, saída e conferência antes da automação.\nVENDAS · Cliente sem retorno: quem acompanha?\nResponsável, próxima ação e data por oportunidade.",
+      "eyebrow": "PEÇAS EDITORIAIS CONCRETAS",
+      "note": "Roteiros completos e legendas por canal em conteudo/pilotos.md. Exemplos didáticos; vídeos ainda não produzidos.",
+      "sources": []
+    },
+    {
+      "layout": "text",
+      "title": "O PDF de Stories precisava de correções",
+      "body": "CTA: substituir “arraste para cima” por mensagem ou toque no sticker de link.\nCONCORRÊNCIA: retirar a alegação de território livre e ausência de diagnóstico dos concorrentes.\nMÉTRICAS: razão de alcance não é conclusão das mesmas pessoas. Separar eventos, contas e conversas.\nTESTES: horários e pontuações editoriais são hipóteses, não parâmetros validados.",
+      "eyebrow": "REVISÃO DO ACERVO",
+      "note": "Original preservado. Edição revisada com nota inicial e nove páginas substituídas; consulte revisao-stories.md.",
+      "sources": []
+    },
+    {
+      "layout": "text",
+      "title": "Uma métrica responde a uma pergunta",
+      "body": "ATENÇÃO · tempo assistido, retenção quando disponível e conclusão do vídeo.\nUTILIDADE · compartilhamentos e salvamentos, com denominador explícito.\nINTERESSE · visitas ao perfil, seguidores atribuídos e perguntas concretas.\nNEGÓCIO · conversas qualificadas e origem; receita somente quando observada e rastreada.",
+      "eyebrow": "PLANO DE MENSURAÇÃO",
+      "note": "Comparar idade, duração, formato e objetivo semelhantes. Views, alcance e pessoas não são equivalentes.",
+      "sources": []
+    },
+    {
+      "layout": "text",
+      "title": "Primeiro ciclo de 30 dias",
+      "body": "SEMANA 1 · conferir entrada do perfil, reunir perguntas e separar demonstrações.\nSEMANAS 2–3 · dois temas por semana; versões próprias para Reels/TikTok e Stories de contexto.\nSEMANA 4 · comparar grupos, perguntas e esforço de produção; escolher o próximo teste.\nCAPACIDADE · estimar 4–6h de produção + 45–60min do Filipe; medir o primeiro lote.",
+      "eyebrow": "OPERAÇÃO PROPOSTA",
+      "note": "Frequência dimensionada como hipótese. O plano não instala agendamentos nem autoriza publicação.",
+      "sources": []
+    },
+    {
+      "layout": "text",
+      "title": "Pronto para revisão; dados ainda necessários",
+      "body": "ENTREGUE · diagnóstico, comparação possível, bio, pilotos, modelo de capa e revisão de Stories.\nPARA FECHAR A AUDITORIA · amostra atual acessível do Instagram/TikTok, Analytics e o vídeo específico para a capa.\nFONTES · dossiê e fontes.csv distinguem histórico, observação pública, interpretação e proposta.",
+      "eyebrow": "CONTINUIDADE",
+      "note": "Nenhuma conta foi editada. Nenhum conteúdo foi publicado. Método: personal-brand-padilha, © 2026.",
+      "sources": []
+    }
+  ],
+  "highlights": [],
+  "posts": []
+}

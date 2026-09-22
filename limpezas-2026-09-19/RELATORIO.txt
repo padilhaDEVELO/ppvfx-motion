@@ -1,0 +1,12 @@
+Limpeza segura — 19/09/2026
+
+Removidos: 211 arquivos/pastas completos, mais limpeza parcial do cache npm.
+Tamanho alocado estimado removido: 658.0 MiB.
+Espaco livre ao final: 67.62 GiB.
+Residuos do npm com permissao de administrador: 112980.0 KiB.
+
+Executado: limpeza de caches de download de pip, npm, Electron e node-gyp e caches Python antigos dos projetos. Temporarios, logs e demais caches foram avaliados; itens recentes ou associados a aplicativos em uso foram preservados.
+
+Nao executadas as etapas que apagam arquivos pessoais, duplicados, Downloads, Lixeira, aplicativos, perfis, preferencias, modelos/runtimes locais ou edicoes salvas de noticias. Scripts originais e agendamentos nao foram alterados.
+
+Um cache de atalhos do macOS nao pode ser inspecionado por protecao do sistema. O restante do cache npm requer autenticacao administrativa.

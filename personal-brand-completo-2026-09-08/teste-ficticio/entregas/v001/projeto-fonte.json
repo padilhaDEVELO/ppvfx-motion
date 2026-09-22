@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "person": "Projeto Fictício",
+  "title": "Marca pessoal — demonstração técnica",
+  "status": "TESTE FICTÍCIO — sem publicação",
+  "bio": "Exemplo técnico de bio. Não representa um cliente.",
+  "visual": {
+    "background": "#101113",
+    "foreground": "#FFFFFF",
+    "accent": "#D0B779"
+  },
+  "deck": [
+    {
+      "layout": "cover",
+      "title": "Experiência que pode ser compreendida.",
+      "body": "Demonstração fictícia do processo de marca pessoal.",
+      "note": "Exclusivamente para validar arquivos e renderização."
+    },
+    {
+      "layout": "columns",
+      "title": "Da evidência à decisão.",
+      "columns": [
+        {
+          "title": "Pesquisa",
+          "body": "Fontes identificadas e alcance da leitura."
+        },
+        {
+          "title": "Estratégia",
+          "body": "Público, contribuição e prova."
+        },
+        {
+          "title": "Aplicação",
+          "body": "Peças, revisão e continuidade."
+        }
+      ]
+    },
+    {
+      "layout": "text",
+      "title": "Acentos, autoria e contexto.",
+      "body": "Gestão, liderança, confiança e execução.\nFalas de convidados mantêm sua autoria.",
+      "sources": [
+        {
+          "source_id": "F01",
+          "label": "Transcrição fictícia, trecho 00:10–00:30"
+        }
+      ]
+    },
+    {
+      "layout": "image",
+      "title": "Um recurso local incorporado.",
+      "image": "assets/teste.png",
+      "alt": "Retângulo azul gerado para o teste",
+      "body": "Esta imagem é um recurso sintético de validação."
+    },
+    {
+      "layout": "text",
+      "title": "Referências clicáveis.",
+      "body": "Um link para testar a preservação no PDF.",
+      "sources": [
+        {
+          "label": "Exemplo de endereço",
+          "url": "https://example.com/"
+        }
+      ]
+    },
+    {
+      "layout": "text",
+      "title": "Encerrar com o próximo passo.",
+      "body": "Inspecionar os materiais produzidos e registrar o estado da entrega.",
+      "note": "Teste técnico não comprova qualidade de uma estratégia real."
+    }
+  ],
+  "highlights": [
+    {
+      "id": "inicio",
+      "title": "Início",
+      "icon": "compass"
+    },
+    {
+      "id": "trajetoria",
+      "title": "Trajetória",
+      "icon": "steps"
+    }
+  ],
+  "posts": [
+    {
+      "id": "carrossel-1",
+      "channels": [
+        "instagram",
+        "linkedin"
+      ],
+      "caption": "Legenda completa de demonstração.",
+      "captions": {
+        "instagram": "Legenda adaptada de teste para Instagram.",
+        "linkedin": "Legenda adaptada de teste para LinkedIn."
+      },
+      "slides": [
+        {
+          "title": "Uma pergunta útil",
+          "body": "Que decisão este conteúdo ajuda a compreender?"
+        },
+        {
+          "title": "Considere o contexto",
+          "body": "Identifique o problema e as pessoas envolvidas."
+        },
+        {
+          "title": "Explique o critério",
+          "body": "Mostre o que foi considerado na decisão."
+        },
+        {
+          "title": "Preserve os limites",
+          "body": "Diferencie observação, interpretação e proposta."
+        },
+        {
+          "title": "Defina a continuidade",
+          "body": "Indique um próximo passo compatível com o objetivo."
+        }
+      ]
+    },
+    {
+      "id": "carrossel-2",
+      "channels": [
+        "instagram",
+        "linkedin"
+      ],
+      "caption": "Legenda completa de demonstração.",
+      "captions": {
+        "instagram": "Legenda adaptada de teste para Instagram.",
+        "linkedin": "Legenda adaptada de teste para LinkedIn."
+      },
+      "slides": [
+        {
+          "title": "Uma pergunta útil",
+          "body": "Que decisão este conteúdo ajuda a compreender?"
+        },
+        {
+          "title": "Considere o contexto",
+          "body": "Identifique o problema e as pessoas envolvidas."
+        },
+        {
+          "title": "Explique o critério",
+          "body": "Mostre o que foi considerado na decisão."
+        },
+        {
+          "title": "Preserve os limites",
+          "body": "Diferencie observação, interpretação e proposta."
+        },
+        {
+          "title": "Defina a continuidade",
+          "body": "Indique um próximo passo compatível com o objetivo."
+        }
+      ]
+    }
+  ],
+  "bios": {
+    "instagram": "Bio de teste para Instagram.",
+    "linkedin-headline": "Título profissional de teste."
+  }
+}

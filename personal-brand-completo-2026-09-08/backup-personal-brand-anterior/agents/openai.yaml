@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marca pessoal"
+  short_description: "Posicionamento, conteúdo e rotina para sua marca pessoal"
+  default_prompt: "Use $personal-brand para construir minha marca pessoal, começando pelo diagnóstico e seguindo as etapas do método."

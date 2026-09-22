@@ -1,0 +1,16 @@
+{
+  "SKILL.md": "2157a2f501fefad660809b4e42390008e79f71cd9b4855260c2267ee4e8ec53b",
+  "agents/openai.yaml": "8d0c80ce1d7757bb9ad11e44ffab93623fa4209934a0aa64a4af1853d91ade79",
+  "assets/apresentacao.css": "8fb9f8daeb1e99c7da19d9efd60b9c7b1bac4d5d3d9f99a5432760a191cefc26",
+  "references/fontes.md": "c6b91cd1cd1c0f04a1a39d97b66f6a6a4fc18d3eb6df34e8c6436aeb214aa587",
+  "references/identidade-e-conteudo.md": "6dca40927a84dc8f30b556542c4288785284c3d2f6274792bbc3262d5b14b505",
+  "references/metodo.md": "dcb359889e4eb83d9e2b6ad28dce511dda4c63abc97295a021461668e9ef506d",
+  "references/modelo-dossie.md": "a20974eb2d2bf673dacd76a879d115b83cecaa740a389173f99744c6cf07187e",
+  "references/pesquisa.md": "bfce1b68b701f963dedc5575f1c72766537648b9c3d3dfde28490543ceb10ebb",
+  "references/plano-e-proposta.md": "497e2b650e55d11eb5f32288641d838013db13de84708ab7ee613fe22b4fe346",
+  "references/processo-completo.md": "737816add7de8a0d5cefe4c8ad7400bc3b6eea69fecf1154366688f257ebfd8c",
+  "references/producao-tecnica.md": "7742ecbd4214f5baae75db73a65d70130c9688b06e1fa3ea61bcb46baea568d0",
+  "references/qualidade-e-entrega.md": "5b76cd26a28694b748b7b97ddeec8f101b474ba416eb5eb54bbefa59cc3e2f8b",
+  "scripts/project.py": "2e2f99066d7389573535cffefbbdb0c3ffbaa8b46d810f474d49fb0aae949486",
+  "scripts/render.mjs": "50e3d6b976c3be7e87bb4e804bfbcf0a72b145f1c56cb67d841b38f75c65a461"
+}

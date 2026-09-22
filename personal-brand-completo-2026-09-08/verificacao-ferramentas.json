@@ -1,0 +1,50 @@
+[
+  {
+    "test": "Não reinicializar pasta existente",
+    "passed": true
+  },
+  {
+    "test": "Não construir análise vazia",
+    "passed": true
+  },
+  {
+    "test": "Escapar HTML e preservar fonte local",
+    "passed": true
+  },
+  {
+    "test": "Não sobrescrever versão",
+    "passed": true
+  },
+  {
+    "test": "Rejeitar versão com travessia de caminho",
+    "passed": true
+  },
+  {
+    "test": "Não empacotar sem renderização",
+    "passed": true
+  },
+  {
+    "test": "Detectar arquivo alterado por hash",
+    "passed": true
+  },
+  {
+    "test": "Rejeitar cor inválida",
+    "passed": true
+  },
+  {
+    "test": "Rejeitar IDs duplicados",
+    "passed": true
+  },
+  {
+    "test": "Recusar tela com excesso de conteúdo",
+    "passed": true
+  },
+  {
+    "test": "Bloquear recurso fora do projeto",
+    "passed": true
+  },
+  {
+    "test": "Falha não deixa versão parcial",
+    "passed": true
+  }
+]

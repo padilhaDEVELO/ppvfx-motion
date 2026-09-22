@@ -1,0 +1,24 @@
+{
+  "current_files": 10088,
+  "current_bytes": 295409129,
+  "groups": {
+    "(raiz)": 43,
+    "assets-premium": 11,
+    ".qa": 520,
+    "metodo-personal-brand": 5,
+    ".qa-alfredo": 1312,
+    ".qa-identidade": 1282,
+    "identidade-sidney": 39,
+    ".qa-flg": 1260,
+    ".qa-completa-identidade": 2096,
+    ".qa-multicanal": 1266,
+    "fontes-transcricoes": 13,
+    ".render-profile": 194,
+    ".qa-anual": 2047
+  },
+  "zip_crc_error": null,
+  "zip_file_count": 39,
+  "zip_files_matching_folder": 39,
+  "zip_differences": [],
+  "zip_path_note": "Nomes internos usam separadores Windows; normalizados somente para a comparação."
+}

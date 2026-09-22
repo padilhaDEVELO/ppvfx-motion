@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Capas TikTok · Filipe Frazão</title>
+<style>
+@font-face{font-family:Tusker;src:url('assets/TuskerGrotesk-6500Medium.otf')}@font-face{font-family:Montserrat;src:url('assets/Montserrat-Regular.ttf')}
+*{box-sizing:border-box}body{margin:0;background:#101010;color:white;font:14px Montserrat,Arial,sans-serif}main{max-width:1120px;margin:auto;padding:40px 24px}header{border-bottom:1px solid #414141;padding-bottom:24px;margin-bottom:30px}header small{color:#aaa;letter-spacing:.12em}h1{font:54px/1 Tusker,Impact,sans-serif;margin:14px 0}header p{color:#b8b8b8;max-width:720px;line-height:1.6}.layout{display:grid;grid-template-columns:340px 1fr;gap:48px}label{display:block;margin:0 0 22px;line-height:1.5}input,select,button{font:inherit}input[type=text],select,input[type=file]{display:block;width:100%;margin-top:8px;padding:12px;background:#232323;color:white;border:1px solid #555;border-radius:4px}input[type=range]{display:block;width:100%;margin-top:10px}button{padding:15px 20px;background:#ed2435;color:white;border:0;border-radius:4px;cursor:pointer;width:100%;font-weight:bold}button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid white;outline-offset:3px}.help{font-size:12px;color:#b8b8b8;line-height:1.6}.preview{display:flex;justify-content:center;align-items:flex-start}canvas{width:min(100%,360px);height:auto;background:#030201;border:1px solid #454545}.status{min-height:3em;color:#ddd;line-height:1.5}.note{border-top:1px solid #414141;margin-top:25px;padding-top:18px;line-height:1.7;color:#b8b8b8}strong{color:white}@media(max-width:760px){.layout{grid-template-columns:1fr;gap:26px}.preview{grid-row:1}main{padding:24px 18px}h1{font-size:42px}}
+</style>
+<main>
+<header><small>FILIPE FRAZÃO · TIKTOK</small><h1>UMA IDEIA. UMA CAPA.</h1><p>Modelo inspirado na referência: frame do vídeo, contraste escuro e palavras de destaque. Os títulos abaixo são sugestões editoriais; use apenas se o corte entregar a promessa.</p></header>
+<div class="layout"><form onsubmit="return false">
+<label>Frame do vídeo<input id="photo" type="file" accept="image/jpeg,image/png,image/webp"><span class="help">Escolha uma imagem nítida do Filipe no próprio corte. O arquivo fica no seu navegador.</span></label>
+<label>Exemplo de título<select id="preset"><option value="0">Gestão: a empresa depende de você?</option><option value="1">IA: automatizar um processo ruim</option><option value="2">Execução: pensar sem agir</option></select></label>
+<label>Linha de contexto<input id="lead" type="text" value="SUA EMPRESA DEPENDE" maxlength="38"></label>
+<label>Destaque principal<input id="headline" type="text" value="SÓ DE VOCÊ?" maxlength="24"></label>
+<label>Posição horizontal da foto<input id="panX" type="range" min="0" max="100" value="50"></label>
+<label>Posição vertical da foto<input id="panY" type="range" min="0" max="100" value="40"></label>
+<label>Escurecimento<input id="dark" type="range" min="0" max="65" value="20"></label>
+<label>Prévia do recorte<select id="crop"><option value="full">Vertical · 9:16</option><option value="grid">Centro · 3:4</option><option value="square">Centro · 1:1</option></select><span class="help">Simulações de recorte para conferir legibilidade; a exibição real pode variar no app.</span></label>
+<button id="download" type="button" disabled>Baixar capa · 1080 × 1920</button><p id="status" class="status" role="status">Adicione o frame para finalizar a capa.</p>
+<p class="help">Fonte: Tusker, já utilizada no preset de vídeos do Filipe. Branco #FFFFFF, vermelho #ED2435 e base #030201. O vermelho segue a referência solicitada para vídeo.</p>
+</form><div class="preview"><canvas id="preview" width="1080" height="1920" aria-label="Prévia da capa. Adicione um frame e personalize o título."></canvas></div></div>
+<p class="note"><strong>Aplicação:</strong> preserve o rosto acima do título e use uma frase curta. A capa deve funcionar em miniatura. No TikTok, confira as opções de capa disponíveis na sua versão; o fluxo documentado permite selecionar um frame do vídeo. Se precisar integrar o layout ao corte, aplique o texto sobre um trecho em movimento e selecione esse frame, preservando a fala desde o início.</p>
+</main>
+<script>
+const $=id=>document.getElementById(id), output=document.createElement('canvas');output.width=1080;output.height=1920;
+const ctx=output.getContext('2d'), preview=$('preview'), pc=preview.getContext('2d');let photo=null,ready=false;
+const presets=[['SUA EMPRESA DEPENDE','SÓ DE VOCÊ?'],['IA NÃO CONSERTA','PROCESSO RUIM'],['PENSAR DEMAIS','TRAVA SUA AÇÃO']];
+function line(text,y,size,maxWidth,color){ctx.fillStyle=color;ctx.textAlign='center';ctx.textBaseline='alphabetic';ctx.font=`${size}px Tusker`;while(ctx.measureText(text).width>maxWidth&&size>28){size-=2;ctx.font=`${size}px Tusker`}ctx.fillText(text,540,y)}
+function render(){ctx.fillStyle='#030201';ctx.fillRect(0,0,1080,1920);if(photo){const scale=Math.max(1080/photo.width,1920/photo.height),w=photo.width*scale,h=photo.height*scale;ctx.drawImage(photo,(1080-w)*$('panX').value/100,(1920-h)*$('panY').value/100,w,h);ctx.fillStyle=`rgba(0,0,0,${$('dark').value/100})`;ctx.fillRect(0,0,1080,1920)}else{ctx.strokeStyle='#323232';ctx.lineWidth=3;ctx.strokeRect(220,320,640,550);line('FRAME DO VÍDEO',590,76,850,'#666666');line('ADICIONE A FOTO DO FILIPE',690,44,850,'#666666')}
+const gradient=ctx.createLinearGradient(0,780,0,1830);gradient.addColorStop(0,'rgba(3,2,1,0)');gradient.addColorStop(.45,'rgba(3,2,1,.65)');gradient.addColorStop(1,'rgba(3,2,1,.96)');ctx.fillStyle=gradient;ctx.fillRect(0,780,1080,1140);
+ctx.save();ctx.shadowColor='rgba(0,0,0,.8)';ctx.shadowBlur=12;line($('lead').value.toUpperCase(),1055,80,910,'#FFFFFF');line($('headline').value.toUpperCase(),1245,188,920,'#ED2435');ctx.restore();
+ctx.fillStyle='#9D9D9F';ctx.font='28px Montserrat,Arial';ctx.textAlign='center';ctx.fillText('@filipefrazao1',540,1390);
+const mode=$('crop').value,viewH=mode==='grid'?1440:mode==='square'?1080:1920;preview.height=viewH;pc.clearRect(0,0,1080,viewH);pc.drawImage(output,0,(1920-viewH)/2,1080,viewH,0,0,1080,viewH)}
+for(const id of ['lead','headline','panX','panY','dark','crop'])$(id).addEventListener('input',render);
+$('preset').addEventListener('change',()=>{[$('lead').value,$('headline').value]=presets[Number($('preset').value)];render()});
+$('photo').addEventListener('change',()=>{const file=$('photo').files[0];if(!file)return;if(!['image/jpeg','image/png','image/webp'].includes(file.type)){$('status').textContent='Use um arquivo JPG, PNG ou WebP.';return}const url=URL.createObjectURL(file),im=new Image();im.onload=()=>{photo=im;URL.revokeObjectURL(url);$('download').disabled=!ready;$('status').textContent=ready?'Frame carregado. Ajuste a foto e confira o recorte antes de baixar.':'Carregando a fonte…';render()};im.onerror=()=>{URL.revokeObjectURL(url);$('status').textContent='Não foi possível abrir a imagem. Tente outro JPG ou PNG.'};im.src=url});
+$('download').addEventListener('click',()=>{if(!photo||!ready)return;output.toBlob(blob=>{if(!blob){$('status').textContent='Falha ao gerar a capa. Tente novamente.';return}const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='capa-filipe-frazao-1080x1920.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),5000);$('status').textContent='Capa gerada em 1080 × 1920. Confira o enquadramento no TikTok.'},'image/png')});
+Promise.all([document.fonts.load('80px Tusker'),document.fonts.load('28px Montserrat')]).then(fonts=>{ready=fonts.every(f=>f.length>0);$('download').disabled=!photo||!ready;if(!ready)$('status').textContent='Fonte indisponível. Mantenha a pasta assets junto deste arquivo.';render()}).catch(()=>{$('status').textContent='Não foi possível carregar a fonte. Mantenha a pasta assets junto deste arquivo.';render()});render();
+</script></html>

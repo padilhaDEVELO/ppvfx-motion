@@ -1,0 +1,24 @@
+{
+  "manifest_entries": 10087,
+  "matched": 10084,
+  "issues": [
+    {
+      "file": ".qa-anual/profile/Default/Extensions/efaidnbmnnnibpcajpcglclefindmkaj/26.9.1.0_0/browser/data/searchterms.json",
+      "issue": "missing"
+    },
+    {
+      "file": ".qa-anual/profile/Default/Extensions/efaidnbmnnnibpcajpcglclefindmkaj/26.9.1.0_1/browser/data/searchterms.json",
+      "issue": "missing"
+    },
+    {
+      "file": ".qa-multicanal/profile/Default/Extensions/efaidnbmnnnibpcajpcglclefindmkaj/26.9.1.0_0/browser/data/searchterms.json",
+      "issue": "missing"
+    }
+  ],
+  "extras": [
+    "INVENTARIO-ARQUIVOS.json",
+    "COMECE-AQUI.md",
+    ".consolidar-arquivos.mjs",
+    "fontes-transcricoes/LEIA-ME.md"
+  ]
+}

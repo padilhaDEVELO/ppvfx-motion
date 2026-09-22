@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O Pará por dentro - Estratégia de conteúdo</title>
+  <style>
+    :root {
+      --green: #26552e;
+      --green-dark: #173c21;
+      --yellow: #eebc4f;
+      --brown: #6e4e2f;
+      --orange: #cb5c2f;
+      --orange-soft: #dd7f48;
+      --sand: #d9bb8f;
+      --cream: #f4ede1;
+      --peach: #e6a178;
+      --ink: #24322a;
+      --white: #fffdf8;
+      --muted: #738078;
+      --line: rgba(38, 85, 46, .18);
+      --shadow: 0 22px 70px rgba(42, 31, 20, .16);
+      --logo-green: url("assets/logo-green.png");
+      --logo-beige: url("assets/logo-beige.png");
+      --pattern: url("assets/pattern.png");
+      --rafael-main: url("assets/rafael-main.jpg");
+      --rafael-profile: url("assets/rafael-profile.jpg");
+      --rafael-reflect: url("assets/rafael-reflect.jpg");
+      --rafael-leading: url("assets/rafael-leading.jpg");
+      --rafael-shirt: url("assets/rafael-shirt.jpg");
+      --working: url("assets/working.jpg");
+      --meeting: url("assets/meeting.jpg");
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #cfc9bd; color: var(--ink); }
+    body {
+      font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+      font-size: 18px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .deck { display: flex; flex-direction: column; align-items: center; gap: 28px; padding: 28px 0; }
+    .slide {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      background: var(--cream);
+      box-shadow: var(--shadow);
+      flex: none;
+      page-break-after: always;
+      break-after: page;
+    }
+
+    .slide::after {
+      content: attr(data-page);
+      position: absolute;
+      right: 36px;
+      bottom: 22px;
+      z-index: 20;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .16em;
+    }
+
+    .dark { background: var(--green); color: var(--cream); }
+    .dark::after { color: rgba(244, 237, 225, .58); }
+    .brown { background: var(--brown); color: var(--cream); }
+    .yellow { background: var(--yellow); color: var(--green-dark); }
+    .white { background: var(--white); }
+
+    .pad { position: relative; z-index: 4; height: 100%; padding: 56px 66px 52px; }
+    .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 26px; }
+    .kicker {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .dark .kicker, .brown .kicker { color: var(--yellow); }
+    .mini-logo {
+      width: 106px;
+      height: 48px;
+      background-image: var(--logo-green);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+    .dark .mini-logo, .brown .mini-logo { background-image: var(--logo-beige); width: 122px; }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 {
+      font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: -.035em;
+    }
+    h1 { font-size: 76px; line-height: .98; margin-bottom: 24px; font-weight: 800; }
+    h2 { font-size: 48px; line-height: 1.04; margin-bottom: 18px; font-weight: 800; color: var(--green-dark); }
+    .dark h2, .brown h2 { color: var(--cream); }
+    h3 { font-size: 24px; line-height: 1.1; margin-bottom: 9px; color: var(--green-dark); }
+    .dark h3, .brown h3 { color: var(--cream); }
+    p { line-height: 1.46; }
+    .lead { font-size: 24px; line-height: 1.42; max-width: 920px; color: #425048; }
+    .dark .lead, .brown .lead { color: rgba(244, 237, 225, .82); }
+    .small { font-size: 14px; line-height: 1.45; color: var(--muted); }
+    .dark .small, .brown .small { color: rgba(244, 237, 225, .66); }
+    .source { position: absolute; left: 66px; bottom: 22px; font-size: 11px; color: var(--muted); letter-spacing: .01em; }
+    .dark .source, .brown .source { color: rgba(244, 237, 225, .56); }
+
+    .pattern-band {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 92px;
+      background-image: var(--pattern);
+      background-size: 420px auto;
+      background-position: center 46%;
+      opacity: .36;
+      z-index: 1;
+    }
+    .dark .pattern-band { opacity: .23; }
+
+    .photo-bg { background-size: cover; background-position: center; }
+    .photo-overlay::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, rgba(18, 49, 27, .96) 0%, rgba(18, 49, 27, .82) 43%, rgba(18, 49, 27, .18) 76%, rgba(18, 49, 27, .04) 100%);
+    }
+    .photo-overlay-right::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, rgba(18, 49, 27, .05) 0%, rgba(18, 49, 27, .2) 36%, rgba(18, 49, 27, .86) 70%, rgba(18, 49, 27, .97) 100%);
+    }
+
+    .cover { background-image: var(--rafael-main); background-position: center 42%; }
+    .cover .pad { display: flex; flex-direction: column; justify-content: center; max-width: 690px; }
+    .cover h1 { color: var(--cream); font-size: 92px; max-width: 600px; }
+    .cover .subtitle { color: var(--sand); font-size: 24px; max-width: 540px; }
+    .cover .logo-block {
+      position: absolute;
+      left: 66px;
+      top: 48px;
+      width: 195px;
+      height: 76px;
+      background: var(--logo-beige) no-repeat left center / contain;
+      z-index: 5;
+    }
+
+    .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: stretch; }
+    .cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .cols-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .cols-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    .stack { display: flex; flex-direction: column; gap: 14px; }
+
+    .card {
+      position: relative;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 253, 248, .72);
+      min-height: 132px;
+    }
+    .dark .card, .brown .card {
+      background: rgba(255,255,255,.075);
+      border-color: rgba(255,255,255,.14);
+    }
+    .card.accent { border-top: 6px solid var(--yellow); }
+    .card.warn { border-top: 6px solid var(--orange); }
+    .card.green { border-top: 6px solid var(--green); }
+    .card p:last-child { margin-bottom: 0; }
+    .card .label { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin-bottom: 10px; }
+    .dark .card .label, .brown .card .label { color: var(--sand); }
+
+    .big-number {
+      font-family: "Avenir Next Condensed", "Avenir Next", sans-serif;
+      font-size: 66px;
+      font-weight: 900;
+      line-height: .9;
+      color: var(--green);
+      letter-spacing: -.045em;
+    }
+    .dark .big-number, .brown .big-number { color: var(--yellow); }
+    .metric-title { font-size: 15px; font-weight: 700; margin-top: 10px; margin-bottom: 4px; }
+    .metric-note { font-size: 12px; color: var(--muted); line-height: 1.35; }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: rgba(38, 85, 46, .11);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .pill.orange { background: rgba(203, 92, 47, .13); color: var(--orange); }
+    .pill.yellow { background: rgba(238, 188, 79, .22); color: #76530d; }
+    .dark .pill { background: rgba(238,188,79,.18); color: var(--yellow); }
+
+    .quote {
+      font-family: "Avenir Next Condensed", "Avenir Next", sans-serif;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.12;
+      color: var(--green-dark);
+      letter-spacing: -.03em;
+    }
+    .dark .quote, .brown .quote { color: var(--cream); }
+
+    .split-photo { display: grid; grid-template-columns: 47% 53%; grid-template-rows: minmax(0, 1fr); height: 720px; }
+    .split-photo .photo { background-size: cover; background-position: center; }
+    .split-photo .content { min-width: 0; min-height: 0; overflow: hidden; padding: 56px 64px 52px 52px; position: relative; }
+    .split-photo.reverse { grid-template-columns: 54% 46%; }
+    .split-photo.reverse .content { order: 1; padding-left: 66px; }
+    .split-photo.reverse .photo { order: 2; }
+    .compact-stack { gap: 10px; margin-top: 16px !important; }
+    .compact-stack .card { min-height: 0; padding: 14px 18px; }
+
+    .river {
+      display: grid;
+      grid-template-columns: 1fr 112px 1fr;
+      align-items: center;
+      gap: 18px;
+      margin-top: 34px;
+    }
+    .river .channel {
+      position: relative;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .river .channel::before,
+    .river .channel::after {
+      content: "";
+      position: absolute;
+      width: 86px;
+      height: 160px;
+      border: 12px solid var(--yellow);
+      border-left: 0;
+      border-radius: 0 90px 90px 0;
+      opacity: .8;
+    }
+    .river .channel::before { transform: rotate(180deg); left: -18px; }
+    .river .channel::after { right: -18px; }
+    .river .center-mark {
+      width: 98px;
+      height: 98px;
+      background-image: var(--logo-green);
+      background-size: 240px auto;
+      background-position: center top;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+    }
+
+    .checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: 11px; }
+    .checklist li { position: relative; padding-left: 25px; font-size: 17px; line-height: 1.32; }
+    .checklist li::before { content: ""; position: absolute; left: 0; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--yellow); }
+    .checklist.danger li::before { background: var(--orange); }
+
+    .process { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; align-items: center; margin-top: 34px; }
+    .process .step {
+      position: relative;
+      min-height: 126px;
+      background: rgba(255,253,248,.1);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 16px;
+      padding: 18px 12px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+    }
+    .process .step:not(:last-child)::after { content: "›"; position: absolute; right: -11px; top: 42px; color: var(--yellow); font-size: 34px; z-index: 3; }
+    .process .num { font-size: 12px; color: var(--yellow); font-weight: 900; }
+    .process strong { font-size: 15px; line-height: 1.15; }
+
+    table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 15px; line-height: 1.3; overflow: hidden; border-radius: 14px; }
+    th { text-align: left; color: var(--cream); background: var(--green); padding: 13px 14px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+    td { padding: 13px 14px; border-bottom: 1px solid var(--line); background: rgba(255,253,248,.7); vertical-align: top; }
+    tr:last-child td { border-bottom: 0; }
+    .dark th { background: var(--yellow); color: var(--green-dark); }
+    .dark td { background: rgba(255,255,255,.075); border-bottom-color: rgba(255,255,255,.12); }
+
+    .bar-row { display: grid; grid-template-columns: 190px 1fr 68px; align-items: center; gap: 14px; margin: 14px 0; }
+    .bar-row .name { font-size: 15px; font-weight: 700; }
+    .bar-track { height: 22px; background: rgba(38,85,46,.09); border-radius: 99px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 99px; background: var(--green); }
+    .bar-fill.yellow { background: var(--yellow); }
+    .bar-fill.orange { background: var(--orange); }
+    .bar-value { text-align: right; font-weight: 900; color: var(--green); }
+    .dark .bar-track { background: rgba(255,255,255,.10); }
+    .dark .bar-value { color: var(--yellow); }
+
+    .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 32px; }
+    .timeline.three { grid-template-columns: repeat(3, 1fr); }
+    .phase { position: relative; padding: 24px 20px 20px; border-radius: 18px; background: rgba(255,253,248,.08); border: 1px solid rgba(255,255,255,.14); min-height: 320px; }
+    .phase::before { content: ""; position: absolute; top: 0; left: 20px; right: 20px; height: 6px; background: var(--yellow); border-radius: 0 0 6px 6px; }
+    .phase .week { font-size: 12px; color: var(--yellow); text-transform: uppercase; letter-spacing: .12em; font-weight: 900; }
+    .phase h3 { font-size: 25px; margin-top: 10px; }
+    .phase ul { margin: 14px 0 0; padding-left: 18px; font-size: 15px; line-height: 1.45; }
+
+    .scenario-grid { display: grid; grid-template-columns: 1.05fr repeat(3, .95fr); gap: 12px; align-items: stretch; margin-top: 28px; }
+    .scenario { border-radius: 18px; padding: 20px; border: 1px solid var(--line); background: rgba(255,253,248,.72); }
+    .scenario.highlight { background: var(--green); color: var(--cream); transform: translateY(-7px); box-shadow: 0 16px 36px rgba(38,85,46,.18); }
+    .scenario .scenario-name { font-size: 12px; text-transform: uppercase; letter-spacing: .12em; font-weight: 900; color: var(--orange); }
+    .scenario.highlight .scenario-name { color: var(--yellow); }
+    .scenario .total { font-size: 42px; font-weight: 900; letter-spacing: -.04em; margin: 12px 0 18px; }
+    .scenario .line { display: flex; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line); padding: 9px 0; font-size: 13px; }
+    .scenario.highlight .line { border-top-color: rgba(255,255,255,.14); }
+
+    .matrix { display: grid; grid-template-columns: 112px repeat(3, 1fr); gap: 8px; margin-top: 24px; }
+    .matrix > div { padding: 15px 14px; border-radius: 12px; font-size: 14px; line-height: 1.3; }
+    .matrix .head { background: var(--green); color: var(--cream); font-weight: 800; text-align: center; }
+    .matrix .row { background: rgba(38,85,46,.08); font-weight: 800; display: flex; align-items: center; }
+    .matrix .cell { background: rgba(255,253,248,.75); border: 1px solid var(--line); }
+
+    .priority { display: grid; grid-template-columns: 82px 1fr 150px; gap: 12px; align-items: center; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+    .priority:last-child { border-bottom: 0; }
+    .badge { width: 48px; height: 34px; border-radius: 8px; display: grid; place-items: center; font-weight: 900; font-size: 13px; background: var(--orange); color: white; }
+    .badge.p1 { background: var(--yellow); color: var(--green-dark); }
+    .badge.p2 { background: var(--sand); color: var(--brown); }
+    .priority .action { font-size: 13px; color: var(--muted); font-weight: 700; }
+
+    .ring { width: 150px; height: 150px; border-radius: 50%; display: grid; place-items: center; background: conic-gradient(var(--yellow) 0 60%, rgba(255,255,255,.12) 60% 100%); position: relative; }
+    .ring::after { content: ""; width: 108px; height: 108px; border-radius: 50%; background: var(--green); position: absolute; }
+    .ring span { position: relative; z-index: 2; color: var(--cream); font-size: 34px; font-weight: 900; }
+
+    .footer-quote { position: absolute; left: 66px; right: 66px; bottom: 62px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.16); color: var(--sand); font-size: 17px; font-weight: 700; }
+
+    @media print {
+      @page { size: 13.333333in 7.5in; margin: 0; }
+      html, body { background: white; }
+      .deck { display: block; padding: 0; }
+      .slide { box-shadow: none; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+<main class="deck">
+
+  <section class="slide cover photo-bg photo-overlay dark" data-page="01">
+    <div class="logo-block"></div>
+    <div class="pad">
+      <div class="kicker">Estratégia de conteúdo 2026</div>
+      <h1>O Pará<br>por dentro</h1>
+      <p class="subtitle">Plano estratégico para Rafael Barros e Amazônia na Cuia transformarem cultura vivida em audiência, reputação e negócio.</p>
+    </div>
+    <div class="source">Diagnóstico baseado em redes públicas, pesquisa de mercado e transcrição local da visita.</div>
+  </section>
+
+  <section class="slide dark" data-page="02">
+    <div class="pad">
+      <div class="header"><div class="kicker">Resumo executivo</div><div class="mini-logo"></div></div>
+      <h2>Seis decisões para o próximo ciclo</h2>
+      <div class="cols-3" style="margin-top:28px">
+        <div class="card accent"><div class="label">01 - Posicionamento</div><h3>Separar sem desconectar</h3><p>Rafael ganha voz própria; o restaurante mantém protagonismo como operação, experiência e marca.</p></div>
+        <div class="card accent"><div class="label">02 - Conteúdo</div><h3>Mais pessoas, menos catálogo</h3><p>A comida abre a história; produtores, equipe, clientes e cultura dão profundidade.</p></div>
+        <div class="card accent"><div class="label">03 - Formato</div><h3>Método do Cheff Otto</h3><p>Adaptar curiosidade, teste, reação e veredito. Não copiar personagem, bordões ou estética.</p></div>
+        <div class="card accent"><div class="label">04 - Distribuição</div><h3>Retomar TikTok e YouTube</h3><p>Há potencial público comprovado, mas falta catálogo e recorrência.</p></div>
+        <div class="card accent"><div class="label">05 - Conversão</div><h3>Um CTA por conteúdo</h3><p>Links rastreáveis por canal, informações operacionais consistentes e atribuição.</p></div>
+        <div class="card accent"><div class="label">06 - Gestão</div><h3>Operar em ciclos de 30 dias</h3><p>Cadência, snapshots, mediana por formato e decisão baseada em dados.</p></div>
+      </div>
+    </div>
+    <div class="pattern-band"></div>
+  </section>
+
+  <section class="slide split-photo" data-page="03">
+    <div class="photo" style="background-image:var(--meeting); background-position:center"></div>
+    <div class="content">
+      <div class="header"><div class="kicker">O ponto de partida</div><div class="mini-logo"></div></div>
+      <h2>Não falta identidade.<br>Falta transformá-la em sistema.</h2>
+      <p class="lead">Rafael e a Amazônia na Cuia já têm autenticidade, operação real, audiência e histórias. O desafio é organizar tudo em uma máquina editorial consistente.</p>
+      <div class="card green" style="margin-top:24px">
+        <div class="quote" style="font-size:30px">Estrutura comprovada + voz real + cultura vivida + pessoas + prova visual.</div>
+      </div>
+      <div class="source">Leitura estratégica da presença pública e da visita.</div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="04">
+    <div class="pad">
+      <div class="header"><div class="kicker">Ativos existentes</div><div class="mini-logo"></div></div>
+      <h2>A marca já possui o que não se compra</h2>
+      <div class="cols-5" style="margin-top:42px">
+        <div class="card green"><div class="big-number">01</div><h3>Operação real</h3><p>História, crescimento, decisões e desafios concretos.</p></div>
+        <div class="card green"><div class="big-number">02</div><h3>Fundador reconhecível</h3><p>Rafael tem energia, repertório e ambição de porta-voz.</p></div>
+        <div class="card green"><div class="big-number">03</div><h3>Cultura legítima</h3><p>O Pará não é cenário. É a razão de existência do negócio.</p></div>
+        <div class="card green"><div class="big-number">04</div><h3>Produto visual</h3><p>Cuia, açaí, tucupi, jambu, peixe e rituais de consumo.</p></div>
+        <div class="card green"><div class="big-number">05</div><h3>Audiência validada</h3><p>Instagram forte e virais já comprovados em mais de um canal.</p></div>
+      </div>
+      <div class="footer-quote" style="color:var(--brown); border-top-color:var(--line)">A vantagem competitiva é cultural. O sistema editorial precisa apenas torná-la repetível.</div>
+    </div>
+  </section>
+
+  <section class="slide dark" data-page="05">
+    <div class="pad">
+      <div class="header"><div class="kicker">Arquitetura de marca</div><div class="mini-logo"></div></div>
+      <h2>Uma história, dois papéis</h2>
+      <div class="river">
+        <div class="card accent">
+          <div class="label">Rafael Barros</div>
+          <h3>Fundador e anfitrião</h3>
+          <ul class="checklist"><li>Decisões e bastidores</li><li>Erros e aprendizados</li><li>Liderança e visão</li><li>Relação pessoal com o Pará</li></ul>
+        </div>
+        <div class="channel"><div class="center-mark"></div></div>
+        <div class="card accent">
+          <div class="label">Amazônia na Cuia</div>
+          <h3>Experiência e operação</h3>
+          <ul class="checklist"><li>Pratos e menus</li><li>Equipe e produtores</li><li>Cultura e hospitalidade</li><li>Serviço, reserva e delivery</li></ul>
+        </div>
+      </div>
+      <div class="footer-quote">Zona compartilhada: origem, inovação, expansão, cultura organizacional, imprensa e projetos institucionais.</div>
+    </div>
+  </section>
+
+  <section class="slide split-photo reverse" data-page="06">
+    <div class="content">
+      <div class="header"><div class="kicker">Posicionamento pessoal</div><div class="mini-logo"></div></div>
+      <h2>Rafael: fundador-anfitrião, não chef técnico</h2>
+      <p class="lead">A autoridade vem de construir, decidir, errar, liderar e transformar cultura em negócio.</p>
+      <div class="stack" style="margin-top:24px">
+        <div><span class="pill">Viveu</span> <strong>trajetória, perdas e recomeços</strong></div>
+        <div><span class="pill">Pratica</span> <strong>gestão, cultura e experiência</strong></div>
+        <div><span class="pill">Representa</span> <strong>orgulho paraense e ambição</strong></div>
+      </div>
+      <div class="card green" style="margin-top:28px"><div class="quote" style="font-size:27px">“Isso não é quem eu sou; é o que eu faço.”</div><div class="small">Fala atribuída a Rafael na transcrição. Conferir o áudio antes de publicar.</div></div>
+      <div class="source">Transcrição local da visita e pesquisa pública.</div>
+    </div>
+    <div class="photo" style="background-image:var(--rafael-profile); background-position:58% center"></div>
+  </section>
+
+  <section class="slide photo-bg photo-overlay dark" data-page="07" style="background-image:var(--rafael-shirt); background-position:center">
+    <div class="pad" style="max-width:650px; display:flex; flex-direction:column; justify-content:center">
+      <div class="kicker">Posicionamento do restaurante</div>
+      <h2 style="font-size:58px">Uma porta de entrada para o Pará</h2>
+      <p class="lead">A Amazônia na Cuia não deve parecer um catálogo de pratos. Deve apresentar o estado pela comida, pela cultura e por quem faz tudo isso acontecer.</p>
+      <div class="cols-4" style="margin-top:26px">
+        <div class="card" style="min-height:90px; padding:16px"><strong>Comida</strong></div>
+        <div class="card" style="min-height:90px; padding:16px"><strong>Cultura</strong></div>
+        <div class="card" style="min-height:90px; padding:16px"><strong>Pessoas</strong></div>
+        <div class="card" style="min-height:90px; padding:16px"><strong>Experiência</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide yellow" data-page="08">
+    <div class="pad">
+      <div class="header"><div class="kicker" style="color:var(--brown)">Regra de voz</div><div class="mini-logo"></div></div>
+      <h2>Regionalizar sem performar regionalidade</h2>
+      <div class="cols-2" style="margin-top:34px">
+        <div class="card" style="background:rgba(244,237,225,.74)">
+          <div class="label">Para quem é do Pará</div>
+          <div class="big-number" style="font-size:50px">Reconhecimento</div>
+          <p>Gírias, hábitos, comida e situações precisam soar vividos, não explicados de fora.</p>
+        </div>
+        <div class="card" style="background:rgba(244,237,225,.74)">
+          <div class="label">Para quem é de fora</div>
+          <div class="big-number" style="font-size:50px">Curiosidade</div>
+          <p>O mesmo conteúdo deve abrir uma porta para descobrir o estado, sem exotização.</p>
+        </div>
+      </div>
+      <div class="quote" style="margin-top:40px; max-width:1040px">A gíria nasce da pessoa e da situação. Não entra no roteiro apenas para “parecer paraense”.</div>
+      <div class="small" style="margin-top:22px; color:var(--brown)">Usar naturalmente: tu, bora, timbora, pai d'égua, brocado, mufino. Nunca exigir uma quantidade de gírias por vídeo.</div>
+    </div>
+    <div class="pattern-band" style="opacity:.28"></div>
+  </section>
+
+  <section class="slide dark" data-page="09">
+    <div class="pad">
+      <div class="header"><div class="kicker">Benchmark criativo</div><div class="mini-logo"></div></div>
+      <h2>Cheff Otto ensina método, não personagem</h2>
+      <p class="lead">O valor da referência está na engenharia de atenção: uma promessa simples, uma prova visual e um veredito claro.</p>
+      <div class="process">
+        <div class="step"><div class="num">01</div><strong>Hipótese forte</strong></div>
+        <div class="step"><div class="num">02</div><strong>Teste visual</strong></div>
+        <div class="step"><div class="num">03</div><strong>Dificuldade ou reação</strong></div>
+        <div class="step"><div class="num">04</div><strong>Transformação</strong></div>
+        <div class="step"><div class="num">05</div><strong>Prova</strong></div>
+        <div class="step"><div class="num">06</div><strong>Veredito</strong></div>
+        <div class="step"><div class="num">07</div><strong>Pergunta</strong></div>
+      </div>
+      <div class="footer-quote">Copiar seria reproduzir frases, estética e persona. Adaptar é usar o mecanismo com matéria-prima genuinamente paraense.</div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="10">
+    <div class="pad">
+      <div class="header"><div class="kicker">Adaptação ética</div><div class="mini-logo"></div></div>
+      <h2>Adaptar o mecanismo. Transformar a matéria-prima.</h2>
+      <table style="margin-top:30px; font-size:16px">
+        <thead><tr><th>Adaptar</th><th>Evitar</th><th>Transformar para Rafael e Amazônia</th></tr></thead>
+        <tbody>
+          <tr><td>Teste real com veredito</td><td>Copiar receita ou ordem de cenas</td><td>Mitos, hábitos e combinações paraenses</td></tr>
+          <tr><td>Comparação simples</td><td>Obsessões de outro criador</td><td>Açaí, tucupi, jambu, farinha, peixe e cuia</td></tr>
+          <tr><td>Pergunta que divide</td><td>Polêmica artificial</td><td>Debates que o paraense realmente tem</td></tr>
+          <tr><td>Pessoas na narrativa</td><td>Usar comunidade como cenário</td><td>Dar nome, contexto, crédito e voz</td></tr>
+          <tr><td>Série episódica</td><td>Copiar nomes e estética</td><td>Mercados, ilhas, rios, bairros e memórias</td></tr>
+          <tr><td>Humor com o resultado</td><td>Debochar de tradição</td><td>Rafael ri de si, do teste ou da surpresa</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="11">
+    <div class="pad">
+      <div class="header"><div class="kicker">Ecossistema atual</div><div class="mini-logo"></div></div>
+      <h2>A audiência existe. A operação dos canais é desigual.</h2>
+      <div class="cols-4" style="margin-top:36px">
+        <div class="card green"><div class="label">Instagram Amazônia</div><div class="big-number">645 mil</div><div class="metric-title">seguidores</div><p class="small">Forte e ativo. Precisa aprofundar pessoas e cultura.</p><span class="pill">Proteger</span></div>
+        <div class="card green"><div class="label">Instagram Rafael</div><div class="big-number">14 mil</div><div class="metric-title">seguidores</div><p class="small">Ativo, mas excessivamente misturado à empresa.</p><span class="pill">Diferenciar</span></div>
+        <div class="card warn"><div class="label">TikTok Amazônia</div><div class="big-number">23,6 mil</div><div class="metric-title">seguidores</div><p class="small">Potencial comprovado. Sem recorrência recente.</p><span class="pill orange">Reativar</span></div>
+        <div class="card warn"><div class="label">YouTube Amazônia</div><div class="big-number">86</div><div class="metric-title">inscritos</div><p class="small">Apenas um vídeo. Ainda não existe catálogo.</p><span class="pill orange">Construir</span></div>
+      </div>
+      <div class="source">Dados públicos observados em 27/08/2026. Números mudam ao longo do tempo.</div>
+    </div>
+  </section>
+
+  <section class="slide dark" data-page="12">
+    <div class="pad">
+      <div class="header"><div class="kicker">Último conteúdo por rede</div><div class="mini-logo"></div></div>
+      <h2>O retrato mais recente mostra três problemas diferentes</h2>
+      <div class="cols-3" style="margin-top:34px">
+        <div class="card accent">
+          <div class="label">Instagram</div><div class="big-number">6.951</div><div class="metric-title">visualizações</div>
+          <p><strong>1.126</strong> curtidas · <strong>36</strong> comentários</p>
+          <p class="small">Reel de 2min29, coletado com menos de 18 horas. Boa conversa; embalagem longa.</p>
+        </div>
+        <div class="card accent">
+          <div class="label">TikTok</div><div class="big-number">57.500</div><div class="metric-title">visualizações</div>
+          <p><strong>4.895</strong> curtidas · <strong>1.008</strong> compartilhamentos</p>
+          <p class="small">Conteúdo forte, mas era o último havia cerca de 159 dias.</p>
+        </div>
+        <div class="card accent">
+          <div class="label">YouTube</div><div class="big-number">4.359</div><div class="metric-title">visualizações</div>
+          <p><strong>166</strong> curtidas · <strong>20</strong> comentários</p>
+          <p class="small">Único vídeo do canal; publicado havia cerca de 345 dias.</p>
+        </div>
+      </div>
+      <div class="footer-quote">Instagram: otimizar. TikTok: retomar. YouTube: construir catálogo.</div>
+      <div class="source">Coleta pública em 27/08/2026, entre 13:10 e 13:13. ND não significa zero.</div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="13">
+    <div class="pad">
+      <div class="header"><div class="kicker">Instagram - último Reel</div><div class="mini-logo"></div></div>
+      <h2>Menos alcance inicial, mais conversa</h2>
+      <div class="cols-2" style="grid-template-columns:44% 56%; margin-top:24px">
+        <div>
+          <div class="cols-2" style="gap:12px">
+            <div class="card green"><div class="big-number" style="font-size:48px">16,72%</div><div class="metric-title">interação pública parcial</div></div>
+            <div class="card warn"><div class="big-number" style="font-size:48px">148,8s</div><div class="metric-title">duração do Reel</div></div>
+          </div>
+          <div class="card" style="margin-top:14px"><strong>Conteúdo:</strong> teste do Arroz Paraense de Charque com decisão aberta ao público.</div>
+          <div class="card" style="margin-top:14px"><strong>Leitura:</strong> o conceito funciona. O problema provável é embalagem, duração e distribuição inicial.</div>
+        </div>
+        <div class="card">
+          <div class="label">Índice: mediana dos 14 Reels anteriores = 100</div>
+          <div class="bar-row"><div class="name">Visualizações</div><div class="bar-track"><div class="bar-fill orange" style="width:51%"></div></div><div class="bar-value">51</div></div>
+          <div class="bar-row"><div class="name">Curtidas</div><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div><div class="bar-value">94</div></div>
+          <div class="bar-row"><div class="name">Comentários</div><div class="bar-track"><div class="bar-fill yellow" style="width:100%"></div></div><div class="bar-value">240</div></div>
+          <div class="bar-row"><div class="name">Interação parcial</div><div class="bar-track"><div class="bar-fill yellow" style="width:100%"></div></div><div class="bar-value">196</div></div>
+          <div class="bar-row"><div class="name">Duração</div><div class="bar-track"><div class="bar-fill orange" style="width:100%"></div></div><div class="bar-value">800</div></div>
+        </div>
+      </div>
+      <div class="source">Instagram @amazonianacuia, 26/08/2026. O post tinha menos de 18 horas na coleta; comparação preliminar.</div>
+    </div>
+  </section>
+
+  <section class="slide yellow" data-page="14">
+    <div class="pad">
+      <div class="header"><div class="kicker" style="color:var(--brown)">TikTok - último vídeo</div><div class="mini-logo"></div></div>
+      <h2>A tese foi validada - e depois interrompida</h2>
+      <div class="cols-4" style="margin-top:34px">
+        <div class="card"><div class="big-number" style="font-size:52px">21×</div><div class="metric-title">a mediana de views</div></div>
+        <div class="card"><div class="big-number" style="font-size:52px">84×</div><div class="metric-title">a mediana de compartilhamentos</div></div>
+        <div class="card"><div class="big-number" style="font-size:52px">10,51%</div><div class="metric-title">interação pública</div></div>
+        <div class="card warn"><div class="big-number" style="font-size:52px">159 dias</div><div class="metric-title">sem novo conteúdo</div></div>
+      </div>
+      <div class="cols-2" style="margin-top:28px">
+        <div class="card green"><h3>O que funcionou</h3><p>Produto sazonal, apelo visual, sabores regionais, oferta concreta e urgência.</p></div>
+        <div class="card warn"><h3>O que quebrou</h3><p>A legenda mandava acessar Stories e Destaques do Instagram dentro do TikTok.</p></div>
+      </div>
+      <div class="source" style="color:var(--brown)">TikTok @amazonianacuia, Cuia da Páscoa, 20/03/2026. Coleta em 27/08/2026.</div>
+    </div>
+  </section>
+
+  <section class="slide dark" data-page="15">
+    <div class="pad">
+      <div class="header"><div class="kicker">YouTube - canal atual</div><div class="mini-logo"></div></div>
+      <div class="cols-2" style="grid-template-columns:42% 58%; align-items:center; height:500px">
+        <div>
+          <div class="big-number" style="font-size:150px">1</div>
+          <h2 style="font-size:52px">vídeo no canal</h2>
+          <p class="lead">Uma peça institucional alcançou mais de 50 vezes a base atual de inscritos. Mas não houve continuidade.</p>
+        </div>
+        <div class="card accent" style="padding:34px">
+          <div class="cols-2" style="gap:18px">
+            <div><div class="big-number">4.359</div><div class="metric-title">visualizações</div></div>
+            <div><div class="big-number">86</div><div class="metric-title">inscritos atuais</div></div>
+            <div><div class="big-number">166</div><div class="metric-title">curtidas</div></div>
+            <div><div class="big-number">345</div><div class="metric-title">dias sem novo vídeo</div></div>
+          </div>
+          <p style="margin-top:28px"><strong>Decisão:</strong> abandonar a lógica de “peça especial” como única entrega e adotar formatos simples e recorrentes.</p>
+        </div>
+      </div>
+      <div class="source">YouTube Amazônia na Cuia, vídeo publicado em 15/09/2025. Não há amostra para mediana interna válida.</div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="16">
+    <div class="pad">
+      <div class="header"><div class="kicker">Conteúdo vencedor</div><div class="mini-logo"></div></div>
+      <h2>Os melhores resultados já revelaram a fórmula</h2>
+      <div class="cols-4" style="margin-top:32px">
+        <div class="card green"><div class="label">Instagram</div><div class="big-number">5,84 mi</div><h3>Dois paraenses brocados</h3><p class="small">Oferta concreta + humor regional + experiência coletiva.</p></div>
+        <div class="card green"><div class="label">TikTok</div><div class="big-number">1,5 mi</div><h3>Passeio gastronômico</h3><p class="small">Descoberta + variedade + experiência de visita.</p></div>
+        <div class="card green"><div class="label">TikTok</div><div class="big-number">836 mil</div><h3>Paraense ou resto do Brasil?</h3><p class="small">Identidade + comparação fácil + participação.</p></div>
+        <div class="card green"><div class="label">Instagram</div><div class="big-number">421 mil</div><h3>Tour com visitantes</h3><p class="small">Pessoas + prova social + descoberta cultural.</p></div>
+      </div>
+      <div class="quote" style="font-size:40px; margin-top:40px; text-align:center">Oferta + regionalidade + comida + reação + pessoas</div>
+      <div class="source">Métricas públicas observadas na auditoria de 27/08/2026. Plataformas não devem ser comparadas pelo mesmo benchmark.</div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="17">
+    <div class="pad">
+      <div class="header"><div class="kicker">Diagnóstico honesto</div><div class="mini-logo"></div></div>
+      <h2>Forças reais. Fragilidades corrigíveis.</h2>
+      <div class="cols-2" style="margin-top:30px">
+        <div class="card green" style="min-height:390px">
+          <div class="label">O que multiplica</div>
+          <ul class="checklist">
+            <li>Cultura paraense legítima</li>
+            <li>Fundador com energia e vivência</li>
+            <li>Operação real para mostrar</li>
+            <li>Audiência relevante no Instagram</li>
+            <li>Comida e cuia visualmente reconhecíveis</li>
+            <li>Virais já comprovados</li>
+            <li>Histórias de erro, recomeço e expansão</li>
+          </ul>
+        </div>
+        <div class="card warn" style="min-height:390px">
+          <div class="label">Onde o valor vaza</div>
+          <ul class="checklist danger">
+            <li>Rafael e empresa excessivamente misturados</li>
+            <li>TikTok e YouTube abandonados</li>
+            <li>Poucas pessoas comuns e produtores</li>
+            <li>Reaproveitamento sem adaptação</li>
+            <li>Vídeos longos sem justificativa</li>
+            <li>Conversão sem atribuição</li>
+            <li>Superlativos e bordões repetidos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="18">
+    <div class="pad">
+      <div class="header"><div class="kicker">Erros e correções</div><div class="mini-logo"></div></div>
+      <h2>Antes de produzir mais, remover os vazamentos</h2>
+      <div class="card" style="padding:8px 18px; margin-top:24px">
+        <div class="priority"><div class="badge">P0</div><div><strong>CTA quebrado no TikTok</strong><br><span class="small">Direciona para Stories e Destaques do Instagram.</span></div><div class="action">Corrigir hoje</div></div>
+        <div class="priority"><div class="badge">P0</div><div><strong>Unidades e horários inconsistentes</strong><br><span class="small">Site e redes apresentam informações diferentes.</span></div><div class="action">Fonte única</div></div>
+        <div class="priority"><div class="badge">P0</div><div><strong>Sem rastreamento de conversão</strong><br><span class="small">Reservas e pedidos não são atribuíveis por canal.</span></div><div class="action">UTMs e links</div></div>
+        <div class="priority"><div class="badge p1">P1</div><div><strong>Excesso de CTA e bloco operacional</strong><br><span class="small">Comentar, visitar, reservar e consultar cardápio no mesmo post.</span></div><div class="action">Uma ação principal</div></div>
+        <div class="priority"><div class="badge p1">P1</div><div><strong>Gestão abstrata no perfil de Rafael</strong><br><span class="small">Falta mostrar problema, decisão, consequência e aprendizado.</span></div><div class="action">Casos reais</div></div>
+        <div class="priority"><div class="badge p2">P2</div><div><strong>Regionalidade pode virar fórmula</strong><br><span class="small">Repetição reduz espontaneidade e poder de identificação.</span></div><div class="action">Contexto primeiro</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide split-photo" data-page="19">
+    <div class="photo" style="background-image:var(--rafael-leading); background-position:36% center"></div>
+    <div class="content">
+      <div class="header"><div class="kicker">Regras entre perfis</div><div class="mini-logo"></div></div>
+      <h2>Separar os perfis fortalece os dois</h2>
+      <div class="stack compact-stack">
+        <div class="card green"><div class="big-number" style="font-size:48px">60%+</div><strong>do conteúdo de Rafael deve ser original</strong></div>
+        <div class="card green"><div class="big-number" style="font-size:48px">2 : 1</div><strong>dois conteúdos autorais para cada colaboração</strong></div>
+        <div class="card green"><div class="big-number" style="font-size:48px">40%+</div><strong>do restaurante com pessoas ou histórias</strong></div>
+      </div>
+      <p class="small" style="margin-top:20px">Rafael é o principal porta-voz, mas não o sinônimo absoluto da empresa.</p>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="20">
+    <div class="pad">
+      <div class="header"><div class="kicker">Mapa editorial</div><div class="mini-logo"></div></div>
+      <h2>Dois mixes de conteúdo. Um mesmo território.</h2>
+      <div class="cols-2" style="margin-top:28px">
+        <div class="card green">
+          <div class="label">Amazônia na Cuia</div>
+          <div class="bar-row"><div class="name">Sabores e experiência</div><div class="bar-track"><div class="bar-fill" style="width:30%"></div></div><div class="bar-value">30%</div></div>
+          <div class="bar-row"><div class="name">Pessoas</div><div class="bar-track"><div class="bar-fill yellow" style="width:25%"></div></div><div class="bar-value">25%</div></div>
+          <div class="bar-row"><div class="name">Cultura e origem</div><div class="bar-track"><div class="bar-fill orange" style="width:20%"></div></div><div class="bar-value">20%</div></div>
+          <div class="bar-row"><div class="name">Reações e prova</div><div class="bar-track"><div class="bar-fill" style="width:15%"></div></div><div class="bar-value">15%</div></div>
+          <div class="bar-row"><div class="name">Oferta e serviço</div><div class="bar-track"><div class="bar-fill yellow" style="width:10%"></div></div><div class="bar-value">10%</div></div>
+        </div>
+        <div class="card warn">
+          <div class="label">Rafael Barros</div>
+          <div class="bar-row"><div class="name">Gestão e decisões</div><div class="bar-track"><div class="bar-fill" style="width:35%"></div></div><div class="bar-value">35%</div></div>
+          <div class="bar-row"><div class="name">Erros e aprendizados</div><div class="bar-track"><div class="bar-fill yellow" style="width:25%"></div></div><div class="bar-value">25%</div></div>
+          <div class="bar-row"><div class="name">Cultura e propósito</div><div class="bar-track"><div class="bar-fill orange" style="width:20%"></div></div><div class="bar-value">20%</div></div>
+          <div class="bar-row"><div class="name">Família e valores</div><div class="bar-track"><div class="bar-fill" style="width:10%"></div></div><div class="bar-value">10%</div></div>
+          <div class="bar-row"><div class="name">Empresa e provas</div><div class="bar-track"><div class="bar-fill yellow" style="width:10%"></div></div><div class="bar-value">10%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide dark" data-page="21">
+    <div class="pad">
+      <div class="header"><div class="kicker">Séries proprietárias</div><div class="mini-logo"></div></div>
+      <h2>Séries transformam estratégia em memória</h2>
+      <div class="cols-4" style="margin-top:28px">
+        <div class="card accent"><div class="label">Restaurante</div><h3>Quem faz o Pará chegar à cuia</h3><p>Equipe, cozinheiros, produtores, artesãos e fornecedores.</p></div>
+        <div class="card accent"><div class="label">Restaurante</div><h3>Da origem à cuia</h3><p>O ingrediente percorre a cadeia até virar prato.</p></div>
+        <div class="card accent"><div class="label">Restaurante</div><h3>O cliente decide</h3><p>Teste, votação, cardápio sazonal e resultado.</p></div>
+        <div class="card accent"><div class="label">Restaurante</div><h3>Coisa de paraense</h3><p>Situações reconhecíveis, curtas e compartilháveis.</p></div>
+        <div class="card accent"><div class="label">Rafael</div><h3>No front com Rafael</h3><p>Problema, decisão, consequência e aprendizado.</p></div>
+        <div class="card accent"><div class="label">Rafael</div><h3>Decisões que mudaram o jogo</h3><p>Delivery, almoço, expansão, cuias e menu degustação.</p></div>
+        <div class="card accent"><div class="label">Rafael</div><h3>O erro que me fez crescer</h3><p>Recomeços sem motivação vazia ou falsa perfeição.</p></div>
+        <div class="card accent"><div class="label">Rafael</div><h3>De mala e cuia</h3><p>Pessoas, territórios, ingredientes e negócios.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide yellow" data-page="22">
+    <div class="pad">
+      <div class="header"><div class="kicker" style="color:var(--brown)">Blueprint de episódio</div><div class="mini-logo"></div></div>
+      <h2>Cada vídeo precisa mostrar antes de explicar</h2>
+      <div class="process" style="margin-top:38px">
+        <div class="step" style="background:rgba(244,237,225,.58); border-color:rgba(110,78,47,.18)"><div class="num" style="color:var(--brown)">01</div><strong>Objeto visual</strong></div>
+        <div class="step" style="background:rgba(244,237,225,.58); border-color:rgba(110,78,47,.18)"><div class="num" style="color:var(--brown)">02</div><strong>Hipótese</strong></div>
+        <div class="step" style="background:rgba(244,237,225,.58); border-color:rgba(110,78,47,.18)"><div class="num" style="color:var(--brown)">03</div><strong>Teste</strong></div>
+        <div class="step" style="background:rgba(244,237,225,.58); border-color:rgba(110,78,47,.18)"><div class="num" style="color:var(--brown)">04</div><strong>Reação</strong></div>
+        <div class="step" style="background:rgba(244,237,225,.58); border-color:rgba(110,78,47,.18)"><div class="num" style="color:var(--brown)">05</div><strong>Transformação</strong></div>
+        <div class="step" style="background:rgba(244,237,225,.58); border-color:rgba(110,78,47,.18)"><div class="num" style="color:var(--brown)">06</div><strong>Prova</strong></div>
+        <div class="step" style="background:rgba(244,237,225,.58); border-color:rgba(110,78,47,.18)"><div class="num" style="color:var(--brown)">07</div><strong>Pergunta</strong></div>
+      </div>
+      <div class="card" style="background:var(--green); color:var(--cream); margin-top:36px; padding:28px">
+        <div class="label" style="color:var(--yellow)">Exemplo</div>
+        <div class="quote" style="color:var(--cream); font-size:38px">“Açaí é com o quê?”</div>
+        <p style="margin-bottom:0">Rafael mostra três combinações, prova com uma pessoa do Pará e outra de fora, entrega o veredito e pergunta qual combinação ficou de fora.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="23">
+    <div class="pad">
+      <div class="header"><div class="kicker">Primeiro banco de pautas</div><div class="mini-logo"></div></div>
+      <h2>Oito formatos prontos para testar</h2>
+      <div class="cols-4" style="margin-top:28px">
+        <div class="card green"><span class="pill">01</span><h3 style="margin-top:14px">Açaí é com o quê?</h3><p class="small">Comparação de combinações e hábitos reais.</p></div>
+        <div class="card green"><span class="pill">02</span><h3 style="margin-top:14px">Tacacá pode esfriar?</h3><p class="small">Mito, explicação curta e prova na temperatura certa.</p></div>
+        <div class="card green"><span class="pill">03</span><h3 style="margin-top:14px">Um ingrediente, três cuias</h3><p class="small">Textura, uso, memória e preferência.</p></div>
+        <div class="card green"><span class="pill">04</span><h3 style="margin-top:14px">O comentário virou prato</h3><p class="small">A audiência escolhe o teste seguinte.</p></div>
+        <div class="card warn"><span class="pill orange">05</span><h3 style="margin-top:14px">Da feira para a cuia</h3><p class="small">Origem, produtor, compra, preparo e prova.</p></div>
+        <div class="card warn"><span class="pill orange">06</span><h3 style="margin-top:14px">Quem me ensinou isso</h3><p class="small">Rafael como anfitrião e aprendiz.</p></div>
+        <div class="card warn"><span class="pill orange">07</span><h3 style="margin-top:14px">Passou no teste da equipe?</h3><p class="small">Resultado primeiro; critério em cinco segundos.</p></div>
+        <div class="card warn"><span class="pill orange">08</span><h3 style="margin-top:14px">No front com Rafael</h3><p class="small">Uma decisão de operação por episódio.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="24">
+    <div class="pad">
+      <div class="header"><div class="kicker">Cadência</div><div class="mini-logo"></div></div>
+      <h2>Consistência sem virar fábrica de conteúdo</h2>
+      <div class="matrix">
+        <div></div><div class="head">Instagram</div><div class="head">TikTok</div><div class="head">YouTube</div>
+        <div class="row">Amazônia</div><div class="cell"><strong>5-6 Reels/sem</strong><br>1 carrossel + Stories diários</div><div class="cell"><strong>4 vídeos nativos/sem</strong><br>Sprint inicial de 8 semanas</div><div class="cell"><strong>3 Shorts/sem</strong><br>2 vídeos longos/mês</div>
+        <div class="row">Rafael</div><div class="cell"><strong>3 posts/sem</strong><br>2 originais + no máximo 1 collab</div><div class="cell">Testes após validar linguagem pessoal</div><div class="cell">Participação em bastidores e episódios de gestão</div>
+        <div class="row">Regra</div><div class="cell">História e CTA próprios</div><div class="cell">Abertura rápida e legenda nativa</div><div class="cell">Título pesquisável e catálogo</div>
+      </div>
+      <div class="card green" style="margin-top:28px; min-height:auto">
+        <strong>Uma captação pode gerar vários conteúdos.</strong> Cada canal, porém, recebe abertura, duração, edição, legenda e CTA próprios.
+      </div>
+    </div>
+  </section>
+
+  <section class="slide split-photo reverse" data-page="25">
+    <div class="content">
+      <div class="header"><div class="kicker">Modelo operacional</div><div class="mini-logo"></div></div>
+      <h2>Uma pauta-mãe. Quatro versões nativas.</h2>
+      <div class="stack compact-stack">
+        <div class="card green"><strong>1. Pesquisa e pauta</strong><br><span class="small">História, personagem, prova e risco editorial.</span></div>
+        <div class="card green"><strong>2. Captação modular</strong><br><span class="small">Longo, vertical, fotos, reação e bastidores.</span></div>
+        <div class="card green"><strong>3. Adaptação por canal</strong><br><span class="small">Hook, duração, título, legenda e CTA.</span></div>
+        <div class="card green"><strong>4. Medição e decisão</strong><br><span class="small">1h, 24h, 72h, 7d e 30d.</span></div>
+      </div>
+    </div>
+    <div class="photo" style="background-image:var(--working); background-position:center"></div>
+  </section>
+
+  <section class="slide dark" data-page="26">
+    <div class="pad">
+      <div class="header"><div class="kicker">0-30 dias</div><div class="mini-logo"></div></div>
+      <h2>Corrigir, instrumentar e retomar</h2>
+      <div class="timeline">
+        <div class="phase"><div class="week">Semana 1</div><h3>Arrumar a casa</h3><ul><li>Unidades e horários</li><li>UTMs por canal</li><li>Bio e destaques</li><li>Identidade de capa</li></ul></div>
+        <div class="phase"><div class="week">Semana 2</div><h3>Voltar a distribuir</h3><ul><li>4 TikToks nativos</li><li>3 Shorts</li><li>2 conteúdos de Rafael</li><li>Primeiro comentário vira prato</li></ul></div>
+        <div class="phase"><div class="week">Semana 3</div><h3>Colocar pessoas</h3><ul><li>Produtor</li><li>Funcionário</li><li>Cliente comum</li><li>Primeiro “Da origem à cuia”</li></ul></div>
+        <div class="phase"><div class="week">Semana 4</div><h3>Comparar</h3><ul><li>24h e 7 dias</li><li>Formatos com pessoas</li><li>Faixas de duração</li><li>Dois melhores mecanismos</li></ul></div>
+      </div>
+      <div class="footer-quote">Objetivo do mês 1: criar controle operacional e voltar a produzir dados confiáveis.</div>
+    </div>
+  </section>
+
+  <section class="slide brown" data-page="27">
+    <div class="pad">
+      <div class="header"><div class="kicker">31-60 dias</div><div class="mini-logo"></div></div>
+      <h2>Repetir, comparar e consolidar</h2>
+      <div class="cols-3" style="margin-top:36px">
+        <div class="card accent"><div class="big-number">04×</div><h3>Amostra mínima</h3><p>Testar cada formato pelo menos quatro vezes antes de descartá-lo.</p></div>
+        <div class="card accent"><div class="big-number">32</div><h3>TikToks no sprint</h3><p>Amostra suficiente para avaliar mediana, distribuição e adaptação.</p></div>
+        <div class="card accent"><div class="big-number">04</div><h3>Séries consolidadas</h3><p>Duas do restaurante e duas de Rafael com promessa clara.</p></div>
+      </div>
+      <div class="cols-2" style="margin-top:24px">
+        <div class="card"><h3>Comparar</h3><p>Pessoas versus produto, vídeos curtos versus longos, alcance versus intenção de visita.</p></div>
+        <div class="card"><h3>Construir baseline</h3><p>Visitas ao perfil, cliques, reservas, pedidos e conversão por canal.</p></div>
+      </div>
+      <div class="footer-quote">Objetivo do mês 2: transformar testes isolados em formatos comparáveis.</div>
+    </div>
+  </section>
+
+  <section class="slide dark" data-page="28">
+    <div class="pad">
+      <div class="header"><div class="kicker">61-90 dias</div><div class="mini-logo"></div></div>
+      <h2>Escalar o que provou valor</h2>
+      <div class="cols-5" style="margin-top:40px">
+        <div class="card accent"><div class="big-number" style="font-size:50px">01</div><h3>Ampliar</h3><p class="small">Os dois melhores formatos por canal.</p></div>
+        <div class="card accent"><div class="big-number" style="font-size:50px">02</div><h3>Temporadas</h3><p class="small">Mercados, rios, bairros, ilhas e pessoas.</p></div>
+        <div class="card accent"><div class="big-number" style="font-size:50px">03</div><h3>Pesquisar</h3><p class="small">Conteúdo evergreen para YouTube.</p></div>
+        <div class="card accent"><div class="big-number" style="font-size:50px">04</div><h3>Converter</h3><p class="small">UTMs, cupons e palavras-chave.</p></div>
+        <div class="card accent"><div class="big-number" style="font-size:50px">05</div><h3>Decidir</h3><p class="small">Relatório executivo e ciclo seguinte.</p></div>
+      </div>
+      <div class="quote" style="margin-top:52px; max-width:980px">Piloto → série → temporada → ativo permanente de marca.</div>
+      <div class="footer-quote">Objetivo do mês 3: concentrar energia em formatos acima da mediana e ligados a reputação ou negócio.</div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="29">
+    <div class="pad">
+      <div class="header"><div class="kicker">Projeções condicionais</div><div class="mini-logo"></div></div>
+      <h2>Capacidade de alcance em 90 dias</h2>
+      <p class="lead" style="font-size:18px">Cenários de planejamento, não garantias. Somente Instagram da Amazônia e TikTok possuem baseline público modelável.</p>
+      <div class="scenario-grid">
+        <div class="scenario" style="display:flex; flex-direction:column; justify-content:center; background:rgba(238,188,79,.18)">
+          <div class="scenario-name">Premissas</div>
+          <p><strong>Instagram:</strong> 65-78 Reels em 90 dias.</p>
+          <p><strong>TikTok:</strong> 32-52 vídeos.</p>
+          <p class="small">Exclui Rafael, YouTube, Stories e carrosséis por falta de benchmark comparável.</p>
+        </div>
+        <div class="scenario">
+          <div class="scenario-name">Conservador</div><div class="total">538 mil</div>
+          <div class="line"><span>Por mês</span><strong>179 mil</strong></div>
+          <div class="line"><span>IG/mês</span><strong>151 mil</strong></div>
+          <div class="line"><span>TikTok/mês</span><strong>29 mil</strong></div>
+        </div>
+        <div class="scenario highlight">
+          <div class="scenario-name">Alvo</div><div class="total">1,28 mi</div>
+          <div class="line"><span>Por mês</span><strong>428 mil</strong></div>
+          <div class="line"><span>IG/mês</span><strong>327 mil</strong></div>
+          <div class="line"><span>TikTok/mês</span><strong>102 mil</strong></div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-name">Expansão</div><div class="total">2,85 mi</div>
+          <div class="line"><span>Por mês</span><strong>951 mil</strong></div>
+          <div class="line"><span>IG/mês</span><strong>468 mil</strong></div>
+          <div class="line"><span>TikTok/mês</span><strong>484 mil</strong></div>
+        </div>
+      </div>
+      <div class="source">Cálculos aritméticos baseados nas medianas e destaques públicos do relatório. Não representam alcance único, vendas ou garantia de distribuição.</div>
+    </div>
+  </section>
+
+  <section class="slide yellow" data-page="30">
+    <div class="pad">
+      <div class="header"><div class="kicker" style="color:var(--brown)">Projeção da marca pessoal</div><div class="mini-logo"></div></div>
+      <h2>Rafael: crescer sem depender do feed da empresa</h2>
+      <div class="cols-3" style="margin-top:34px">
+        <div class="card"><div class="label">Conservador</div><div class="big-number">14,7 mil</div><p><strong>+5%</strong> em 90 dias</p><p class="small">Cerca de 700 novos seguidores líquidos.</p></div>
+        <div class="card" style="background:var(--green); color:var(--cream)"><div class="label" style="color:var(--yellow)">Alvo</div><div class="big-number">16,1 mil</div><p><strong>+15%</strong> em 90 dias</p><p class="small" style="color:var(--sand)">Cerca de 2.100 novos seguidores líquidos.</p></div>
+        <div class="card"><div class="label">Expansão</div><div class="big-number">18,2 mil</div><p><strong>+30%</strong> em 90 dias</p><p class="small">Cerca de 4.200 novos seguidores líquidos.</p></div>
+      </div>
+      <div class="cols-2" style="margin-top:28px">
+        <div class="card green"><div class="big-number" style="font-size:52px">39</div><strong>publicações em 90 dias</strong><p class="small">Cadência de três por semana.</p></div>
+        <div class="card green"><div class="big-number" style="font-size:52px">26</div><strong>conteúdos autorais mínimos</strong><p class="small">66,7% original; no máximo 13 colaborações.</p></div>
+      </div>
+      <div class="source" style="color:var(--brown)">Faixas gerenciais, não previsão estatística. Faltam visitas ao perfil e conversão em seguidores para modelagem mais precisa.</div>
+    </div>
+  </section>
+
+  <section class="slide photo-bg photo-overlay-right dark" data-page="31" style="background-image:var(--rafael-reflect); background-position:center">
+    <div class="pad" style="display:flex; flex-direction:column; justify-content:center; margin-left:54%; width:46%; padding-left:34px">
+      <div class="kicker">O placar de decisão</div>
+      <h2 style="font-size:48px">Medir conteúdo e negócio com a mesma disciplina</h2>
+      <div class="stack" style="margin-top:18px">
+        <div><span class="pill">Execução</span> cadência, UTMs e snapshots</div>
+        <div><span class="pill">Atenção</span> retenção, tempo médio e conclusão</div>
+        <div><span class="pill">Afinidade</span> comentários, compartilhamentos e salvamentos</div>
+        <div><span class="pill">Negócio</span> cliques, reservas, pedidos e receita atribuída</div>
+      </div>
+      <p class="small" style="margin-top:24px">Coletar em 1h, 24h, 72h, 7 dias e 30 dias. Avaliar medianas por formato e por canal.</p>
+    </div>
+  </section>
+
+  <section class="slide dark" data-page="32">
+    <div class="pad">
+      <div class="header"><div class="kicker">Decisões necessárias</div><div class="mini-logo"></div></div>
+      <h2>O que Rafael precisa aprovar para começar</h2>
+      <div class="cols-2" style="margin-top:30px">
+        <div class="card accent"><ul class="checklist"><li>Três temas associados ao nome Rafael Barros</li><li>Objetivo da marca pessoal em 12 meses</li><li>Tempo semanal disponível para gravação</li><li>Limites para família, fé, patrimônio e rotina</li></ul></div>
+        <div class="card accent"><ul class="checklist"><li>Histórias de erro autorizadas</li><li>Números de crescimento que podem ser públicos</li><li>Parceiros e categorias aceitas</li><li>Nomes das séries e responsáveis por aprovação</li></ul></div>
+      </div>
+      <div class="quote" style="font-size:47px; margin-top:54px">O objetivo não é criar um Cheff Otto paraense. É construir um sistema que só Rafael pode sustentar.</div>
+      <div class="footer-quote">Voz real de Rafael + cultura paraense vivida + pessoas com história + prova visual da comida.</div>
+    </div>
+  </section>
+
+  <section class="slide white" data-page="33">
+    <div class="pad">
+      <div class="header"><div class="kicker">Fontes e metodologia</div><div class="mini-logo"></div></div>
+      <h2>Base da análise</h2>
+      <div class="cols-2" style="margin-top:22px">
+        <div class="card green">
+          <h3>Fontes primárias</h3>
+          <p class="small">Instagram @rafabarrosz e @amazonianacuia<br>TikTok @amazonianacuia<br>YouTube Amazônia na Cuia<br>Cheff Otto em Instagram, TikTok e YouTube Shorts<br>Site oficial da Amazônia na Cuia<br>Transcrição local da visita<br>Manual de identidade visual e fotografias fornecidas</p>
+        </div>
+        <div class="card green">
+          <h3>Fontes públicas complementares</h3>
+          <p class="small">G1/PEGN, National Geographic, Exame, O Liberal, DOL, Tripadvisor, entrevistas e registros empresariais públicos.</p>
+          <h3 style="margin-top:22px">Limitações</h3>
+          <p class="small">Sem Insights internos, alcance único, retenção, salvamentos completos, Stories ou conversões. Métricas públicas mudam continuamente.</p>
+        </div>
+      </div>
+      <div class="card warn" style="margin-top:20px; min-height:auto"><strong>Regra metodológica:</strong> ND significa não disponível publicamente, não zero. Projeções são condicionais e devem ser refeitas com dados internos após 30 dias.</div>
+      <div class="quote" style="font-size:34px; margin-top:32px; text-align:center">O Pará por dentro. Para o Brasil e para o mundo.</div>
+    </div>
+    <div class="pattern-band"></div>
+  </section>
+
+</main>
+</body>
+</html>

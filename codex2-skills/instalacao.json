@@ -1,0 +1,3609 @@
+{
+  "base_skills": 312,
+  "plugin_skills": [
+    {
+      "plugin": "app-69312da8e4dc81919370cb86fd172b6c",
+      "name": "plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-batch-edit-photos",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-batch-edit-photos"
+    },
+    {
+      "plugin": "app-69312da8e4dc81919370cb86fd172b6c",
+      "name": "plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-mockups",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-mockups"
+    },
+    {
+      "plugin": "app-69312da8e4dc81919370cb86fd172b6c",
+      "name": "plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-social-variations",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-social-variations"
+    },
+    {
+      "plugin": "app-69312da8e4dc81919370cb86fd172b6c",
+      "name": "plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-design-from-template",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-design-from-template"
+    },
+    {
+      "plugin": "app-69312da8e4dc81919370cb86fd172b6c",
+      "name": "plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-edit-quick-cut",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-edit-quick-cut"
+    },
+    {
+      "plugin": "app-69312da8e4dc81919370cb86fd172b6c",
+      "name": "plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-retouch-portraits",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-retouch-portraits"
+    },
+    {
+      "plugin": "browser",
+      "name": "plugin-browser--control-in-app-browser",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/browser/26.623.70822/skills/control-in-app-browser"
+    },
+    {
+      "plugin": "canva",
+      "name": "plugin-canva--canva-brand-check",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-brand-check"
+    },
+    {
+      "plugin": "canva",
+      "name": "plugin-canva--canva-branded-presentation",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-branded-presentation"
+    },
+    {
+      "plugin": "canva",
+      "name": "plugin-canva--canva-bulk-create",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-bulk-create"
+    },
+    {
+      "plugin": "canva",
+      "name": "plugin-canva--canva-design-feedback",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-design-feedback"
+    },
+    {
+      "plugin": "canva",
+      "name": "plugin-canva--canva-edit-design",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-edit-design"
+    },
+    {
+      "plugin": "canva",
+      "name": "plugin-canva--canva-implement-feedback",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-implement-feedback"
+    },
+    {
+      "plugin": "canva",
+      "name": "plugin-canva--canva-resize-for-social-media",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-resize-for-social-media"
+    },
+    {
+      "plugin": "canva",
+      "name": "plugin-canva--canva-translate-design",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-translate-design"
+    },
+    {
+      "plugin": "chrome",
+      "name": "plugin-chrome--control-chrome",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/chrome/26.623.70822/skills/control-chrome"
+    },
+    {
+      "plugin": "creative-production",
+      "name": "plugin-creative-production--intake",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/intake"
+    },
+    {
+      "plugin": "creative-production",
+      "name": "plugin-creative-production--produce",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/produce"
+    },
+    {
+      "plugin": "documents",
+      "name": "plugin-documents--documents",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/documents/26.623.12021/skills/documents"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-code-connect",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-code-connect"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-create-new-file",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-create-new-file"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-design-to-code",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-design-to-code"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-generate-design",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-design"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-generate-diagram",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-diagram"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-generate-library",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-library"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-generative-plugins",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generative-plugins"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-implement-motion",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-implement-motion"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-shaders",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-shaders"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-swiftui",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-swiftui"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-use",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-use-figjam",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-figjam"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-use-motion",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-motion"
+    },
+    {
+      "plugin": "figma",
+      "name": "plugin-figma--figma-use-slides",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-slides"
+    },
+    {
+      "plugin": "github",
+      "name": "plugin-github--gh-address-comments",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-address-comments"
+    },
+    {
+      "plugin": "github",
+      "name": "plugin-github--gh-fix-ci",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-fix-ci"
+    },
+    {
+      "plugin": "github",
+      "name": "plugin-github--github",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/github"
+    },
+    {
+      "plugin": "github",
+      "name": "plugin-github--yeet",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/yeet"
+    },
+    {
+      "plugin": "gmail",
+      "name": "plugin-gmail--gmail",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail"
+    },
+    {
+      "plugin": "gmail",
+      "name": "plugin-gmail--gmail-inbox-triage",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail-inbox-triage"
+    },
+    {
+      "plugin": "google-calendar",
+      "name": "plugin-google-calendar--google-calendar",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar"
+    },
+    {
+      "plugin": "google-calendar",
+      "name": "plugin-google-calendar--google-calendar-daily-brief",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-daily-brief"
+    },
+    {
+      "plugin": "google-calendar",
+      "name": "plugin-google-calendar--google-calendar-free-up-time",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-free-up-time"
+    },
+    {
+      "plugin": "google-calendar",
+      "name": "plugin-google-calendar--google-calendar-group-scheduler",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-group-scheduler"
+    },
+    {
+      "plugin": "google-calendar",
+      "name": "plugin-google-calendar--google-calendar-meeting-prep",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-meeting-prep"
+    },
+    {
+      "plugin": "google-drive",
+      "name": "plugin-google-drive--google-docs",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-docs"
+    },
+    {
+      "plugin": "google-drive",
+      "name": "plugin-google-drive--google-drive",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive"
+    },
+    {
+      "plugin": "google-drive",
+      "name": "plugin-google-drive--google-drive-comments",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive-comments"
+    },
+    {
+      "plugin": "google-drive",
+      "name": "plugin-google-drive--google-sheets",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-sheets"
+    },
+    {
+      "plugin": "google-drive",
+      "name": "plugin-google-drive--google-slides",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-slides"
+    },
+    {
+      "plugin": "heygen",
+      "name": "plugin-heygen--heygen-avatar",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-avatar"
+    },
+    {
+      "plugin": "heygen",
+      "name": "plugin-heygen--heygen-video",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-video"
+    },
+    {
+      "plugin": "notion",
+      "name": "plugin-notion--notion-knowledge-capture",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-knowledge-capture"
+    },
+    {
+      "plugin": "notion",
+      "name": "plugin-notion--notion-meeting-intelligence",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-meeting-intelligence"
+    },
+    {
+      "plugin": "notion",
+      "name": "plugin-notion--notion-research-documentation",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-research-documentation"
+    },
+    {
+      "plugin": "notion",
+      "name": "plugin-notion--notion-spec-to-implementation",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-spec-to-implementation"
+    },
+    {
+      "plugin": "openai-developers",
+      "name": "plugin-openai-developers--agents",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/agents"
+    },
+    {
+      "plugin": "openai-developers",
+      "name": "plugin-openai-developers--build-chatgpt-app",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/build-chatgpt-app"
+    },
+    {
+      "plugin": "openai-developers",
+      "name": "plugin-openai-developers--chatgpt-app-submission",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/chatgpt-app-submission"
+    },
+    {
+      "plugin": "openai-developers",
+      "name": "plugin-openai-developers--openai-api-troubleshooting",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-api-troubleshooting"
+    },
+    {
+      "plugin": "openai-developers",
+      "name": "plugin-openai-developers--openai-platform-api-key",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-platform-api-key"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-analytics-dashboard",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-business-review",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-design-report",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-experiment-analysis",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-financial-budget",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-investment-committee-memo",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-legal-memorandum",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-market-trends-report",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-minimal-letterhead",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-operating-calendar",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-operating-review",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-project-kickoff",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-project-tracker",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-sales-pipeline",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-simple-dark-mode",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-simple-light-mode",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-strategy-memorandum",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-system-design",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-team-alignment",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment"
+    },
+    {
+      "plugin": "openai-templates",
+      "name": "plugin-openai-templates--artifact-template-three-statement-forecast",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast"
+    },
+    {
+      "plugin": "pdf",
+      "name": "plugin-pdf--pdf",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/pdf/26.623.12021/skills/pdf"
+    },
+    {
+      "plugin": "plugin-management",
+      "name": "plugin-plugin-management--plugin-management",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management"
+    },
+    {
+      "plugin": "presentations",
+      "name": "plugin-presentations--presentations",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/presentations/26.623.12021/skills/presentations"
+    },
+    {
+      "plugin": "remotion",
+      "name": "plugin-remotion--remotion",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/remotion/bd2122cb/skills/remotion"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--analyze-account-signals",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/analyze-account-signals"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--build-business-case",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-business-case"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--build-competitive-brief",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-competitive-brief"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--demo-exec-and-seller-dash",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/demo-exec-and-seller-dash"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--enrich-company-and-contact-data",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/enrich-company-and-contact-data"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--find-customer-quotes",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-customer-quotes"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--find-key-internal-sources",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-key-internal-sources"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--follow-up-after-call",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/follow-up-after-call"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--get-rep-call-feedback",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/get-rep-call-feedback"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--index",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/index"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--plan-deal-strategy",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/plan-deal-strategy"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--prepare-for-meeting",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/prepare-for-meeting"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--review-forecast",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-forecast"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--review-rep-call-trends",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-rep-call-trends"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--sales-company-research",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-company-research"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--sales-leadership-dashboard",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-leadership-dashboard"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--sales-presentations",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-presentations"
+    },
+    {
+      "plugin": "sales",
+      "name": "plugin-sales--seller-account-dashboard",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/seller-account-dashboard"
+    },
+    {
+      "plugin": "spreadsheets",
+      "name": "plugin-spreadsheets--spreadsheets",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/spreadsheets/26.623.12021/skills/spreadsheets"
+    },
+    {
+      "plugin": "teams",
+      "name": "plugin-teams--teams",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams"
+    },
+    {
+      "plugin": "teams",
+      "name": "plugin-teams--teams-channel-summarization",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-channel-summarization"
+    },
+    {
+      "plugin": "teams",
+      "name": "plugin-teams--teams-daily-digest",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-daily-digest"
+    },
+    {
+      "plugin": "teams",
+      "name": "plugin-teams--teams-messages",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-messages"
+    },
+    {
+      "plugin": "teams",
+      "name": "plugin-teams--teams-notification-triage",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-notification-triage"
+    },
+    {
+      "plugin": "teams",
+      "name": "plugin-teams--teams-planner-task-management",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-planner-task-management"
+    },
+    {
+      "plugin": "teams",
+      "name": "plugin-teams--teams-reply-drafting",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-reply-drafting"
+    },
+    {
+      "plugin": "template-creator",
+      "name": "plugin-template-creator--template-creator",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/skills/template-creator"
+    },
+    {
+      "plugin": "windsor-ai",
+      "name": "plugin-windsor-ai--windsor",
+      "source": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/windsor-ai/4.0.0/skills/windsor"
+    }
+  ],
+  "created": [
+    {
+      "link": "/Users/ppvfx/.codex2/skills/04-agente-figma-to-lp",
+      "target": "/Users/ppvfx/.codex/skills/04-agente-figma-to-lp"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/3d-model-generation",
+      "target": "/Users/ppvfx/.codex/skills/3d-model-generation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/3d-modeling",
+      "target": "/Users/ppvfx/.codex/skills/3d-modeling"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/3d-visualizer",
+      "target": "/Users/ppvfx/.codex/skills/3d-visualizer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/ab-test-setup",
+      "target": "/Users/ppvfx/.codex/skills/ab-test-setup"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/ab-testing",
+      "target": "/Users/ppvfx/.codex/skills/ab-testing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/ad-creative",
+      "target": "/Users/ppvfx/.codex/skills/ad-creative"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/adobe-batch-edit-photos",
+      "target": "/Users/ppvfx/.codex/skills/adobe-batch-edit-photos"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/ads",
+      "target": "/Users/ppvfx/.codex/skills/ads"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/agents",
+      "target": "/Users/ppvfx/.codex/skills/agents"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/ai-image-generation",
+      "target": "/Users/ppvfx/.codex/skills/ai-image-generation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/ai-seo",
+      "target": "/Users/ppvfx/.codex/skills/ai-seo"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/analytics",
+      "target": "/Users/ppvfx/.codex/skills/analytics"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/analytics-and-reporting",
+      "target": "/Users/ppvfx/.codex/skills/analytics-and-reporting"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/analytics-tracking",
+      "target": "/Users/ppvfx/.codex/skills/analytics-tracking"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/apify",
+      "target": "/Users/ppvfx/.codex/skills/apify"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/aso",
+      "target": "/Users/ppvfx/.codex/skills/aso"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/aso-audit",
+      "target": "/Users/ppvfx/.codex/skills/aso-audit"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/aspnet-core",
+      "target": "/Users/ppvfx/.codex/skills/aspnet-core"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/audience-research",
+      "target": "/Users/ppvfx/.codex/skills/audience-research"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/audio-editing",
+      "target": "/Users/ppvfx/.codex/skills/audio-editing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/audio-transcriber",
+      "target": "/Users/ppvfx/.codex/skills/audio-transcriber"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/banner-design",
+      "target": "/Users/ppvfx/.codex/skills/banner-design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/batch-content-plan",
+      "target": "/Users/ppvfx/.codex/skills/batch-content-plan"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/blender-mcp",
+      "target": "/Users/ppvfx/.codex/skills/blender-mcp"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/blender-web-pipeline",
+      "target": "/Users/ppvfx/.codex/skills/blender-web-pipeline"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/blockbench-modeling",
+      "target": "/Users/ppvfx/.codex/skills/blockbench-modeling"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/blotato",
+      "target": "/Users/ppvfx/.codex/skills/blotato"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/brand",
+      "target": "/Users/ppvfx/.codex/skills/brand"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/brand-profile",
+      "target": "/Users/ppvfx/.codex/skills/brand-profile"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/canva",
+      "target": "/Users/ppvfx/.codex/skills/canva"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/caption-writer",
+      "target": "/Users/ppvfx/.codex/skills/caption-writer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/captions-and-clipping",
+      "target": "/Users/ppvfx/.codex/skills/captions-and-clipping"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/carousel-writer",
+      "target": "/Users/ppvfx/.codex/skills/carousel-writer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/chatgpt-apps",
+      "target": "/Users/ppvfx/.codex/skills/chatgpt-apps"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/churn-prevention",
+      "target": "/Users/ppvfx/.codex/skills/churn-prevention"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/cli-creator",
+      "target": "/Users/ppvfx/.codex/skills/cli-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/cloudflare-deploy",
+      "target": "/Users/ppvfx/.codex/skills/cloudflare-deploy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/co-marketing",
+      "target": "/Users/ppvfx/.codex/skills/co-marketing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/cold-email",
+      "target": "/Users/ppvfx/.codex/skills/cold-email"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/community-marketing",
+      "target": "/Users/ppvfx/.codex/skills/community-marketing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/comparison-table-generator",
+      "target": "/Users/ppvfx/.codex/skills/comparison-table-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/competitor-alternatives",
+      "target": "/Users/ppvfx/.codex/skills/competitor-alternatives"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/competitor-profiling",
+      "target": "/Users/ppvfx/.codex/skills/competitor-profiling"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/competitors",
+      "target": "/Users/ppvfx/.codex/skills/competitors"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/contact-page-generator",
+      "target": "/Users/ppvfx/.codex/skills/contact-page-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/content-audit",
+      "target": "/Users/ppvfx/.codex/skills/content-audit"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/content-calendar",
+      "target": "/Users/ppvfx/.codex/skills/content-calendar"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/content-humanizer",
+      "target": "/Users/ppvfx/.codex/skills/content-humanizer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/content-pillars",
+      "target": "/Users/ppvfx/.codex/skills/content-pillars"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/content-recycling",
+      "target": "/Users/ppvfx/.codex/skills/content-recycling"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/content-strategy",
+      "target": "/Users/ppvfx/.codex/skills/content-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/coppiegpt",
+      "target": "/Users/ppvfx/.codex/skills/coppiegpt"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/copy-cro-direct-response",
+      "target": "/Users/ppvfx/.codex/skills/copy-cro-direct-response"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/copy-editing",
+      "target": "/Users/ppvfx/.codex/skills/copy-editing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/copywriting",
+      "target": "/Users/ppvfx/.codex/skills/copywriting"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/copywriting-claude",
+      "target": "/Users/ppvfx/.codex/skills/copywriting-claude"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/copywriting-prompts",
+      "target": "/Users/ppvfx/.codex/skills/copywriting-prompts"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/core-web-vitals",
+      "target": "/Users/ppvfx/.codex/skills/core-web-vitals"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/corte-opus-xml-padilha",
+      "target": "/Users/ppvfx/.codex/skills/corte-opus-xml-padilha"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/corte-video-respect",
+      "target": "/Users/ppvfx/.codex/skills/corte-video-respect"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/cortes-padilha",
+      "target": "/Users/ppvfx/.codex/skills/cortes-padilha"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/cro",
+      "target": "/Users/ppvfx/.codex/skills/cro"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/cross-platform-repurposing",
+      "target": "/Users/ppvfx/.codex/skills/cross-platform-repurposing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/cta-generator",
+      "target": "/Users/ppvfx/.codex/skills/cta-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/customer-research",
+      "target": "/Users/ppvfx/.codex/skills/customer-research"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/define-goal",
+      "target": "/Users/ppvfx/.codex/skills/define-goal"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/deploy-to-vercel",
+      "target": "/Users/ppvfx/.codex/skills/deploy-to-vercel"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/design",
+      "target": "/Users/ppvfx/.codex/skills/design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/design-system",
+      "target": "/Users/ppvfx/.codex/skills/design-system"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/directory-submissions",
+      "target": "/Users/ppvfx/.codex/skills/directory-submissions"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/doc-coauthoring",
+      "target": "/Users/ppvfx/.codex/skills/doc-coauthoring"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/eachlabs-image-edit",
+      "target": "/Users/ppvfx/.codex/skills/eachlabs-image-edit"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/educational-content-and-how-to",
+      "target": "/Users/ppvfx/.codex/skills/educational-content-and-how-to"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/elevenlabs",
+      "target": "/Users/ppvfx/.codex/skills/elevenlabs"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/elevenlabs-music",
+      "target": "/Users/ppvfx/.codex/skills/elevenlabs-music"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/elevenlabs-music-generation",
+      "target": "/Users/ppvfx/.codex/skills/elevenlabs-music-generation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/elevenlabs-remotion",
+      "target": "/Users/ppvfx/.codex/skills/elevenlabs-remotion"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/elevenlabs-sound-effects",
+      "target": "/Users/ppvfx/.codex/skills/elevenlabs-sound-effects"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/elevenlabs-tts",
+      "target": "/Users/ppvfx/.codex/skills/elevenlabs-tts"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/elevenlabs-voice-changer",
+      "target": "/Users/ppvfx/.codex/skills/elevenlabs-voice-changer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/elevenlabs-voice-isolator",
+      "target": "/Users/ppvfx/.codex/skills/elevenlabs-voice-isolator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/email-sequence",
+      "target": "/Users/ppvfx/.codex/skills/email-sequence"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/emails",
+      "target": "/Users/ppvfx/.codex/skills/emails"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/experimentation-and-ab-testing",
+      "target": "/Users/ppvfx/.codex/skills/experimentation-and-ab-testing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/fal-video-to-video",
+      "target": "/Users/ppvfx/.codex/skills/fal-video-to-video"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/faq-page-generator",
+      "target": "/Users/ppvfx/.codex/skills/faq-page-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/features-page-generator",
+      "target": "/Users/ppvfx/.codex/skills/features-page-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma",
+      "target": "/Users/ppvfx/.codex/skills/figma"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-code-connect",
+      "target": "/Users/ppvfx/.codex/skills/figma-code-connect"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-code-connect-components",
+      "target": "/Users/ppvfx/.codex/skills/figma-code-connect-components"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-create-design-system-rules",
+      "target": "/Users/ppvfx/.codex/skills/figma-create-design-system-rules"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-create-new-file",
+      "target": "/Users/ppvfx/.codex/skills/figma-create-new-file"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-generate-design",
+      "target": "/Users/ppvfx/.codex/skills/figma-generate-design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-generate-diagram",
+      "target": "/Users/ppvfx/.codex/skills/figma-generate-diagram"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-generate-library",
+      "target": "/Users/ppvfx/.codex/skills/figma-generate-library"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-implement-design",
+      "target": "/Users/ppvfx/.codex/skills/figma-implement-design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-use",
+      "target": "/Users/ppvfx/.codex/skills/figma-use"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-use-figjam",
+      "target": "/Users/ppvfx/.codex/skills/figma-use-figjam"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/figma-use-slides",
+      "target": "/Users/ppvfx/.codex/skills/figma-use-slides"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/find-skills",
+      "target": "/Users/ppvfx/.codex/skills/find-skills"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/firecrawl",
+      "target": "/Users/ppvfx/.codex/skills/firecrawl"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/flux-image",
+      "target": "/Users/ppvfx/.codex/skills/flux-image"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/food-beverage-content-production",
+      "target": "/Users/ppvfx/.codex/skills/food-beverage-content-production"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/footer-generator",
+      "target": "/Users/ppvfx/.codex/skills/footer-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/form-cro",
+      "target": "/Users/ppvfx/.codex/skills/form-cro"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/free-tool-strategy",
+      "target": "/Users/ppvfx/.codex/skills/free-tool-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/free-tools",
+      "target": "/Users/ppvfx/.codex/skills/free-tools"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/freepik-api",
+      "target": "/Users/ppvfx/.codex/skills/freepik-api"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/freepik-downloader",
+      "target": "/Users/ppvfx/.codex/skills/freepik-downloader"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/frontend-design",
+      "target": "/Users/ppvfx/.codex/skills/frontend-design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/game-3d-assets",
+      "target": "/Users/ppvfx/.codex/skills/game-3d-assets"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/gh-address-comments",
+      "target": "/Users/ppvfx/.codex/skills/gh-address-comments"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/gh-fix-ci",
+      "target": "/Users/ppvfx/.codex/skills/gh-fix-ci"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/goals-and-kpis",
+      "target": "/Users/ppvfx/.codex/skills/goals-and-kpis"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/gpt-image-2",
+      "target": "/Users/ppvfx/.codex/skills/gpt-image-2"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/hashtag-strategy",
+      "target": "/Users/ppvfx/.codex/skills/hashtag-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/hatch-pet",
+      "target": "/Users/ppvfx/.codex/skills/hatch-pet"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/headline-cta-lab",
+      "target": "/Users/ppvfx/.codex/skills/headline-cta-lab"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/hero-generator",
+      "target": "/Users/ppvfx/.codex/skills/hero-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/homepage-generator",
+      "target": "/Users/ppvfx/.codex/skills/homepage-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/hook-writer",
+      "target": "/Users/ppvfx/.codex/skills/hook-writer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/howto-section-generator",
+      "target": "/Users/ppvfx/.codex/skills/howto-section-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/idea-generation-and-ideation",
+      "target": "/Users/ppvfx/.codex/skills/idea-generation-and-ideation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/image",
+      "target": "/Users/ppvfx/.codex/skills/image"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/image-ai-generator",
+      "target": "/Users/ppvfx/.codex/skills/image-ai-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/image-creator",
+      "target": "/Users/ppvfx/.codex/skills/image-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/image-fetcher",
+      "target": "/Users/ppvfx/.codex/skills/image-fetcher"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/image-inpainting",
+      "target": "/Users/ppvfx/.codex/skills/image-inpainting"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/image-optimization",
+      "target": "/Users/ppvfx/.codex/skills/image-optimization"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/image-outpainting",
+      "target": "/Users/ppvfx/.codex/skills/image-outpainting"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/image-upscaling",
+      "target": "/Users/ppvfx/.codex/skills/image-upscaling"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/imagegen",
+      "target": "/Users/ppvfx/.codex/skills/imagegen"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/instagram-growth",
+      "target": "/Users/ppvfx/.codex/skills/instagram-growth"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/instagram-publisher",
+      "target": "/Users/ppvfx/.codex/skills/instagram-publisher"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/instagram-reels-publishing",
+      "target": "/Users/ppvfx/.codex/skills/instagram-reels-publishing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/instagram-research",
+      "target": "/Users/ppvfx/.codex/skills/instagram-research"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/instagram-seo",
+      "target": "/Users/ppvfx/.codex/skills/instagram-seo"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/jupyter-notebook",
+      "target": "/Users/ppvfx/.codex/skills/jupyter-notebook"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/landing-page-copy-optimizer",
+      "target": "/Users/ppvfx/.codex/skills/landing-page-copy-optimizer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/landing-page-generator",
+      "target": "/Users/ppvfx/.codex/skills/landing-page-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/landing-page-sales-copy",
+      "target": "/Users/ppvfx/.codex/skills/landing-page-sales-copy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/launch",
+      "target": "/Users/ppvfx/.codex/skills/launch"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/launch-strategy",
+      "target": "/Users/ppvfx/.codex/skills/launch-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/lead-magnets",
+      "target": "/Users/ppvfx/.codex/skills/lead-magnets"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/legendas-instagram",
+      "target": "/Users/ppvfx/.codex/skills/legendas-instagram"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/linear",
+      "target": "/Users/ppvfx/.codex/skills/linear"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/manim-composer",
+      "target": "/Users/ppvfx/.codex/skills/manim-composer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/manim-video",
+      "target": "/Users/ppvfx/.codex/skills/manim-video"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/manimce-best-practices",
+      "target": "/Users/ppvfx/.codex/skills/manimce-best-practices"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/manimgl-best-practices",
+      "target": "/Users/ppvfx/.codex/skills/manimgl-best-practices"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/marketing-ideas",
+      "target": "/Users/ppvfx/.codex/skills/marketing-ideas"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/marketing-plan",
+      "target": "/Users/ppvfx/.codex/skills/marketing-plan"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/marketing-psychology",
+      "target": "/Users/ppvfx/.codex/skills/marketing-psychology"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/meta-description",
+      "target": "/Users/ppvfx/.codex/skills/meta-description"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/midjourney-prompt-engineering",
+      "target": "/Users/ppvfx/.codex/skills/midjourney-prompt-engineering"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/migrate-to-codex",
+      "target": "/Users/ppvfx/.codex/skills/migrate-to-codex"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/mobile-friendly",
+      "target": "/Users/ppvfx/.codex/skills/mobile-friendly"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/music",
+      "target": "/Users/ppvfx/.codex/skills/music"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/navigation-menu-generator",
+      "target": "/Users/ppvfx/.codex/skills/navigation-menu-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-ai-gateway",
+      "target": "/Users/ppvfx/.codex/skills/netlify-ai-gateway"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-blobs",
+      "target": "/Users/ppvfx/.codex/skills/netlify-blobs"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-caching",
+      "target": "/Users/ppvfx/.codex/skills/netlify-caching"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-cli-and-deploy",
+      "target": "/Users/ppvfx/.codex/skills/netlify-cli-and-deploy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-config",
+      "target": "/Users/ppvfx/.codex/skills/netlify-config"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-database",
+      "target": "/Users/ppvfx/.codex/skills/netlify-database"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-deploy",
+      "target": "/Users/ppvfx/.codex/skills/netlify-deploy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-deploy-claude",
+      "target": "/Users/ppvfx/.codex/skills/netlify-deploy-claude"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-edge-functions",
+      "target": "/Users/ppvfx/.codex/skills/netlify-edge-functions"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-forms",
+      "target": "/Users/ppvfx/.codex/skills/netlify-forms"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-frameworks",
+      "target": "/Users/ppvfx/.codex/skills/netlify-frameworks"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-functions",
+      "target": "/Users/ppvfx/.codex/skills/netlify-functions"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-identity",
+      "target": "/Users/ppvfx/.codex/skills/netlify-identity"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/netlify-image-cdn",
+      "target": "/Users/ppvfx/.codex/skills/netlify-image-cdn"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/new-skill",
+      "target": "/Users/ppvfx/.codex/skills/new-skill"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/next-best-practices",
+      "target": "/Users/ppvfx/.codex/skills/next-best-practices"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/notion-knowledge-capture",
+      "target": "/Users/ppvfx/.codex/skills/notion-knowledge-capture"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/notion-meeting-intelligence",
+      "target": "/Users/ppvfx/.codex/skills/notion-meeting-intelligence"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/notion-research-documentation",
+      "target": "/Users/ppvfx/.codex/skills/notion-research-documentation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/notion-spec-to-implementation",
+      "target": "/Users/ppvfx/.codex/skills/notion-spec-to-implementation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/offer-stack-builder",
+      "target": "/Users/ppvfx/.codex/skills/offer-stack-builder"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/offers",
+      "target": "/Users/ppvfx/.codex/skills/offers"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/onboarding",
+      "target": "/Users/ppvfx/.codex/skills/onboarding"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/onboarding-cro",
+      "target": "/Users/ppvfx/.codex/skills/onboarding-cro"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/open-graph",
+      "target": "/Users/ppvfx/.codex/skills/open-graph"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/openai-docs",
+      "target": "/Users/ppvfx/.codex/skills/openai-docs"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/opensquad",
+      "target": "/Users/ppvfx/.codex/skills/opensquad"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/opensquad-agent-creator",
+      "target": "/Users/ppvfx/.codex/skills/opensquad-agent-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/opensquad-skill-creator",
+      "target": "/Users/ppvfx/.codex/skills/opensquad-skill-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/page-cro",
+      "target": "/Users/ppvfx/.codex/skills/page-cro"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/page-metadata",
+      "target": "/Users/ppvfx/.codex/skills/page-metadata"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/paid-ads",
+      "target": "/Users/ppvfx/.codex/skills/paid-ads"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/paywall-upgrade-cro",
+      "target": "/Users/ppvfx/.codex/skills/paywall-upgrade-cro"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/paywalls",
+      "target": "/Users/ppvfx/.codex/skills/paywalls"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/pdf",
+      "target": "/Users/ppvfx/.codex/skills/pdf"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/personal-brand-padilha",
+      "target": "/Users/ppvfx/.codex/skills/personal-brand-padilha"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/playwright",
+      "target": "/Users/ppvfx/.codex/skills/playwright"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/playwright-interactive",
+      "target": "/Users/ppvfx/.codex/skills/playwright-interactive"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-creator",
+      "target": "/Users/ppvfx/.codex/skills/plugin-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-articles",
+      "target": "/Users/ppvfx/.codex/skills/podcast-articles"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-asr",
+      "target": "/Users/ppvfx/.codex/skills/podcast-asr"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-audio",
+      "target": "/Users/ppvfx/.codex/skills/podcast-audio"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-clean",
+      "target": "/Users/ppvfx/.codex/skills/podcast-clean"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-editor",
+      "target": "/Users/ppvfx/.codex/skills/podcast-editor"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-highlights",
+      "target": "/Users/ppvfx/.codex/skills/podcast-highlights"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-instagram",
+      "target": "/Users/ppvfx/.codex/skills/podcast-instagram"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-normalize",
+      "target": "/Users/ppvfx/.codex/skills/podcast-normalize"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-post-production",
+      "target": "/Users/ppvfx/.codex/skills/podcast-post-production"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-shownotes",
+      "target": "/Users/ppvfx/.codex/skills/podcast-shownotes"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-storyline",
+      "target": "/Users/ppvfx/.codex/skills/podcast-storyline"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-summary",
+      "target": "/Users/ppvfx/.codex/skills/podcast-summary"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-transcribe",
+      "target": "/Users/ppvfx/.codex/skills/podcast-transcribe"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/podcast-videoclip",
+      "target": "/Users/ppvfx/.codex/skills/podcast-videoclip"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/popup-cro",
+      "target": "/Users/ppvfx/.codex/skills/popup-cro"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/popups",
+      "target": "/Users/ppvfx/.codex/skills/popups"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/pricing",
+      "target": "/Users/ppvfx/.codex/skills/pricing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/pricing-page-generator",
+      "target": "/Users/ppvfx/.codex/skills/pricing-page-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/pricing-page-sales-copy",
+      "target": "/Users/ppvfx/.codex/skills/pricing-page-sales-copy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/pricing-strategy",
+      "target": "/Users/ppvfx/.codex/skills/pricing-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/product-marketing",
+      "target": "/Users/ppvfx/.codex/skills/product-marketing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/product-marketing-context",
+      "target": "/Users/ppvfx/.codex/skills/product-marketing-context"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/products-page-generator",
+      "target": "/Users/ppvfx/.codex/skills/products-page-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/programmatic-seo",
+      "target": "/Users/ppvfx/.codex/skills/programmatic-seo"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/prompt-images",
+      "target": "/Users/ppvfx/.codex/skills/prompt-images"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/prospecting",
+      "target": "/Users/ppvfx/.codex/skills/prospecting"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/public-relations",
+      "target": "/Users/ppvfx/.codex/skills/public-relations"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/reels-script",
+      "target": "/Users/ppvfx/.codex/skills/reels-script"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/referral-program",
+      "target": "/Users/ppvfx/.codex/skills/referral-program"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/referrals",
+      "target": "/Users/ppvfx/.codex/skills/referrals"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/remotion-best-practices",
+      "target": "/Users/ppvfx/.codex/skills/remotion-best-practices"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/render-deploy",
+      "target": "/Users/ppvfx/.codex/skills/render-deploy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/rendering-strategies",
+      "target": "/Users/ppvfx/.codex/skills/rendering-strategies"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/resend",
+      "target": "/Users/ppvfx/.codex/skills/resend"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/revops",
+      "target": "/Users/ppvfx/.codex/skills/revops"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/run-local-codex-automations",
+      "target": "/Users/ppvfx/.codex/skills/run-local-codex-automations"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/sales-enablement",
+      "target": "/Users/ppvfx/.codex/skills/sales-enablement"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/schema",
+      "target": "/Users/ppvfx/.codex/skills/schema"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/schema-markup",
+      "target": "/Users/ppvfx/.codex/skills/schema-markup"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/screenshot",
+      "target": "/Users/ppvfx/.codex/skills/screenshot"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/scripting-and-storyboarding",
+      "target": "/Users/ppvfx/.codex/skills/scripting-and-storyboarding"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/security-best-practices",
+      "target": "/Users/ppvfx/.codex/skills/security-best-practices"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/security-ownership-map",
+      "target": "/Users/ppvfx/.codex/skills/security-ownership-map"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/security-threat-model",
+      "target": "/Users/ppvfx/.codex/skills/security-threat-model"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/sentry",
+      "target": "/Users/ppvfx/.codex/skills/sentry"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/seo-audit",
+      "target": "/Users/ppvfx/.codex/skills/seo-audit"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/services-page-generator",
+      "target": "/Users/ppvfx/.codex/skills/services-page-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/setup-api-key",
+      "target": "/Users/ppvfx/.codex/skills/setup-api-key"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/short-form-video-script",
+      "target": "/Users/ppvfx/.codex/skills/short-form-video-script"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/signup",
+      "target": "/Users/ppvfx/.codex/skills/signup"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/signup-flow-cro",
+      "target": "/Users/ppvfx/.codex/skills/signup-flow-cro"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/site-architecture",
+      "target": "/Users/ppvfx/.codex/skills/site-architecture"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/skill-creator",
+      "target": "/Users/ppvfx/.codex/skills/skill-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/skill-installer",
+      "target": "/Users/ppvfx/.codex/skills/skill-installer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/slides",
+      "target": "/Users/ppvfx/.codex/skills/slides"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/sms",
+      "target": "/Users/ppvfx/.codex/skills/sms"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/social",
+      "target": "/Users/ppvfx/.codex/skills/social"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/social-content",
+      "target": "/Users/ppvfx/.codex/skills/social-content"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/social-media-analyzer",
+      "target": "/Users/ppvfx/.codex/skills/social-media-analyzer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/social-seo",
+      "target": "/Users/ppvfx/.codex/skills/social-seo"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/social-short-production",
+      "target": "/Users/ppvfx/.codex/skills/social-short-production"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/social-strategy",
+      "target": "/Users/ppvfx/.codex/skills/social-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/sound-design-film",
+      "target": "/Users/ppvfx/.codex/skills/sound-design-film"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/sound-effects",
+      "target": "/Users/ppvfx/.codex/skills/sound-effects"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/speech",
+      "target": "/Users/ppvfx/.codex/skills/speech"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/speech-engine",
+      "target": "/Users/ppvfx/.codex/skills/speech-engine"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/speech-to-text",
+      "target": "/Users/ppvfx/.codex/skills/speech-to-text"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/stable-diffusion-image-generation",
+      "target": "/Users/ppvfx/.codex/skills/stable-diffusion-image-generation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/story-writer",
+      "target": "/Users/ppvfx/.codex/skills/story-writer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/storytelling-and-narrative",
+      "target": "/Users/ppvfx/.codex/skills/storytelling-and-narrative"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/talking-head-and-piece-to-camera",
+      "target": "/Users/ppvfx/.codex/skills/talking-head-and-piece-to-camera"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/template-designer",
+      "target": "/Users/ppvfx/.codex/skills/template-designer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/template-page-generator",
+      "target": "/Users/ppvfx/.codex/skills/template-page-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/testimonials-generator",
+      "target": "/Users/ppvfx/.codex/skills/testimonials-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/text-to-cad-harness",
+      "target": "/Users/ppvfx/.codex/skills/text-to-cad-harness"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/text-to-image-prompt-optimizer",
+      "target": "/Users/ppvfx/.codex/skills/text-to-image-prompt-optimizer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/text-to-speech",
+      "target": "/Users/ppvfx/.codex/skills/text-to-speech"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/threejs",
+      "target": "/Users/ppvfx/.codex/skills/threejs"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/thumbnail-design",
+      "target": "/Users/ppvfx/.codex/skills/thumbnail-design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/tiktok-growth",
+      "target": "/Users/ppvfx/.codex/skills/tiktok-growth"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/tiktok-photo-mode",
+      "target": "/Users/ppvfx/.codex/skills/tiktok-photo-mode"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/tiktok-script",
+      "target": "/Users/ppvfx/.codex/skills/tiktok-script"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/title-tag",
+      "target": "/Users/ppvfx/.codex/skills/title-tag"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/transcribe",
+      "target": "/Users/ppvfx/.codex/skills/transcribe"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/trend-jacking",
+      "target": "/Users/ppvfx/.codex/skills/trend-jacking"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/trust-badges-generator",
+      "target": "/Users/ppvfx/.codex/skills/trust-badges-generator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/ui-styling",
+      "target": "/Users/ppvfx/.codex/skills/ui-styling"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/ui-ux-pro-max",
+      "target": "/Users/ppvfx/.codex/skills/ui-ux-pro-max"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/vercel-cli-with-tokens",
+      "target": "/Users/ppvfx/.codex/skills/vercel-cli-with-tokens"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/vercel-composition-patterns",
+      "target": "/Users/ppvfx/.codex/skills/vercel-composition-patterns"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/vercel-deploy",
+      "target": "/Users/ppvfx/.codex/skills/vercel-deploy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/vercel-optimize",
+      "target": "/Users/ppvfx/.codex/skills/vercel-optimize"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/vercel-react-best-practices",
+      "target": "/Users/ppvfx/.codex/skills/vercel-react-best-practices"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/vercel-react-native-skills",
+      "target": "/Users/ppvfx/.codex/skills/vercel-react-native-skills"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/vercel-react-view-transitions",
+      "target": "/Users/ppvfx/.codex/skills/vercel-react-view-transitions"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/video",
+      "target": "/Users/ppvfx/.codex/skills/video"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/video-enhancement",
+      "target": "/Users/ppvfx/.codex/skills/video-enhancement"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/video-marketing",
+      "target": "/Users/ppvfx/.codex/skills/video-marketing"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/video-tracking-padilha",
+      "target": "/Users/ppvfx/.codex/skills/video-tracking-padilha"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/video-use",
+      "target": "/Users/ppvfx/.codex/skills/video-use"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/videoagent-audio-studio",
+      "target": "/Users/ppvfx/.codex/skills/videoagent-audio-studio"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/viral-hooks",
+      "target": "/Users/ppvfx/.codex/skills/viral-hooks"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/viral-reverse-engineering",
+      "target": "/Users/ppvfx/.codex/skills/viral-reverse-engineering"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/voice-builder",
+      "target": "/Users/ppvfx/.codex/skills/voice-builder"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/voice-changer",
+      "target": "/Users/ppvfx/.codex/skills/voice-changer"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/voice-isolator",
+      "target": "/Users/ppvfx/.codex/skills/voice-isolator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/voiceover",
+      "target": "/Users/ppvfx/.codex/skills/voiceover"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/web-design-guidelines",
+      "target": "/Users/ppvfx/.codex/skills/web-design-guidelines"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/winui-app",
+      "target": "/Users/ppvfx/.codex/skills/winui-app"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/writing-guidelines",
+      "target": "/Users/ppvfx/.codex/skills/writing-guidelines"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/writing-style-and-tone",
+      "target": "/Users/ppvfx/.codex/skills/writing-style-and-tone"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/yeet",
+      "target": "/Users/ppvfx/.codex/skills/yeet"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/youtube-shorts",
+      "target": "/Users/ppvfx/.codex/skills/youtube-shorts"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-batch-edit-photos",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-batch-edit-photos"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-batch-edit-photos",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-batch-edit-photos"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-batch-edit-photos",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-batch-edit-photos"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-batch-edit-photos",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-batch-edit-photos"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-mockups",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-mockups"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-mockups",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-mockups"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-mockups",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-mockups"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-mockups",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-mockups"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-social-variations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-social-variations"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-social-variations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-social-variations"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-social-variations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-social-variations"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-create-social-variations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-create-social-variations"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-design-from-template",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-design-from-template"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-design-from-template",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-design-from-template"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-design-from-template",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-design-from-template"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-design-from-template",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-design-from-template"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-edit-quick-cut",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-edit-quick-cut"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-edit-quick-cut",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-edit-quick-cut"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-edit-quick-cut",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-edit-quick-cut"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-edit-quick-cut",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-edit-quick-cut"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-retouch-portraits",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-retouch-portraits"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-retouch-portraits",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-retouch-portraits"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-retouch-portraits",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-retouch-portraits"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-app-69312da8e4dc81919370cb86fd172b6c--adobe-retouch-portraits",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/app-69312da8e4dc81919370cb86fd172b6c/8.0.0/skills/adobe-retouch-portraits"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-browser--control-in-app-browser",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/browser/26.623.70822/skills/control-in-app-browser"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-browser--control-in-app-browser",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/browser/26.623.70822/skills/control-in-app-browser"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-browser--control-in-app-browser",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/browser/26.623.70822/skills/control-in-app-browser"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-browser--control-in-app-browser",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/browser/26.623.70822/skills/control-in-app-browser"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-canva--canva-brand-check",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-brand-check"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-canva--canva-brand-check",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-brand-check"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-canva--canva-brand-check",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-brand-check"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-canva--canva-brand-check",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-brand-check"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-canva--canva-branded-presentation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-branded-presentation"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-canva--canva-branded-presentation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-branded-presentation"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-canva--canva-branded-presentation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-branded-presentation"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-canva--canva-branded-presentation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-branded-presentation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-canva--canva-bulk-create",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-bulk-create"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-canva--canva-bulk-create",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-bulk-create"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-canva--canva-bulk-create",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-bulk-create"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-canva--canva-bulk-create",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-bulk-create"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-canva--canva-design-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-design-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-canva--canva-design-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-design-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-canva--canva-design-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-design-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-canva--canva-design-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-design-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-canva--canva-edit-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-edit-design"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-canva--canva-edit-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-edit-design"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-canva--canva-edit-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-edit-design"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-canva--canva-edit-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-edit-design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-canva--canva-implement-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-implement-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-canva--canva-implement-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-implement-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-canva--canva-implement-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-implement-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-canva--canva-implement-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-implement-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-canva--canva-resize-for-social-media",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-resize-for-social-media"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-canva--canva-resize-for-social-media",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-resize-for-social-media"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-canva--canva-resize-for-social-media",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-resize-for-social-media"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-canva--canva-resize-for-social-media",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-resize-for-social-media"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-canva--canva-translate-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-translate-design"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-canva--canva-translate-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-translate-design"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-canva--canva-translate-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-translate-design"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-canva--canva-translate-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/canva/15.0.0/skills/canva-translate-design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-chrome--control-chrome",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/chrome/26.623.70822/skills/control-chrome"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-chrome--control-chrome",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/chrome/26.623.70822/skills/control-chrome"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-chrome--control-chrome",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/chrome/26.623.70822/skills/control-chrome"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-chrome--control-chrome",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-bundled/chrome/26.623.70822/skills/control-chrome"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-creative-production--intake",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/intake"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-creative-production--intake",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/intake"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-creative-production--intake",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/intake"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-creative-production--intake",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/intake"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-creative-production--produce",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/produce"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-creative-production--produce",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/produce"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-creative-production--produce",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/produce"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-creative-production--produce",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/creative-production/0.1.25/skills/produce"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-documents--documents",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/documents/26.623.12021/skills/documents"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-documents--documents",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/documents/26.623.12021/skills/documents"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-documents--documents",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/documents/26.623.12021/skills/documents"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-documents--documents",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/documents/26.623.12021/skills/documents"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-code-connect",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-code-connect"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-code-connect",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-code-connect"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-code-connect",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-code-connect"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-code-connect",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-code-connect"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-create-new-file",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-create-new-file"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-create-new-file",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-create-new-file"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-create-new-file",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-create-new-file"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-create-new-file",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-create-new-file"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-design-to-code",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-design-to-code"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-design-to-code",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-design-to-code"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-design-to-code",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-design-to-code"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-design-to-code",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-design-to-code"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-generate-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-design"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-generate-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-design"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-generate-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-design"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-generate-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-generate-diagram",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-diagram"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-generate-diagram",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-diagram"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-generate-diagram",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-diagram"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-generate-diagram",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-diagram"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-generate-library",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-library"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-generate-library",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-library"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-generate-library",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-library"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-generate-library",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generate-library"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-generative-plugins",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generative-plugins"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-generative-plugins",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generative-plugins"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-generative-plugins",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generative-plugins"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-generative-plugins",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-generative-plugins"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-implement-motion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-implement-motion"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-implement-motion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-implement-motion"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-implement-motion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-implement-motion"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-implement-motion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-implement-motion"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-shaders",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-shaders"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-shaders",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-shaders"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-shaders",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-shaders"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-shaders",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-shaders"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-swiftui",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-swiftui"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-swiftui",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-swiftui"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-swiftui",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-swiftui"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-swiftui",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-swiftui"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-use",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-use",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-use",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-use",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-use-figjam",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-figjam"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-use-figjam",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-figjam"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-use-figjam",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-figjam"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-use-figjam",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-figjam"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-use-motion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-motion"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-use-motion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-motion"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-use-motion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-motion"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-use-motion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-motion"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-figma--figma-use-slides",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-slides"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-figma--figma-use-slides",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-slides"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-figma--figma-use-slides",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-slides"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-figma--figma-use-slides",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/figma/12.0.0/skills/figma-use-slides"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-github--gh-address-comments",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-address-comments"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-github--gh-address-comments",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-address-comments"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-github--gh-address-comments",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-address-comments"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-github--gh-address-comments",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-address-comments"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-github--gh-fix-ci",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-fix-ci"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-github--gh-fix-ci",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-fix-ci"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-github--gh-fix-ci",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-fix-ci"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-github--gh-fix-ci",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/gh-fix-ci"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-github--github",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/github"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-github--github",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/github"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-github--github",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/github"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-github--github",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/github"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-github--yeet",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/yeet"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-github--yeet",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/yeet"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-github--yeet",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/yeet"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-github--yeet",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/github/bd2122cb/skills/yeet"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-gmail--gmail",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-gmail--gmail",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-gmail--gmail",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-gmail--gmail",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-gmail--gmail-inbox-triage",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail-inbox-triage"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-gmail--gmail-inbox-triage",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail-inbox-triage"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-gmail--gmail-inbox-triage",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail-inbox-triage"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-gmail--gmail-inbox-triage",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/gmail/bd2122cb/skills/gmail-inbox-triage"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-calendar--google-calendar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-calendar--google-calendar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-calendar--google-calendar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-calendar--google-calendar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-calendar--google-calendar-daily-brief",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-daily-brief"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-calendar--google-calendar-daily-brief",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-daily-brief"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-calendar--google-calendar-daily-brief",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-daily-brief"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-calendar--google-calendar-daily-brief",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-daily-brief"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-calendar--google-calendar-free-up-time",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-free-up-time"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-calendar--google-calendar-free-up-time",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-free-up-time"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-calendar--google-calendar-free-up-time",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-free-up-time"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-calendar--google-calendar-free-up-time",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-free-up-time"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-calendar--google-calendar-group-scheduler",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-group-scheduler"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-calendar--google-calendar-group-scheduler",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-group-scheduler"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-calendar--google-calendar-group-scheduler",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-group-scheduler"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-calendar--google-calendar-group-scheduler",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-group-scheduler"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-calendar--google-calendar-meeting-prep",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-meeting-prep"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-calendar--google-calendar-meeting-prep",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-meeting-prep"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-calendar--google-calendar-meeting-prep",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-meeting-prep"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-calendar--google-calendar-meeting-prep",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/google-calendar/bd2122cb/skills/google-calendar-meeting-prep"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-drive--google-docs",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-docs"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-drive--google-docs",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-docs"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-drive--google-docs",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-docs"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-drive--google-docs",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-docs"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-drive--google-drive",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-drive--google-drive",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-drive--google-drive",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-drive--google-drive",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-drive--google-drive-comments",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive-comments"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-drive--google-drive-comments",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive-comments"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-drive--google-drive-comments",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive-comments"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-drive--google-drive-comments",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-drive-comments"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-drive--google-sheets",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-sheets"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-drive--google-sheets",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-sheets"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-drive--google-sheets",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-sheets"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-drive--google-sheets",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-sheets"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-google-drive--google-slides",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-slides"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-google-drive--google-slides",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-slides"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-google-drive--google-slides",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-slides"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-google-drive--google-slides",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/google-drive/0.1.16/skills/google-slides"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-heygen--heygen-avatar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-avatar"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-heygen--heygen-avatar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-avatar"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-heygen--heygen-avatar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-avatar"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-heygen--heygen-avatar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-avatar"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-heygen--heygen-video",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-video"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-heygen--heygen-video",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-video"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-heygen--heygen-video",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-video"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-heygen--heygen-video",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/heygen/bd2122cb/skills/heygen-video"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-notion--notion-knowledge-capture",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-knowledge-capture"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-notion--notion-knowledge-capture",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-knowledge-capture"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-notion--notion-knowledge-capture",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-knowledge-capture"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-notion--notion-knowledge-capture",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-knowledge-capture"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-notion--notion-meeting-intelligence",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-meeting-intelligence"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-notion--notion-meeting-intelligence",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-meeting-intelligence"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-notion--notion-meeting-intelligence",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-meeting-intelligence"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-notion--notion-meeting-intelligence",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-meeting-intelligence"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-notion--notion-research-documentation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-research-documentation"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-notion--notion-research-documentation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-research-documentation"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-notion--notion-research-documentation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-research-documentation"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-notion--notion-research-documentation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-research-documentation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-notion--notion-spec-to-implementation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-spec-to-implementation"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-notion--notion-spec-to-implementation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-spec-to-implementation"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-notion--notion-spec-to-implementation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-spec-to-implementation"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-notion--notion-spec-to-implementation",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/notion/0.1.8/skills/notion-spec-to-implementation"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-developers--agents",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/agents"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-developers--agents",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/agents"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-developers--agents",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/agents"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-developers--agents",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/agents"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-developers--build-chatgpt-app",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/build-chatgpt-app"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-developers--build-chatgpt-app",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/build-chatgpt-app"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-developers--build-chatgpt-app",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/build-chatgpt-app"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-developers--build-chatgpt-app",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/build-chatgpt-app"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-developers--chatgpt-app-submission",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/chatgpt-app-submission"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-developers--chatgpt-app-submission",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/chatgpt-app-submission"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-developers--chatgpt-app-submission",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/chatgpt-app-submission"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-developers--chatgpt-app-submission",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/chatgpt-app-submission"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-developers--openai-api-troubleshooting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-api-troubleshooting"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-developers--openai-api-troubleshooting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-api-troubleshooting"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-developers--openai-api-troubleshooting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-api-troubleshooting"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-developers--openai-api-troubleshooting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-api-troubleshooting"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-developers--openai-platform-api-key",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-platform-api-key"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-developers--openai-platform-api-key",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-platform-api-key"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-developers--openai-platform-api-key",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-platform-api-key"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-developers--openai-platform-api-key",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-developers/1.3.0/skills/openai-platform-api-key"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-analytics-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-analytics-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-analytics-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-analytics-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-analytics-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-business-review",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-business-review",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-business-review",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-business-review",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-business-review"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-design-report",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-design-report",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-design-report",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-design-report",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-design-report"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-experiment-analysis",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-experiment-analysis",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-experiment-analysis",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-experiment-analysis",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-experiment-analysis"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-financial-budget",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-financial-budget",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-financial-budget",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-financial-budget",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-financial-budget"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-investment-committee-memo",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-investment-committee-memo",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-investment-committee-memo",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-investment-committee-memo",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-investment-committee-memo"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-legal-memorandum",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-legal-memorandum",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-legal-memorandum",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-legal-memorandum",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-legal-memorandum"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-market-trends-report",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-market-trends-report",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-market-trends-report",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-market-trends-report",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-market-trends-report"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-minimal-letterhead",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-minimal-letterhead",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-minimal-letterhead",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-minimal-letterhead",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-minimal-letterhead"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-operating-calendar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-operating-calendar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-operating-calendar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-operating-calendar",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-calendar"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-operating-review",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-operating-review",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-operating-review",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-operating-review",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-operating-review"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-project-kickoff",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-project-kickoff",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-project-kickoff",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-project-kickoff",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-kickoff"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-project-tracker",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-project-tracker",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-project-tracker",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-project-tracker",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-project-tracker"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-sales-pipeline",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-sales-pipeline",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-sales-pipeline",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-sales-pipeline",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-sales-pipeline"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-simple-dark-mode",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-simple-dark-mode",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-simple-dark-mode",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-simple-dark-mode",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-dark-mode"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-simple-light-mode",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-simple-light-mode",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-simple-light-mode",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-simple-light-mode",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-simple-light-mode"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-strategy-memorandum",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-strategy-memorandum",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-strategy-memorandum",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-strategy-memorandum",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-strategy-memorandum"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-system-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-system-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-system-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-system-design",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-system-design"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-team-alignment",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-team-alignment",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-team-alignment",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-team-alignment",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-team-alignment"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-openai-templates--artifact-template-three-statement-forecast",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-openai-templates--artifact-template-three-statement-forecast",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-openai-templates--artifact-template-three-statement-forecast",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-openai-templates--artifact-template-three-statement-forecast",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.1/skills/artifact-template-three-statement-forecast"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-pdf--pdf",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/pdf/26.623.12021/skills/pdf"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-pdf--pdf",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/pdf/26.623.12021/skills/pdf"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-pdf--pdf",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/pdf/26.623.12021/skills/pdf"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-pdf--pdf",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/pdf/26.623.12021/skills/pdf"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-plugin-management--plugin-management",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-plugin-management--plugin-management",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-plugin-management--plugin-management",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-plugin-management--plugin-management",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/plugin-management/0.1.0/skills/plugin-management"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-presentations--presentations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/presentations/26.623.12021/skills/presentations"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-presentations--presentations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/presentations/26.623.12021/skills/presentations"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-presentations--presentations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/presentations/26.623.12021/skills/presentations"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-presentations--presentations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/presentations/26.623.12021/skills/presentations"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-remotion--remotion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/remotion/bd2122cb/skills/remotion"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-remotion--remotion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/remotion/bd2122cb/skills/remotion"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-remotion--remotion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/remotion/bd2122cb/skills/remotion"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-remotion--remotion",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/remotion/bd2122cb/skills/remotion"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--analyze-account-signals",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/analyze-account-signals"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--analyze-account-signals",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/analyze-account-signals"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--analyze-account-signals",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/analyze-account-signals"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--analyze-account-signals",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/analyze-account-signals"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--build-business-case",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-business-case"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--build-business-case",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-business-case"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--build-business-case",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-business-case"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--build-business-case",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-business-case"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--build-competitive-brief",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-competitive-brief"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--build-competitive-brief",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-competitive-brief"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--build-competitive-brief",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-competitive-brief"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--build-competitive-brief",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/build-competitive-brief"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--demo-exec-and-seller-dash",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/demo-exec-and-seller-dash"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--demo-exec-and-seller-dash",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/demo-exec-and-seller-dash"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--demo-exec-and-seller-dash",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/demo-exec-and-seller-dash"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--demo-exec-and-seller-dash",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/demo-exec-and-seller-dash"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--enrich-company-and-contact-data",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/enrich-company-and-contact-data"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--enrich-company-and-contact-data",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/enrich-company-and-contact-data"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--enrich-company-and-contact-data",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/enrich-company-and-contact-data"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--enrich-company-and-contact-data",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/enrich-company-and-contact-data"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--find-customer-quotes",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-customer-quotes"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--find-customer-quotes",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-customer-quotes"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--find-customer-quotes",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-customer-quotes"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--find-customer-quotes",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-customer-quotes"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--find-key-internal-sources",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-key-internal-sources"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--find-key-internal-sources",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-key-internal-sources"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--find-key-internal-sources",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-key-internal-sources"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--find-key-internal-sources",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/find-key-internal-sources"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--follow-up-after-call",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/follow-up-after-call"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--follow-up-after-call",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/follow-up-after-call"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--follow-up-after-call",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/follow-up-after-call"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--follow-up-after-call",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/follow-up-after-call"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--get-rep-call-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/get-rep-call-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--get-rep-call-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/get-rep-call-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--get-rep-call-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/get-rep-call-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--get-rep-call-feedback",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/get-rep-call-feedback"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--index",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/index"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--index",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/index"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--index",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/index"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--index",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/index"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--plan-deal-strategy",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/plan-deal-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--plan-deal-strategy",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/plan-deal-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--plan-deal-strategy",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/plan-deal-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--plan-deal-strategy",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/plan-deal-strategy"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--prepare-for-meeting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/prepare-for-meeting"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--prepare-for-meeting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/prepare-for-meeting"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--prepare-for-meeting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/prepare-for-meeting"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--prepare-for-meeting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/prepare-for-meeting"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--review-forecast",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-forecast"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--review-forecast",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-forecast"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--review-forecast",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-forecast"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--review-forecast",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-forecast"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--review-rep-call-trends",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-rep-call-trends"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--review-rep-call-trends",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-rep-call-trends"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--review-rep-call-trends",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-rep-call-trends"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--review-rep-call-trends",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/review-rep-call-trends"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--sales-company-research",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-company-research"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--sales-company-research",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-company-research"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--sales-company-research",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-company-research"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--sales-company-research",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-company-research"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--sales-leadership-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-leadership-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--sales-leadership-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-leadership-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--sales-leadership-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-leadership-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--sales-leadership-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-leadership-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--sales-presentations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-presentations"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--sales-presentations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-presentations"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--sales-presentations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-presentations"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--sales-presentations",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/sales-presentations"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-sales--seller-account-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/seller-account-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-sales--seller-account-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/seller-account-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-sales--seller-account-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/seller-account-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-sales--seller-account-dashboard",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/sales/1.1.0-alpha.2/skills/seller-account-dashboard"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-spreadsheets--spreadsheets",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/spreadsheets/26.623.12021/skills/spreadsheets"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-spreadsheets--spreadsheets",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/spreadsheets/26.623.12021/skills/spreadsheets"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-spreadsheets--spreadsheets",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/spreadsheets/26.623.12021/skills/spreadsheets"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-spreadsheets--spreadsheets",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/spreadsheets/26.623.12021/skills/spreadsheets"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-teams--teams",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-teams--teams",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-teams--teams",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-teams--teams",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-teams--teams-channel-summarization",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-channel-summarization"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-teams--teams-channel-summarization",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-channel-summarization"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-teams--teams-channel-summarization",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-channel-summarization"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-teams--teams-channel-summarization",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-channel-summarization"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-teams--teams-daily-digest",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-daily-digest"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-teams--teams-daily-digest",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-daily-digest"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-teams--teams-daily-digest",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-daily-digest"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-teams--teams-daily-digest",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-daily-digest"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-teams--teams-messages",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-messages"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-teams--teams-messages",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-messages"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-teams--teams-messages",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-messages"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-teams--teams-messages",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-messages"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-teams--teams-notification-triage",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-notification-triage"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-teams--teams-notification-triage",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-notification-triage"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-teams--teams-notification-triage",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-notification-triage"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-teams--teams-notification-triage",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-notification-triage"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-teams--teams-planner-task-management",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-planner-task-management"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-teams--teams-planner-task-management",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-planner-task-management"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-teams--teams-planner-task-management",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-planner-task-management"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-teams--teams-planner-task-management",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-planner-task-management"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-teams--teams-reply-drafting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-reply-drafting"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-teams--teams-reply-drafting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-reply-drafting"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-teams--teams-reply-drafting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-reply-drafting"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-teams--teams-reply-drafting",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated/teams/bd2122cb/skills/teams-reply-drafting"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-template-creator--template-creator",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/skills/template-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-template-creator--template-creator",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/skills/template-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-template-creator--template-creator",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/skills/template-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-template-creator--template-creator",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/skills/template-creator"
+    },
+    {
+      "link": "/Users/ppvfx/.codex2/skills/plugin-windsor-ai--windsor",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/windsor-ai/4.0.0/skills/windsor"
+    },
+    {
+      "link": "/Users/ppvfx/.agents/skills/plugin-windsor-ai--windsor",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/windsor-ai/4.0.0/skills/windsor"
+    },
+    {
+      "link": "/Users/ppvfx/.claude/skills/plugin-windsor-ai--windsor",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/windsor-ai/4.0.0/skills/windsor"
+    },
+    {
+      "link": "/Users/ppvfx/.config/opencode/skills/plugin-windsor-ai--windsor",
+      "target": "/Users/ppvfx/.codex/plugins/cache/openai-curated-remote/windsor-ai/4.0.0/skills/windsor"
+    }
+  ],
+  "existing_count": 0,
+  "conflicts": []
+}

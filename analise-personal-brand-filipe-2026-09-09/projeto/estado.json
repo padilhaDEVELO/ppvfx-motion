@@ -1,0 +1,51 @@
+{
+  "versao_vigente": "v001",
+  "data": "2026-09-09",
+  "escopo": "Revisão estratégica, Instagram, comparação com Alfredo e integração TikTok. Não é implantação completa de marca.",
+  "etapas": {
+    "acervo": {
+      "status": "concluida",
+      "arquivo": "dossie.md"
+    },
+    "pesquisa_atual": {
+      "status": "limitada",
+      "motivo": "Instagram e TikTok sem acesso direto; sites e um post histórico do LinkedIn acessíveis",
+      "arquivo": "fontes/fontes.csv"
+    },
+    "estrategia": {
+      "status": "concluida",
+      "arquivo": "dossie.md"
+    },
+    "pilotos_editoriais": {
+      "status": "concluida",
+      "arquivo": "conteudo/pilotos.md"
+    },
+    "pdfs": {
+      "status": "concluida",
+      "arquivo": "../entregas"
+    },
+    "html": {
+      "status": "limitada",
+      "motivo": "Gerado e verificado por hashes; renderização em navegador não executada",
+      "arquivo": "entregas/v001/apresentacao.html"
+    },
+    "capa_final": {
+      "status": "pendente",
+      "motivo": "Falta vídeo/frame específico; modelo local entregue na pasta TikTok"
+    },
+    "plano_de_mensuracao": {
+      "status": "concluida",
+      "arquivo": "dossie.md"
+    },
+    "acompanhamento_real": {
+      "status": "pendente",
+      "motivo": "Sem publicação e sem Analytics"
+    }
+  },
+  "limitacoes": [
+    "Sem auditoria audiovisual atual de Instagram/TikTok",
+    "Sem dados nativos do Filipe",
+    "Mapa oficial do YouTube contém endereço legado e handle cuja equivalência não foi confirmada"
+  ],
+  "publicado": false
+}

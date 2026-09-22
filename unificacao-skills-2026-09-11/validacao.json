@@ -1,0 +1,28 @@
+{
+  "shared": {
+    "main_skills": 312,
+    "broken_root_links": [],
+    "podcast_support": true
+  },
+  "codex": {
+    "main_skills": 312,
+    "broken_root_links": [],
+    "podcast_support": true
+  },
+  "claude": {
+    "main_skills": 312,
+    "broken_root_links": [],
+    "podcast_support": true
+  },
+  "opencode": {
+    "main_skills": 312,
+    "broken_root_links": [],
+    "podcast_support": true
+  },
+  "nested_skill": {
+    "path": "/Users/ppvfx/.codex/skills/video-use/skills/manim-video/SKILL.md",
+    "accessible": true
+  },
+  "original_codex_skills_preserved": 69,
+  "added_codex_skill_links": 243
+}

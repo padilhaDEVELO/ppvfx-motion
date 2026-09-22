@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "build_sha256": "46aa2635e0d7e0cc2dabeabe0a1c23a34cc4c1d60933e9474d5aa8bfd99ee282",
+  "slides": 6,
+  "assets": 12,
+  "issues": [],
+  "files": {
+    "apresentacao.pdf": "76ef90dbf94a8b6410885098f7b75f53de89e5e2112e87ce35fe6cd01abb3955",
+    "qa/slide-01.png": "a16d0f987fc659a9896d8471e8937e630bc0c22398042f3b6dd2a860c319b15b",
+    "qa/slide-02.png": "58f7e80f7c41d7588bdc7b847a2e49c64e545466e2e3cec3f8287185599dec5d",
+    "qa/slide-03.png": "43200844a915ec34a36fc994a38c2ec4565f047c4aeda5543c986efc3f7d31ec",
+    "qa/slide-04.png": "cb0fd4947b37900824ab77c4027d911b765caf82680cb993f5e0e23c9c85fb75",
+    "qa/slide-05.png": "b2b3ec83c001898059d58e2ac8d5706fc3493709057cc1f0bfc8ba76283a8c29",
+    "qa/slide-06.png": "543547d6f5d912c135c07e9592c30d7d12395ae4ffd404e8c4053746c2877706",
+    "kit/destaques/inicio.png": "cd5080ca5a338fc072e420e2832bb7535cf803683e4d0348429d0a4c58b2cb7d",
+    "kit/destaques/trajetoria.png": "c712eafce39a670738bd826d89ded0f8edcf82dcc83557e8a9817a7794f8484d",
+    "kit/posts/carrossel-1/tela-01.png": "da03e3477480327471168987ca269838039f8d7366d79856871408c0a531214d",
+    "kit/posts/carrossel-1/tela-02.png": "e72b391ce30ec6f37e59d05e18cd56bd44d32aa53863b12eb418e1a9e8c5121e",
+    "kit/posts/carrossel-1/tela-03.png": "984fb27d1728105d150d13f7f37548689db47e8c7f89ddc690a9a0d63a71e76d",
+    "kit/posts/carrossel-1/tela-04.png": "158c9386edcac7c7b71764477831bdb6d06096532de3ac469f40494e7fabb96f",
+    "kit/posts/carrossel-1/tela-05.png": "c6a1be3c7710cb8a26dad46c0a057f7150d87731bc70d6859c0176fa6397c3fc",
+    "kit/posts/carrossel-2/tela-01.png": "da03e3477480327471168987ca269838039f8d7366d79856871408c0a531214d",
+    "kit/posts/carrossel-2/tela-02.png": "e72b391ce30ec6f37e59d05e18cd56bd44d32aa53863b12eb418e1a9e8c5121e",
+    "kit/posts/carrossel-2/tela-03.png": "984fb27d1728105d150d13f7f37548689db47e8c7f89ddc690a9a0d63a71e76d",
+    "kit/posts/carrossel-2/tela-04.png": "158c9386edcac7c7b71764477831bdb6d06096532de3ac469f40494e7fabb96f",
+    "kit/posts/carrossel-2/tela-05.png": "c6a1be3c7710cb8a26dad46c0a057f7150d87731bc70d6859c0176fa6397c3fc",
+    "qa/painel-01.png": "ff875b29c91d5cc6b9a8ea4aa735b10c6b51e0a902235553e1b3075a3a4550ac"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "personal-brand": {
+    "canonical": "/Users/ppvfx/.agents/skills/personal-brand",
+    "links": [
+      "/Users/ppvfx/.codex/skills/personal-brand",
+      "/Users/ppvfx/.config/opencode/skills/personal-brand",
+      "/Users/ppvfx/.claude/skills/personal-brand"
+    ],
+    "sha256": {
+      "SKILL.md": "fdb8b4a03bb1ecbee8d136bb563fc16d196c58a2766ecba5ffe8f7a7ceea6f32",
+      "agents/openai.yaml": "6d59be321759a0eb3d266c292a3f27ecf419be92d9ba1de3b9921bbcab96ff60",
+      "references/fontes.md": "c6b91cd1cd1c0f04a1a39d97b66f6a6a4fc18d3eb6df34e8c6436aeb214aa587",
+      "references/metodo.md": "9ed8bac0b49dfe13160d779bb6f1394a6134fe8d96ad27c46432539046b87132",
+      "references/modelo-dossie.md": "1f0fa0fee95283bde59bf84cf4bb21871191a8d6cb195c87b52390143d74913c"
+    }
+  },
+  "skill-creator": {
+    "codex": "/Users/ppvfx/.codex/skills/.system/skill-creator",
+    "opencode": "/Users/ppvfx/.config/opencode/skills/skill-creator",
+    "claude": "/Users/ppvfx/.claude/skills/skill-creator",
+    "existing_versions_preserved": true
+  },
+  "verification": "Hashes dos cinco arquivos e referencias locais conferidos nos tres destinos."
+}

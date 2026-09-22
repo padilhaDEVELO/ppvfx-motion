@@ -1,0 +1,25 @@
+ANÁLISE TIKTOK E CAPAS — FILIPE FRAZÃO
+09/09/2026
+
+Pasta central:
+/Volumes/SSD_PP_FRZ/FILIPE/ANALISE PERFIS FILIPE
+
+ARQUIVOS
+diagnostico.md — evidências, limites, comparação possível, recomendações e teste editorial.
+modelo-de-capa.html — modelo local editável de capa, com exportação PNG 1080 × 1920.
+assets/ — fontes locais utilizadas pelo modelo; manter junto do HTML.
+referencia-enviada.jpeg — imagem original enviada nesta conversa.
+fontes-e-coleta.md — registro das fontes e do que foi ou não verificado.
+coleta-metricas.csv — cabeçalho para registrar resultados futuros; sem números inventados.
+
+COMO USAR O MODELO
+Abra modelo-de-capa.html no navegador. Adicione um frame JPG, PNG ou WebP do vídeo. Edite o título conforme o conteúdo real. Ajuste a posição da foto e confira a simulação de recorte. Baixe a capa em PNG. As fotos permanecem locais.
+
+STATUS
+Diagnóstico preliminar. Os dois perfis do TikTok não puderam ser inspecionados diretamente nesta sessão. Não foi possível concluir a comparação dos vídeos, do ritmo ou das hashtags atuais. Falta o vídeo específico e seu frame para finalizar uma capa fiel ao conteúdo.
+
+VALIDAÇÃO
+Sintaxe JavaScript conferida com node --check. Existência das fontes locais conferida. A interface, a aparência e a exportação ainda não foram testadas em navegador nesta sessão, pois a ferramenta de navegador não estava disponível. Não há alegação de validação visual.
+
+ORGANIZAÇÃO
+Novas entregas do Filipe devem ser concentradas na pasta central, em subpastas por trabalho e data. Materiais antigos e caminhos de automações existentes não foram alterados.

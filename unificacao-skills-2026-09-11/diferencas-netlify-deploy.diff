@@ -1,0 +1,41 @@
+--- /Users/ppvfx/.codex/skills/netlify-deploy
++++ /Users/ppvfx/.claude/skills/netlify-deploy
+@@ -20,8 +20,8 @@
+ - **Netlify CLI**: Installed via npx (no global install required)
+ - **Authentication**: Netlify account with active login session
+ - **Project**: Valid web project in current directory
+-- When sandboxing blocks the deployment network calls, rerun with `sandbox_permissions=require_escalated`.
+-- The deployment might take a few minutes. Use appropriate timeout values.
++- **Network access**: Deployment requires outbound network calls. If sandboxing blocks these, the agent may need to request elevated permissions or prompt the user.
++- **Timeouts**: Deployments can take a few minutes. Use appropriate timeout values for CLI commands.
+ 
+ ## Authentication Pattern
+ 
+@@ -208,18 +208,6 @@
+ → Verify build command ran successfully
+ → Check publish directory path is correct
+ 
+-## Troubleshooting
+-
+-### Escalated Network Access
+-
+-If deployment fails due to network issues (timeouts, DNS errors, connection resets), rerun the deploy with escalated permissions (use `sandbox_permissions=require_escalated`). The deploy requires escalated network access when sandbox networking blocks outbound requests.
+-
+-Example guidance to the user:
+-
+-```
+-The deploy needs escalated network access to deploy to Netlify. I can rerun the command with escalated permissions—want me to proceed?
+-```
+-
+ ## Environment Variables
+ 
+ For secrets and configuration:
+@@ -240,7 +228,7 @@
+ - Netlify CLI Docs: https://docs.netlify.com/cli/get-started/
+ - netlify.toml Reference: https://docs.netlify.com/configure-builds/file-based-configuration/
+ 
+-## Bundled References (Load As Needed)
++## References
+ 
+ - [CLI commands](references/cli-commands.md)
+ - [Deployment patterns](references/deployment-patterns.md)

@@ -1,0 +1,116 @@
+{
+  "source_sha256": "66dfea7bc074700cc70b65d093bd5e116bc6187e131964574f9122704ce640b8",
+  "data_consulta": "2026-09-09",
+  "ano_inferido_nao_confirmado": true,
+  "periodo_inferido": [
+    "2025-09-08",
+    "2026-09-07"
+  ],
+  "linhas": 365,
+  "totais": {
+    "Video Views": 26293,
+    "Profile Views": 274,
+    "Likes": 709,
+    "Comments": 39,
+    "Shares": 37
+  },
+  "mediana_diaria": 7,
+  "ultimos_28_dias": {
+    "Video Views": 1241,
+    "Profile Views": 8,
+    "Likes": 48,
+    "Comments": 1,
+    "Shares": 3
+  },
+  "mediana_ultimos_28": 20.0,
+  "28_dias_anteriores": {
+    "Video Views": 956,
+    "Profile Views": 6,
+    "Likes": 35,
+    "Comments": 0,
+    "Shares": 5
+  },
+  "mediana_28_anteriores": 30.5,
+  "pico_31ago_1set": {
+    "Video Views": 703,
+    "Profile Views": 2,
+    "Likes": 28,
+    "Comments": 0,
+    "Shares": 1
+  },
+  "pico_11a16jun": {
+    "Video Views": 9331,
+    "Profile Views": 152,
+    "Likes": 95,
+    "Comments": 38,
+    "Shares": 10
+  },
+  "valores_negativos": [
+    {
+      "data_original": "September 24",
+      "data_inferida": "2025-09-24",
+      "campo": "Comments",
+      "valor": -1
+    },
+    {
+      "data_original": "October 8",
+      "data_inferida": "2025-10-08",
+      "campo": "Comments",
+      "valor": -1
+    },
+    {
+      "data_original": "October 13",
+      "data_inferida": "2025-10-13",
+      "campo": "Comments",
+      "valor": -1
+    },
+    {
+      "data_original": "January 16",
+      "data_inferida": "2026-01-16",
+      "campo": "Comments",
+      "valor": -2
+    },
+    {
+      "data_original": "February 14",
+      "data_inferida": "2026-02-14",
+      "campo": "Comments",
+      "valor": -1
+    },
+    {
+      "data_original": "April 20",
+      "data_inferida": "2026-04-20",
+      "campo": "Comments",
+      "valor": -1
+    },
+    {
+      "data_original": "April 27",
+      "data_inferida": "2026-04-27",
+      "campo": "Comments",
+      "valor": -1
+    },
+    {
+      "data_original": "May 4",
+      "data_inferida": "2026-05-04",
+      "campo": "Comments",
+      "valor": -1
+    },
+    {
+      "data_original": "May 7",
+      "data_inferida": "2026-05-07",
+      "campo": "Comments",
+      "valor": -1
+    },
+    {
+      "data_original": "May 18",
+      "data_inferida": "2026-05-18",
+      "campo": "Comments",
+      "valor": -1
+    },
+    {
+      "data_original": "June 28",
+      "data_inferida": "2026-06-28",
+      "campo": "Comments",
+      "valor": -1
+    }
+  ]
+}

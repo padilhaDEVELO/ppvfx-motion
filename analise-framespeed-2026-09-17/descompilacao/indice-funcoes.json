@@ -1,0 +1,1354 @@
+[
+  {
+    "name": "_buildFontCache",
+    "line": 7
+  },
+  {
+    "name": "_resolveFont",
+    "line": 43
+  },
+  {
+    "name": "_getFontFamilyStyle",
+    "line": 59
+  },
+  {
+    "name": "_resolveFontByFamilyStyle",
+    "line": 78
+  },
+  {
+    "name": "_resolveFontSmart",
+    "line": 114
+  },
+  {
+    "name": "getAvailableFonts",
+    "line": 125
+  },
+  {
+    "name": "hexToAeColor",
+    "line": 141
+  },
+  {
+    "name": "_applyCustomStylingToLayer",
+    "line": 148
+  },
+  {
+    "name": "_findBestAudioTrackForTime",
+    "line": 238
+  },
+  {
+    "name": "applyPresetBatchAE",
+    "line": 258
+  },
+  {
+    "name": "stackSelectedTexts",
+    "line": 298
+  },
+  {
+    "name": "updateExpressionNames",
+    "line": 555
+  },
+  {
+    "name": "scanKeys",
+    "line": 596
+  },
+  {
+    "name": "getTemplateStructure",
+    "line": 1148
+  },
+  {
+    "name": "fsAeFonteDeAudio",
+    "line": 1286
+  },
+  {
+    "name": "importSRTCaptions",
+    "line": 1362
+  },
+  {
+    "name": "clearImportedCaptions",
+    "line": 1421
+  },
+  {
+    "name": "importSRTFromFile",
+    "line": 1443
+  },
+  {
+    "name": "_srtTimeToSec",
+    "line": 1519
+  },
+  {
+    "name": "clearCaptions",
+    "line": 1523
+  },
+  {
+    "name": "getAESelectedLayers",
+    "line": 1549
+  },
+  {
+    "name": "injectAegraphicAE",
+    "line": 1590
+  },
+  {
+    "name": "_fsGetBlockText",
+    "line": 2088
+  },
+  {
+    "name": "fsLegendasExportarProjeto",
+    "line": 2121
+  },
+  {
+    "name": "fsLegendasDaTimeline",
+    "line": 2159
+  },
+  {
+    "name": "getPremiereCaptionsForSelection",
+    "line": 2273
+  },
+  {
+    "name": "getPremiereCTI",
+    "line": 2399
+  },
+  {
+    "name": "dumpMgtStructure",
+    "line": 2410
+  },
+  {
+    "name": "walk",
+    "line": 2412
+  },
+  {
+    "name": "addVideoTrackAndRetry",
+    "line": 2497
+  },
+  {
+    "name": "exportTimelineAudio",
+    "line": 2514
+  },
+  {
+    "name": "fsSeqFps",
+    "line": 2540
+  },
+  {
+    "name": "fsTrilhasAudio",
+    "line": 2558
+  },
+  {
+    "name": "fsExportAudioTrecho",
+    "line": 2601
+  },
+  {
+    "name": "fsDuracaoSequencia",
+    "line": 2712
+  },
+  {
+    "name": "fsExportAudioTrilha",
+    "line": 2736
+  },
+  {
+    "name": "_fsSfxOcupados",
+    "line": 2858
+  },
+  {
+    "name": "_fsSfxAcharPorNome",
+    "line": 2892
+  },
+  {
+    "name": "_fsAddTrilhaAudio",
+    "line": 2904
+  },
+  {
+    "name": "_subiu",
+    "line": 2906
+  },
+  {
+    "name": "_fsSfxCriarTrilha",
+    "line": 2999
+  },
+  {
+    "name": "_fsSfxTrilhaDestino",
+    "line": 3026
+  },
+  {
+    "name": "distributeSfxAtTimes",
+    "line": 3044
+  },
+  {
+    "name": "_getSfxItem",
+    "line": 3046
+  },
+  {
+    "name": "_fsNomesTransAudio",
+    "line": 3264
+  },
+  {
+    "name": "_fsListaTransAudioQE",
+    "line": 3267
+  },
+  {
+    "name": "_fsAchaTransAudio",
+    "line": 3282
+  },
+  {
+    "name": "_fsQeItemAudio",
+    "line": 3308
+  },
+  {
+    "name": "_fsContaTransAudio",
+    "line": 3357
+  },
+  {
+    "name": "_fsTrilhaFimDoVideo",
+    "line": 3368
+  },
+  {
+    "name": "fsAutoTrilhaAplicar",
+    "line": 3406
+  },
+  {
+    "name": "_acharPorNome",
+    "line": 3408
+  },
+  {
+    "name": "_itemDaTrilha",
+    "line": 3432
+  },
+  {
+    "name": "fsAutoTrilhaRemover",
+    "line": 3727
+  },
+  {
+    "name": "clearAutoSfx",
+    "line": 3749
+  },
+  {
+    "name": "_fsNormalizeRuns",
+    "line": 3778
+  },
+  {
+    "name": "_fsScAchaTexto",
+    "line": 3805
+  },
+  {
+    "name": "_fsScFonteNaProp",
+    "line": 3844
+  },
+  {
+    "name": "_setBlockFont",
+    "line": 3880
+  },
+  {
+    "name": "_setBlockText",
+    "line": 3905
+  },
+  {
+    "name": "_dumpBlockProps",
+    "line": 3967
+  },
+  {
+    "name": "walk",
+    "line": 3968
+  },
+  {
+    "name": "getSequenceInOut",
+    "line": 4005
+  },
+  {
+    "name": "fsTirarBlocosLegenda",
+    "line": 4059
+  },
+  {
+    "name": "_fsPrendeNoFrame",
+    "line": 4136
+  },
+  {
+    "name": "insertCaptionBlocks",
+    "line": 4142
+  },
+  {
+    "name": "_fsSpanDasLegendas",
+    "line": 4144
+  },
+  {
+    "name": "_fsTrilhaOcupada",
+    "line": 4166
+  },
+  {
+    "name": "_fsSondaEscopo",
+    "line": 4499
+  },
+  {
+    "name": "t",
+    "line": 4500
+  },
+  {
+    "name": "_fsSubAchaItem",
+    "line": 4519
+  },
+  {
+    "name": "desce",
+    "line": 4520
+  },
+  {
+    "name": "fsSubtitulosImportar",
+    "line": 4559
+  },
+  {
+    "name": "fsSubtitulosCriarTrilha",
+    "line": 4584
+  },
+  {
+    "name": "fsSubtitulosConta",
+    "line": 4613
+  },
+  {
+    "name": "saveSrtFile",
+    "line": 4628
+  },
+  {
+    "name": "_fsDbParaLevel",
+    "line": 4656
+  },
+  {
+    "name": "_fsLevelParaDb",
+    "line": 4669
+  },
+  {
+    "name": "_fsNivelDoClipe",
+    "line": 4675
+  },
+  {
+    "name": "_fsSfxSetLevel",
+    "line": 4732
+  },
+  {
+    "name": "insertSfxAtCTI",
+    "line": 4830
+  },
+  {
+    "name": "_fsNormCaminho",
+    "line": 4933
+  },
+  {
+    "name": "_fsAchaAudioPorCaminho",
+    "line": 4936
+  },
+  {
+    "name": "_fsGravarSlots",
+    "line": 4959
+  },
+  {
+    "name": "injectMogrtPremiere",
+    "line": 5017
+  },
+  {
+    "name": "_fsFixRuns",
+    "line": 5520
+  },
+  {
+    "name": "findItemRecursiveAudio",
+    "line": 5555
+  },
+  {
+    "name": "_getGroupIndex",
+    "line": 5610
+  },
+  {
+    "name": "_deleteControlLayers",
+    "line": 6323
+  },
+  {
+    "name": "saveUserTemplate",
+    "line": 6337
+  },
+  {
+    "name": "getNextTemplateNumber",
+    "line": 6506
+  },
+  {
+    "name": "countActiveCompTexts",
+    "line": 6534
+  },
+  {
+    "name": "createTempTextLayerAE",
+    "line": 6555
+  },
+  {
+    "name": "getActiveSequenceUniqueId",
+    "line": 6573
+  },
+  {
+    "name": "forceProjectDirty",
+    "line": 6584
+  },
+  {
+    "name": "_fsAcTpf",
+    "line": 6595
+  },
+  {
+    "name": "_fsAcDisplayFormat",
+    "line": 6606
+  },
+  {
+    "name": "_fsAcTicksToTC",
+    "line": 6617
+  },
+  {
+    "name": "_p",
+    "line": 6618
+  },
+  {
+    "name": "_fsAcTimeTicks",
+    "line": 6648
+  },
+  {
+    "name": "_fsAcTrack",
+    "line": 6653
+  },
+  {
+    "name": "_fsAcFindByNode",
+    "line": 6660
+  },
+  {
+    "name": "_fsAcSnap",
+    "line": 6674
+  },
+  {
+    "name": "_fsAcApplyMove",
+    "line": 6695
+  },
+  {
+    "name": "_fsAcMoveVerified",
+    "line": 6730
+  },
+  {
+    "name": "_fsAcRightmost",
+    "line": 6770
+  },
+  {
+    "name": "_fsAcProbe",
+    "line": 6802
+  },
+  {
+    "name": "fsAutocutDiag",
+    "line": 6853
+  },
+  {
+    "name": "_fsAcScope",
+    "line": 6913
+  },
+  {
+    "name": "fsAutocutExport",
+    "line": 7018
+  },
+  {
+    "name": "_fsAcNormalizeCuts",
+    "line": 7088
+  },
+  {
+    "name": "_fsAcTrackFlags",
+    "line": 7130
+  },
+  {
+    "name": "_locked",
+    "line": 7131
+  },
+  {
+    "name": "_fsAcPediuParar",
+    "line": 7162
+  },
+  {
+    "name": "_fsAcProgresso",
+    "line": 7171
+  },
+  {
+    "name": "_fsAcRunPhases",
+    "line": 7185
+  },
+  {
+    "name": "_qeSeq",
+    "line": 7186
+  },
+  {
+    "name": "_razorAll",
+    "line": 7192
+  },
+  {
+    "name": "_eachTrackIdx",
+    "line": 7219
+  },
+  {
+    "name": "_inAnyCut",
+    "line": 7229
+  },
+  {
+    "name": "_cutBefore",
+    "line": 7239
+  },
+  {
+    "name": "_links",
+    "line": 7340
+  },
+  {
+    "name": "_fsAcDeleteSeq",
+    "line": 7453
+  },
+  {
+    "name": "fsAutocutApply",
+    "line": 7479
+  },
+  {
+    "name": "_qeSeq",
+    "line": 7481
+  },
+  {
+    "name": "_locked",
+    "line": 7487
+  },
+  {
+    "name": "fsAutocutSetStep",
+    "line": 7673
+  },
+  {
+    "name": "fsAutocutRestore",
+    "line": 7831
+  },
+  {
+    "name": "_fsAchaCompMovimento",
+    "line": 7873
+  },
+  {
+    "name": "_fsScForma",
+    "line": 7909
+  },
+  {
+    "name": "_fsScMesmoValor",
+    "line": 7924
+  },
+  {
+    "name": "_fsScIsPosName",
+    "line": 7950
+  },
+  {
+    "name": "_fsScIsTextVal",
+    "line": 7954
+  },
+  {
+    "name": "_fsScIsColorName",
+    "line": 7957
+  },
+  {
+    "name": "_fsScLooksLikeColor",
+    "line": 7967
+  },
+  {
+    "name": "_fsScIsColorProp",
+    "line": 7988
+  },
+  {
+    "name": "_fsScNormColor",
+    "line": 8000
+  },
+  {
+    "name": "_c",
+    "line": 8012
+  },
+  {
+    "name": "_fsScFerido",
+    "line": 8035
+  },
+  {
+    "name": "_fsScEchoRestore",
+    "line": 8043
+  },
+  {
+    "name": "_fsScRawColor",
+    "line": 8087
+  },
+  {
+    "name": "_fsScPut",
+    "line": 8120
+  },
+  {
+    "name": "_fsScIdxNear",
+    "line": 8143
+  },
+  {
+    "name": "_fsScFromRaw",
+    "line": 8154
+  },
+  {
+    "name": "_c",
+    "line": 8155
+  },
+  {
+    "name": "_fsScCalibrate",
+    "line": 8188
+  },
+  {
+    "name": "_fsScReadColor",
+    "line": 8245
+  },
+  {
+    "name": "_fsScWriteColor",
+    "line": 8256
+  },
+  {
+    "name": "_fsScWalk",
+    "line": 8284
+  },
+  {
+    "name": "_fsScRunsDoDestino",
+    "line": 8333
+  },
+  {
+    "name": "_fsScApply",
+    "line": 8349
+  },
+  {
+    "name": "_fsScTargets",
+    "line": 8431
+  },
+  {
+    "name": "_fsScColorKind",
+    "line": 8479
+  },
+  {
+    "name": "_fsScIsSizeName",
+    "line": 8495
+  },
+  {
+    "name": "_fsScIsTimeName",
+    "line": 8512
+  },
+  {
+    "name": "fsStyleCopy",
+    "line": 8516
+  },
+  {
+    "name": "_fsScLineNum",
+    "line": 8661
+  },
+  {
+    "name": "_fsScNumerarLinhas",
+    "line": 8677
+  },
+  {
+    "name": "_fsScLinhaDe",
+    "line": 8716
+  },
+  {
+    "name": "fsStylePaste",
+    "line": 8722
+  },
+  {
+    "name": "_score",
+    "line": 8724
+  },
+  {
+    "name": "_pega",
+    "line": 9049
+  },
+  {
+    "name": "_fsScKey",
+    "line": 9207
+  },
+  {
+    "name": "fsStyleDumpParams",
+    "line": 9238
+  },
+  {
+    "name": "_fsFxIsIntrinsic",
+    "line": 9414
+  },
+  {
+    "name": "_fsFxPorque",
+    "line": 9418
+  },
+  {
+    "name": "_fsFxNormNome",
+    "line": 9427
+  },
+  {
+    "name": "_fsFxListaEfeitos",
+    "line": 9435
+  },
+  {
+    "name": "_fsFxEfeitoVale",
+    "line": 9470
+  },
+  {
+    "name": "_fsFxNomeDoMatch",
+    "line": 9484
+  },
+  {
+    "name": "_fsFxMatchDe",
+    "line": 9495
+  },
+  {
+    "name": "_fsFxAcharEfeito",
+    "line": 9503
+  },
+  {
+    "name": "_fsFxQeItem",
+    "line": 9574
+  },
+  {
+    "name": "_fsFxReadParams",
+    "line": 9623
+  },
+  {
+    "name": "_fsFxWriteParams",
+    "line": 9671
+  },
+  {
+    "name": "_fsFxTargets",
+    "line": 9729
+  },
+  {
+    "name": "fsFxCopy",
+    "line": 9785
+  },
+  {
+    "name": "fsFxPaste",
+    "line": 9888
+  },
+  {
+    "name": "_fsDynTargets",
+    "line": 10019
+  },
+  {
+    "name": "_fsDynQeItem",
+    "line": 10086
+  },
+  {
+    "name": "_fsDynCountTransitions",
+    "line": 10135
+  },
+  {
+    "name": "_fsPrVersao",
+    "line": 10146
+  },
+  {
+    "name": "_fsIdioma",
+    "line": 10154
+  },
+  {
+    "name": "fsDefinirIdioma",
+    "line": 10166
+  },
+  {
+    "name": "_fsNomes",
+    "line": 10174
+  },
+  {
+    "name": "_fsNomesDe",
+    "line": 10192
+  },
+  {
+    "name": "_fsNomesTransicao",
+    "line": 10219
+  },
+  {
+    "name": "_fsListaTransicoesQE",
+    "line": 10237
+  },
+  {
+    "name": "fsApplyTransitions",
+    "line": 10272
+  },
+  {
+    "name": "_sortear",
+    "line": 10274
+  },
+  {
+    "name": "_fsDynScaleProp",
+    "line": 10587
+  },
+  {
+    "name": "_fsDynGravou",
+    "line": 10645
+  },
+  {
+    "name": "_fsDynTempos",
+    "line": 10656
+  },
+  {
+    "name": "_fsDynEspacoZoom",
+    "line": 10676
+  },
+  {
+    "name": "_fsDynAutoZoom",
+    "line": 10685
+  },
+  {
+    "name": "_fsDynAutoCortes",
+    "line": 10777
+  },
+  {
+    "name": "_fsDynEspaco",
+    "line": 10795
+  },
+  {
+    "name": "fsApplyZoom",
+    "line": 10804
+  },
+  {
+    "name": "fsClearZoom",
+    "line": 10945
+  },
+  {
+    "name": "_fsPvParse",
+    "line": 10983
+  },
+  {
+    "name": "_fsPvWrite",
+    "line": 11022
+  },
+  {
+    "name": "fsPresetApply",
+    "line": 11086
+  },
+  {
+    "name": "_fxColetar",
+    "line": 11156
+  },
+  {
+    "name": "fsDynPreview",
+    "line": 11324
+  },
+  {
+    "name": "fsFxCountTargets",
+    "line": 11390
+  },
+  {
+    "name": "_fsSbTexto",
+    "line": 11401
+  },
+  {
+    "name": "_fsSbNumLinha",
+    "line": 11447
+  },
+  {
+    "name": "_fsSbEhTempoLinha",
+    "line": 11459
+  },
+  {
+    "name": "_fsSbEhTempoGeral",
+    "line": 11463
+  },
+  {
+    "name": "_fsSbLinhas",
+    "line": 11467
+  },
+  {
+    "name": "_descer",
+    "line": 11468
+  },
+  {
+    "name": "fsSfxBlocos",
+    "line": 11577
+  },
+  {
+    "name": "_fsZBezier",
+    "line": 11749
+  },
+  {
+    "name": "cx",
+    "line": 11750
+  },
+  {
+    "name": "cy",
+    "line": 11753
+  },
+  {
+    "name": "dcx",
+    "line": 11756
+  },
+  {
+    "name": "_fsZPontos",
+    "line": 11793
+  },
+  {
+    "name": "_fsZLut",
+    "line": 11816
+  },
+  {
+    "name": "_fsZChaves",
+    "line": 11828
+  },
+  {
+    "name": "amostra",
+    "line": 11829
+  },
+  {
+    "name": "_fsZFormatoPonto",
+    "line": 11878
+  },
+  {
+    "name": "_fsZPontoDoQuadro",
+    "line": 11912
+  },
+  {
+    "name": "_fsZPonto",
+    "line": 11947
+  },
+  {
+    "name": "_fsZTransform",
+    "line": 11987
+  },
+  {
+    "name": "achar",
+    "line": 11988
+  },
+  {
+    "name": "_fsSemAcento",
+    "line": 12096
+  },
+  {
+    "name": "_fsZProp",
+    "line": 12104
+  },
+  {
+    "name": "livre",
+    "line": 12105
+  },
+  {
+    "name": "_fsZGravar",
+    "line": 12168
+  },
+  {
+    "name": "fsZoomAplicar",
+    "line": 12205
+  },
+  {
+    "name": "fsZoomLimpar",
+    "line": 12386
+  },
+  {
+    "name": "_fsZEhNossaCamada",
+    "line": 12491
+  },
+  {
+    "name": "fsZoomDesfazer",
+    "line": 12550
+  },
+  {
+    "name": "_fsCaEhAjuste",
+    "line": 12609
+  },
+  {
+    "name": "_fsCaProcurar",
+    "line": 12628
+  },
+  {
+    "name": "fsCamadaAjuste",
+    "line": 12656
+  },
+  {
+    "name": "_fsCaLivre",
+    "line": 12676
+  },
+  {
+    "name": "_fsCaTrilhaLivre",
+    "line": 12720
+  },
+  {
+    "name": "_fsZTrilhaDestino",
+    "line": 12732
+  },
+  {
+    "name": "fsImportarCamadaAjuste",
+    "line": 12754
+  },
+  {
+    "name": "_fsAddTrilhaVideoEm",
+    "line": 12809
+  },
+  {
+    "name": "_subiuEm",
+    "line": 12811
+  },
+  {
+    "name": "_fsZTrilhaUnica",
+    "line": 12875
+  },
+  {
+    "name": "livre",
+    "line": 12877
+  },
+  {
+    "name": "_fsZGeometriaCobrir",
+    "line": 12945
+  },
+  {
+    "name": "_fsZAncoraNaCamada",
+    "line": 12971
+  },
+  {
+    "name": "_fsZCobrirCamada",
+    "line": 12977
+  },
+  {
+    "name": "fsZoomCamada",
+    "line": 13028
+  },
+  {
+    "name": "fsSondaQe",
+    "line": 13408
+  },
+  {
+    "name": "nomes",
+    "line": 13410
+  },
+  {
+    "name": "fsJLAnalisar",
+    "line": 13476
+  },
+  {
+    "name": "bateEmAlgo",
+    "line": 13478
+  },
+  {
+    "name": "_fsJLNomes",
+    "line": 13628
+  },
+  {
+    "name": "fsJLSonda",
+    "line": 13659
+  },
+  {
+    "name": "_fsJLFaixaDe",
+    "line": 13783
+  },
+  {
+    "name": "_fsJLItemQE",
+    "line": 13800
+  },
+  {
+    "name": "_fsJLDescobrirMove",
+    "line": 13836
+  },
+  {
+    "name": "_fsJLMover",
+    "line": 13901
+  },
+  {
+    "name": "fsJLAplicar",
+    "line": 13923
+  },
+  {
+    "name": "fsJLSonda2",
+    "line": 14172
+  },
+  {
+    "name": "nota",
+    "line": 14174
+  },
+  {
+    "name": "fsJLSonda3",
+    "line": 14390
+  },
+  {
+    "name": "item",
+    "line": 14394
+  },
+  {
+    "name": "chamar",
+    "line": 14400
+  },
+  {
+    "name": "fsAutocutSondaLink",
+    "line": 14576
+  },
+  {
+    "name": "linksDe",
+    "line": 14580
+  },
+  {
+    "name": "soLink",
+    "line": 14590
+  },
+  {
+    "name": "fsAudioNoTrecho",
+    "line": 14781
+  },
+  {
+    "name": "fsRegioesDeAudio",
+    "line": 14831
+  },
+  {
+    "name": "_fsAnimComp",
+    "line": 14926
+  },
+  {
+    "name": "_fsAnimProps",
+    "line": 14957
+  },
+  {
+    "name": "_fsAnimBase",
+    "line": 15003
+  },
+  {
+    "name": "_fsAnimChaves",
+    "line": 15044
+  },
+  {
+    "name": "fsAnimTexto",
+    "line": 15062
+  },
+  {
+    "name": "fsRaioXTimeline",
+    "line": 15157
+  },
+  {
+    "name": "fsFrameDaSequencia",
+    "line": 15382
+  },
+  {
+    "name": "fsRelatorioAutoEdit",
+    "line": 15401
+  },
+  {
+    "name": "_fsGuiaProporcao",
+    "line": 15777
+  },
+  {
+    "name": "_fsGuiaArquivo",
+    "line": 15796
+  },
+  {
+    "name": "_fsGuiaBin",
+    "line": 15808
+  },
+  {
+    "name": "_fsGuiaNormalizar",
+    "line": 15839
+  },
+  {
+    "name": "_fsGuiaAchaItem",
+    "line": 15842
+  },
+  {
+    "name": "_fsGuiaItem",
+    "line": 15878
+  },
+  {
+    "name": "_fsGuiaEhNosso",
+    "line": 15895
+  },
+  {
+    "name": "_fsGuiaVarrer",
+    "line": 15901
+  },
+  {
+    "name": "_fsGuiaLimpar",
+    "line": 15933
+  },
+  {
+    "name": "_fsGuiaFimDaSequencia",
+    "line": 15948
+  },
+  {
+    "name": "_fsGuiaIntervalo",
+    "line": 15974
+  },
+  {
+    "name": "_olhar",
+    "line": 16017
+  },
+  {
+    "name": "_fsGuiaLivreNoTrecho",
+    "line": 16085
+  },
+  {
+    "name": "_fsGuiaTrilhaEscolhida",
+    "line": 16107
+  },
+  {
+    "name": "_fsGuiaTrilhaDeCima",
+    "line": 16133
+  },
+  {
+    "name": "_fsGuiaAjustar",
+    "line": 16169
+  },
+  {
+    "name": "_fsGuiaEscalaPara",
+    "line": 16223
+  },
+  {
+    "name": "_fsGuiaPor",
+    "line": 16233
+  },
+  {
+    "name": "fsGuiaEstado",
+    "line": 16298
+  },
+  {
+    "name": "fsGuiaAplicar",
+    "line": 16316
+  },
+  {
+    "name": "fsGuiaRemover",
+    "line": 16430
+  },
+  {
+    "name": "fsIrParaTempo",
+    "line": 16442
+  },
+  {
+    "name": "fsPontaNaAgulha",
+    "line": 16482
+  },
+  {
+    "name": "fsSelecaoVideoConta",
+    "line": 16594
+  },
+  {
+    "name": "fsCriarTrilhaVideo",
+    "line": 16631
+  },
+  {
+    "name": "fsTrilhaLivreNoIntervalo",
+    "line": 16644
+  },
+  {
+    "name": "_fsAddTrilhaVideo",
+    "line": 16696
+  },
+  {
+    "name": "_subiu",
+    "line": 16698
+  },
+  {
+    "name": "fsSondaEfeitos",
+    "line": 16784
+  },
+  {
+    "name": "P",
+    "line": 16786
+  },
+  {
+    "name": "_fsTdTps",
+    "line": 16978
+  },
+  {
+    "name": "_fsTdPropMotion",
+    "line": 16981
+  },
+  {
+    "name": "_fsTdAchaCrop",
+    "line": 17042
+  },
+  {
+    "name": "_fsTdTamanhoDaMidia",
+    "line": 17068
+  },
+  {
+    "name": "_fsTdAchaEfeitoJanela",
+    "line": 17090
+  },
+  {
+    "name": "_fsTdCompCrop",
+    "line": 17116
+  },
+  {
+    "name": "_fsTdBordasCrop",
+    "line": 17149
+  },
+  {
+    "name": "_fsTdGrava",
+    "line": 17261
+  },
+  {
+    "name": "_fsTdSelecionados",
+    "line": 17292
+  },
+  {
+    "name": "_fsTdPedaco",
+    "line": 17330
+  },
+  {
+    "name": "fsTelaDividida",
+    "line": 17358
+  },
+  {
+    "name": "_corta",
+    "line": 17360
+  },
+  {
+    "name": "fsTelaDivididaLer",
+    "line": 17674
+  },
+  {
+    "name": "_num",
+    "line": 17676
+  },
+  {
+    "name": "fsTelaDivididaAjustar",
+    "line": 17714
+  },
+  {
+    "name": "_g",
+    "line": 17716
+  },
+  {
+    "name": "_fsScExpandeLinhas",
+    "line": 17809
+  },
+  {
+    "name": "fsTrocarCores",
+    "line": 17848
+  },
+  {
+    "name": "fsConferirFonteAplicada",
+    "line": 18024
+  },
+  {
+    "name": "fsRetakeSubir",
+    "line": 18114
+  },
+  {
+    "name": "_razor",
+    "line": 18116
+  },
+  {
+    "name": "_dentro",
+    "line": 18137
+  },
+  {
+    "name": "_coleta",
+    "line": 18144
+  },
+  {
+    "name": "_lista",
+    "line": 18160
+  },
+  {
+    "name": "_livre",
+    "line": 18163
+  },
+  {
+    "name": "_destino",
+    "line": 18181
+  },
+  {
+    "name": "_totalClipes",
+    "line": 18204
+  },
+  {
+    "name": "_rot",
+    "line": 18218
+  },
+  {
+    "name": "_chaves",
+    "line": 18221
+  },
+  {
+    "name": "quote",
+    "line": 18458
+  },
+  {
+    "name": "str",
+    "line": 18465
+  }
+]
