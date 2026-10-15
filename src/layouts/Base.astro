@@ -1,0 +1,96 @@
+---
+import '@fontsource/syne/latin-700.css';
+import '@fontsource/syne/latin-800.css';
+import '@fontsource/space-grotesk/latin-400.css';
+import '@fontsource/space-grotesk/latin-500.css';
+import '@fontsource/space-grotesk/latin-600.css';
+import '@fontsource/space-grotesk/latin-700.css';
+import '../styles/global.css';
+import Cabecalho from '../components/Cabecalho.astro';
+import Rodape from '../components/Rodape.astro';
+import PlayerDialogo from '../components/PlayerDialogo.astro';
+import { url } from '../lib/url';
+// Fontes da primeira dobra: pré-carregadas para evitar deslocamento de layout na troca.
+import syne800 from '@fontsource/syne/files/syne-latin-800-normal.woff2?url';
+import grotesk400 from '@fontsource/space-grotesk/files/space-grotesk-latin-400-normal.woff2?url';
+
+interface Props {
+  titulo: string;
+  descricao: string;
+  /** Caminho canônico relativo à base, ex.: "projetos/x/". Omitido no 404. */
+  caminho?: string;
+  indexar?: boolean;
+}
+const { titulo, descricao, caminho, indexar = true } = Astro.props;
+const canonico = caminho !== undefined ? new URL(url(caminho), Astro.site).href : undefined;
+const imagemSocial = new URL(url('og.png'), Astro.site).href;
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{titulo}</title>
+    <meta name="description" content={descricao} />
+    <meta name="theme-color" content="#0e1016" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    {!indexar && <meta name="robots" content="noindex" />}
+    {canonico && <link rel="canonical" href={canonico} />}
+    <link rel="preload" href={syne800} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={grotesk400} as="font" type="font/woff2" crossorigin />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="sitemap" href={url('sitemap.xml')} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="ppvfx — Paulo Padilha" />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descricao} />
+    {canonico && <meta property="og:url" content={canonico} />}
+    <meta property="og:image" content={imagemSocial} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Paulo Padilha — Motion Design e Edição de Vídeo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <div class="fundo" aria-hidden="true"><span class="aurora a1"></span><span class="aurora a2"></span><span class="aurora a3"></span></div>
+    <Cabecalho />
+    <main id="conteudo" tabindex="-1">
+      <slot />
+    </main>
+    <Rodape />
+    <PlayerDialogo />
+    <script>
+      import '../scripts/revelar';
+    </script>
+  </body>
+</html>
+
+<style>
+  /* Fundo: gradientes radiais já suaves (sem filtro de desfoque, que custa caro na GPU). */
+  .fundo { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+  .aurora { position: absolute; border-radius: 50%; }
+  .a1 {
+    width: 70vw; height: 70vw; max-width: 900px; max-height: 900px; top: -20%; left: -15%;
+    background: radial-gradient(circle, rgba(59, 7, 100, 0.55) 0%, transparent 65%);
+    animation: aurora-1 40s ease-in-out infinite;
+  }
+  .a2 {
+    width: 55vw; height: 55vw; max-width: 700px; max-height: 700px; top: 30%; right: -18%;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, transparent 65%);
+    animation: aurora-2 48s ease-in-out infinite;
+  }
+  .a3 {
+    width: 60vw; height: 60vw; max-width: 800px; max-height: 800px; bottom: -25%; left: 15%;
+    background: radial-gradient(circle, rgba(30, 10, 60, 0.7) 0%, transparent 65%);
+    animation: aurora-3 56s ease-in-out infinite;
+  }
+  @keyframes aurora-1 { 50% { transform: translate(6vw, 8vh) scale(1.1); } }
+  @keyframes aurora-2 { 50% { transform: translate(-7vw, 6vh) scale(1.06); } }
+  @keyframes aurora-3 { 50% { transform: translate(5vw, -7vh) scale(1.12); } }
+  main:focus { outline: none; }
+</style>

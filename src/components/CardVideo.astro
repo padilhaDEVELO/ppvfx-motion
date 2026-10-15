@@ -1,0 +1,138 @@
+---
+import { Picture } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import Icone from './Icone.astro';
+import { urlProjeto, urlYouTube } from '../lib/url';
+
+interface Props {
+  projeto: CollectionEntry<'projetos'>;
+  /** Primeira dobra: carrega a capa sem atraso. */
+  prioridade?: boolean;
+  /** Na página do projeto o card não repete o link "ver projeto". */
+  semLinkProjeto?: boolean;
+  tamanhos?: string;
+}
+const { projeto, prioridade = false, semLinkProjeto = false, tamanhos } = Astro.props;
+const p = projeto.data;
+const vertical = p.formato === 'vertical';
+const larguras = vertical ? [270, 405] : [480, 800, 1280];
+const sizes = tamanhos ?? (vertical ? '(max-width: 640px) 68vw, 300px' : '(max-width: 640px) 92vw, 580px');
+---
+<article class:list={['card', vertical ? 'celular' : 'notebook']}>
+  <div class="aparelho">
+    {vertical ? <span class="ilha" aria-hidden="true" /> : <span class="entalhe" aria-hidden="true" />}
+    <a
+      class:list={['capa', vertical ? 'v' : 'h']}
+      href={urlYouTube(p.video)}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-video={p.video}
+      data-titulo={p.titulo}
+      data-formato={p.formato}
+    >
+      <Picture
+        src={p.capa}
+        alt=""
+        formats={['avif', 'webp']}
+        widths={larguras}
+        sizes={sizes}
+        loading={prioridade ? 'eager' : 'lazy'}
+        fetchpriority={prioridade ? 'high' : 'auto'}
+        decoding="async"
+      />
+      <span class="sombra" aria-hidden="true"></span>
+      <span class="play" aria-hidden="true"><Icone nome="play" /></span>
+      <span class="meta">
+        <span class="sr-only">Reproduzir vídeo: </span>
+        <strong>{p.titulo}</strong>
+        <span class="cat">{p.categoria}</span>
+      </span>
+    </a>
+    {!vertical && <span class="base" aria-hidden="true" />}
+  </div>
+  {!semLinkProjeto && (
+    <a class="ver" href={urlProjeto(p.slug)}>Ver projeto<span class="sr-only">: {p.titulo}</span> <Icone nome="seta-dir" /></a>
+  )}
+</article>
+
+<style>
+  .card { position: relative; display: flex; flex-direction: column; gap: var(--s-3); min-width: 0; }
+  .aparelho {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    transition: transform var(--t-med) var(--ease-out), border-color var(--t-med), box-shadow var(--t-med);
+  }
+  .card:hover .aparelho, .card:focus-within .aparelho {
+    transform: translateY(-6px);
+    border-color: var(--neon-soft);
+    box-shadow: 0 0 32px rgba(168, 85, 247, 0.14);
+  }
+
+  /* Celular (vertical) */
+  .celular .aparelho { padding: 10px 8px 14px; border-radius: 40px; }
+  .celular .capa { border-radius: 32px; }
+  .ilha {
+    position: absolute; top: 21px; left: 50%; transform: translateX(-50%);
+    width: 78px; height: 23px; border-radius: 16px; background: #000; z-index: 3;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+  }
+  .celular .aparelho::before, .celular .aparelho::after { content: ''; position: absolute; background: var(--border); }
+  .celular .aparelho::before { right: -1px; top: 92px; width: 3px; height: 56px; border-radius: 2px 0 0 2px; }
+  .celular .aparelho::after { left: -1px; top: 78px; width: 3px; height: 78px; border-radius: 0 2px 2px 0; }
+
+  /* Notebook (horizontal) */
+  .notebook .aparelho { padding: 8px 8px 0; border-radius: var(--r-lg) var(--r-lg) 12px 12px; }
+  .notebook .capa { border-radius: 10px 10px 0 0; }
+  .entalhe {
+    position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+    width: 104px; height: 15px; background: #000; border-radius: 0 0 9px 9px; z-index: 3;
+    pointer-events: none;
+  }
+  .base {
+    display: block; height: 14px; margin: 0 -8px;
+    background: linear-gradient(180deg, var(--surface), #1a1d27);
+    border-top: 1px solid var(--border); border-radius: 0 0 12px 12px;
+    position: relative;
+  }
+  .base::after {
+    content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 72px; height: 5px; background: var(--bg); border-radius: 0 0 7px 7px;
+  }
+
+  .capa {
+    position: relative; display: block; overflow: hidden;
+    background: #000; text-decoration: none; color: var(--text);
+  }
+  .capa.v { aspect-ratio: 9 / 16; }
+  .capa.h { aspect-ratio: 16 / 9; }
+  .capa :global(img) {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.5s var(--ease-out);
+  }
+  .card:hover .capa :global(img) { transform: scale(1.04); }
+  .capa:focus-visible { outline-offset: -4px; }
+  .sombra { position: absolute; inset: 0; background: linear-gradient(to top, rgba(14, 16, 22, 0.85), rgba(14, 16, 22, 0.05) 50%); }
+  .play {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    display: flex; align-items: center; justify-content: center;
+    width: 58px; height: 58px; border-radius: 50%;
+    background: rgba(236, 231, 225, 0.94); color: var(--bg);
+    transition: transform var(--t-med) var(--ease-out);
+  }
+  .card:hover .play, .capa:focus-visible .play { transform: translate(-50%, -50%) scale(1.1); }
+  .play :global(svg) { width: 20px; height: 20px; margin-left: 2px; }
+  .meta { position: absolute; left: 18px; right: 18px; bottom: 16px; display: flex; flex-direction: column; gap: 2px; }
+  .meta strong { font-weight: 700; font-size: 1.05rem; line-height: 1.25; }
+  .cat { font-size: var(--fs-xs); color: rgba(236, 231, 225, 0.82); letter-spacing: 0.04em; text-transform: uppercase; }
+
+  .ver {
+    align-self: center;
+    display: inline-flex; align-items: center; gap: var(--s-1);
+    min-height: 44px; padding: var(--s-2) var(--s-3); white-space: nowrap;
+    font-size: var(--fs-sm); color: var(--muted); text-decoration: none;
+  }
+  .ver:hover { color: var(--text); }
+  .ver :global(svg) { width: 14px; height: 14px; }
+</style>

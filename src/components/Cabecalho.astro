@@ -1,0 +1,103 @@
+---
+import Icone from './Icone.astro';
+import { navegacao, linkWhatsApp, mensagens } from '../config/site';
+import { url } from '../lib/url';
+---
+<header class="cabecalho">
+  <div class="container barra">
+    <a href={url('#home')} class="logo" aria-label="ppvfx — início">ppvfx<span class="grad-text">.</span></a>
+
+    <!-- Uma só lista para desktop e celular. No celular vira popover nativo:
+         abre e fecha sem JavaScript, fecha com Escape e ao tocar fora. -->
+    <button class="menu-botao" type="button" popovertarget="menu-principal" aria-label="Menu" aria-controls="menu-principal">
+      <Icone nome="menu" />
+    </button>
+    <nav id="menu-principal" class="menu" popover aria-label="Principal">
+      <ul role="list">
+        {navegacao.map((item) => (
+          <li><a href={url(item.href)}>{item.rotulo}</a></li>
+        ))}
+        <li class="menu-contato"><a href={url('#contact')}>Contato</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn-claro whatsapp" href={linkWhatsApp(mensagens.geral)} target="_blank" rel="noopener noreferrer">
+      <Icone nome="whatsapp" />
+      <span><span class="so-largo">Falar no </span>WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<script>
+  // Fecha o menu móvel ao escolher um destino.
+  const menu = document.getElementById('menu-principal');
+  menu?.addEventListener('click', (e) => {
+    if (!(e.target instanceof Element) || !e.target.closest('a')) return;
+    if (menu.matches(':popover-open')) menu.hidePopover();
+  });
+</script>
+
+<style>
+  .cabecalho {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(14, 16, 22, 0.82);
+    border-bottom: 1px solid rgba(47, 53, 70, 0.6);
+    padding-top: env(safe-area-inset-top);
+  }
+  @supports (backdrop-filter: blur(12px)) {
+    .cabecalho { backdrop-filter: blur(12px); background: rgba(14, 16, 22, 0.7); }
+  }
+  .barra { display: flex; align-items: center; gap: var(--s-4); height: var(--header-h); }
+  .logo {
+    font-family: var(--font-display); font-weight: 800; font-size: 1.25rem;
+    letter-spacing: -0.02em; text-decoration: none;
+    padding: var(--s-2) 0; margin-right: auto;
+  }
+  .menu ul { display: flex; gap: var(--s-1); }
+  .menu a {
+    display: block; padding: var(--s-3) var(--s-3);
+    font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none;
+    transition: color var(--t-fast);
+  }
+  .menu a:hover { color: var(--text); }
+  .menu-contato { display: none; }
+  .whatsapp { min-height: 44px; padding: 0.65rem 1.2rem; white-space: nowrap; }
+  .menu-botao { display: none; }
+
+  /* Desktop: a lista fica na barra mesmo com o atributo popover. */
+  @media (min-width: 1000px) {
+    .menu:not(:popover-open) { display: block; position: static; inset: auto; background: none; border: 0; padding: 0; margin: 0; overflow: visible; }
+  }
+
+  @media (max-width: 999.98px) {
+    .menu-botao {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; order: 3;
+      background: transparent; border: 1px solid var(--border); border-radius: 50%;
+    }
+    .menu-botao :global(svg) { width: 20px; height: 20px; }
+    .whatsapp { order: 2; }
+    .menu {
+      /* Navegadores sem popover: a lista aparece na barra, em linha. */
+      order: 4; flex-basis: 100%;
+    }
+    .menu[popover] {
+      position: fixed; inset: auto var(--gutter) auto auto;
+      top: calc(var(--header-h) + env(safe-area-inset-top) + var(--s-2));
+      width: min(280px, calc(100vw - 2 * var(--gutter)));
+      margin: 0; padding: var(--s-3);
+      background: var(--surface); color: var(--text);
+      border: 1px solid var(--border); border-radius: var(--r-md);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+    }
+    .menu[popover] ul { flex-direction: column; }
+    .menu[popover] a { font-size: var(--fs-md); padding: var(--s-3) var(--s-4); color: var(--text); border-radius: var(--r-sm); }
+    .menu[popover] a:hover { background: var(--surface-2); }
+    .menu-contato { display: list-item; }
+  }
+  @media (max-width: 520px) {
+    .so-largo { display: none; }
+    .whatsapp { padding-inline: 1rem; }
+  }
+</style>

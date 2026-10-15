@@ -1,0 +1,59 @@
+/* Tokens da identidade PP VFX: fundo escuro, laranja → roxo. */
+:root {
+  /* cores */
+  --bg: #0e1016;
+  --surface: #1b1f2a;
+  --surface-2: #212531;
+  --border: #2f3546;
+  --text: #ece7e1;
+  --muted: #a9abb2;
+  --from: #ffaa40;
+  --to: #a855f7;
+  --neon: #a855f7;
+  --neon-soft: rgba(168, 85, 247, 0.5);
+  --pink: #ec4899;
+  --ok: #68cd86;
+  --grad: linear-gradient(90deg, var(--from), var(--to));
+  --line: linear-gradient(90deg, transparent, var(--pink) 20%, var(--neon) 80%, transparent);
+
+  /* tipografia */
+  --font-display: 'Syne', 'Arial Black', system-ui, sans-serif;
+  --font-body: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-title: clamp(1.4rem, 0.25rem + 6vw, 3.4rem);
+  --fs-hero: clamp(2rem, 11.4vw, 6.75rem);
+  --fs-contact: clamp(2.6rem, 12.5vw, 9rem);
+
+  /* espaçamento */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --section-y: clamp(4.5rem, 9vw, 7.5rem);
+  --gutter: clamp(1rem, 4vw, 1.5rem);
+  --max: 1200px;
+  --header-h: 68px;
+
+  /* bordas */
+  --r-sm: 10px;
+  --r-md: 18px;
+  --r-lg: 24px;
+  --r-pill: 999px;
+
+  /* movimento */
+  --ease-out: cubic-bezier(0.19, 1, 0.22, 1);
+  --t-fast: 0.2s;
+  --t-med: 0.35s;
+  --t-slow: 0.8s;
+
+  color-scheme: dark;
+}

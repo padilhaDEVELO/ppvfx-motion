@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/url';
+import { linkWhatsApp, mensagens } from '../config/site';
+---
+<Base titulo="Página não encontrada — Paulo Padilha" descricao="Esta página não existe ou foi removida." indexar={false}>
+  <section class="container erro">
+    <p class="codigo grad-text" aria-hidden="true">404</p>
+    <h1>Página não encontrada.</h1>
+    <p>O endereço não existe ou foi removido. Os trabalhos, serviços e o contato estão na página inicial.</p>
+    <div class="acoes">
+      <a class="btn btn-claro" href={url('/')}>Ir para o início</a>
+      <a class="btn btn-contorno" href={url('#work')}>Ver trabalhos</a>
+      <a class="btn btn-contorno" href={linkWhatsApp(mensagens.geral)} target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .erro { padding-block: var(--section-y); min-height: 60dvh; }
+  .codigo { font-family: var(--font-display); font-weight: 800; font-size: clamp(5rem, 18vw, 12rem); line-height: 0.9; }
+  h1 { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-title); text-transform: uppercase; letter-spacing: -0.02em; margin: var(--s-4) 0; }
+  p { color: var(--muted); max-width: 520px; margin-bottom: var(--s-6); }
+  .acoes { display: flex; flex-wrap: wrap; gap: var(--s-3); }
+</style>

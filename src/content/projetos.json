@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "identidade-em-movimento",
+    "titulo": "Identidade em movimento",
+    "categoria": "Vinheta · Redes sociais",
+    "formato": "vertical",
+    "video": "K7sz44MX7Ks",
+    "descricao": "Vinheta animada em formato vertical para redes sociais.",
+    "ordem": 1,
+    "capa": "../assets/capas/K7sz44MX7Ks.jpg"
+  },
+  {
+    "slug": "animacao-para-feed",
+    "titulo": "Animação para feed",
+    "categoria": "Motion · Instagram / Reels",
+    "formato": "vertical",
+    "video": "Ie3ZOMup0TI",
+    "descricao": "Animação em formato vertical para Instagram e Reels.",
+    "ordem": 2,
+    "capa": "../assets/capas/Ie3ZOMup0TI.jpg"
+  },
+  {
+    "slug": "apresentacao-de-marca",
+    "titulo": "Apresentação de marca",
+    "categoria": "Motion · Institucional",
+    "formato": "vertical",
+    "video": "BbxBwroAa7M",
+    "descricao": "Peça institucional em motion design, em formato vertical.",
+    "ordem": 3,
+    "capa": "../assets/capas/BbxBwroAa7M.jpg"
+  },
+  {
+    "slug": "motion-grafico",
+    "titulo": "Motion gráfico",
+    "categoria": "Animação · Social media",
+    "formato": "vertical",
+    "video": "hXxPlKrLdFQ",
+    "descricao": "Animação gráfica em formato vertical para social media.",
+    "ordem": 4,
+    "capa": "../assets/capas/hXxPlKrLdFQ.jpg"
+  },
+  {
+    "slug": "producao-completa",
+    "titulo": "Produção completa",
+    "categoria": "Edição + motion",
+    "formato": "vertical",
+    "video": "cM_V5sN7SLY",
+    "descricao": "Edição de vídeo combinada com motion design, em formato vertical.",
+    "ordem": 5,
+    "capa": "../assets/capas/cM_V5sN7SLY.jpg"
+  },
+  {
+    "slug": "lancamento-animado",
+    "titulo": "Lançamento animado",
+    "categoria": "Motion · Campanha digital",
+    "formato": "horizontal",
+    "video": "ef-kyVnx328",
+    "descricao": "Animação horizontal para campanha digital.",
+    "ordem": 6,
+    "capa": "../assets/capas/ef-kyVnx328.jpg"
+  },
+  {
+    "slug": "vinheta-de-canal",
+    "titulo": "Vinheta de canal",
+    "categoria": "Intro · YouTube",
+    "formato": "horizontal",
+    "video": "Hk94bWJ7Vvw",
+    "descricao": "Intro animada em widescreen para canal do YouTube.",
+    "ordem": 7,
+    "capa": "../assets/capas/Hk94bWJ7Vvw.jpg"
+  }
+]

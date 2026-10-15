@@ -1,0 +1,24 @@
+---
+import { contato } from '../config/site';
+import { url } from '../lib/url';
+const ano = new Date().getFullYear();
+---
+<footer class="rodape">
+  <div class="container linha">
+    <p class="copy">© {ano} {contato.marca} — Motion Design &amp; Edição de Vídeo · {contato.cidade}</p>
+    <ul role="list" class="links">
+      <li><a href={contato.instagram} target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href={url('privacidade/')}>Privacidade</a></li>
+    </ul>
+  </div>
+</footer>
+
+<style>
+  .rodape { border-top: 1px solid var(--border); padding: var(--s-6) 0 calc(var(--s-6) + env(safe-area-inset-bottom)); }
+  .linha { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--s-4); }
+  .copy { font-size: var(--fs-sm); color: var(--muted); }
+  .links { display: flex; gap: var(--s-1); }
+  .links a { display: block; padding: var(--s-3) var(--s-3); font-size: var(--fs-sm); color: var(--muted); text-decoration: none; }
+  .links a:hover { color: var(--text); }
+  @media (max-width: 640px) { .linha { justify-content: center; text-align: center; } }
+</style>

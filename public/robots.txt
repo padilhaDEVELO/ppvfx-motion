@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://padilhadevelo.github.io/ppvfx-motion/sitemap.xml

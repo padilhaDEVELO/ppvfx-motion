@@ -1,0 +1,410 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import CardVideo from '../components/CardVideo.astro';
+import Trilho from '../components/Trilho.astro';
+import Icone from '../components/Icone.astro';
+import { contato, numeros, servicos, processo, linkWhatsApp, mensagens, formatoPreco } from '../config/site';
+import { url } from '../lib/url';
+
+import febracis from '../assets/marcas/FEBRACIS.webp';
+import globalPrime from '../assets/marcas/GLOBAL.webp';
+import diarioDoPara from '../assets/marcas/logo-header-v2.svg';
+import ova from '../assets/marcas/1739470855ova.webp';
+import dol from '../assets/marcas/DOL.webp';
+import ananindeua from '../assets/marcas/ANANINDEUA.webp';
+import afterEffects from '../assets/ferramentas/adobeaftereffects.svg';
+import premiere from '../assets/ferramentas/adobepremierepro.svg';
+import davinci from '../assets/ferramentas/davinciresolve.svg';
+import photoshop from '../assets/ferramentas/adobephotoshop.svg';
+import illustrator from '../assets/ferramentas/adobeillustrator.svg';
+import blender from '../assets/ferramentas/blender.svg';
+
+const projetos = (await getCollection('projetos')).sort((a, b) => a.data.ordem - b.data.ordem);
+const verticais = projetos.filter((p) => p.data.formato === 'vertical');
+const horizontais = projetos.filter((p) => p.data.formato === 'horizontal');
+
+const marcas = [
+  { src: febracis, alt: 'FEBRACIS' },
+  { src: globalPrime, alt: 'Global Prime Solutions' },
+  { src: diarioDoPara, alt: 'Diário do Pará' },
+  { src: ova, alt: 'OVA' },
+  { src: dol, alt: 'DOL' },
+  { src: ananindeua, alt: 'Prefeitura de Ananindeua' },
+];
+const ferramentas = [
+  { src: afterEffects, alt: 'After Effects' },
+  { src: premiere, alt: 'Premiere Pro' },
+  { src: davinci, alt: 'DaVinci Resolve' },
+  { src: photoshop, alt: 'Photoshop' },
+  { src: illustrator, alt: 'Illustrator' },
+  { src: blender, alt: 'Blender' },
+];
+const linhasNome = ['Paulo', 'Padilha'];
+const motionRedes = servicos.find((s) => s.id === 'motion-redes')!;
+const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
+---
+<Base
+  titulo="Paulo Padilha — Motion Design & Edição de Vídeo"
+  descricao="Motion design e edição de vídeo para marcas, agências e criadores. Briefing direto, prazo definido, arquivo pronto para publicar. Belém · PA."
+  caminho="/"
+>
+  <!-- APRESENTAÇÃO -->
+  <section id="home" class="hero" aria-labelledby="hero-nome">
+    <div class="container">
+      <p class="hero-status">Motion Design &amp; Edição de Vídeo — {contato.cidade}</p>
+      <h1 class="hero-nome" id="hero-nome">
+        <span class="sr-only">Paulo Padilha</span>
+        {linhasNome.map((linha) => (
+          <span class="ln" aria-hidden="true">{[...linha].map((c) => <span>{c}</span>)}</span>
+        ))}
+      </h1>
+      <p class="hero-sub">
+        Você manda o briefing. Eu devolvo o <strong>arquivo pronto para publicar</strong>, com prazo definido.
+        Agenda sob consulta — <strong>respondo em até 24h</strong>.
+      </p>
+      <div class="hero-acoes">
+        <a class="btn btn-claro" href={linkWhatsApp(mensagens.geral)} target="_blank" rel="noopener noreferrer">
+          <Icone nome="whatsapp" /> Falar sobre meu projeto
+        </a>
+        <a class="btn btn-contorno" href={url('#work')}>Ver trabalhos</a>
+        <a class="social" href={contato.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram de Paulo Padilha">
+          <Icone nome="instagram" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRABALHOS: vertical -->
+  <section id="work" class="secao trabalhos" aria-labelledby="work-titulo">
+    <div class="container">
+      <p class="tag rv">Trabalhos em destaque · Vertical 9:16</p>
+      <h2 class="titulo rv" id="work-titulo">Motion<br />para redes.</h2>
+      <p class="sub rv">Formato vertical para Instagram, Reels e TikTok — conteúdo que para o dedo no feed.</p>
+      <Trilho rotulo="Vídeos verticais">
+        {verticais.map((p, i) => <li><CardVideo projeto={p} prioridade={i < 2} /></li>)}
+      </Trilho>
+    </div>
+  </section>
+
+  <!-- TRABALHOS: horizontal -->
+  <section id="youtube" class="secao trabalhos-h" aria-labelledby="youtube-titulo">
+    <div class="container">
+      <p class="tag rv">Formato horizontal · 16:9</p>
+      <h2 class="titulo rv" id="youtube-titulo">Animações<br />para YouTube.</h2>
+      <p class="sub rv">Vinhetas, intros e vídeos de campanha em widescreen — do conceito ao arquivo final.</p>
+      <ul class="grade-h" role="list">
+        {horizontais.map((p) => <li class="rv"><CardVideo projeto={p} /></li>)}
+      </ul>
+      <p class="cta-centro rv">
+        <a class="btn btn-claro" href={linkWhatsApp(mensagens.portfolio)} target="_blank" rel="noopener noreferrer">Quero um vídeo assim</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="secao com-linha" aria-labelledby="servicos-titulo">
+    <div class="container">
+      <p class="tag rv">Serviços</p>
+      <h2 class="titulo rv" id="servicos-titulo">O que<br />eu faço.</h2>
+      <p class="sub rv">Três formatos de trabalho, com escopo e limite de revisões definidos antes de começar.</p>
+      <ul class="servicos" role="list">
+        {servicos.map((s) => (
+          <li class="servico rv">
+            <h3>{s.nome}</h3>
+            <p class="servico-resumo">{s.resumo}</p>
+            <p class="rotulo">Inclui</p>
+            <ul role="list" class="lista-traco">
+              {s.entregaveis.map((e) => <li>{e}</li>)}
+            </ul>
+            <p class="limite"><strong>Revisões:</strong> {rodadas(s.rodadas)}. Além disso, ou fora do escopo, orçamento à parte.</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section id="processo" class="secao com-linha" aria-labelledby="processo-titulo">
+    <div class="container">
+      <p class="tag rv">Processo</p>
+      <h2 class="titulo rv" id="processo-titulo">Como<br />funciona.</h2>
+      <ol class="etapas" role="list">
+        {processo.map((etapa, i) => (
+          <li class="etapa rv">
+            <span class="etapa-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <h3><span class="sr-only">Etapa {i + 1}: </span>{etapa.nome}</h3>
+            <p>{etapa.texto}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- SOBRE E MARCAS -->
+  <section id="about" class="secao com-linha" aria-labelledby="about-titulo">
+    <div class="container">
+      <p class="tag rv">Sobre</p>
+      <h2 class="titulo rv" id="about-titulo">Quem entrega.</h2>
+      <p id="manifesto" class="manifesto rv">
+        Sua marca se move. Ou fica <span class="grad-text">parada</span> enquanto o mercado <span class="grad-text">passa.</span>
+      </p>
+      <div class="sobre-texto">
+        <p class="rv">Meu nome é <strong>Paulo Padilha</strong>. Trabalho com motion design e edição de vídeo para marcas, veículos de comunicação e criadores de conteúdo.</p>
+        <p class="rv">O processo é direto: <strong>você manda o briefing, eu mando prazo e valor.</strong> Aprovou, entro em produção com checkpoint de revisão antes da entrega final. Sem reunião desnecessária, sem surpresa no orçamento.</p>
+      </div>
+      <dl class="numeros rv">
+        {numeros.map((n) => (
+          <div><dt>{n.rotulo}</dt><dd>{n.valor}</dd></div>
+        ))}
+      </dl>
+
+      <div id="marcas" class="marcas rv">
+        <h3 class="rotulo">Marcas atendidas</h3>
+        <div class="letreiro">
+          <ul role="list" class="letreiro-faixa">
+            {marcas.map((m) => <li><Image src={m.src} alt={m.alt} height={32} loading="lazy" decoding="async" /></li>)}
+          </ul>
+          <ul role="list" class="letreiro-faixa copia" aria-hidden="true">
+            {marcas.map((m) => <li><Image src={m.src} alt="" height={32} loading="lazy" decoding="async" /></li>)}
+          </ul>
+        </div>
+      </div>
+
+      <div class="ferramentas rv">
+        <h3 class="rotulo">Ferramentas</h3>
+        <ul role="list" class="ferramentas-lista">
+          {ferramentas.map((f) => <li><Image src={f.src} alt={f.alt} width={24} height={24} loading="lazy" decoding="async" /></li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTIMENTO -->
+  <section id="precos" class="secao com-linha" aria-labelledby="precos-titulo">
+    <div class="container">
+      <p class="tag rv">Investimento</p>
+      <h2 class="titulo rv" id="precos-titulo">Quanto custa.</h2>
+      <p class="sub rv">Valores de referência. Projetos fora do escopo têm orçamento personalizado.</p>
+      <ul class="precos" role="list">
+        {servicos.map((s) => (
+          <li class:list={['preco', 'rv', { destaque: s.destaque }]}>
+            {s.destaque && <p class="selo">{s.destaque}</p>}
+            <h3 class="preco-nome">{s.nome}</h3>
+            <p class="preco-valor"><small>a partir de</small> {formatoPreco(s.preco)}</p>
+            <ul role="list" class="lista-traco">
+              {s.entregaveis.slice(0, 2).map((e) => <li>{e}</li>)}
+              <li>{rodadas(s.rodadas)}</li>
+            </ul>
+            <a class="btn btn-contorno largo" href={linkWhatsApp(s.mensagem)} target="_blank" rel="noopener noreferrer">{s.cta}</a>
+          </li>
+        ))}
+      </ul>
+      <p class="obs rv">
+        Projeto fora desse escopo? Me manda o briefing e te respondo com valor em até 24h.
+        <a href={linkWhatsApp(mensagens.geral)} target="_blank" rel="noopener noreferrer">Falar sobre meu projeto</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="secao com-linha" aria-labelledby="faq-titulo">
+    <div class="container">
+      <p class="tag rv">Dúvidas frequentes</p>
+      <h2 class="titulo rv" id="faq-titulo">Antes de você<br />perguntar.</h2>
+      <div class="faq">
+        <div class="faq-item rv">
+          <h3>“Já tentei e não ficou bom.”</h3>
+          <p>Acontece sem briefing claro e sem checkpoint. Aqui o processo tem revisão estruturada — a primeira entrega já costuma chegar perto porque as perguntas certas foram feitas antes.</p>
+        </div>
+        <div class="faq-item rv">
+          <h3>“Acho que é caro contratar isso.”</h3>
+          <p>Depende do que você perde sem movimento. Um Reels bem feito sai a partir de {formatoPreco(motionRedes.preco)} e fica rodando por meses.</p>
+        </div>
+        <div class="faq-item rv">
+          <h3>“Não sei se preciso de motion ou só de um vídeo editado.”</h3>
+          <p>Me manda o briefing. Em 5 minutos de conversa você sabe exatamente o que faz sentido para o seu projeto — e o valor certo para isso.</p>
+        </div>
+        <div class="faq-item rv">
+          <h3>“Como sei que você entrega no prazo?”</h3>
+          <p>Prazo escrito na proposta. Sem prazo definido, sem contrato.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contact" class="secao com-linha contato" aria-labelledby="contact-titulo">
+    <div class="container">
+      <h2 class="contato-titulo rv" id="contact-titulo">Vamos<br /><span class="grad-text">falar.</span></h2>
+      <p class="contato-sub rv">Tem um projeto em vista? Conta pelo WhatsApp o objetivo, o formato e o prazo. Eu respondo com proposta de prazo e valor.</p>
+      <p class="rv">
+        <a class="btn btn-claro" href={linkWhatsApp(mensagens.geral)} target="_blank" rel="noopener noreferrer">
+          <Icone nome="whatsapp" /> Falar sobre meu projeto
+        </a>
+      </p>
+      <p class="status rv">Agenda sob consulta · resposta em até 24h no WhatsApp</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  /* ── Apresentação ── */
+  .hero { padding: clamp(4rem, 12vh, 8rem) 0 clamp(3rem, 8vh, 5rem); min-height: min(86dvh, 820px); display: flex; align-items: center; }
+  .hero-status {
+    display: inline-flex; align-items: center; gap: var(--s-3);
+    font-size: var(--fs-sm); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: var(--s-5);
+  }
+  .hero-status::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--grad); flex-shrink: 0; }
+  .hero-nome {
+    font-family: var(--font-display); font-weight: 800;
+    font-size: var(--fs-hero); line-height: 0.98; letter-spacing: -0.03em; text-transform: uppercase;
+    margin-bottom: var(--s-6);
+  }
+  .ln { display: block; overflow: hidden; white-space: nowrap; padding-bottom: 0.04em; }
+  .ln > span { display: inline-block; animation: letra 0.9s var(--ease-out) both; animation-delay: calc(var(--l, 0ms) + var(--c, 0ms)); }
+  .ln:nth-of-type(3) { --l: 180ms; }
+  .ln > span:nth-child(2) { --c: 45ms; } .ln > span:nth-child(3) { --c: 90ms; }
+  .ln > span:nth-child(4) { --c: 135ms; } .ln > span:nth-child(5) { --c: 180ms; }
+  .ln > span:nth-child(6) { --c: 225ms; } .ln > span:nth-child(7) { --c: 270ms; }
+  @keyframes letra { from { transform: translateY(110%); } }
+  .hero-sub { max-width: 560px; color: var(--muted); font-size: var(--fs-lg); margin-bottom: var(--s-6); }
+  .hero-sub strong { color: var(--text); font-weight: 600; }
+  .hero-acoes { display: flex; align-items: center; gap: var(--s-3); flex-wrap: wrap; }
+  .social {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 48px; height: 48px; border-radius: 50%;
+    border: 1px solid var(--border); color: var(--muted);
+    transition: color var(--t-fast), border-color var(--t-fast);
+  }
+  .social:hover { color: var(--text); border-color: var(--muted); }
+  .social :global(svg) { width: 18px; height: 18px; }
+
+  /* ── Cabeçalhos de seção ── */
+  .tag {
+    display: flex; align-items: center; gap: var(--s-3);
+    font-size: var(--fs-sm); font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: var(--s-4);
+  }
+  .tag::before { content: ''; width: 34px; height: 1px; background: var(--muted); flex-shrink: 0; }
+  .titulo {
+    font-family: var(--font-display); font-weight: 800;
+    font-size: var(--fs-title); line-height: 1.02; letter-spacing: -0.02em; text-transform: uppercase;
+    margin-bottom: var(--s-4);
+  }
+  .sub { color: var(--muted); max-width: 560px; margin-bottom: var(--s-7); }
+  .rotulo { font-size: var(--fs-sm); font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: var(--s-3); }
+  .lista-traco li { position: relative; padding: 6px 0 6px 24px; color: var(--muted); font-size: 0.92rem; }
+  .lista-traco li::before { content: ''; position: absolute; left: 2px; top: 1.05em; width: 12px; height: 2px; background: var(--grad); border-radius: 2px; }
+
+  /* ── Trabalhos ── */
+  .trabalhos { padding-top: var(--s-6); padding-bottom: var(--s-7); }
+  .trabalhos-h { padding-top: var(--s-7); }
+  .grade-h { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .cta-centro { text-align: center; margin-top: var(--s-7); }
+
+  /* ── Serviços ── */
+  .servicos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .servico { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: var(--s-6); display: flex; flex-direction: column; }
+  .servico h3 { font-size: var(--fs-xl); font-weight: 700; margin-bottom: var(--s-2); }
+  .servico-resumo { color: var(--muted); font-size: 0.95rem; margin-bottom: var(--s-5); }
+  .servico .lista-traco { margin-bottom: var(--s-5); flex: 1; }
+  .limite { font-size: var(--fs-sm); color: var(--muted); border-top: 1px solid var(--border); padding-top: var(--s-4); }
+  .limite strong { color: var(--text); }
+
+  /* ── Processo ── */
+  .etapas { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; counter-reset: etapa; margin-top: var(--s-6); }
+  .etapa { border-top: 2px solid var(--border); padding-top: var(--s-4); }
+  .etapa-num { display: block; font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; line-height: 1; margin-bottom: var(--s-3); background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: var(--from); }
+  .etapa h3 { font-size: var(--fs-lg); font-weight: 700; margin-bottom: var(--s-2); }
+  .etapa p { color: var(--muted); font-size: 0.92rem; }
+
+  /* ── Sobre ── */
+  .manifesto {
+    font-family: var(--font-display); font-weight: 800;
+    font-size: clamp(1.5rem, 3.2vw, 2.5rem); line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase;
+    max-width: 900px; margin: var(--s-6) 0 var(--s-6);
+  }
+  .sobre-texto p { color: var(--muted); margin-bottom: var(--s-4); max-width: 640px; }
+  .sobre-texto strong { color: var(--text); font-weight: 600; }
+  .numeros { display: flex; flex-wrap: wrap; gap: var(--s-7); margin: var(--s-6) 0 var(--s-7); }
+  .numeros div { display: flex; flex-direction: column-reverse; }
+  .numeros dd { font-family: var(--font-display); font-weight: 800; font-size: 2.5rem; line-height: 1; }
+  .numeros dt { font-size: var(--fs-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: var(--s-2); }
+
+  .marcas { margin-bottom: var(--s-7); }
+  .letreiro {
+    display: flex; overflow: hidden; padding-block: var(--s-4);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .letreiro-faixa { display: flex; align-items: center; gap: 96px; padding-right: 96px; flex-shrink: 0; animation: letreiro 32s linear infinite; }
+  .letreiro:hover .letreiro-faixa { animation-play-state: paused; }
+  .letreiro-faixa :global(img) { height: 32px; width: auto; filter: brightness(0) invert(0.85) opacity(0.6); }
+  @keyframes letreiro { to { transform: translateX(-100%); } }
+  @media (prefers-reduced-motion: reduce) {
+    .letreiro { mask-image: none; }
+    .letreiro-faixa { flex-wrap: wrap; flex-shrink: 1; gap: var(--s-6) var(--s-7); padding: 0; animation: none; }
+    .letreiro-faixa.copia { display: none; }
+  }
+
+  .ferramentas-lista { display: flex; flex-wrap: wrap; gap: 14px; }
+  .ferramentas-lista li {
+    display: flex; align-items: center; justify-content: center;
+    width: 52px; height: 52px; border-radius: 50%;
+    background: var(--surface); border: 1px solid rgba(168, 85, 247, 0.45);
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.22);
+  }
+
+  /* ── Preços ── */
+  .precos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
+  .preco {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg);
+    padding: var(--s-6) var(--s-6); display: flex; flex-direction: column;
+    transition: transform var(--t-med) var(--ease-out), box-shadow var(--t-med);
+  }
+  .preco:hover { transform: translateY(-4px); box-shadow: 0 0 32px rgba(168, 85, 247, 0.12); }
+  .preco.destaque {
+    border-color: transparent;
+    background: linear-gradient(var(--surface), var(--surface)) padding-box, linear-gradient(130deg, var(--from), var(--to) 55%, var(--border)) border-box;
+    box-shadow: 0 0 36px rgba(168, 85, 247, 0.25);
+  }
+  .selo { align-self: flex-start; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: var(--grad); color: var(--bg); padding: 5px 12px; border-radius: var(--r-pill); margin-bottom: var(--s-4); }
+  .preco-nome { font-size: var(--fs-xl); font-weight: 700; margin-bottom: var(--s-2); }
+  .preco-valor { font-family: var(--font-display); font-weight: 800; font-size: 2.6rem; line-height: 1; margin-bottom: var(--s-5); white-space: nowrap; }
+  .preco-valor small { display: block; font-family: var(--font-body); font-size: var(--fs-sm); font-weight: 500; color: var(--muted); margin-bottom: var(--s-2); }
+  .preco .lista-traco { flex: 1; margin-bottom: var(--s-6); }
+  .largo { width: 100%; text-transform: none; letter-spacing: 0; font-size: 0.92rem; }
+  .obs { margin-top: var(--s-7); color: var(--muted); font-size: 0.92rem; text-align: center; }
+  .obs a { color: var(--text); font-weight: 600; display: inline-block; padding: var(--s-3) var(--s-1); }
+
+  /* ── FAQ ── */
+  .faq { max-width: 760px; margin-top: var(--s-6); }
+  .faq-item { border-bottom: 1px solid var(--border); padding: var(--s-6) 0; }
+  .faq-item h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: var(--s-2); }
+  .faq-item p { color: var(--muted); font-size: 0.95rem; max-width: 640px; }
+
+  /* ── Contato ── */
+  .contato { text-align: center; padding-bottom: var(--s-8); }
+  .contato-titulo {
+    font-family: var(--font-display); font-weight: 800;
+    font-size: var(--fs-contact); line-height: 0.95; letter-spacing: -0.03em; text-transform: uppercase;
+    margin-bottom: var(--s-6);
+  }
+  .contato-sub { color: var(--muted); max-width: 500px; margin: 0 auto var(--s-6); }
+  .status { display: inline-flex; align-items: center; gap: var(--s-3); font-size: var(--fs-sm); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-top: var(--s-5); }
+
+  /* ── Responsivo ── */
+  @media (max-width: 1000px) {
+    .etapas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .servicos, .precos { grid-template-columns: 1fr; max-width: 560px; }
+  }
+  @media (max-width: 640px) {
+    .grade-h { grid-template-columns: 1fr; }
+    .etapas { grid-template-columns: 1fr; }
+    .numeros { gap: var(--s-6); }
+    .hero-acoes .btn { flex: 1 1 auto; }
+    .hero { min-height: auto; padding-top: var(--s-7); }
+  }
+</style>

@@ -1,0 +1,82 @@
+---
+import Icone from './Icone.astro';
+// Faixa com rolagem horizontal: toque, trackpad, teclado (Tab percorre os cards e
+// a faixa acompanha) e botões explícitos. Os botões só aparecem quando há o que rolar.
+interface Props { rotulo: string; }
+const { rotulo } = Astro.props;
+---
+<div class="trilho" data-trilho>
+  <div class="controles" data-controles hidden>
+    <button type="button" class="seta" data-anterior aria-label={`${rotulo}: anteriores`}><Icone nome="seta-esq" /></button>
+    <button type="button" class="seta" data-proximo aria-label={`${rotulo}: próximos`}><Icone nome="seta-dir" /></button>
+  </div>
+  <ul class="faixa" role="list" aria-label={rotulo} data-faixa>
+    <slot />
+  </ul>
+</div>
+
+<script>
+  for (const trilho of document.querySelectorAll<HTMLElement>('[data-trilho]')) {
+    const faixa = trilho.querySelector<HTMLElement>('[data-faixa]')!;
+    const controles = trilho.querySelector<HTMLElement>('[data-controles]')!;
+    const ant = trilho.querySelector<HTMLButtonElement>('[data-anterior]')!;
+    const prox = trilho.querySelector<HTMLButtonElement>('[data-proximo]')!;
+    const reduzido = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const passo = () => {
+      const item = faixa.querySelector<HTMLElement>(':scope > li');
+      const gap = parseFloat(getComputedStyle(faixa).columnGap) || 0;
+      return item ? item.offsetWidth + gap : faixa.clientWidth * 0.8;
+    };
+    let pendente = false;
+    const atualizar = () => {
+      pendente = false;
+      const max = faixa.scrollWidth - faixa.clientWidth;
+      controles.hidden = max <= 2;
+      ant.disabled = faixa.scrollLeft <= 2;
+      prox.disabled = faixa.scrollLeft >= max - 2;
+    };
+    const agendar = () => { if (!pendente) { pendente = true; requestAnimationFrame(atualizar); } };
+    const rolar = (dir: number) => faixa.scrollBy({ left: dir * passo(), behavior: reduzido.matches ? 'auto' : 'smooth' });
+
+    ant.addEventListener('click', () => rolar(-1));
+    prox.addEventListener('click', () => rolar(1));
+    faixa.addEventListener('scroll', agendar, { passive: true });
+    new ResizeObserver(agendar).observe(faixa);
+    atualizar();
+  }
+</script>
+
+<style>
+  .trilho { position: relative; }
+  .controles { display: flex; justify-content: flex-end; gap: var(--s-2); margin-bottom: var(--s-4); }
+  /* Espaço reservado mesmo antes do script: os botões aparecem sem deslocar a faixa. */
+  .controles { min-height: 48px; }
+  .controles[hidden] { display: flex; visibility: hidden; }
+  .seta {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--surface); border: 1px solid var(--border);
+    transition: background var(--t-fast), border-color var(--t-fast), opacity var(--t-fast);
+  }
+  .seta:hover:not(:disabled) { border-color: var(--neon-soft); background: var(--surface-2); }
+  .seta:disabled { opacity: 0.35; cursor: default; }
+  .seta :global(svg) { width: 20px; height: 20px; }
+
+  .faixa {
+    position: relative;
+    display: flex; gap: 20px;
+    overflow-x: auto; overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter);
+    padding: 12px var(--gutter) 16px;
+    margin-inline: calc(var(--gutter) * -1);
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+  .faixa > :global(li) { flex: 0 0 300px; scroll-snap-align: start; }
+  @media (max-width: 640px) {
+    .faixa { gap: 14px; }
+    .faixa > :global(li) { flex-basis: min(68vw, 300px); scroll-snap-align: center; }
+  }
+</style>

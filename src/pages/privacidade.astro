@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/url';
+const atualizado = '15 de outubro de 2026';
+---
+<Base titulo="Privacidade — Paulo Padilha" descricao="Como o portfólio de Paulo Padilha usa serviços externos: hospedagem, vídeos do YouTube, WhatsApp e Instagram." caminho="privacidade/">
+  <article class="container texto">
+    <h1>Privacidade</h1>
+    <p class="nota">Atualizado em {atualizado}.</p>
+
+    <p>Este site é um portfólio estático. Ele não tem formulário, login, cadastro nem banco de dados, não usa cookies próprios e não tem ferramentas de análise de audiência ou publicidade. As fontes e as imagens são servidas pelo próprio site.</p>
+
+    <h2>Serviços externos</h2>
+    <dl>
+      <dt>Hospedagem — GitHub Pages</dt>
+      <dd>O site é hospedado pelo GitHub Pages. Como todo servidor web, o GitHub recebe dados técnicos da sua visita, como endereço IP e navegador, conforme a <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">política de privacidade do GitHub</a>.</dd>
+
+      <dt>Vídeos — YouTube</dt>
+      <dd>Nenhum conteúdo do YouTube é carregado enquanto você navega. O player só é criado quando você escolhe assistir a um vídeo, e usa o modo de privacidade aprimorada (youtube-nocookie.com). A partir desse momento, o Google pode coletar dados de acordo com a <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener noreferrer">política de privacidade do Google</a>. O modo de privacidade aprimorada reduz, mas não elimina, essa coleta. Se preferir, use o link “Assistir no YouTube”.</dd>
+
+      <dt>Contato — WhatsApp</dt>
+      <dd>Os botões de contato abrem o WhatsApp com uma mensagem sugerida, que você pode editar ou não enviar. Nada é enviado pelo site. A conversa segue a <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">política de privacidade do WhatsApp</a>.</dd>
+
+      <dt>Instagram</dt>
+      <dd>O link para o Instagram só abre o perfil quando você clica nele.</dd>
+    </dl>
+
+    <h2>Contato</h2>
+    <p>Dúvidas sobre esta página podem ser enviadas pelo mesmo WhatsApp do site.</p>
+    <p><a href={url('/')}>Voltar ao início</a></p>
+  </article>
+</Base>
+
+<style>
+  .texto { max-width: 760px; padding-block: var(--s-7) var(--section-y); }
+  h1 { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-title); text-transform: uppercase; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: var(--s-3); }
+  h2 { font-size: var(--fs-xl); font-weight: 700; margin: var(--s-7) 0 var(--s-4); }
+  p, dd { color: var(--muted); margin-bottom: var(--s-4); }
+  .nota { font-size: var(--fs-sm); margin-bottom: var(--s-6); }
+  dt { color: var(--text); font-weight: 600; margin-top: var(--s-5); margin-bottom: var(--s-2); }
+  a { color: var(--text); text-underline-offset: 3px; }
+</style>

@@ -1,0 +1,74 @@
+---
+import Icone from './Icone.astro';
+---
+<!-- Um único diálogo para todos os vídeos. showModal() torna o resto da página inerte
+     (contém o foco), Escape fecha e o foco volta ao card que abriu. -->
+<dialog id="player" class="player" aria-labelledby="player-titulo">
+  <div class="caixa">
+    <div class="topo">
+      <h2 id="player-titulo" class="titulo">Vídeo</h2>
+      <button type="button" class="fechar" data-fechar aria-label="Fechar vídeo" autofocus>
+        <Icone nome="fechar" />
+      </button>
+    </div>
+    <div class="quadro" data-quadro></div>
+    <p class="alternativa">
+      Não carregou?
+      <a data-alternativa href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+        Assistir no YouTube <Icone nome="externo" />
+      </a>
+    </p>
+  </div>
+</dialog>
+
+<script>
+  import { iniciarPlayer } from '../scripts/player';
+  iniciarPlayer();
+</script>
+
+<style>
+  .player {
+    margin: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    max-width: none;
+    max-height: none;
+    overflow: visible;
+  }
+  .player::backdrop { background: rgba(5, 6, 10, 0.88); }
+  @supports (backdrop-filter: blur(6px)) { .player::backdrop { backdrop-filter: blur(6px); } }
+
+  .caixa {
+    /* Largura calculada pela proporção do vídeo e pelo espaço útil (inclui áreas seguras). */
+    --area-h: calc(100dvh - 9.5rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    --area-w: calc(100vw - 2rem - env(safe-area-inset-left) - env(safe-area-inset-right));
+    width: min(var(--area-w), 1100px, calc(var(--area-h) * 16 / 9));
+    display: flex; flex-direction: column; gap: var(--s-3);
+  }
+  .player[data-formato='vertical'] .caixa { width: min(var(--area-w), 460px, calc(var(--area-h) * 9 / 16)); }
+
+  .topo { display: flex; align-items: center; justify-content: space-between; gap: var(--s-4); }
+  .titulo { font-family: var(--font-body); font-size: var(--fs-lg); font-weight: 700; line-height: 1.3; }
+  .fechar {
+    flex-shrink: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--surface); border: 1px solid var(--border);
+  }
+  .fechar:hover { background: var(--surface-2); }
+  .fechar :global(svg) { width: 18px; height: 18px; }
+
+  .quadro {
+    position: relative; width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000; border-radius: var(--r-md); overflow: hidden;
+  }
+  .player[data-formato='vertical'] .quadro { aspect-ratio: 9 / 16; }
+  .quadro :global(iframe) { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+  .alternativa { font-size: var(--fs-sm); color: var(--muted); text-align: center; }
+  .alternativa a { display: inline-flex; align-items: center; gap: var(--s-1); color: var(--text); font-weight: 600; padding: var(--s-2) var(--s-1); white-space: nowrap; }
+  .alternativa :global(svg) { width: 14px; height: 14px; }
+</style>
