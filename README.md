@@ -17,7 +17,7 @@ Requer Node 22.12 ou mais recente (a versão fixada para o CI está em `.nvmrc`:
 | `npm run test:local` | Testes Playwright nos 5 perfis, com os navegadores em `IA/.cache/ms-playwright`. |
 | `npm test` | Os mesmos testes, usando os navegadores do local padrão (é o que roda no CI). |
 | `npm run imagens` | Gera de novo as capas (`src/assets/capas`) a partir de `src/assets/originais`. |
-| `npm run og` | Gera de novo a imagem social `public/og.png` (1200×630). |
+| `npm run og` | Gera de novo as imagens sociais `public/og.png` e `public/og-en.png` (1200×630). |
 
 Na primeira vez em outra máquina, instale os navegadores de teste dentro da pasta IA:
 `PLAYWRIGHT_BROWSERS_PATH=../../../.cache/ms-playwright npx playwright install chromium firefox webkit`.
@@ -44,7 +44,7 @@ tests/                   Playwright: navegação, player, resiliência, acessibi
 
 ## Tarefas comuns
 
-**Adicionar um projeto.** Salve a thumbnail em `src/assets/originais/<ID>-maxresdefault.jpg` (1280×720) e acrescente um item em `src/content/projetos.json` com `slug`, `titulo`, `categoria`, `formato` (`vertical` ou `horizontal`), `video` (ID de 11 caracteres do YouTube), `descricao`, `ordem` e `capa`. Depois rode `npm run imagens` e `npm run build`. O build falha se faltar campo ou se o ID for inválido, e a página `/projetos/<slug>/` é criada sozinha. Registre só informação verificável: cliente, resultado ou depoimento entram apenas com confirmação.
+**Adicionar um projeto.** Salve a thumbnail em `src/assets/originais/<ID>-maxresdefault.jpg` (1280×720) e acrescente um item em `src/content/projetos.json` com `slug`, `titulo`, `categoria`, `formato` (`vertical` ou `horizontal`), `video` (ID de 11 caracteres do YouTube), `descricao`, `ordem`, `capa` e o objeto `en` (title, category, context, role, focus, note, group). Depois rode `npm run imagens` e `npm run build`. O build falha se faltar campo ou se o ID for inválido, e a página `/projetos/<slug>/` é criada sozinha. Registre só informação verificável: cliente, resultado ou depoimento entram apenas com confirmação.
 
 **Mudar preço, serviço, contato ou texto do processo.** Edite só `src/config/site.ts`. O FAQ e os cards leem dali.
 
@@ -54,7 +54,7 @@ tests/                   Playwright: navegação, player, resiliência, acessibi
 
 - **CSP por `<meta>`**, gerada pelo Astro com hashes SHA-256 dos scripts e estilos inline. Sem `unsafe-inline` e sem `unsafe-eval`. Só `youtube-nocookie.com` pode ser incorporado. Origens permitidas: `default-src 'self'`, `object-src 'none'`, `base-uri 'self'`, `form-action 'none'`.
 - **Player**: o iframe só é criado depois do clique e é destruído ao fechar. Usa permissões mínimas (`autoplay; encrypted-media; picture-in-picture; fullscreen`) e `sandbox` sem `allow-top-navigation` e sem `allow-forms`. Os IDs de vídeo são validados no build e no script.
-- **Links externos** só para `wa.me`, `instagram.com` e `youtube.com`, sempre com `rel="noopener noreferrer"`.
+- **Links externos** de contato e vídeos para `wa.me`, `instagram.com`, `linkedin.com` e `youtube.com`, sempre com `rel="noopener noreferrer"`.
 - **Verificador de artefato** (`scripts/verificar-artefato.mjs`): reprova o build se o `dist/` tiver arquivo fora da lista de publicação, link interno quebrado, página sem CSP, `unsafe-*`, handler inline, `javascript:`, iframe estático, destino externo não previsto, caminho local de usuário ou padrão de segredo.
 - **CI**: permissões mínimas por job, `npm audit --audit-level=high` bloqueante, nenhum segredo, sem `pull_request_target`. Pull requests nunca publicam.
 
@@ -70,3 +70,11 @@ A política de referência é aplicada por `<meta name="referrer">`, que funcion
 ## Afirmações comerciais
 
 “+200 projetos”, “8 anos”, “resposta em até 24h” e o selo “Mais solicitado” foram **mantidos como estavam** no site anterior. Estão em `src/config/site.ts` e dependem de confirmação do responsável. A mensagem automática “2 vagas abertas em <mês>” foi substituída por “Agenda sob consulta”.
+
+## Versão internacional
+
+`/en/` é a entrada para recrutadores; `/en/work/<slug>/` apresenta cada trabalho e `/en/privacy/` explica os serviços externos. A versão portuguesa permanece na raiz. O layout gera canonical e hreflang recíprocos, e o seletor mantém o projeto ao trocar de idioma. O player e os contatos também são localizados.
+
+Os textos em `projetos.json → en` usam títulos públicos do YouTube, as imagens das peças e as funções já registradas no portfólio. Peças publicadas como teste aparecem como estudos; não implicam encomenda comercial. O currículo resumido em `pages/en/index.astro` reflete o perfil LinkedIn verificado em 18/10/2026. Atualize-o quando a experiência mudar.
+
+O inglês é apresentado como conversacional. A entrada inglesa não usa os números comerciais ainda sem confirmação da versão portuguesa.

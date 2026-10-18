@@ -38,5 +38,8 @@ const pagina = await navegador.newPage({ viewport: { width: 1200, height: 630 },
 await pagina.setContent(html, { waitUntil: 'load' });
 await pagina.evaluate(() => document.fonts.ready);
 await pagina.screenshot({ path: `${raiz}public/og.png`, type: 'png' });
+await pagina.setContent(html.replace('Motion Design &amp; Edição de Vídeo · Belém, PA', 'Video Editor &amp; Motion Designer · Brazil'), { waitUntil: 'load' });
+await pagina.evaluate(() => document.fonts.ready);
+await pagina.screenshot({ path: `${raiz}public/og-en.png`, type: 'png' });
 await navegador.close();
 console.log('og: public/og.png (1200×630)');

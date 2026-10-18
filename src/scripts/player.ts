@@ -22,14 +22,15 @@ export function iniciarPlayer(): void {
     if (!ID_VIDEO.test(id) || dialogo.open) return false;
     origem = gatilho;
 
-    const nome = gatilho.dataset.titulo || 'Vídeo';
+    const prefixo = document.documentElement.lang === 'en' ? 'Video' : 'Vídeo';
+    const nome = gatilho.dataset.titulo || prefixo;
     titulo.textContent = nome;
     dialogo.dataset.formato = gatilho.dataset.formato === 'vertical' ? 'vertical' : 'horizontal';
     alternativa.href = `https://www.youtube.com/watch?v=${id}`;
 
     const iframe = document.createElement('iframe');
     iframe.src = `${EMBED}${id}?autoplay=1&rel=0&playsinline=1`;
-    iframe.title = `Vídeo: ${nome}`;
+    iframe.title = `${prefixo}: ${nome}`;
     iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
     iframe.allowFullscreen = true;
     iframe.referrerPolicy = 'strict-origin-when-cross-origin';

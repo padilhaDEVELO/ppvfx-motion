@@ -16,6 +16,11 @@ const projetos = defineCollection({
       video: z.string().regex(/^[A-Za-z0-9_-]{11}$/),
       descricao: z.string().min(10),
       capa: image(),
+      en: z.object({
+        title: z.string().min(3), category: z.string().min(3),
+        context: z.string().min(20), role: z.string().min(3), focus: z.string().min(20),
+        note: z.string(), group: z.enum(['work', 'estudo']),
+      }),
       ordem: z.number().int().positive(),
     }),
 });

@@ -1,21 +1,23 @@
 ---
 import Icone from './Icone.astro';
+interface Props { idioma?: 'pt' | 'en'; }
+const en = Astro.props.idioma === 'en';
 ---
 <!-- Um único diálogo para todos os vídeos. showModal() torna o resto da página inerte
      (contém o foco), Escape fecha e o foco volta ao card que abriu. -->
 <dialog id="player" class="player" aria-labelledby="player-titulo">
   <div class="caixa">
     <div class="topo">
-      <h2 id="player-titulo" class="titulo">Vídeo</h2>
-      <button type="button" class="fechar" data-fechar aria-label="Fechar vídeo" autofocus>
+      <h2 id="player-titulo" class="titulo">{en ? "Video" : "Vídeo"}</h2>
+      <button type="button" class="fechar" data-fechar aria-label={en ? "Close video" : "Fechar vídeo"} autofocus>
         <Icone nome="fechar" />
       </button>
     </div>
     <div class="quadro" data-quadro></div>
     <p class="alternativa">
-      Não carregou?
+      {en ? "Video not loading?" : "Não carregou?"}
       <a data-alternativa href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-        Assistir no YouTube <Icone nome="externo" />
+        {en ? "Watch on YouTube" : "Assistir no YouTube"} <Icone nome="externo" />
       </a>
     </p>
   </div>

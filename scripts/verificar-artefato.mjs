@@ -11,8 +11,8 @@ const projetos = JSON.parse(await readFile(new URL('../src/content/projetos.json
 const slugs = new Set(projetos.map((p) => p.slug));
 
 // Lista de publicação: páginas exatas + recursos gerados pelo Astro em _astro/.
-const PAGINAS = new Set(['index.html', '404.html', 'privacidade/index.html', ...[...slugs].map((s) => `projetos/${s}/index.html`)]);
-const AVULSOS = new Set(['robots.txt', 'sitemap.xml', 'favicon.svg', 'og.png']);
+const PAGINAS = new Set(['index.html', '404.html', 'privacidade/index.html', 'en/index.html', 'en/privacy/index.html', ...[...slugs].map((s) => `en/work/${s}/index.html`), ...[...slugs].map((s) => `projetos/${s}/index.html`)]);
+const AVULSOS = new Set(['robots.txt', 'sitemap.xml', 'favicon.svg', 'og.png', 'og-en.png']);
 const RECURSO = /^_astro\/[A-Za-z0-9_.-]+\.(?:css|js|avif|webp|jpg|jpeg|png|svg|woff2|woff)$/;
 const LIMITE_TOTAL = 8 * 1024 * 1024; // 8 MB
 
@@ -51,7 +51,7 @@ const resolver = (ref, deArquivo) => {
   return { caminho };
 };
 
-const HOSTS_EXTERNOS = new Set(['wa.me', 'www.instagram.com', 'www.youtube.com', 'padilhadevelo.github.io', 'docs.github.com', 'policies.google.com', 'www.whatsapp.com']);
+const HOSTS_EXTERNOS = new Set(['www.linkedin.com', 'wa.me', 'www.instagram.com', 'www.youtube.com', 'padilhadevelo.github.io', 'docs.github.com', 'policies.google.com', 'www.whatsapp.com']);
 
 for (const pagina of arquivos.filter((a) => a.endsWith('.html'))) {
   const html = await readFile(join(RAIZ, pagina), 'utf8');

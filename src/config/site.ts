@@ -7,6 +7,7 @@ export const contato = {
   marca: 'ppvfx',
   cidade: 'Belém · PA',
   whatsapp: '5591991755068',
+  linkedin: 'https://www.linkedin.com/in/paulopadilhai/',
   instagram: 'https://www.instagram.com/paulopadiilha',
 } as const;
 

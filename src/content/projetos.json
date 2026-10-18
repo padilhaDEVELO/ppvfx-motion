@@ -7,7 +7,16 @@
     "video": "K7sz44MX7Ks",
     "descricao": "Vinheta animada em formato vertical para redes sociais.",
     "ordem": 1,
-    "capa": "../assets/capas/K7sz44MX7Ks.jpg"
+    "capa": "../assets/capas/K7sz44MX7Ks.jpg",
+    "en": {
+      "title": "Summer identity study",
+      "category": "Motion design · Identity study",
+      "context": "A vertical motion study featuring the Verão na Torre identity, with a sun emblem, dimensional lettering and a blue-and-yellow palette.",
+      "role": "Motion design",
+      "focus": "Logo presentation and the relationship between typography, color and the vertical frame.",
+      "note": "Published as a test piece.",
+      "group": "estudo"
+    }
   },
   {
     "slug": "animacao-para-feed",
@@ -17,7 +26,16 @@
     "video": "Ie3ZOMup0TI",
     "descricao": "Animação em formato vertical para Instagram e Reels.",
     "ordem": 2,
-    "capa": "../assets/capas/Ie3ZOMup0TI.jpg"
+    "capa": "../assets/capas/Ie3ZOMup0TI.jpg",
+    "en": {
+      "title": "QGBet — broadcast intro",
+      "category": "Motion design · Vertical intro",
+      "context": "A vertical intro featuring the Plantão QGBet identity. Green graphic elements and a dotted globe establish the visual theme.",
+      "role": "Motion design",
+      "focus": "The hierarchy between the program title, background graphics and live-broadcast label.",
+      "note": "",
+      "group": "work"
+    }
   },
   {
     "slug": "apresentacao-de-marca",
@@ -27,7 +45,16 @@
     "video": "BbxBwroAa7M",
     "descricao": "Peça institucional em motion design, em formato vertical.",
     "ordem": 3,
-    "capa": "../assets/capas/BbxBwroAa7M.jpg"
+    "capa": "../assets/capas/BbxBwroAa7M.jpg",
+    "en": {
+      "title": "Diário Pet — brand sequence",
+      "category": "Motion design · Branded content",
+      "context": "A vertical piece that brings pet imagery together with colorful graphic shapes and the Diário Pet identity.",
+      "role": "Motion design",
+      "focus": "How the graphic treatment and animal imagery share the frame while keeping the brand visible.",
+      "note": "",
+      "group": "work"
+    }
   },
   {
     "slug": "motion-grafico",
@@ -37,7 +64,16 @@
     "video": "hXxPlKrLdFQ",
     "descricao": "Animação gráfica em formato vertical para social media.",
     "ordem": 4,
-    "capa": "../assets/capas/hXxPlKrLdFQ.jpg"
+    "capa": "../assets/capas/hXxPlKrLdFQ.jpg",
+    "en": {
+      "title": "DOL — closing identity",
+      "category": "Motion design · Logo animation",
+      "context": "A vertical closing sequence featuring the DOL logo and its tagline, with a dimensional logo treatment on a light background.",
+      "role": "Motion design",
+      "focus": "Logo readability, visual depth and the balance between the mark and its tagline.",
+      "note": "",
+      "group": "work"
+    }
   },
   {
     "slug": "producao-completa",
@@ -47,7 +83,16 @@
     "video": "cM_V5sN7SLY",
     "descricao": "Edição de vídeo combinada com motion design, em formato vertical.",
     "ordem": 5,
-    "capa": "../assets/capas/cM_V5sN7SLY.jpg"
+    "capa": "../assets/capas/cM_V5sN7SLY.jpg",
+    "en": {
+      "title": "Círio 2023 — video & motion",
+      "category": "Video editing + motion graphics",
+      "context": "A vertical piece about Círio 2023, a religious celebration in Belém, Brazil. Live-action images are combined with textured graphic framing.",
+      "role": "Video editing and motion graphics",
+      "focus": "The relationship between the footage, layered textures and visual framing.",
+      "note": "",
+      "group": "work"
+    }
   },
   {
     "slug": "lancamento-animado",
@@ -57,7 +102,16 @@
     "video": "ef-kyVnx328",
     "descricao": "Animação horizontal para campanha digital.",
     "ordem": 6,
-    "capa": "../assets/capas/ef-kyVnx328.jpg"
+    "capa": "../assets/capas/ef-kyVnx328.jpg",
+    "en": {
+      "title": "Darwin — title sequence study",
+      "category": "Motion design · Educational study",
+      "context": "A widescreen animation study featuring Charles Darwin, archival portraits, graphic grids and layered typography.",
+      "role": "Motion design",
+      "focus": "The organization of historical imagery and text into a clear visual hierarchy.",
+      "note": "Published as “TESTE CANAL NOSTALGIA 2”. Presented here as an animation study, not as a commissioned Canal Nostalgia credit.",
+      "group": "estudo"
+    }
   },
   {
     "slug": "vinheta-de-canal",
@@ -67,6 +121,15 @@
     "video": "Hk94bWJ7Vvw",
     "descricao": "Intro animada em widescreen para canal do YouTube.",
     "ordem": 7,
-    "capa": "../assets/capas/Hk94bWJ7Vvw.jpg"
+    "capa": "../assets/capas/Hk94bWJ7Vvw.jpg",
+    "en": {
+      "title": "Darwin — visual storytelling study",
+      "category": "Motion design · Educational study",
+      "context": "A widescreen animation study using portraits, names and dates on a textured background to present historical information.",
+      "role": "Motion design",
+      "focus": "How portraits and concise labels help viewers follow the people and dates in the story.",
+      "note": "Published as “TESTE CANAL NOSTALGIA”. Presented here as an animation study, not as a commissioned Canal Nostalgia credit.",
+      "group": "estudo"
+    }
   }
 ]

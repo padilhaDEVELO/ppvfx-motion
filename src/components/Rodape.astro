@@ -1,14 +1,17 @@
 ---
 import { contato } from '../config/site';
 import { url } from '../lib/url';
+interface Props { idioma?: 'pt' | 'en'; }
+const en = Astro.props.idioma === 'en';
 const ano = new Date().getFullYear();
 ---
 <footer class="rodape">
   <div class="container linha">
-    <p class="copy">© {ano} {contato.marca} — Motion Design &amp; Edição de Vídeo · {contato.cidade}</p>
+    <p class="copy">© {ano} {contato.marca} — {en ? 'Video Editing & Motion Design · Belém, Brazil' : `Motion Design & Edição de Vídeo · ${contato.cidade}`}</p>
     <ul role="list" class="links">
       <li><a href={contato.instagram} target="_blank" rel="noopener noreferrer">Instagram</a></li>
-      <li><a href={url('privacidade/')}>Privacidade</a></li>
+      {en && <li><a href={contato.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>}
+      <li><a href={url(en ? 'en/privacy/' : 'privacidade/')}>{en ? 'Privacy' : 'Privacidade'}</a></li>
     </ul>
   </div>
 </footer>

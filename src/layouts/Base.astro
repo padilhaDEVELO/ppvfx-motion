@@ -20,13 +20,18 @@ interface Props {
   /** Caminho canônico relativo à base, ex.: "projetos/x/". Omitido no 404. */
   caminho?: string;
   indexar?: boolean;
+  idioma?: 'pt' | 'en';
 }
-const { titulo, descricao, caminho, indexar = true } = Astro.props;
+const { titulo, descricao, caminho, indexar = true, idioma = 'pt' } = Astro.props;
+const en = idioma === 'en';
+const ptPath = en ? (caminho === 'en/' ? '/' : caminho?.replace(/^en\/work\//, 'projetos/').replace(/^en\/privacy\//, 'privacidade/')) : caminho;
+const enPath = ptPath === '/' ? 'en/' : ptPath?.replace(/^projetos\//, 'en/work/').replace(/^privacidade\//, 'en/privacy/');
+const alternativo = (en ? ptPath : enPath) ?? (en ? '/' : 'en/');
 const canonico = caminho !== undefined ? new URL(url(caminho), Astro.site).href : undefined;
-const imagemSocial = new URL(url('og.png'), Astro.site).href;
+const imagemSocial = new URL(url(en ? 'og-en.png' : 'og.png'), Astro.site).href;
 ---
 <!doctype html>
-<html lang="pt-BR">
+<html lang={en ? "en" : "pt-BR"}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -37,13 +42,18 @@ const imagemSocial = new URL(url('og.png'), Astro.site).href;
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     {!indexar && <meta name="robots" content="noindex" />}
     {canonico && <link rel="canonical" href={canonico} />}
+    {canonico && <>
+      <link rel="alternate" hreflang="pt-BR" href={new URL(url(ptPath!), Astro.site).href} />
+      <link rel="alternate" hreflang="en" href={new URL(url(enPath!), Astro.site).href} />
+      <link rel="alternate" hreflang="x-default" href={new URL(url(ptPath!), Astro.site).href} />
+    </>}
     <link rel="preload" href={syne800} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={grotesk400} as="font" type="font/woff2" crossorigin />
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
     <link rel="sitemap" href={url('sitemap.xml')} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale" content={en ? "en_US" : "pt_BR"} />
     <meta property="og:site_name" content="ppvfx — Paulo Padilha" />
     <meta property="og:title" content={titulo} />
     <meta property="og:description" content={descricao} />
@@ -51,19 +61,19 @@ const imagemSocial = new URL(url('og.png'), Astro.site).href;
     <meta property="og:image" content={imagemSocial} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Paulo Padilha — Motion Design e Edição de Vídeo" />
+    <meta property="og:image:alt" content={en ? "Paulo Padilha — Video Editor & Motion Designer" : "Paulo Padilha — Motion Design e Edição de Vídeo"} />
     <meta name="twitter:card" content="summary_large_image" />
     <slot name="head" />
   </head>
   <body>
-    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <a class="pular" href="#conteudo">{en ? "Skip to content" : "Pular para o conteúdo"}</a>
     <div class="fundo" aria-hidden="true"><span class="aurora a1"></span><span class="aurora a2"></span><span class="aurora a3"></span></div>
-    <Cabecalho />
+    <Cabecalho idioma={idioma} alternativo={alternativo} />
     <main id="conteudo" tabindex="-1">
       <slot />
     </main>
-    <Rodape />
-    <PlayerDialogo />
+    <Rodape idioma={idioma} />
+    <PlayerDialogo idioma={idioma} />
     <script>
       import '../scripts/revelar';
     </script>

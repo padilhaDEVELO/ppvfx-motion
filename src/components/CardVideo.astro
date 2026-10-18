@@ -2,7 +2,7 @@
 import { Picture } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import Icone from './Icone.astro';
-import { urlProjeto, urlYouTube } from '../lib/url';
+import { url, urlProjeto, urlYouTube } from '../lib/url';
 
 interface Props {
   projeto: CollectionEntry<'projetos'>;
@@ -11,9 +11,12 @@ interface Props {
   /** Na página do projeto o card não repete o link "ver projeto". */
   semLinkProjeto?: boolean;
   tamanhos?: string;
+  idioma?: 'pt' | 'en';
 }
-const { projeto, prioridade = false, semLinkProjeto = false, tamanhos } = Astro.props;
-const p = projeto.data;
+const { projeto, prioridade = false, semLinkProjeto = false, tamanhos, idioma = 'pt' } = Astro.props;
+const original = projeto.data;
+const en = idioma === 'en';
+const p = en ? { ...original, titulo: original.en.title, categoria: original.en.category } : original;
 const vertical = p.formato === 'vertical';
 const larguras = vertical ? [270, 405] : [480, 800, 1280];
 const sizes = tamanhos ?? (vertical ? '(max-width: 640px) 68vw, 300px' : '(max-width: 640px) 92vw, 580px');
@@ -43,7 +46,7 @@ const sizes = tamanhos ?? (vertical ? '(max-width: 640px) 68vw, 300px' : '(max-w
       <span class="sombra" aria-hidden="true"></span>
       <span class="play" aria-hidden="true"><Icone nome="play" /></span>
       <span class="meta">
-        <span class="sr-only">Reproduzir vídeo: </span>
+        <span class="sr-only">{en ? "Play video: " : "Reproduzir vídeo: "}</span>
         <strong>{p.titulo}</strong>
         <span class="cat">{p.categoria}</span>
       </span>
@@ -51,7 +54,7 @@ const sizes = tamanhos ?? (vertical ? '(max-width: 640px) 68vw, 300px' : '(max-w
     {!vertical && <span class="base" aria-hidden="true" />}
   </div>
   {!semLinkProjeto && (
-    <a class="ver" href={urlProjeto(p.slug)}>Ver projeto<span class="sr-only">: {p.titulo}</span> <Icone nome="seta-dir" /></a>
+    <a class="ver" href={en ? url(`en/work/${p.slug}/`) : urlProjeto(p.slug)}>{en ? "Project details" : "Ver projeto"}<span class="sr-only">: {p.titulo}</span> <Icone nome="seta-dir" /></a>
   )}
 </article>
 

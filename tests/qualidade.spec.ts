@@ -72,7 +72,7 @@ test('SEO: títulos, descrição, canonical, imagem social, sitemap e robots', a
   const robots = await (await request.get('robots.txt')).text();
   expect(robots).toContain('Sitemap: https://padilhadevelo.github.io/ppvfx-motion/sitemap.xml');
   const sitemap = await (await request.get('sitemap.xml')).text();
-  expect(sitemap.match(/<loc>/g)?.length).toBe(PROJETOS.length + 2);
+  expect(sitemap.match(/<loc>/g)?.length).toBe((PROJETOS.length + 2) * 2);
   expect(sitemap).not.toContain('404');
 
   await page.goto('nao-existe/');
