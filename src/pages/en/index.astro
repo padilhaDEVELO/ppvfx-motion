@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import CardVideo from '../../components/CardVideo.astro';
+import VitrineIA from '../../components/VitrineIA.astro';
 import { contato, linkWhatsApp } from '../../config/site';
 import { url } from '../../lib/url';
 const all = (await getCollection('projetos')).sort((a, b) => a.data.ordem - b.data.ordem);
@@ -47,6 +48,11 @@ const experience = [
         <div class="project-copy"><h3>{p.data.en.title}</h3><p>{p.data.en.context}</p><p class="role"><span>My contribution</span>{p.data.en.role}</p></div>
       </div>)}
     </div>
+  </section>
+
+  <section id="ai" class="container section">
+    <div class="section-heading"><div><p class="eyebrow">New · 3D parallax with AI</p><h2>AI-made{' '}<br /><span class="grad-text">videos.</span></h2></div><p>A still photo becomes a moving scene: AI separates the layers and builds depth; camera, light and typography are motion design.</p></div>
+    <VitrineIA idioma="en" />
   </section>
 
   <section id="studies" class="section studies">

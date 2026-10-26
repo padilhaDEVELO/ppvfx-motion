@@ -37,6 +37,10 @@ export interface Servico {
   entregaveis: string[];
   rodadas: number;
   destaque?: string;
+  /** Selo de lançamento, sem o realce de "mais solicitado". */
+  novo?: boolean;
+  /** Frase de destaque em caixa própria no card de preço. */
+  chamada?: { titulo: string; texto: string };
   cta: string;
   mensagem: string;
 }
@@ -63,6 +67,18 @@ export const servicos: Servico[] = [
     mensagem: 'Oi Paulo, quero animação para redes',
   },
   {
+    id: 'videos-ia',
+    nome: 'Vídeos com IA',
+    preco: 550,
+    resumo: 'Sua arte estática vira vídeo: paralaxe 3D feito com IA, movimento de câmera e acabamento em motion.',
+    entregaveis: ['Paralaxe 3D com IA a partir da sua arte', 'Formato vertical ou horizontal'],
+    rodadas: 1,
+    novo: true,
+    chamada: { titulo: 'Só preciso de um SVG do seu projeto', texto: 'Exportado do Figma, Canva ou Illustrator.' },
+    cta: 'Quero um vídeo com IA',
+    mensagem: 'Oi Paulo, quero um vídeo com IA a partir da arte do meu projeto',
+  },
+  {
     id: 'motion-campanha',
     nome: 'Motion de Campanha',
     preco: 900,
@@ -85,6 +101,7 @@ export const processo = [
 
 export const navegacao = [
   { href: '#work', rotulo: 'Trabalhos' },
+  { href: '#ia', rotulo: 'Vídeos IA' },
   { href: '#servicos', rotulo: 'Serviços' },
   { href: '#processo', rotulo: 'Processo' },
   { href: '#about', rotulo: 'Sobre' },

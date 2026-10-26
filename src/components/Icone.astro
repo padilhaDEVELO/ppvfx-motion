@@ -1,6 +1,6 @@
 ---
 // Ícones SVG inline, sempre decorativos (o texto ou aria-label do controle dá o nome).
-interface Props { nome: 'whatsapp' | 'instagram' | 'play' | 'fechar' | 'menu' | 'seta-esq' | 'seta-dir' | 'externo'; }
+interface Props { nome: 'whatsapp' | 'instagram' | 'play' | 'fechar' | 'menu' | 'seta-esq' | 'seta-dir' | 'externo' | 'pausa'; }
 const { nome } = Astro.props;
 ---
 {nome === 'whatsapp' && (
@@ -26,4 +26,7 @@ const { nome } = Astro.props;
 )}
 {nome === 'externo' && (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="1em" height="1em"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+)}
+{nome === 'pausa' && (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" width="1em" height="1em"><rect x="6.5" y="5" width="4" height="14" rx="1"/><rect x="13.5" y="5" width="4" height="14" rx="1"/></svg>
 )}

@@ -24,7 +24,8 @@ export default defineConfig({
         "default-src 'self'",
         "img-src 'self' data:",
         "font-src 'self'",
-        "media-src 'none'",
+        // Vídeos da seção de IA ficam no próprio site (public/videos).
+        "media-src 'self'",
         "connect-src 'self'",
         'frame-src https://www.youtube-nocookie.com',
         "object-src 'none'",

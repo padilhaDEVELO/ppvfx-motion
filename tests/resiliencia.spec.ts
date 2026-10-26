@@ -11,7 +11,7 @@ test.describe('sem JavaScript', () => {
       els.filter((e) => getComputedStyle(e).opacity === '0' && !e.closest('[aria-hidden="true"]')).length,
     );
     expect(invisiveis).toBe(0);
-    for (const preco of ['R$ 350', 'R$ 450', 'R$ 900']) await expect(page.getByText(preco).first()).toBeVisible();
+    for (const preco of ['R$ 350', 'R$ 450', 'R$ 550', 'R$ 900']) await expect(page.getByText(preco).first()).toBeVisible();
     await expect(page.locator('#contact').getByRole('link', { name: /Falar sobre meu projeto/ })).toBeVisible();
     const links = page.locator('[data-video]');
     await expect(links).toHaveCount(PROJETOS.length);

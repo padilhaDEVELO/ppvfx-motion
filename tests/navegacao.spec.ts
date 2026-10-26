@@ -4,7 +4,7 @@ import { LARGURAS, PROJETOS, rolarTudo, vigiarErros } from './apoio';
 test('seções na ordem do plano e âncoras antigas preservadas', async ({ page }) => {
   await page.goto('./');
   const ids = await page.locator('main > section').evaluateAll((s) => s.map((x) => x.id));
-  expect(ids).toEqual(['home', 'work', 'youtube', 'servicos', 'processo', 'about', 'precos', 'faq', 'contact']);
+  expect(ids).toEqual(['home', 'work', 'youtube', 'ia', 'servicos', 'processo', 'about', 'precos', 'faq', 'contact']);
   for (const ancora of ['marcas', 'manifesto']) await expect(page.locator(`#${ancora}`)).toHaveCount(1);
 });
 

@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import CardVideo from '../components/CardVideo.astro';
 import Trilho from '../components/Trilho.astro';
+import VitrineIA from '../components/VitrineIA.astro';
 import Icone from '../components/Icone.astro';
 import { contato, numeros, servicos, processo, linkWhatsApp, mensagens, formatoPreco } from '../config/site';
 import { url } from '../lib/url';
@@ -43,6 +44,7 @@ const ferramentas = [
 ];
 const linhasNome = ['Paulo', 'Padilha'];
 const motionRedes = servicos.find((s) => s.id === 'motion-redes')!;
+const servicoIA = servicos.find((s) => s.id === 'videos-ia')!;
 const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
 ---
 <Base
@@ -103,15 +105,30 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
     </div>
   </section>
 
+  <!-- VÍDEOS FEITOS COM IA -->
+  <section id="ia" class="secao ia" aria-labelledby="ia-titulo">
+    <div class="container">
+      <p class="tag rv">Novo · Paralaxe 3D com IA</p>
+      <h2 class="titulo rv" id="ia-titulo">Vídeos feitos<br />com <span class="grad-text">IA.</span></h2>
+      <p class="sub rv">Uma foto vira cena em movimento: a IA separa as camadas e cria a profundidade; câmera, luz e tipografia são motion design.</p>
+      <VitrineIA />
+      <p class="cta-centro rv">
+        <span class="cta-ia">A partir de <strong>{formatoPreco(servicoIA.preco)}</strong> · {servicoIA.chamada!.titulo}.</span>
+        <a class="btn btn-claro" href={linkWhatsApp(servicoIA.mensagem)} target="_blank" rel="noopener noreferrer">{servicoIA.cta}</a>
+      </p>
+    </div>
+  </section>
+
   <!-- SERVIÇOS -->
   <section id="servicos" class="secao com-linha" aria-labelledby="servicos-titulo">
     <div class="container">
       <p class="tag rv">Serviços</p>
       <h2 class="titulo rv" id="servicos-titulo">O que<br />eu faço.</h2>
-      <p class="sub rv">Três formatos de trabalho, com escopo e limite de revisões definidos antes de começar.</p>
+      <p class="sub rv">Quatro formatos de trabalho, com escopo e limite de revisões definidos antes de começar.</p>
       <ul class="servicos" role="list">
         {servicos.map((s) => (
-          <li class="servico rv">
+          <li class:list={['servico', 'rv', { 'servico-ia': s.novo }]}>
+            {s.novo && <p class="selo selo-novo">Novo</p>}
             <h3>{s.nome}</h3>
             <p class="servico-resumo">{s.resumo}</p>
             <p class="rotulo">Inclui</p>
@@ -189,10 +206,12 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
       <p class="sub rv">Valores de referência. Projetos fora do escopo têm orçamento personalizado.</p>
       <ul class="precos" role="list">
         {servicos.map((s) => (
-          <li class:list={['preco', 'rv', { destaque: s.destaque }]}>
+          <li class:list={['preco', 'rv', { destaque: s.destaque, 'preco-ia': s.novo }]}>
             {s.destaque && <p class="selo">{s.destaque}</p>}
+            {s.novo && <p class="selo selo-novo">Novo</p>}
             <h3 class="preco-nome">{s.nome}</h3>
             <p class="preco-valor"><small>a partir de</small> {formatoPreco(s.preco)}</p>
+            {s.chamada && <p class="chamada"><strong>{s.chamada.titulo}</strong> {s.chamada.texto}</p>}
             <ul role="list" class="lista-traco">
               {s.entregaveis.slice(0, 2).map((e) => <li>{e}</li>)}
               <li>{rodadas(s.rodadas)}</li>
@@ -304,9 +323,22 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   .trabalhos-h { padding-top: var(--s-7); }
   .grade-h { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   .cta-centro { text-align: center; margin-top: var(--s-7); }
+  .ia { padding-top: var(--s-8); }
 
   /* ── Serviços ── */
-  .servicos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .servicos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+  .servico-ia { border-color: rgba(255, 140, 50, 0.45); }
+  .selo.selo-novo { background: none; color: var(--from); border: 1px solid var(--from); padding: 4px 11px; }
+  .servico .selo-novo { align-self: flex-start; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 11px; border-radius: var(--r-pill); margin-bottom: var(--s-4); }
+  .preco-ia { border-color: rgba(255, 140, 50, 0.45); }
+  .chamada {
+    margin: calc(var(--s-2) * -1) 0 var(--s-5); padding: var(--s-3) var(--s-4);
+    border-radius: var(--r-sm); font-size: var(--fs-sm); color: var(--muted);
+    background: rgba(255, 170, 64, 0.08); border: 1px dashed rgba(255, 170, 64, 0.55);
+  }
+  .chamada strong { display: block; color: var(--from); font-size: 0.98rem; line-height: 1.3; margin-bottom: 2px; }
+  .cta-ia { display: block; color: var(--muted); margin-bottom: var(--s-4); }
+  .cta-ia strong { color: var(--text); }
   .servico { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: var(--s-6); display: flex; flex-direction: column; }
   .servico h3 { font-size: var(--fs-xl); font-weight: 700; margin-bottom: var(--s-2); }
   .servico-resumo { color: var(--muted); font-size: 0.95rem; margin-bottom: var(--s-5); }
@@ -358,7 +390,7 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   }
 
   /* ── Preços ── */
-  .precos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
+  .precos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
   .preco {
     background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg);
     padding: var(--s-6) var(--s-6); display: flex; flex-direction: column;
@@ -372,10 +404,10 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   }
   .selo { align-self: flex-start; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: var(--grad); color: var(--bg); padding: 5px 12px; border-radius: var(--r-pill); margin-bottom: var(--s-4); }
   .preco-nome { font-size: var(--fs-xl); font-weight: 700; margin-bottom: var(--s-2); }
-  .preco-valor { font-family: var(--font-display); font-weight: 800; font-size: 2.6rem; line-height: 1; margin-bottom: var(--s-5); white-space: nowrap; }
+  .preco-valor { font-family: var(--font-display); font-weight: 800; font-size: clamp(2rem, 2.3vw, 2.6rem); line-height: 1; margin-bottom: var(--s-5); white-space: nowrap; }
   .preco-valor small { display: block; font-family: var(--font-body); font-size: var(--fs-sm); font-weight: 500; color: var(--muted); margin-bottom: var(--s-2); }
   .preco .lista-traco { flex: 1; margin-bottom: var(--s-6); }
-  .largo { width: 100%; text-transform: none; letter-spacing: 0; font-size: 0.92rem; }
+  .largo { width: 100%; text-transform: none; letter-spacing: 0; font-size: 0.92rem; padding-inline: var(--s-4); }
   .obs { margin-top: var(--s-7); color: var(--muted); font-size: 0.92rem; text-align: center; }
   .obs a { color: var(--text); font-weight: 600; display: inline-block; padding: var(--s-3) var(--s-1); }
 
@@ -399,6 +431,9 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   @media (max-width: 1000px) {
     .etapas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .servicos, .precos { grid-template-columns: 1fr; max-width: 560px; }
+  }
+  @media (min-width: 1001px) and (max-width: 1180px) {
+    .servicos, .precos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   @media (max-width: 640px) {
     .grade-h { grid-template-columns: 1fr; }

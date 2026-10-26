@@ -5,7 +5,7 @@ import { url } from '../lib/url';
 interface Props { idioma?: 'pt' | 'en'; alternativo?: string; }
 const { idioma = 'pt', alternativo = 'en/' } = Astro.props;
 const en = idioma === 'en';
-const itens = en ? [{ href: '#work', rotulo: 'Work' }, { href: '#expertise', rotulo: 'Expertise' }, { href: '#about', rotulo: 'Experience' }] : navegacao;
+const itens = en ? [{ href: '#work', rotulo: 'Work' }, { href: '#ai', rotulo: 'AI videos' }, { href: '#expertise', rotulo: 'Expertise' }, { href: '#about', rotulo: 'Experience' }] : navegacao;
 const destino = (hash: string) => url(en ? `en/${hash}` : hash);
 ---
 <header class="cabecalho">

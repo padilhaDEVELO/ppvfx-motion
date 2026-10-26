@@ -1,0 +1,149 @@
+---
+// Vídeo hospedado no próprio site, dentro da moldura de celular ou notebook.
+// Sem JS: <video> com controles nativos. Com JS: toca mudo em loop só enquanto
+// está na tela, com um botão de pausar/reproduzir. Quem prefere menos movimento
+// começa com o vídeo parado.
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Icone from './Icone.astro';
+import { url } from '../lib/url';
+
+interface Props {
+  arquivo: string;
+  capa: ImageMetadata;
+  titulo: string;
+  formato: 'vertical' | 'horizontal';
+  idioma?: 'pt' | 'en';
+}
+const { arquivo, capa, titulo, formato, idioma = 'pt' } = Astro.props;
+if (!/^[a-z0-9-]+\.mp4$/.test(arquivo)) throw new Error(`Nome de vídeo inválido: ${arquivo}`);
+const vertical = formato === 'vertical';
+const poster = await getImage({ src: capa, format: 'webp', width: vertical ? 540 : 1280, quality: 72 });
+const en = idioma === 'en';
+const rotulos = {
+  tocar: `${en ? 'Play video' : 'Reproduzir vídeo'}: ${titulo}`,
+  pausar: `${en ? 'Pause video' : 'Pausar vídeo'}: ${titulo}`,
+};
+---
+<div class:list={['video-ia', vertical ? 'celular' : 'notebook']} data-video-ia>
+  <div class="aparelho">
+    {vertical ? <span class="ilha" aria-hidden="true" /> : <span class="entalhe" aria-hidden="true" />}
+    <div class:list={['tela', vertical ? 'v' : 'h']}>
+      <video
+        src={url(`videos/${arquivo}`)}
+        poster={poster.src}
+        width={vertical ? 720 : 1920}
+        height={vertical ? 1280 : 1080}
+        muted
+        loop
+        playsinline
+        preload="none"
+        controls
+        aria-label={titulo}
+      ></video>
+      <button type="button" class="alternar" data-alternar hidden data-tocar={rotulos.tocar} data-pausar={rotulos.pausar} aria-label={rotulos.tocar}>
+        <span class="ic-play" aria-hidden="true"><Icone nome="play" /></span>
+        <span class="ic-pausa" aria-hidden="true"><Icone nome="pausa" /></span>
+      </button>
+    </div>
+    {!vertical && <span class="base" aria-hidden="true" />}
+  </div>
+</div>
+
+<script>
+  const reduzido = window.matchMedia('(prefers-reduced-motion: reduce)');
+  for (const caixa of document.querySelectorAll<HTMLElement>('[data-video-ia]')) {
+    const video = caixa.querySelector('video')!;
+    const botao = caixa.querySelector<HTMLButtonElement>('[data-alternar]')!;
+    video.controls = false;
+    botao.hidden = false;
+
+    let pausadoPeloUsuario = reduzido.matches;
+    let visivel = false;
+
+    const atualizar = () => {
+      const tocando = !video.paused;
+      caixa.classList.toggle('tocando', tocando);
+      botao.setAttribute('aria-label', (tocando ? botao.dataset.pausar : botao.dataset.tocar) ?? '');
+    };
+    const sincronizar = () => {
+      if (visivel && !pausadoPeloUsuario && !document.hidden) video.play().catch(atualizar);
+      else video.pause();
+    };
+
+    botao.addEventListener('click', () => {
+      pausadoPeloUsuario = !video.paused;
+      if (pausadoPeloUsuario) video.pause();
+      else video.play().catch(atualizar);
+    });
+    video.addEventListener('play', atualizar);
+    video.addEventListener('pause', atualizar);
+    document.addEventListener('visibilitychange', sincronizar);
+    new IntersectionObserver(([e]) => { visivel = e.isIntersecting; sincronizar(); }, { threshold: 0.35 }).observe(caixa);
+  }
+</script>
+
+<style>
+  .video-ia { position: relative; min-width: 0; }
+  .aparelho {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Celular (vertical) */
+  .celular .aparelho { padding: 10px 8px 14px; border-radius: 40px; }
+  .celular .tela { border-radius: 32px; }
+  .ilha {
+    position: absolute; top: clamp(14px, 3.5%, 21px); left: 50%; transform: translateX(-50%);
+    width: clamp(40px, 27%, 78px); aspect-ratio: 78 / 23; border-radius: 16px; background: #000; z-index: 3;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+  }
+  .celular .aparelho::before, .celular .aparelho::after { content: ''; position: absolute; background: var(--border); }
+  .celular .aparelho::before { right: -1px; top: 92px; width: 3px; height: 56px; border-radius: 2px 0 0 2px; }
+  .celular .aparelho::after { left: -1px; top: 78px; width: 3px; height: 78px; border-radius: 0 2px 2px 0; }
+
+  /* Notebook (horizontal) */
+  .notebook .aparelho { padding: 10px 10px 0; border-radius: var(--r-lg) var(--r-lg) 12px 12px; }
+  .notebook .tela { border-radius: 12px 12px 0 0; }
+  .entalhe {
+    position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 16px; background: #000; border-radius: 0 0 10px 10px; z-index: 3;
+    pointer-events: none;
+  }
+  .base {
+    display: block; height: 16px; margin: 0 -10px;
+    background: linear-gradient(180deg, var(--surface), #1a1d27);
+    border-top: 1px solid var(--border); border-radius: 0 0 12px 12px;
+    position: relative;
+  }
+  .base::after {
+    content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 84px; height: 5px; background: var(--bg); border-radius: 0 0 7px 7px;
+  }
+
+  .tela { position: relative; overflow: hidden; background: #000; }
+  .tela.v { aspect-ratio: 9 / 16; }
+  .tela.h { aspect-ratio: 16 / 9; }
+  video { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+  /* Parado: botão grande no centro. Tocando: botão discreto no canto. */
+  .alternar { position: absolute; inset: 0; z-index: 2; display: block; width: 100%; background: transparent; border: 0; cursor: pointer; }
+  .alternar:focus-visible { outline-offset: -4px; }
+  .ic-play, .ic-pausa {
+    position: absolute; display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; color: var(--bg); background: rgba(236, 231, 225, 0.94);
+    transition: opacity var(--t-fast), transform var(--t-med) var(--ease-out);
+  }
+  .ic-play { top: 50%; left: 50%; width: clamp(44px, 28%, 62px); aspect-ratio: 1; transform: translate(-50%, -50%); }
+  .ic-play :global(svg) { width: 22px; height: 22px; margin-left: 3px; }
+  .ic-pausa { right: 14px; bottom: 14px; width: 40px; height: 40px; opacity: 0; background: rgba(14, 16, 22, 0.7); color: var(--text); border: 1px solid rgba(236, 231, 225, 0.25); }
+  .ic-pausa :global(svg) { width: 16px; height: 16px; }
+  .alternar:hover .ic-play { transform: translate(-50%, -50%) scale(1.08); }
+  .tocando .ic-play { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+  .tocando .ic-pausa { opacity: 0.75; }
+  .tocando .alternar:hover .ic-pausa, .tocando .alternar:focus-visible .ic-pausa { opacity: 1; }
+  @media (hover: none) { .tocando .ic-pausa { opacity: 0.9; } }
+</style>

@@ -1,0 +1,210 @@
+---
+// Seção "Vídeos feitos com IA": três vitrines com a marca de cada cliente ao fundo.
+// Clientes e pessoas citados aqui foram confirmados pelo responsável em 26/10/2026.
+import { Image } from 'astro:assets';
+import VideoIA from './VideoIA.astro';
+
+import simboloFebracis from '../assets/ia/febracis-simbolo.webp';
+import logoFebracis from '../assets/ia/febracis-logo.webp';
+import logoRoi from '../assets/ia/roi-makers-logo.webp';
+import fernandoRecorte from '../assets/ia/fernando-miranda-recorte.webp';
+import fernandoPalco from '../assets/ia/fernando-miranda-palco.jpg';
+import capaBelem from '../assets/ia/capa-febracis-cis-belem.jpg';
+import capaVitoria from '../assets/ia/capa-febracis-cis-vitoria.jpg';
+import capaRoi from '../assets/ia/capa-roi-makers-fernando-miranda.jpg';
+import capaPitch from '../assets/ia/capa-pitch-ia-aplicada-aos-negocios.jpg';
+
+interface Props { idioma?: 'pt' | 'en'; }
+const { idioma = 'pt' } = Astro.props;
+const en = idioma === 'en';
+
+const t = en
+  ? {
+      febracisSelo: 'Made for Febracis',
+      febracisTitulo: 'Método CIS', febracisSub: 'Global edition',
+      febracisTexto: 'Instagram stories promoting the Método CIS editions in Belém and Vitória, led by Paulo Vieira. Each stage photo gains depth and a setting built for its city.',
+      febracisFrase: 'Good enough for Febracis to promote Método CIS. Ready for your event, too.',
+      belem: 'Febracis · Método CIS in Belém', vitoria: 'Febracis · Método CIS in Vitória',
+      pitchSelo: 'Featured', pitchTitulo: 'IA Aplicada aos Negócios',
+      pitchTexto: 'Pitch for Grupo FRZ’s AI-for-business mentorship with Filipe Frazão: a 3D-parallax portrait, holographic panels for each AI tool and an orange palette in widescreen.',
+      pitch: 'Grupo FRZ · IA Aplicada aos Negócios mentorship pitch',
+      roiSelo: 'Made for ROI Makers', roiTitulo: 'Fernando Miranda in Belém',
+      roiTexto: 'Ticket-sales story for the ROI Makers event with Fernando Miranda of V4 Company. The stage photo becomes a scene with depth, with pricing and the call to action in the same frame.',
+      roi: 'ROI Makers · Fernando Miranda in Belém',
+      tecnica: ['9:16 stories', '3D parallax with AI', 'Motion design'],
+      tecnicaH: ['16:9', '3D parallax with AI', 'Motion design'],
+    }
+  : {
+      febracisSelo: 'Feito para a Febracis',
+      febracisTitulo: 'Método CIS', febracisSub: 'Modalidade Global',
+      febracisTexto: 'Stories de divulgação das edições do Método CIS em Belém e Vitória, com Paulo Vieira. A foto do palco ganha profundidade e um cenário feito para cada cidade.',
+      febracisFrase: 'Se serve para a Febracis divulgar o Método CIS, serve para o seu evento.',
+      belem: 'Febracis · Método CIS em Belém', vitoria: 'Febracis · Método CIS em Vitória',
+      pitchSelo: 'Destaque', pitchTitulo: 'IA Aplicada aos Negócios',
+      pitchTexto: 'Pitch da mentoria do Grupo FRZ com Filipe Frazão: retrato em paralaxe 3D, painéis holográficos das ferramentas de IA e paleta laranja em formato widescreen.',
+      pitch: 'Grupo FRZ · pitch da mentoria IA Aplicada aos Negócios',
+      roiSelo: 'Feito para a ROI Makers', roiTitulo: 'Fernando Miranda em Belém',
+      roiTexto: 'Story de venda de ingressos do evento da ROI Makers com Fernando Miranda, da V4 Company. A foto de palco vira cena com profundidade, com preço e chamada para compra no mesmo quadro.',
+      roi: 'ROI Makers · Fernando Miranda em Belém',
+      tecnica: ['Stories 9:16', 'Paralaxe 3D com IA', 'Motion design'],
+      tecnicaH: ['16:9', 'Paralaxe 3D com IA', 'Motion design'],
+    };
+---
+<div class="vitrines">
+  <!-- FEBRACIS: símbolo dourado ao fundo -->
+  <article class="vitrine febracis rv" aria-labelledby="ia-febracis">
+    <Image src={simboloFebracis} alt="" class="fundo-simbolo" widths={[480, 732]} sizes="(max-width: 800px) 90vw, 560px" loading="lazy" decoding="async" />
+    <div class="texto">
+      <Image src={logoFebracis} alt="Febracis" class="logo-cliente logo-febracis" width={180} loading="lazy" decoding="async" />
+      <p class="selo">{t.febracisSelo}</p>
+      <h3 id="ia-febracis">{t.febracisTitulo}<small>{t.febracisSub}</small></h3>
+      <p>{t.febracisTexto}</p>
+      <p class="frase">{t.febracisFrase}</p>
+      <ul class="chips" role="list">{t.tecnica.map((c) => <li>{c}</li>)}</ul>
+    </div>
+    <ul class="dupla" role="list">
+      <li><VideoIA arquivo="febracis-cis-belem.mp4" capa={capaBelem} titulo={t.belem} formato="vertical" idioma={idioma} /></li>
+      <li><VideoIA arquivo="febracis-cis-vitoria.mp4" capa={capaVitoria} titulo={t.vitoria} formato="vertical" idioma={idioma} /></li>
+    </ul>
+  </article>
+
+  <!-- DESTAQUE: pitch horizontal -->
+  <article class="vitrine pitch rv" aria-labelledby="ia-pitch">
+    <div class="texto">
+      <p class="selo selo-grad">{t.pitchSelo}</p>
+      <h3 id="ia-pitch">{t.pitchTitulo}</h3>
+      <p>{t.pitchTexto}</p>
+      <ul class="chips" role="list">{t.tecnicaH.map((c) => <li>{c}</li>)}</ul>
+    </div>
+    <VideoIA arquivo="pitch-ia-aplicada-aos-negocios.mp4" capa={capaPitch} titulo={t.pitch} formato="horizontal" idioma={idioma} />
+  </article>
+
+  <!-- ROI MAKERS: Fernando Miranda no palco -->
+  <article class="vitrine roi rv" aria-labelledby="ia-roi">
+    <Image src={fernandoPalco} alt="" class="fundo-palco" widths={[900, 1800]} sizes="(max-width: 800px) 100vw, 1200px" loading="lazy" decoding="async" />
+    <div class="texto">
+      <Image src={logoRoi} alt="ROI Makers" class="logo-cliente logo-roi" width={150} loading="lazy" decoding="async" />
+      <p class="selo">{t.roiSelo}</p>
+      <h3 id="ia-roi">{t.roiTitulo}</h3>
+      <p>{t.roiTexto}</p>
+      <ul class="chips" role="list">{t.tecnica.map((c) => <li>{c}</li>)}</ul>
+    </div>
+    <div class="palco">
+      <Image src={fernandoRecorte} alt="" class="recorte" widths={[311, 622]} sizes="(max-width: 800px) 45vw, 300px" loading="lazy" decoding="async" />
+      <div class="unico"><VideoIA arquivo="roi-makers-fernando-miranda.mp4" capa={capaRoi} titulo={t.roi} formato="vertical" idioma={idioma} /></div>
+    </div>
+  </article>
+</div>
+
+<style>
+  .vitrines { display: grid; gap: clamp(1.5rem, 4vw, 2.5rem); }
+  .vitrine {
+    position: relative; isolation: isolate; overflow: hidden;
+    display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); align-items: center;
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    padding: clamp(1.5rem, 4vw, 3.5rem);
+    border: 1px solid var(--border); border-radius: var(--r-lg);
+    background: var(--surface);
+  }
+  .texto { position: relative; z-index: 1; }
+  .texto h3 {
+    font-family: var(--font-display); font-weight: 800; text-transform: uppercase;
+    font-size: clamp(1.35rem, 0.9rem + 2.2vw, 2.4rem); line-height: 1.05; letter-spacing: -0.02em;
+    margin-bottom: var(--s-4);
+    hyphens: manual; overflow-wrap: normal; text-wrap: balance;
+  }
+  .texto h3 small { display: block; margin-top: var(--s-2); font-family: var(--font-body); font-size: var(--fs-sm); font-weight: 600; letter-spacing: 0.14em; color: var(--muted); }
+  .texto > p:not(.selo) { color: var(--muted); max-width: 46ch; margin-bottom: var(--s-4); }
+  .texto .frase { color: var(--text) !important; font-weight: 600; }
+  .selo {
+    display: inline-block; font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 5px 12px; border-radius: var(--r-pill); margin-bottom: var(--s-4);
+    border: 1px solid currentColor;
+  }
+  .selo-grad { background: var(--grad); color: var(--bg); border-color: transparent; }
+  .chips { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-top: var(--s-5); }
+  .chips li {
+    font-size: var(--fs-xs); letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 6px 12px; border-radius: var(--r-pill);
+    background: rgba(14, 16, 22, 0.55); border: 1px solid var(--border); color: var(--muted);
+  }
+  .logo-cliente { display: block; height: auto; margin-bottom: var(--s-5); }
+
+  /* ── Febracis ── */
+  .febracis {
+    --ouro: #d9a93b;
+    background:
+      radial-gradient(120% 90% at 85% 10%, rgba(30, 70, 140, 0.45), transparent 60%),
+      radial-gradient(80% 70% at 10% 100%, rgba(217, 169, 59, 0.16), transparent 60%),
+      #0b1222;
+    border-color: rgba(217, 169, 59, 0.35);
+  }
+  .fundo-simbolo {
+    position: absolute; z-index: -1; pointer-events: none;
+    left: 34%; top: 50%; transform: translateY(-50%);
+    height: 135%; width: auto; opacity: 0.3;
+    filter: drop-shadow(0 0 60px rgba(217, 169, 59, 0.45));
+  }
+  .logo-febracis { width: 180px; }
+  .febracis .selo { color: var(--ouro); }
+  .febracis .chips li { border-color: rgba(217, 169, 59, 0.3); }
+  .dupla { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(0.75rem, 2vw, 1.5rem); max-width: 560px; justify-self: end; width: 100%; }
+  .dupla li:nth-child(2) { transform: translateY(8%); }
+
+  /* ── Pitch ── */
+  .pitch {
+    grid-template-columns: 1fr;
+    background:
+      radial-gradient(70% 80% at 50% 110%, rgba(255, 120, 30, 0.28), transparent 65%),
+      radial-gradient(60% 60% at 0% 0%, rgba(168, 85, 247, 0.18), transparent 60%),
+      var(--surface);
+    border-color: transparent;
+    background-clip: padding-box;
+    box-shadow: 0 0 0 1px rgba(255, 140, 50, 0.35), 0 0 60px rgba(255, 120, 30, 0.12);
+  }
+  .pitch .texto { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 var(--s-7); align-items: end; }
+  .pitch .selo, .pitch h3 { grid-column: 1; }
+  .pitch .texto > p:not(.selo) { grid-column: 2; grid-row: 1 / span 2; align-self: end; margin-bottom: var(--s-4); }
+  .pitch .chips { grid-column: 2; margin-top: 0; }
+  .pitch .selo { justify-self: start; }
+
+  /* ── ROI Makers ── */
+  .roi { background: #08080a; border-color: rgba(220, 40, 40, 0.3); }
+  .fundo-palco {
+    position: absolute; inset: 0; z-index: -2; pointer-events: none;
+    width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%;
+    opacity: 0.35;
+  }
+  .roi::before {
+    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      linear-gradient(90deg, rgba(8, 8, 10, 0.96) 25%, rgba(8, 8, 10, 0.55) 60%, rgba(8, 8, 10, 0.75)),
+      radial-gradient(60% 70% at 75% 60%, rgba(220, 40, 40, 0.22), transparent 70%);
+  }
+  .logo-roi { width: 150px; }
+  .roi .selo { color: #f0c46a; }
+  .palco { position: relative; display: grid; grid-template-columns: 1fr minmax(0, 300px); align-items: end; justify-self: end; width: 100%; max-width: 600px; }
+  .recorte {
+    grid-column: 1; grid-row: 1; justify-self: end; align-self: end;
+    width: 115%; max-width: none; height: auto; margin-right: -22%;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.6));
+    pointer-events: none;
+  }
+  .unico { grid-column: 2; grid-row: 1; position: relative; z-index: 1; }
+
+  /* ── Responsivo ── */
+  @media (max-width: 900px) {
+    .vitrine { grid-template-columns: 1fr; }
+    .dupla, .palco { justify-self: center; }
+    .dupla li:nth-child(2) { transform: none; }
+    .pitch .texto { grid-template-columns: 1fr; }
+    .pitch .texto > p:not(.selo), .pitch .chips { grid-column: 1; grid-row: auto; }
+    .pitch .chips { margin-bottom: var(--s-2); }
+    .fundo-simbolo { right: -18%; top: auto; bottom: -4%; transform: none; height: 62%; opacity: 0.26; }
+    .roi::before { background: linear-gradient(180deg, rgba(8, 8, 10, 0.95) 30%, rgba(8, 8, 10, 0.6) 70%, rgba(8, 8, 10, 0.85)); }
+  }
+  @media (max-width: 520px) {
+    .palco { grid-template-columns: 0.8fr minmax(0, 1.2fr); }
+    .recorte { width: 130%; margin-right: -30%; }
+  }
+</style>
