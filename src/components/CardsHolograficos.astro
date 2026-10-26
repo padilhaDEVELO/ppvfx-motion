@@ -1,0 +1,160 @@
+---
+// Fundo decorativo da seção de IA: cards holográficos flutuando, com glitch
+// periódico (separação RGB em fatias), linhas de varredura e brilho laranja.
+// Tudo em SVG/CSS (sem vídeo). Com "reduzir movimento", os cards ficam parados.
+// Ícones genéricos de propósito: nada de logos de empresas de IA.
+interface Props { sangrar?: boolean; idioma?: 'pt' | 'en'; }
+const { sangrar = false } = Astro.props;
+
+const cards = [
+  { icone: 'ia', titulo: 'NEURAL NETWORK', sub: 'PROCESSOR' },
+  { icone: 'rede', titulo: 'QUANTUM DATA', sub: 'LINK' },
+  { icone: 'espectro', titulo: 'SPECTRUM', sub: 'ENGINE' },
+  { icone: 'faisca', titulo: 'INNOVATION', sub: 'HUB CORE' },
+  { icone: 'chip', titulo: 'DEPTH MAP', sub: '3D PARALLAX' },
+  { icone: 'onda', titulo: 'MOTION', sub: 'SYNTH' },
+  { icone: 'rede', titulo: 'VISION', sub: 'MODEL' },
+];
+---
+<div class:list={['holos', { sangrar }]} aria-hidden="true">
+  <svg class="defs" width="0" height="0" focusable="false">
+    <defs>
+      <linearGradient id="holo-grad-espectro" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#ff6a3d" /><stop offset="0.35" stop-color="#ffd23f" />
+        <stop offset="0.6" stop-color="#3fe0c5" /><stop offset="1" stop-color="#a855f7" />
+      </linearGradient>
+      <symbol id="holo-moldura" viewBox="0 0 200 270">
+        <path d="M14 2 H78 L86 10 H134 L142 2 H186 L198 14 V256 L186 268 H14 L2 256 V14 Z" fill="rgba(255,120,40,0.07)" stroke="currentColor" stroke-width="1.6" />
+        <path d="M16 22 H184 V172 H16 Z" fill="rgba(255,140,60,0.05)" stroke="currentColor" stroke-opacity="0.45" />
+        <path d="M16 36 V22 H30 M170 22 H184 V36 M184 158 V172 H170 M30 172 H16 V158" fill="none" stroke="currentColor" stroke-width="2.4" />
+        <path d="M16 184 H176 L184 192 V256 H16 Z" fill="rgba(255,120,40,0.06)" stroke="currentColor" stroke-opacity="0.55" />
+        <rect x="24" y="226" width="120" height="5" rx="2" fill="currentColor" opacity="0.35" />
+        <rect x="24" y="237" width="96" height="5" rx="2" fill="currentColor" opacity="0.25" />
+        <rect x="24" y="248" width="60" height="4" rx="2" fill="currentColor" opacity="0.18" />
+        <path d="M190 40 V60 M190 66 V72 M190 78 V110" stroke="currentColor" stroke-opacity="0.5" />
+        <circle cx="100" cy="12" r="1.6" fill="currentColor" /><circle cx="108" cy="12" r="1.6" fill="currentColor" opacity="0.5" />
+      </symbol>
+      <symbol id="holo-ia" viewBox="-50 -50 100 100">
+        <path d="M0 -44 L38 -22 V22 L0 44 L-38 22 V-22 Z" fill="none" stroke="currentColor" stroke-width="3" />
+        <text x="0" y="13" text-anchor="middle" font-size="36" font-weight="700" fill="currentColor">IA</text>
+      </symbol>
+      <symbol id="holo-rede" viewBox="-50 -50 100 100">
+        <g fill="none" stroke="currentColor" stroke-width="2" opacity="0.8">
+          <path d="M-34 -24 L0 -34 L34 -24 M-34 -24 L-6 0 L34 -24 M-34 24 L-6 0 L34 24 M-34 24 L0 34 L34 24 M0 -34 L-6 0 L0 34 M-34 -24 V24 M34 -24 V24" />
+        </g>
+        <g fill="currentColor"><circle cx="-34" cy="-24" r="5" /><circle cx="0" cy="-34" r="5" /><circle cx="34" cy="-24" r="5" /><circle cx="-6" cy="0" r="7" /><circle cx="-34" cy="24" r="5" /><circle cx="0" cy="34" r="5" /><circle cx="34" cy="24" r="5" /></g>
+      </symbol>
+      <symbol id="holo-espectro" viewBox="-50 -50 100 100">
+        <path d="M-36 38 C-28 -52 28 -52 36 38" fill="none" stroke="url(#holo-grad-espectro)" stroke-width="15" stroke-linecap="round" />
+      </symbol>
+      <symbol id="holo-faisca" viewBox="-50 -50 100 100">
+        <g stroke="currentColor" stroke-width="7" stroke-linecap="round">
+          <path d="M0 -40 V-12 M0 12 V40 M-40 0 H-12 M12 0 H40 M-28 -28 L-9 -9 M9 9 L28 28 M28 -28 L9 -9 M-9 9 L-28 28" />
+        </g>
+      </symbol>
+      <symbol id="holo-chip" viewBox="-50 -50 100 100">
+        <rect x="-26" y="-26" width="52" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="3" />
+        <rect x="-12" y="-12" width="24" height="24" fill="currentColor" opacity="0.6" />
+        <path d="M-16 -26 V-40 M0 -26 V-40 M16 -26 V-40 M-16 26 V40 M0 26 V40 M16 26 V40 M-26 -16 H-40 M-26 0 H-40 M-26 16 H-40 M26 -16 H40 M26 0 H40 M26 16 H40" stroke="currentColor" stroke-width="3" />
+      </symbol>
+      <symbol id="holo-onda" viewBox="-50 -50 100 100">
+        <path d="M-44 0 Q-36 -30 -28 0 T-12 0 T4 0 T20 0 T36 0" fill="none" stroke="currentColor" stroke-width="4" />
+        <path d="M-44 0 Q-36 22 -28 0 T-12 0 T4 0 T20 0 T36 0" fill="none" stroke="currentColor" stroke-width="2" opacity="0.5" />
+      </symbol>
+    </defs>
+  </svg>
+
+  {cards.map((c, i) => (
+    <div class:list={['holo', `holo-${i + 1}`]}>
+      <div class="flutua">
+        {['base', 'r', 'c'].map((camada) => (
+          <svg class:list={['camada', camada]} viewBox="0 0 200 270" focusable="false">
+            <use href="#holo-moldura" width="200" height="270" />
+            <use href={`#holo-${c.icone}`} x="40" y="37" width="120" height="120" />
+            <text x="24" y="204" font-size="12.5" font-weight="700" letter-spacing="0.6" fill="currentColor">{c.titulo}</text>
+            <text x="24" y="218" font-size="10" letter-spacing="1.2" fill="currentColor" opacity="0.7">{c.sub}</text>
+          </svg>
+        ))}
+        <span class="varredura"></span>
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  .holos { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; perspective: 1200px; }
+  .holos.sangrar { inset: 0 calc(50% - 50vw); }
+  .defs { position: absolute; }
+
+  .holo { position: absolute; width: var(--w, 180px); aspect-ratio: 200 / 270; color: #ff9a52; opacity: var(--op, 0.6); filter: blur(var(--blur, 0)); }
+  .flutua {
+    position: relative; width: 100%; height: 100%;
+    transform: rotateY(var(--ry, 0deg)) rotateZ(var(--rz, 0deg));
+    animation: flutuar var(--dur, 9s) ease-in-out var(--atraso, 0s) infinite alternate;
+    will-change: transform;
+  }
+  .camada { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; font-family: var(--font-body); }
+  .base { filter: drop-shadow(0 0 6px rgba(255, 130, 50, 0.75)) drop-shadow(0 0 22px rgba(255, 100, 30, 0.35)); animation: piscar var(--gdur, 7s) steps(1) var(--gatraso, 0s) infinite; }
+  .r, .c { opacity: 0; mix-blend-mode: screen; }
+  .r { color: #ff3b5c; animation: glitch-r var(--gdur, 7s) steps(1) var(--gatraso, 0s) infinite; }
+  .c { color: #36e6ff; animation: glitch-c var(--gdur, 7s) steps(1) var(--gatraso, 0s) infinite; }
+  .varredura {
+    position: absolute; inset: 0; border-radius: 6px;
+    background: repeating-linear-gradient(180deg, rgba(255, 170, 100, 0.12) 0 1px, transparent 1px 4px);
+    mask: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.4));
+  }
+  .varredura::after {
+    content: ''; position: absolute; left: 0; right: 0; top: 0; height: 18%;
+    background: linear-gradient(180deg, transparent, rgba(255, 180, 110, 0.18), transparent);
+    animation: varrer 4.5s linear var(--atraso, 0s) infinite;
+  }
+
+  @keyframes flutuar {
+    from { transform: translate3d(0, -12px, 0) rotateY(var(--ry, 0deg)) rotateX(4deg) rotateZ(var(--rz, 0deg)); }
+    to { transform: translate3d(0, 14px, 0) rotateY(calc(var(--ry, 0deg) - 8deg)) rotateX(-3deg) rotateZ(calc(var(--rz, 0deg) + 1.5deg)); }
+  }
+  @keyframes varrer { from { transform: translateY(-120%); } to { transform: translateY(560%); } }
+  @keyframes piscar {
+    0%, 88%, 100% { opacity: 1; transform: none; }
+    89% { opacity: 0.55; transform: translateX(3px); }
+    90% { opacity: 1; transform: translateX(-2px) skewX(-4deg); }
+    92% { opacity: 0.7; transform: none; }
+    93% { opacity: 1; }
+  }
+  @keyframes glitch-r {
+    0%, 88%, 94%, 100% { opacity: 0; clip-path: inset(0); transform: none; }
+    89% { opacity: 0.9; clip-path: inset(18% 0 62% 0); transform: translateX(-7px); }
+    90% { opacity: 0.8; clip-path: inset(55% 0 28% 0); transform: translateX(6px); }
+    91% { opacity: 0.7; clip-path: inset(8% 0 80% 0); transform: translateX(-4px); }
+    92% { opacity: 0.9; clip-path: inset(70% 0 10% 0); transform: translateX(8px); }
+    93% { opacity: 0.6; clip-path: inset(0); transform: translateX(-3px); }
+  }
+  @keyframes glitch-c {
+    0%, 88%, 94%, 100% { opacity: 0; clip-path: inset(0); transform: none; }
+    89% { opacity: 0.8; clip-path: inset(40% 0 40% 0); transform: translateX(6px); }
+    90% { opacity: 0.9; clip-path: inset(12% 0 70% 0); transform: translateX(-8px); }
+    91% { opacity: 0.6; clip-path: inset(62% 0 18% 0); transform: translateX(5px); }
+    92% { opacity: 0.8; clip-path: inset(30% 0 52% 0); transform: translateX(-6px); }
+    93% { opacity: 0.5; clip-path: inset(0); transform: translateX(3px); }
+  }
+
+  /* Posições: perto do título, nas bordas entre as vitrines e junto da chamada final. */
+  .holo-1 { --w: 210px; top: 1.2%; right: 7%; --ry: -22deg; --rz: 4deg; --dur: 8s; --gdur: 6.5s; --gatraso: 1.2s; --op: 0.75; }
+  .holo-2 { --w: 150px; top: 4.5%; right: 26%; --ry: 18deg; --rz: -6deg; --dur: 10s; --atraso: -3s; --gdur: 8s; --gatraso: 3.4s; --op: 0.45; --blur: 1.5px; }
+  .holo-3 { --w: 120px; top: 0.4%; right: 40%; --ry: 25deg; --rz: 3deg; --dur: 11s; --atraso: -5s; --gdur: 9s; --gatraso: 5s; --op: 0.3; --blur: 3px; }
+  .holo-4 { --w: 230px; top: 27%; left: -3%; --ry: 28deg; --rz: -5deg; --dur: 9s; --atraso: -2s; --gdur: 7.5s; --gatraso: 2.2s; --op: 0.6; }
+  .holo-5 { --w: 240px; top: 49%; right: -3%; --ry: -28deg; --rz: 5deg; --dur: 10s; --atraso: -6s; --gdur: 6s; --gatraso: 0.4s; --op: 0.6; }
+  .holo-6 { --w: 190px; top: 75%; left: 2%; --ry: 24deg; --rz: 6deg; --dur: 8.5s; --atraso: -1s; --gdur: 8.5s; --gatraso: 4.1s; --op: 0.5; --blur: 1px; }
+  .holo-7 { --w: 170px; bottom: 1%; right: 9%; --ry: -20deg; --rz: -4deg; --dur: 9.5s; --atraso: -4s; --gdur: 7s; --gatraso: 2.8s; --op: 0.55; }
+
+  @media (max-width: 900px) {
+    .holo-2, .holo-3, .holo-6 { display: none; }
+    .holo-1 { --w: 120px; top: 0; right: -6%; --op: 0.4; }
+    .holo-4 { --w: 150px; left: -12%; }
+    .holo-5 { --w: 150px; right: -12%; }
+    .holo-7 { --w: 120px; right: -6%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .flutua, .base, .r, .c, .varredura::after { animation: none; }
+  }
+</style>

@@ -4,6 +4,7 @@ import { Picture } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import CardVideo from '../../components/CardVideo.astro';
 import VitrineIA from '../../components/VitrineIA.astro';
+import CardsHolograficos from '../../components/CardsHolograficos.astro';
 import FundoVideo from '../../components/FundoVideo.astro';
 import fundoPremiere from '../../assets/fundos/timeline-premiere.jpg';
 import fundoAE from '../../assets/fundos/timeline-ae.jpg';
@@ -55,7 +56,8 @@ const experience = [
     </div>
   </section>
 
-  <section id="ai" class="container section">
+  <section id="ai" class="container section com-fundo">
+    <CardsHolograficos sangrar />
     <div class="section-heading"><div><p class="eyebrow">New · 3D parallax with AI</p><h2>AI-made{' '}<br /><span class="grad-text">videos.</span></h2></div><p>A still photo becomes a moving scene: AI separates the layers and builds depth; camera, light and typography are motion design.</p></div>
     <VitrineIA idioma="en" />
   </section>

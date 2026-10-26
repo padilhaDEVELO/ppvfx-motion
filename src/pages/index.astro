@@ -5,6 +5,7 @@ import Base from '../layouts/Base.astro';
 import CardVideo from '../components/CardVideo.astro';
 import Trilho from '../components/Trilho.astro';
 import VitrineIA from '../components/VitrineIA.astro';
+import CardsHolograficos from '../components/CardsHolograficos.astro';
 import FundoVideo from '../components/FundoVideo.astro';
 import fundoPremiere from '../assets/fundos/timeline-premiere.jpg';
 import fundoAE from '../assets/fundos/timeline-ae.jpg';
@@ -112,7 +113,8 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   </section>
 
   <!-- VÍDEOS FEITOS COM IA -->
-  <section id="ia" class="secao ia" aria-labelledby="ia-titulo">
+  <section id="ia" class="secao ia com-fundo" aria-labelledby="ia-titulo">
+    <CardsHolograficos />
     <div class="container">
       <p class="tag rv">Novo · Paralaxe 3D com IA</p>
       <h2 class="titulo rv" id="ia-titulo">Vídeos feitos<br />com <span class="grad-text">IA.</span></h2>
