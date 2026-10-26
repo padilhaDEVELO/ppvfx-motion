@@ -1,6 +1,10 @@
 // Revelação ao rolar, como melhoria progressiva. Só esconde o que está abaixo da tela
 // na abertura, então não há piscada. A cada rolagem revela tudo o que já entrou OU
 // já passou da tela: uma rolagem rápida nunca deixa conteúdo preso invisível.
+// O que entra junto (cards da mesma fileira) aparece em cascata curta.
+
+const CASCATA_MS = 50;
+const CASCATA_MAX = 5;
 
 const raiz = document.documentElement;
 
@@ -24,9 +28,12 @@ if (!reduzido) {
   const verificar = () => {
     agendado = false;
     const l = limite();
+    let ordem = 0;
     for (const el of pendentes) {
       if (el.getBoundingClientRect().top < l) {
-        el.classList.remove('rv-espera');
+        const atraso = Math.min(ordem++, CASCATA_MAX) * CASCATA_MS;
+        if (atraso) setTimeout(() => el.classList.remove('rv-espera'), atraso);
+        else el.classList.remove('rv-espera');
         pendentes.delete(el);
       }
     }

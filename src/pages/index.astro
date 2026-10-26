@@ -337,7 +337,7 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   .servicos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
   .servico-ia { border-color: rgba(255, 140, 50, 0.45); }
   .selo.selo-novo { background: none; color: var(--from); border: 1px solid var(--from); padding: 4px 11px; }
-  .servico .selo-novo { align-self: flex-start; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 11px; border-radius: var(--r-pill); margin-bottom: var(--s-4); }
+  .servico .selo-novo { align-self: flex-start; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 11px; border-radius: var(--r-pill); margin-bottom: var(--s-4); }
   .preco-ia { border-color: rgba(255, 140, 50, 0.45); }
   .chamada {
     margin: calc(var(--s-2) * -1) 0 var(--s-5); padding: var(--s-3) var(--s-4);
@@ -402,15 +402,18 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   .preco {
     background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg);
     padding: var(--s-6) var(--s-6); display: flex; flex-direction: column;
-    transition: transform var(--t-med) var(--ease-out), box-shadow var(--t-med);
+    /* Inclui a opacidade da revelação (.rv), que este transition substituiria. */
+    transition: opacity var(--t-slow) var(--ease-out), transform var(--t-med) var(--ease-out), box-shadow var(--t-med);
   }
-  .preco:hover { transform: translateY(-4px); box-shadow: 0 0 32px rgba(168, 85, 247, 0.12); }
+  @media (hover: hover) {
+    .preco:hover { transform: translateY(-4px); box-shadow: 0 0 32px rgba(168, 85, 247, 0.12); }
+  }
   .preco.destaque {
     border-color: transparent;
     background: linear-gradient(var(--surface), var(--surface)) padding-box, linear-gradient(130deg, var(--from), var(--to) 55%, var(--border)) border-box;
     box-shadow: 0 0 36px rgba(168, 85, 247, 0.25);
   }
-  .selo { align-self: flex-start; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: var(--grad); color: var(--bg); padding: 5px 12px; border-radius: var(--r-pill); margin-bottom: var(--s-4); }
+  .selo { align-self: flex-start; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: var(--grad); color: var(--bg); padding: 5px 12px; border-radius: var(--r-pill); margin-bottom: var(--s-4); }
   .preco-nome { font-size: var(--fs-xl); font-weight: 700; margin-bottom: var(--s-2); }
   .preco-valor { font-family: var(--font-display); font-weight: 800; font-size: clamp(2rem, 2.3vw, 2.6rem); line-height: 1; margin-bottom: var(--s-5); white-space: nowrap; }
   .preco-valor small { display: block; font-family: var(--font-body); font-size: var(--fs-sm); font-weight: 500; color: var(--muted); margin-bottom: var(--s-2); }

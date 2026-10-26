@@ -101,9 +101,14 @@ section { position: relative; }
 }
 .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 .btn-claro { background: var(--text); color: var(--bg); border: 1px solid var(--text); }
-.btn-claro:hover { transform: scale(1.03); box-shadow: 0 8px 32px rgba(236, 231, 225, 0.15); }
 .btn-contorno { border: 1px solid var(--border); background: transparent; }
-.btn-contorno:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+/* Hover só onde há mouse: no toque o estado ficaria preso depois do toque. */
+@media (hover: hover) {
+  .btn-claro:hover { transform: scale(1.03); box-shadow: 0 8px 32px rgba(236, 231, 225, 0.15); }
+  .btn-contorno:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+}
+/* Resposta imediata ao pressionar, com mouse ou toque. */
+.btn:active { transform: scale(0.97); }
 
 /* ── Revelação progressiva ──
    Sem JavaScript tudo fica visível. O script só esconde o que ainda está fora da tela
