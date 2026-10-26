@@ -81,6 +81,8 @@ a, button { touch-action: manipulation; }
 /* ── Seções ── */
 section { position: relative; }
 .secao { padding-block: var(--section-y); }
+/* Seções com vídeo de fundo (components/FundoVideo.astro). */
+.com-fundo { position: relative; isolation: isolate; }
 .secao.com-linha::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
   background: var(--line);

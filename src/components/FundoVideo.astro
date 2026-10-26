@@ -1,0 +1,62 @@
+---
+// Vídeo decorativo de fundo (timeline do Premiere ou do After Effects).
+// Fica atrás do conteúdo da seção, com opacidade baixa e bordas que somem no fundo.
+// Só toca enquanto está na tela; com "reduzir movimento" fica parado no pôster.
+// A seção que o recebe precisa de position: relative e isolation: isolate.
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { url } from '../lib/url';
+
+interface Props {
+  arquivo: string;
+  poster: ImageMetadata;
+  /** topo: mais presente, com sombra à esquerda para o texto; secao: mais discreto. */
+  intensidade?: 'topo' | 'secao';
+  /** Para seções com largura limitada: o fundo ocupa a largura toda da tela. */
+  sangrar?: boolean;
+}
+const { arquivo, poster, intensidade = 'secao', sangrar = false } = Astro.props;
+if (!/^[a-z0-9-]+\.mp4$/.test(arquivo)) throw new Error(`Nome de vídeo inválido: ${arquivo}`);
+const capa = await getImage({ src: poster, format: 'webp', width: 1280, quality: 60 });
+---
+<div class:list={['fundo-video', intensidade, { sangrar }]} aria-hidden="true" data-fundo-video>
+  <video src={url(`videos/${arquivo}`)} poster={capa.src} width="1600" height="900" muted loop playsinline preload="none" tabindex="-1"></video>
+</div>
+
+<script>
+  const reduzido = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const observador = new IntersectionObserver((entradas) => {
+    for (const e of entradas) {
+      const video = e.target.querySelector('video')!;
+      if (e.isIntersecting && !reduzido.matches && !document.hidden) video.play().catch(() => {});
+      else video.pause();
+    }
+  }, { rootMargin: '100px 0px' });
+  for (const el of document.querySelectorAll('[data-fundo-video]')) observador.observe(el);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) for (const v of document.querySelectorAll<HTMLVideoElement>('[data-fundo-video] video')) v.pause();
+  });
+</script>
+
+<style>
+  .fundo-video {
+    position: absolute; inset: 0; z-index: -1;
+    overflow: hidden; pointer-events: none;
+  }
+  .fundo-video.sangrar { inset: 0 calc(50% - 50vw); }
+  video { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .topo video { opacity: 0.2; object-position: 40% 30%; }
+  .secao video { opacity: 0.11; filter: saturate(0.7); }
+  /* Bordas somem na cor de fundo; no topo, o lado do texto fica mais escuro. */
+  .fundo-video::after { content: ''; position: absolute; inset: 0; }
+  .topo::after {
+    background:
+      linear-gradient(90deg, var(--bg) 0%, rgba(14, 16, 22, 0.75) 35%, rgba(14, 16, 22, 0.2) 70%, rgba(14, 16, 22, 0.5) 100%),
+      linear-gradient(180deg, rgba(14, 16, 22, 0.6) 0%, transparent 25%, transparent 70%, var(--bg) 100%);
+  }
+  .secao::after { background: linear-gradient(180deg, var(--bg) 0%, transparent 18%, transparent 82%, var(--bg) 100%); }
+  @media (max-width: 640px) {
+    .topo video { opacity: 0.16; object-position: 30% 30%; }
+    .topo::after { background: linear-gradient(180deg, rgba(14, 16, 22, 0.55) 0%, rgba(14, 16, 22, 0.35) 50%, var(--bg) 100%); }
+  }
+</style>

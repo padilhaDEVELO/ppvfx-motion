@@ -4,6 +4,9 @@ import { Picture } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import CardVideo from '../../components/CardVideo.astro';
 import VitrineIA from '../../components/VitrineIA.astro';
+import FundoVideo from '../../components/FundoVideo.astro';
+import fundoPremiere from '../../assets/fundos/timeline-premiere.jpg';
+import fundoAE from '../../assets/fundos/timeline-ae.jpg';
 import { contato, linkWhatsApp } from '../../config/site';
 import { url } from '../../lib/url';
 const all = (await getCollection('projetos')).sort((a, b) => a.data.ordem - b.data.ordem);
@@ -20,7 +23,8 @@ const experience = [
 ];
 ---
 <Base idioma="en" caminho="en/" titulo="Paulo Padilha — Video Editor & Motion Designer" descricao="Video editing and motion design for social media, brands and educational content. Explore Paulo Padilha’s work. Based in Brazil, open to remote opportunities.">
-  <section id="home" class="container hero">
+  <section id="home" class="container hero com-fundo">
+    <FundoVideo arquivo="fundo-timeline-premiere.mp4" poster={fundoPremiere} intensidade="topo" sangrar />
     <div class="intro">
       <p class="eyebrow">Paulo Padilha / PP VFX</p>
       <h1>Video editor.{' '}<br /><span class="grad-text">Motion{' '}<br />designer.</span></h1>
@@ -40,7 +44,8 @@ const experience = [
     </div>
   </section>
 
-  <section id="work" class="container work section">
+  <section id="work" class="container work section com-fundo">
+    <FundoVideo arquivo="fundo-timeline-ae.mp4" poster={fundoAE} sangrar />
     <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2>Footage meets{' '}<br />motion.</h2></div><p>Explore the finished pieces and the part I contributed to each project.</p></div>
     <div class="work-grid">
       {selected.map(p => <div class="work-item">
@@ -55,7 +60,8 @@ const experience = [
     <VitrineIA idioma="en" />
   </section>
 
-  <section id="studies" class="section studies">
+  <section id="studies" class="section studies com-fundo">
+    <FundoVideo arquivo="fundo-timeline-ae.mp4" poster={fundoAE} />
     <div class="container">
       <div class="section-heading"><div><p class="eyebrow">Animation studies</p><h2>Exploring visual{' '}<br />storytelling.</h2></div><p>Test pieces exploring identity, historical imagery and educational animation.</p></div>
       <div class="studies-grid">

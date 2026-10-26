@@ -15,7 +15,7 @@ const PAGINAS = new Set(['index.html', '404.html', 'privacidade/index.html', 'en
 const AVULSOS = new Set(['robots.txt', 'sitemap.xml', 'favicon.svg', 'og.png', 'og-en.png']);
 const RECURSO = /^_astro\/[A-Za-z0-9_.-]+\.(?:css|js|avif|webp|jpg|jpeg|png|svg|woff2|woff)$/;
 // Vídeos da seção de IA: nomes fixos, H.264 com faststart, até 8 MB cada.
-const VIDEOS = new Set(['febracis-cis-belem.mp4', 'febracis-cis-vitoria.mp4', 'roi-makers-fernando-miranda.mp4', 'pitch-ia-aplicada-aos-negocios.mp4'].map((v) => `videos/${v}`));
+const VIDEOS = new Set(['febracis-cis-belem.mp4', 'febracis-cis-vitoria.mp4', 'roi-makers-fernando-miranda.mp4', 'pitch-ia-aplicada-aos-negocios.mp4', 'fundo-timeline-premiere.mp4', 'fundo-timeline-ae.mp4'].map((v) => `videos/${v}`));
 const LIMITE_VIDEO = 8 * 1024 * 1024;
 const LIMITE_TOTAL = 8 * 1024 * 1024; // 8 MB, sem contar os vídeos
 const LIMITE_VIDEOS = 16 * 1024 * 1024; // 16 MB somando os vídeos

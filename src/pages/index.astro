@@ -5,6 +5,9 @@ import Base from '../layouts/Base.astro';
 import CardVideo from '../components/CardVideo.astro';
 import Trilho from '../components/Trilho.astro';
 import VitrineIA from '../components/VitrineIA.astro';
+import FundoVideo from '../components/FundoVideo.astro';
+import fundoPremiere from '../assets/fundos/timeline-premiere.jpg';
+import fundoAE from '../assets/fundos/timeline-ae.jpg';
 import Icone from '../components/Icone.astro';
 import { contato, numeros, servicos, processo, linkWhatsApp, mensagens, formatoPreco } from '../config/site';
 import { url } from '../lib/url';
@@ -53,7 +56,8 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   caminho="/"
 >
   <!-- APRESENTAÇÃO -->
-  <section id="home" class="hero" aria-labelledby="hero-nome">
+  <section id="home" class="hero com-fundo" aria-labelledby="hero-nome">
+    <FundoVideo arquivo="fundo-timeline-premiere.mp4" poster={fundoPremiere} intensidade="topo" />
     <div class="container">
       <p class="hero-status">Motion Design &amp; Edição de Vídeo — {contato.cidade}</p>
       <h1 class="hero-nome" id="hero-nome">
@@ -79,7 +83,8 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   </section>
 
   <!-- TRABALHOS: vertical -->
-  <section id="work" class="secao trabalhos" aria-labelledby="work-titulo">
+  <section id="work" class="secao trabalhos com-fundo" aria-labelledby="work-titulo">
+    <FundoVideo arquivo="fundo-timeline-ae.mp4" poster={fundoAE} />
     <div class="container">
       <p class="tag rv">Trabalhos em destaque · Vertical 9:16</p>
       <h2 class="titulo rv" id="work-titulo">Motion<br />para redes.</h2>
@@ -91,7 +96,8 @@ const rodadas = (n: number) => `${n} rodada${n > 1 ? 's' : ''} de ajuste`;
   </section>
 
   <!-- TRABALHOS: horizontal -->
-  <section id="youtube" class="secao trabalhos-h" aria-labelledby="youtube-titulo">
+  <section id="youtube" class="secao trabalhos-h com-fundo" aria-labelledby="youtube-titulo">
+    <FundoVideo arquivo="fundo-timeline-ae.mp4" poster={fundoAE} />
     <div class="container">
       <p class="tag rv">Formato horizontal · 16:9</p>
       <h2 class="titulo rv" id="youtube-titulo">Animações<br />para YouTube.</h2>
